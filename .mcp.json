@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "actionista": {
+      "command": "bash",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/scripts/actionista-mcp"]
+    }
+  }
+}

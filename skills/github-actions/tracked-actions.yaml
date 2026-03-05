@@ -1,0 +1,207 @@
+# Tracked GitHub Actions
+# This file defines which actions are tracked in index.json
+# Categories help organize and discover actions
+# Updated by .github/workflows/update-index.yml
+
+categories:
+  core:
+    description: Official GitHub Actions for core functionality
+    actions:
+      - actions/checkout
+      - actions/cache
+      - actions/upload-artifact
+      - actions/download-artifact
+      - actions/github-script
+      - actions/create-release
+      - actions/upload-release-asset
+      - actions/stale
+      - actions/labeler
+      - actions/dependency-review-action
+
+  setup-languages:
+    description: Language and runtime setup actions
+    actions:
+      - actions/setup-node
+      - actions/setup-python
+      - actions/setup-go
+      - actions/setup-java
+      - actions/setup-dotnet
+      - ruby/setup-ruby
+      - dtolnay/rust-toolchain
+      - actions-rust-lang/setup-rust-toolchain
+      - erlef/setup-beam
+      - swift-actions/setup-swift
+      - julia-actions/setup-julia
+      - ocaml/setup-ocaml
+      - haskell-actions/setup
+      - graalvm/setup-graalvm
+      - php-actions/composer
+      - shivammathur/setup-php
+
+  package-managers:
+    description: Package manager caching and setup
+    actions:
+      - actions/setup-node  # Built-in npm/yarn/pnpm cache
+      - pnpm/action-setup
+      - bahmutov/npm-install
+      - Swatinem/rust-cache
+      - actions/cache  # Generic caching
+
+  docker:
+    description: Docker and container actions
+    actions:
+      - docker/setup-buildx-action
+      - docker/setup-qemu-action
+      - docker/build-push-action
+      - docker/login-action
+      - docker/metadata-action
+      - docker/bake-action
+
+  cloud-aws:
+    description: AWS service integrations
+    actions:
+      - aws-actions/configure-aws-credentials
+      - aws-actions/amazon-ecr-login
+      - aws-actions/amazon-ecs-deploy-task-definition
+      - aws-actions/amazon-ecs-render-task-definition
+      - aws-actions/aws-cloudformation-github-deploy
+      - aws-actions/aws-secretsmanager-get-secrets
+
+  cloud-gcp:
+    description: Google Cloud Platform integrations
+    actions:
+      - google-github-actions/auth
+      - google-github-actions/setup-gcloud
+      - google-github-actions/deploy-cloudrun
+      - google-github-actions/upload-cloud-storage
+      - google-github-actions/get-secretmanager-secrets
+      - google-github-actions/deploy-cloud-functions
+
+  cloud-azure:
+    description: Microsoft Azure integrations
+    actions:
+      - azure/login
+      - azure/webapps-deploy
+      - azure/aks-set-context
+      - azure/k8s-deploy
+      - azure/docker-login
+      - azure/functions-action
+      - azure/cli
+
+  kubernetes:
+    description: Kubernetes deployment and management
+    actions:
+      - azure/k8s-deploy
+      - azure/aks-set-context
+      - google-github-actions/get-gke-credentials
+      - helm/kind-action
+      - helm/chart-releaser-action
+
+  security:
+    description: Security scanning and analysis
+    actions:
+      - github/codeql-action/init
+      - github/codeql-action/analyze
+      - github/codeql-action/autobuild
+      - snyk/actions/node
+      - snyk/actions/python
+      - snyk/actions/docker
+      - aquasecurity/trivy-action
+      - anchore/scan-action
+      - securego/gosec
+      - trufflesecurity/trufflehog
+
+  testing:
+    description: Testing frameworks and coverage
+    actions:
+      - codecov/codecov-action
+      - coverallsapp/github-action
+      - mattallty/jest-github-action
+      - cypress-io/github-action
+      - browser-actions/setup-chrome
+      - browser-actions/setup-firefox
+      - mikepenz/action-junit-report
+
+  linting:
+    description: Code quality and linting
+    actions:
+      - github/super-linter
+      - oxsecurity/megalinter
+      - reviewdog/action-eslint
+      - reviewdog/action-golangci-lint
+      - reviewdog/action-shellcheck
+      - ludeeus/action-shellcheck
+      - chartboost/ruff-action
+
+  release:
+    description: Release automation
+    actions:
+      - google-github-actions/release-please-action
+      - semantic-release/semantic-release
+      - changesets/action
+      - goreleaser/goreleaser-action
+      - softprops/action-gh-release
+      - marvinpinto/action-automatic-releases
+      - release-drafter/release-drafter
+
+  notifications:
+    description: Notification and messaging
+    actions:
+      - slackapi/slack-github-action
+      - 8398a7/action-slack
+      - appleboy/telegram-action
+      - dawidd6/action-send-mail
+      - peter-evans/create-or-update-comment
+      - actions/github-script
+
+  git-operations:
+    description: Git and GitHub operations
+    actions:
+      - peter-evans/create-pull-request
+      - stefanzweifel/git-auto-commit-action
+      - peaceiris/actions-gh-pages
+      - ad-m/github-push-action
+      - EndBug/add-and-commit
+      - actions/checkout
+      - dorny/paths-filter
+
+  infrastructure:
+    description: Infrastructure as Code
+    actions:
+      - hashicorp/setup-terraform
+      - hashicorp/terraform-github-actions
+      - pulumi/actions
+      - bridgecrewio/checkov-action
+      - cloudflare/wrangler-action
+      - amondnet/vercel-action
+
+  mobile:
+    description: Mobile app development
+    actions:
+      - gradle/actions/setup-gradle
+      - ruby/setup-ruby  # For fastlane
+      - maierj/fastlane-action
+      - subosito/flutter-action
+      - actions/setup-java  # For Android
+
+  documentation:
+    description: Documentation generation
+    actions:
+      - peaceiris/actions-gh-pages
+      - actions/configure-pages
+      - actions/deploy-pages
+      - actions/upload-pages-artifact
+
+  utilities:
+    description: General utility actions
+    actions:
+      - actions/github-script
+      - dorny/paths-filter
+      - tj-actions/changed-files
+      - hmarr/auto-approve-action
+      - pascalgn/automerge-action
+      - tibdex/github-app-token
+      - peter-evans/create-or-update-comment
+      - dawidd6/action-download-artifact
+      - mathieudutour/github-tag-action
+      - EndBug/version-check

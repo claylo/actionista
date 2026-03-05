@@ -1,0 +1,315 @@
+#!/usr/bin/env bash
+# actionista-mcp — MCP server for GitHub Actions version lookups
+#
+# Speaks JSON-RPC 2.0 over stdio. Provides tools:
+#   - lookup_action: Get version info for a specific action
+#   - list_actions: List tracked actions by category
+#   - check_workflow: Report outdated versions in a workflow file
+#
+# Requirements: jq, yq (for check_workflow only)
+
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+INDEX_PATH="$SCRIPT_DIR/../skills/github-actions/index.json"
+
+# ============================================================================
+# Tool definitions
+# ============================================================================
+
+tools_json() {
+    cat <<'TOOLS'
+[
+  {
+    "name": "lookup_action",
+    "description": "Look up version info for a GitHub Action. Returns latest version, full version tag, description, category, deprecated versions, and input parameters.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "action": {
+          "type": "string",
+          "description": "Action name, e.g. 'actions/checkout' or 'docker/build-push-action'"
+        }
+      },
+      "required": ["action"]
+    }
+  },
+  {
+    "name": "list_actions",
+    "description": "List all tracked GitHub Actions in the index. Optionally filter by category.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "category": {
+          "type": "string",
+          "description": "Filter by category (e.g. 'core', 'docker', 'security', 'cloud-aws'). Omit to list all."
+        }
+      }
+    }
+  },
+  {
+    "name": "check_workflow",
+    "description": "Check a GitHub Actions workflow file for outdated action versions. Compares uses: directives against the current index.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "file": {
+          "type": "string",
+          "description": "Path to the workflow YAML file to check"
+        }
+      },
+      "required": ["file"]
+    }
+  }
+]
+TOOLS
+}
+
+# ============================================================================
+# Tool handlers
+# ============================================================================
+
+handle_lookup_action() {
+    local action="$1"
+
+    if [[ ! -f "$INDEX_PATH" ]]; then
+        echo '{"error": "Index file not found. Run scripts/update-index first."}'
+        return
+    fi
+
+    local result
+    result=$(jq --arg a "$action" '.actions[$a] // empty' "$INDEX_PATH")
+
+    if [[ -z "$result" ]]; then
+        # Try fuzzy match
+        local matches
+        matches=$(jq -r --arg a "$action" '.actions | keys[] | select(test($a; "i"))' "$INDEX_PATH" | head -5)
+        if [[ -n "$matches" ]]; then
+            jq -n --arg a "$action" --arg m "$matches" \
+                '{error: ("Action not found: " + $a), suggestions: ($m | split("\n"))}'
+        else
+            jq -n --arg a "$action" '{error: ("Action not found: " + $a)}'
+        fi
+    else
+        jq -n --arg a "$action" --argjson info "$result" '{action: $a} + $info'
+    fi
+}
+
+handle_list_actions() {
+    local category="${1:-}"
+
+    if [[ ! -f "$INDEX_PATH" ]]; then
+        echo '{"error": "Index file not found. Run scripts/update-index first."}'
+        return
+    fi
+
+    if [[ -n "$category" ]]; then
+        jq --arg c "$category" '{
+            category: $c,
+            actions: [.actions | to_entries[] | select(.value.category == $c) | {name: .key, latest: .value.latest, description: .value.description}]
+        } | if .actions | length == 0 then
+            {error: ("No actions found in category: " + $c), available_categories: [.actions | to_entries[].value.category] | unique}
+        else . end' "$INDEX_PATH"
+    else
+        jq '{
+            total: (.actions | length),
+            categories: [.actions | to_entries | group_by(.value.category)[] | {
+                category: .[0].value.category,
+                count: length,
+                actions: [.[].key]
+            }] | sort_by(.category)
+        }' "$INDEX_PATH"
+    fi
+}
+
+handle_check_workflow() {
+    local file="$1"
+
+    if [[ ! -f "$file" ]]; then
+        jq -n --arg f "$file" '{error: ("File not found: " + $f)}'
+        return
+    fi
+
+    if [[ ! -f "$INDEX_PATH" ]]; then
+        echo '{"error": "Index file not found. Run scripts/update-index first."}'
+        return
+    fi
+
+    # Extract uses: directives from workflow
+    local uses_lines
+    uses_lines=$(grep -oE 'uses:[[:space:]]*[^ ]+' "$file" | sed 's/uses:[[:space:]]*//' | sort -u)
+
+    if [[ -z "$uses_lines" ]]; then
+        jq -n --arg f "$file" '{file: $f, message: "No action references found", issues: []}'
+        return
+    fi
+
+    local issues="[]"
+    local checked=0
+    local outdated=0
+
+    while IFS= read -r usage; do
+        # Parse owner/repo@version (handle subpaths like github/codeql-action/init@v3)
+        local action_with_version="$usage"
+        local action version
+
+        if [[ "$action_with_version" == *"@"* ]]; then
+            version="${action_with_version##*@}"
+            action="${action_with_version%@*}"
+        else
+            continue
+        fi
+
+        # Look up in index
+        local index_entry
+        index_entry=$(jq -r --arg a "$action" '.actions[$a] // empty' "$INDEX_PATH")
+
+        if [[ -z "$index_entry" ]]; then
+            continue
+        fi
+
+        checked=$((checked + 1))
+        local latest
+        latest=$(echo "$index_entry" | jq -r '.latest')
+
+        if [[ "$version" != "$latest" ]]; then
+            local latest_full deprecated
+            latest_full=$(echo "$index_entry" | jq -r '.latestFull')
+            deprecated=$(echo "$index_entry" | jq -r --arg v "$version" '.deprecated // [] | if map(. == $v) | any then "true" else "false" end')
+
+            issues=$(echo "$issues" | jq --arg a "$action" --arg cur "$version" --arg lat "$latest" --arg latf "$latest_full" --arg dep "$deprecated" \
+                '. + [{action: $a, current: $cur, latest: $lat, latestFull: $latf, deprecated: ($dep == "true")}]')
+            outdated=$((outdated + 1))
+        fi
+    done <<< "$uses_lines"
+
+    jq -n --arg f "$file" --argjson checked "$checked" --argjson outdated "$outdated" --argjson issues "$issues" \
+        '{file: $f, checked: $checked, outdated: $outdated, issues: $issues}'
+}
+
+# ============================================================================
+# JSON-RPC dispatch
+# ============================================================================
+
+handle_request() {
+    local request="$1"
+
+    local id method params
+    id=$(echo "$request" | jq -r '.id // empty')
+    method=$(echo "$request" | jq -r '.method // empty')
+    params=$(echo "$request" | jq -c '.params // {}')
+
+    # Notifications (no id) — don't respond
+    if [[ -z "$id" ]]; then
+        return
+    fi
+
+    case "$method" in
+        initialize)
+            jq -n --arg id "$id" '{
+                jsonrpc: "2.0",
+                id: ($id | tonumber),
+                result: {
+                    protocolVersion: "2024-11-05",
+                    capabilities: {tools: {}},
+                    serverInfo: {name: "actionista", version: "0.2.0"}
+                }
+            }'
+            ;;
+
+        tools/list)
+            local tools
+            tools=$(tools_json)
+            jq -n --arg id "$id" --argjson tools "$tools" '{
+                jsonrpc: "2.0",
+                id: ($id | tonumber),
+                result: {tools: $tools}
+            }'
+            ;;
+
+        tools/call)
+            local tool_name tool_args result
+            tool_name=$(echo "$params" | jq -r '.name // empty')
+            tool_args=$(echo "$params" | jq -c '.arguments // {}')
+
+            case "$tool_name" in
+                lookup_action)
+                    local action
+                    action=$(echo "$tool_args" | jq -r '.action // empty')
+                    if [[ -z "$action" ]]; then
+                        result='{"error": "Missing required parameter: action"}'
+                    else
+                        result=$(handle_lookup_action "$action")
+                    fi
+                    ;;
+                list_actions)
+                    local category
+                    category=$(echo "$tool_args" | jq -r '.category // empty')
+                    result=$(handle_list_actions "$category")
+                    ;;
+                check_workflow)
+                    local file
+                    file=$(echo "$tool_args" | jq -r '.file // empty')
+                    if [[ -z "$file" ]]; then
+                        result='{"error": "Missing required parameter: file"}'
+                    else
+                        result=$(handle_check_workflow "$file")
+                    fi
+                    ;;
+                *)
+                    jq -n --arg id "$id" --arg name "$tool_name" '{
+                        jsonrpc: "2.0",
+                        id: ($id | tonumber),
+                        error: {code: -32601, message: ("Unknown tool: " + $name)}
+                    }'
+                    return
+                    ;;
+            esac
+
+            jq -n --arg id "$id" --arg text "$result" '{
+                jsonrpc: "2.0",
+                id: ($id | tonumber),
+                result: {content: [{type: "text", text: $text}]}
+            }'
+            ;;
+
+        *)
+            jq -n --arg id "$id" --arg m "$method" '{
+                jsonrpc: "2.0",
+                id: ($id | tonumber),
+                error: {code: -32601, message: ("Method not found: " + $m)}
+            }'
+            ;;
+    esac
+}
+
+# ============================================================================
+# Main loop — read JSON-RPC from stdin, write responses to stdout
+# ============================================================================
+
+main() {
+    # Verify jq is available
+    if ! command -v jq &>/dev/null; then
+        echo '{"jsonrpc":"2.0","error":{"code":-32603,"message":"jq is required but not installed"}}' >&2
+        exit 1
+    fi
+
+    while IFS= read -r line; do
+        # Skip empty lines
+        [[ -z "$line" ]] && continue
+
+        # Validate JSON
+        if ! echo "$line" | jq -e '.' &>/dev/null; then
+            continue
+        fi
+
+        local response
+        response=$(handle_request "$line")
+
+        if [[ -n "$response" ]]; then
+            echo "$response"
+        fi
+    done
+}
+
+main

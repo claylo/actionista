@@ -1,0 +1,239 @@
+#!/usr/bin/env bash
+# update-index — Fetch latest versions for all tracked GitHub Actions
+#
+# Uses batched GraphQL queries (one API call per ~50 actions) to update
+# skills/github-actions/index.json with current version data.
+#
+# Requirements:
+#   - gh (authenticated)
+#   - yq
+#   - jq
+
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+TRACKED_ACTIONS="$SCRIPT_DIR/../skills/github-actions/tracked-actions.yaml"
+INDEX_PATH="$SCRIPT_DIR/../skills/github-actions/index.json"
+BATCH_SIZE=50
+
+# ============================================================================
+# Helpers
+# ============================================================================
+
+check_requirements() {
+    local missing=()
+    command -v gh &>/dev/null || missing+=("gh")
+    command -v yq &>/dev/null || missing+=("yq")
+    command -v jq &>/dev/null || missing+=("jq")
+
+    if [[ ${#missing[@]} -gt 0 ]]; then
+        echo "error: missing required tools: ${missing[*]}" >&2
+        exit 1
+    fi
+
+    if ! gh auth status &>/dev/null 2>&1; then
+        echo "error: not authenticated with gh. Run: gh auth login" >&2
+        exit 1
+    fi
+}
+
+# ============================================================================
+# Main
+# ============================================================================
+
+main() {
+    check_requirements
+
+    echo "Actionista Index Updater"
+    echo ""
+
+    # Load existing index for fallback
+    local existing='{}'
+    if [[ -f "$INDEX_PATH" ]]; then
+        existing=$(jq '.actions // {}' "$INDEX_PATH")
+    fi
+
+    # Load and deduplicate tracked actions
+    local actions=()
+    local categories=()
+    while IFS=$'\t' read -r action category; do
+        actions+=("$action")
+        categories+=("$category")
+    done < <(
+        yq -o=json '.' "$TRACKED_ACTIONS" \
+            | jq -r '.categories | to_entries[] | .key as $cat | .value.actions[] | [., $cat] | @tsv' \
+            | sort -t$'\t' -k1,1 -u
+    )
+
+    local total=${#actions[@]}
+    echo "Tracked: ${total} unique actions"
+
+    # Process in batches
+    local batch_count=$(( (total + BATCH_SIZE - 1) / BATCH_SIZE ))
+    echo "Fetching in ${batch_count} GraphQL batch(es)..."
+    echo ""
+
+    local all_entries='{}'
+
+    for (( batch=0; batch < total; batch += BATCH_SIZE )); do
+        local batch_num=$(( batch / BATCH_SIZE + 1 ))
+        local end=$(( batch + BATCH_SIZE ))
+        [[ $end -gt $total ]] && end=$total
+        local count=$(( end - batch ))
+
+        echo "  Batch ${batch_num}/${batch_count} (${count} actions)..."
+
+        # Build GraphQL query inline
+        local query='query {'
+        for (( i=batch; i < end; i++ )); do
+            # Handle subpath actions: "github/codeql-action/init" → owner=github, repo=codeql-action
+            local owner repo
+            IFS='/' read -r owner repo _ <<< "${actions[$i]}"
+            query+="
+  repo${i}: repository(owner: \"$owner\", name: \"$repo\") {
+    nameWithOwner
+    description
+    latestRelease { tagName }
+    refs(refPrefix: \"refs/tags/\", first: 1, orderBy: {field: TAG_COMMIT_DATE, direction: DESC}) {
+      nodes { name }
+    }
+    actionYml: object(expression: \"HEAD:action.yml\") { ... on Blob { text } }
+    actionYaml: object(expression: \"HEAD:action.yaml\") { ... on Blob { text } }
+    releases(first: 10, orderBy: {field: CREATED_AT, direction: DESC}) {
+      nodes { tagName isPrerelease }
+    }
+  }"
+        done
+        query+=$'\n}'
+
+        # Execute query — gh exits non-zero on partial errors, so capture output
+        # regardless of exit code and check for .data presence
+        local response
+        response=$(gh api graphql -f query="$query" 2>/dev/null) || true
+
+        if [[ -z "$response" ]] || ! echo "$response" | jq -e '.data' &>/dev/null; then
+            echo "    warning: batch ${batch_num} failed entirely, using existing data"
+            for (( i=batch; i < end; i++ )); do
+                local fb
+                fb=$(echo "$existing" | jq --arg a "${actions[$i]}" 'if .[$a] then {($a): .[$a]} else empty end')
+                [[ -n "$fb" ]] && all_entries=$(echo "$all_entries" "$fb" | jq -s 'add')
+            done
+            continue
+        fi
+
+        # Parse each action from the response
+        for (( i=batch; i < end; i++ )); do
+            local action="${actions[$i]}"
+            local category="${categories[$i]}"
+            local alias="repo${i}"
+
+            local repo_data
+            repo_data=$(echo "$response" | jq ".data.${alias} // empty")
+            if [[ -z "$repo_data" || "$repo_data" == "null" ]]; then
+                # Use fallback
+                local fb
+                fb=$(echo "$existing" | jq --arg a "$action" 'if .[$a] then {($a): .[$a]} else empty end')
+                [[ -n "$fb" ]] && all_entries=$(echo "$all_entries" "$fb" | jq -s 'add')
+                echo "    warning: ${action} — not found, kept existing"
+                continue
+            fi
+
+            # Prefer the newest non-prerelease tag matching v\d+ from recent releases,
+            # falling back to latestRelease, then latest tag
+            local tag_name
+            tag_name=$(echo "$repo_data" | jq -r '
+                (.releases.nodes // [] | map(select(.isPrerelease == false and (.tagName | test("^v\\d")))) | .[0].tagName) //
+                .latestRelease.tagName //
+                (.refs.nodes[0].name) //
+                empty')
+
+            if [[ -z "$tag_name" ]]; then
+                echo "    warning: ${action} — no tags found, skipped"
+                continue
+            fi
+
+            local major_num major_version
+            major_num=$(echo "$tag_name" | sed -n 's/^v\{0,1\}\([0-9]*\).*/\1/p')
+            major_version="v${major_num}"
+
+            local description
+            description=$(echo "$repo_data" | jq -r '.description // "" | .[0:100]')
+
+            # Deprecated versions: anything 2+ majors behind
+            local deprecated="[]"
+            if [[ -n "$major_num" && "$major_num" -gt 2 ]]; then
+                deprecated=$(seq 1 $((major_num - 2)) | jq -R '"v\(.)"' | jq -s .)
+            fi
+
+            # Parse inputs from action.yml / action.yaml blob
+            local action_text inputs="null"
+            action_text=$(echo "$repo_data" | jq -r '.actionYml.text // .actionYaml.text // empty')
+            if [[ -n "$action_text" ]]; then
+                inputs=$(echo "$action_text" | yq -o=json '.inputs | keys' 2>/dev/null || echo "null")
+            fi
+
+            # Build entry
+            local entry
+            entry=$(jq -n \
+                --arg action "$action" \
+                --arg latest "$major_version" \
+                --arg latestFull "$tag_name" \
+                --arg description "$description" \
+                --arg category "$category" \
+                --argjson deprecated "$deprecated" \
+                --argjson inputs "$inputs" \
+                '{
+                    ($action): (
+                        {latest: $latest, latestFull: $latestFull, description: $description, category: $category}
+                        + (if $deprecated | length > 0 then {deprecated: $deprecated} else {} end)
+                        + (if $inputs != null and ($inputs | length) > 0 then {inputs: $inputs} else {} end)
+                    )
+                }')
+
+            all_entries=$(echo "$all_entries" "$entry" | jq -s 'add')
+        done
+    done
+
+    # Build final index
+    local action_count now
+    action_count=$(echo "$all_entries" | jq 'length')
+    now=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+
+    jq -n \
+        --arg generated "$now" \
+        --argjson count "$action_count" \
+        --argjson actions "$all_entries" \
+        '{
+            _metadata: {
+                generated: $generated,
+                generator: "actionista",
+                actionCount: $count,
+                note: "This index is updated daily by .github/workflows/update-index.yml"
+            },
+            actions: $actions
+        }' > "$INDEX_PATH"
+
+    echo ""
+    echo "Updated index: ${action_count} actions"
+
+    # Summary: compare against existing
+    local added=0 updated=0 unchanged=0
+    while IFS=$'\t' read -r action new_full; do
+        local old_full
+        old_full=$(echo "$existing" | jq -r --arg a "$action" '.[$a].latestFull // empty')
+
+        if [[ -z "$old_full" ]]; then
+            added=$((added + 1))
+        elif [[ "$new_full" != "$old_full" ]]; then
+            updated=$((updated + 1))
+            echo "  ${action}: ${old_full} -> ${new_full}"
+        else
+            unchanged=$((unchanged + 1))
+        fi
+    done < <(echo "$all_entries" | jq -r 'to_entries[] | [.key, .value.latestFull] | @tsv')
+
+    echo ""
+    echo "Summary: ${added} added, ${updated} updated, ${unchanged} unchanged"
+}
+
+main "$@"

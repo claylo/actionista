@@ -1,0 +1,20 @@
+{
+  "name": "actionista",
+  "version": "0.2.0",
+  "description": "GitHub Actions assistant - helps create, review, and optimize workflows with up-to-date action versions and best practices",
+  "author": {
+    "name": "Clay Loveless",
+    "email": "clay@loveless.net",
+    "url": "https://github.com/claylo"
+  },
+  "homepage": "https://github.com/claylo/actionista",
+  "repository": "https://github.com/claylo/actionista",
+  "license": "MIT",
+  "keywords": [
+    "github-actions",
+    "ci-cd",
+    "workflows",
+    "automation",
+    "devops"
+  ]
+}

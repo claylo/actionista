@@ -1,0 +1,18 @@
+# Claude Code local settings
+.claude/*.local.md
+
+# Node modules (for update script)
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
