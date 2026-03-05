@@ -2,7 +2,7 @@
 # update-index — Fetch latest versions for all tracked GitHub Actions
 #
 # Uses batched GraphQL queries (one API call per ~50 actions) to update
-# skills/github-actions/index.json with current version data.
+# skills/github-actions/index.json with current version data and migration info.
 #
 # Requirements:
 #   - gh (authenticated)
@@ -37,6 +37,40 @@ check_requirements() {
     fi
 }
 
+# Compute input diff between previous and current major version
+# Outputs a JSON migration object or "null"
+compute_migration() {
+    local prev_inputs_json="$1"  # JSON array of input names (previous major)
+    local curr_inputs_json="$2"  # JSON array of input names (current major)
+    local prev_major="$3"
+    local curr_major="$4"
+
+    if [[ "$prev_inputs_json" == "null" || "$curr_inputs_json" == "null" ]]; then
+        echo "null"
+        return
+    fi
+
+    local migration
+    migration=$(jq -n \
+        --argjson prev "$prev_inputs_json" \
+        --argjson curr "$curr_inputs_json" \
+        --arg from "$prev_major" \
+        --arg to "$curr_major" \
+        '{
+            key: ($from + "→" + $to),
+            value: {
+                inputChanges: {
+                    added: ($curr - $prev),
+                    removed: ($prev - $curr)
+                }
+            }
+        } | if (.value.inputChanges.added | length) == 0 and (.value.inputChanges.removed | length) == 0
+            then null
+            else . end')
+
+    echo "$migration"
+}
+
 # ============================================================================
 # Main
 # ============================================================================
@@ -47,7 +81,7 @@ main() {
     echo "Actionista Index Updater"
     echo ""
 
-    # Load existing index for fallback
+    # Load existing index for fallback and migration preservation
     local existing='{}'
     if [[ -f "$INDEX_PATH" ]]; then
         existing=$(jq '.actions // {}' "$INDEX_PATH")
@@ -68,12 +102,15 @@ main() {
     local total=${#actions[@]}
     echo "Tracked: ${total} unique actions"
 
-    # Process in batches
+    # First pass: fetch current version data
     local batch_count=$(( (total + BATCH_SIZE - 1) / BATCH_SIZE ))
     echo "Fetching in ${batch_count} GraphQL batch(es)..."
     echo ""
 
     local all_entries='{}'
+    # Track actions needing migration diff: "action major_num" pairs
+    local migration_actions=()
+    local migration_majors=()
 
     for (( batch=0; batch < total; batch += BATCH_SIZE )); do
         local batch_num=$(( batch / BATCH_SIZE + 1 ))
@@ -86,7 +123,6 @@ main() {
         # Build GraphQL query inline
         local query='query {'
         for (( i=batch; i < end; i++ )); do
-            # Handle subpath actions: "github/codeql-action/init" → owner=github, repo=codeql-action
             local owner repo
             IFS='/' read -r owner repo _ <<< "${actions[$i]}"
             query+="
@@ -106,8 +142,6 @@ main() {
         done
         query+=$'\n}'
 
-        # Execute query — gh exits non-zero on partial errors, so capture output
-        # regardless of exit code and check for .data presence
         local response
         response=$(gh api graphql -f query="$query" 2>/dev/null) || true
 
@@ -121,7 +155,6 @@ main() {
             continue
         fi
 
-        # Parse each action from the response
         for (( i=batch; i < end; i++ )); do
             local action="${actions[$i]}"
             local category="${categories[$i]}"
@@ -130,7 +163,6 @@ main() {
             local repo_data
             repo_data=$(echo "$response" | jq ".data.${alias} // empty")
             if [[ -z "$repo_data" || "$repo_data" == "null" ]]; then
-                # Use fallback
                 local fb
                 fb=$(echo "$existing" | jq --arg a "$action" 'if .[$a] then {($a): .[$a]} else empty end')
                 [[ -n "$fb" ]] && all_entries=$(echo "$all_entries" "$fb" | jq -s 'add')
@@ -138,8 +170,6 @@ main() {
                 continue
             fi
 
-            # Prefer the newest non-prerelease tag matching v\d+ from recent releases,
-            # falling back to latestRelease, then latest tag
             local tag_name
             tag_name=$(echo "$repo_data" | jq -r '
                 (.releases.nodes // [] | map(select(.isPrerelease == false and (.tagName | test("^v\\d")))) | .[0].tagName) //
@@ -159,20 +189,23 @@ main() {
             local description
             description=$(echo "$repo_data" | jq -r '.description // "" | .[0:100]')
 
-            # Deprecated versions: anything 2+ majors behind
             local deprecated="[]"
             if [[ -n "$major_num" && "$major_num" -gt 2 ]]; then
                 deprecated=$(seq 1 $((major_num - 2)) | jq -R '"v\(.)"' | jq -s .)
             fi
 
-            # Parse inputs from action.yml / action.yaml blob
             local action_text inputs="null"
             action_text=$(echo "$repo_data" | jq -r '.actionYml.text // .actionYaml.text // empty')
             if [[ -n "$action_text" ]]; then
                 inputs=$(echo "$action_text" | yq -o=json '.inputs | keys' 2>/dev/null || echo "null")
             fi
 
-            # Build entry
+            # Queue for migration diff if major > 1
+            if [[ -n "$major_num" && "$major_num" -gt 1 ]]; then
+                migration_actions+=("$action")
+                migration_majors+=("$major_num")
+            fi
+
             local entry
             entry=$(jq -n \
                 --arg action "$action" \
@@ -193,6 +226,95 @@ main() {
             all_entries=$(echo "$all_entries" "$entry" | jq -s 'add')
         done
     done
+
+    # Second pass: fetch previous major action.yml for migration diffs
+    local mig_total=${#migration_actions[@]}
+    if [[ $mig_total -gt 0 ]]; then
+        local mig_batch_count=$(( (mig_total + BATCH_SIZE - 1) / BATCH_SIZE ))
+        echo ""
+        echo "Computing migrations for ${mig_total} actions (${mig_batch_count} batch(es))..."
+
+        for (( batch=0; batch < mig_total; batch += BATCH_SIZE )); do
+            local batch_num=$(( batch / BATCH_SIZE + 1 ))
+            local end=$(( batch + BATCH_SIZE ))
+            [[ $end -gt $mig_total ]] && end=$mig_total
+
+            echo "  Migration batch ${batch_num}/${mig_batch_count}..."
+
+            # Build query for previous major action.yml
+            local query='query {'
+            for (( i=batch; i < end; i++ )); do
+                local owner repo
+                IFS='/' read -r owner repo _ <<< "${migration_actions[$i]}"
+                local prev_major="v$(( migration_majors[i] - 1 ))"
+                query+="
+  mig${i}: repository(owner: \"$owner\", name: \"$repo\") {
+    prevYml: object(expression: \"${prev_major}:action.yml\") { ... on Blob { text } }
+    prevYaml: object(expression: \"${prev_major}:action.yaml\") { ... on Blob { text } }
+  }"
+            done
+            query+=$'\n}'
+
+            local response
+            response=$(gh api graphql -f query="$query" 2>/dev/null) || true
+
+            if [[ -z "$response" ]] || ! echo "$response" | jq -e '.data' &>/dev/null; then
+                echo "    warning: migration batch ${batch_num} failed"
+                continue
+            fi
+
+            for (( i=batch; i < end; i++ )); do
+                local action="${migration_actions[$i]}"
+                local major_num="${migration_majors[$i]}"
+                local prev_major="v$(( major_num - 1 ))"
+                local curr_major="v${major_num}"
+                local alias="mig${i}"
+
+                local mig_data
+                mig_data=$(echo "$response" | jq ".data.${alias} // empty")
+                if [[ -z "$mig_data" || "$mig_data" == "null" ]]; then
+                    continue
+                fi
+
+                # Parse previous version inputs
+                local prev_text prev_inputs="null"
+                prev_text=$(echo "$mig_data" | jq -r '.prevYml.text // .prevYaml.text // empty')
+                if [[ -n "$prev_text" ]]; then
+                    prev_inputs=$(echo "$prev_text" | yq -o=json '.inputs | keys' 2>/dev/null || echo "null")
+                fi
+
+                # Get current inputs from the entry we already built
+                local curr_inputs
+                curr_inputs=$(echo "$all_entries" | jq --arg a "$action" '.[$a].inputs // null')
+
+                # Compute migration
+                local migration
+                migration=$(compute_migration "$prev_inputs" "$curr_inputs" "$prev_major" "$curr_major")
+
+                if [[ "$migration" != "null" && -n "$migration" ]]; then
+                    local mig_key mig_value
+                    mig_key=$(echo "$migration" | jq -r '.key')
+                    mig_value=$(echo "$migration" | jq -c '.value')
+
+                    # Preserve any existing Claude-written summary/notes for this migration
+                    local existing_mig
+                    existing_mig=$(echo "$existing" | jq -c --arg a "$action" --arg k "$mig_key" '.[$a].migrations[$k] // empty')
+
+                    if [[ -n "$existing_mig" && "$existing_mig" != "null" ]]; then
+                        # Merge: keep existing summary/notes, update inputChanges
+                        mig_value=$(echo "$existing_mig" "$mig_value" | jq -s '.[0] * .[1]')
+                    fi
+
+                    # Add migration to the action entry
+                    all_entries=$(echo "$all_entries" | jq \
+                        --arg a "$action" \
+                        --arg k "$mig_key" \
+                        --argjson v "$mig_value" \
+                        '.[$a].migrations = ((.[$a].migrations // {}) + {($k): $v})')
+                fi
+            done
+        done
+    fi
 
     # Build final index
     local action_count now
@@ -217,7 +339,7 @@ main() {
     echo "Updated index: ${action_count} actions"
 
     # Summary: compare against existing
-    local added=0 updated=0 unchanged=0
+    local added=0 updated=0 unchanged=0 migrations=0
     while IFS=$'\t' read -r action new_full; do
         local old_full
         old_full=$(echo "$existing" | jq -r --arg a "$action" '.[$a].latestFull // empty')
@@ -232,8 +354,10 @@ main() {
         fi
     done < <(echo "$all_entries" | jq -r 'to_entries[] | [.key, .value.latestFull] | @tsv')
 
+    migrations=$(echo "$all_entries" | jq '[to_entries[] | select(.value.migrations)] | length')
+
     echo ""
-    echo "Summary: ${added} added, ${updated} updated, ${unchanged} unchanged"
+    echo "Summary: ${added} added, ${updated} updated, ${unchanged} unchanged, ${migrations} with migrations"
 }
 
 main "$@"

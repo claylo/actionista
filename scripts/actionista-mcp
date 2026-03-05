@@ -177,8 +177,42 @@ handle_check_workflow() {
             latest_full=$(echo "$index_entry" | jq -r '.latestFull')
             deprecated=$(echo "$index_entry" | jq -r --arg v "$version" '.deprecated // [] | if map(. == $v) | any then "true" else "false" end')
 
-            issues=$(echo "$issues" | jq --arg a "$action" --arg cur "$version" --arg lat "$latest" --arg latf "$latest_full" --arg dep "$deprecated" \
-                '. + [{action: $a, current: $cur, latest: $lat, latestFull: $latf, deprecated: ($dep == "true")}]')
+            # Find applicable migration data
+            # Walk from current version to latest, collecting all migrations
+            local cur_major_num lat_major_num
+            cur_major_num=$(echo "$version" | sed -n 's/^v\([0-9]*\).*/\1/p')
+            lat_major_num=$(echo "$latest" | sed -n 's/^v\([0-9]*\).*/\1/p')
+
+            local migration="null"
+            if [[ -n "$cur_major_num" && -n "$lat_major_num" ]]; then
+                # Get the direct migration entry (prev→current latest)
+                # For multi-major jumps, aggregate all migrations in range
+                migration=$(echo "$index_entry" | jq --arg from_num "$cur_major_num" --arg to_num "$lat_major_num" '
+                    .migrations // {} | to_entries
+                    | map(select(
+                        (.key | split("→") | .[0] | ltrimstr("v") | tonumber) >= ($from_num | tonumber)
+                        and (.key | split("→") | .[1] | ltrimstr("v") | tonumber) <= ($to_num | tonumber)
+                    ))
+                    | if length == 0 then null
+                      elif length == 1 then .[0].value
+                      else {
+                        steps: [.[] | {migration: .key} + .value],
+                        inputChanges: {
+                            added: [.[].value.inputChanges.added // [] | .[]] | unique,
+                            removed: [.[].value.inputChanges.removed // [] | .[]] | unique
+                        }
+                      }
+                      end')
+            fi
+
+            issues=$(echo "$issues" | jq \
+                --arg a "$action" --arg cur "$version" --arg lat "$latest" \
+                --arg latf "$latest_full" --arg dep "$deprecated" \
+                --argjson mig "$migration" \
+                '. + [{
+                    action: $a, current: $cur, latest: $lat, latestFull: $latf,
+                    deprecated: ($dep == "true")
+                } + (if $mig != null then {migration: $mig} else {} end)]')
             outdated=$((outdated + 1))
         fi
     done <<< "$uses_lines"
