@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-03-05T23:09:59Z",
+    "generated": "2026-03-05T23:42:36Z",
     "generator": "actionista",
     "actionCount": 118,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -32,7 +32,28 @@
         "failure_message",
         "github_token",
         "github_base_url"
-      ]
+      ],
+      "migrations": {
+        "v2→v3": {
+          "inputChanges": {
+            "added": [
+              "fields",
+              "custom_payload",
+              "if_mention",
+              "job_name",
+              "success_message",
+              "cancelled_message",
+              "failure_message",
+              "github_token",
+              "github_base_url"
+            ],
+            "removed": [
+              "payload",
+              "only_mention_fail"
+            ]
+          }
+        }
+      }
     },
     "actions-rust-lang/setup-rust-toolchain": {
       "latest": "v1",
@@ -180,7 +201,20 @@
         "show-openssf-scorecard",
         "warn-on-openssf-scorecard-level",
         "show-patched-versions"
-      ]
+      ],
+      "migrations": {
+        "v3→v4": {
+          "inputChanges": {
+            "added": [
+              "warn-only",
+              "show-openssf-scorecard",
+              "warn-on-openssf-scorecard-level",
+              "show-patched-versions"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "actions/deploy-pages": {
       "latest": "v4",
@@ -224,7 +258,18 @@
         "run-id",
         "skip-decompress",
         "digest-mismatch"
-      ]
+      ],
+      "migrations": {
+        "v7→v8": {
+          "inputChanges": {
+            "added": [
+              "skip-decompress",
+              "digest-mismatch"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "actions/github-script": {
       "latest": "v8",
@@ -291,7 +336,18 @@
         "cache-dependency-path",
         "workloads",
         "architecture"
-      ]
+      ],
+      "migrations": {
+        "v4→v5": {
+          "inputChanges": {
+            "added": [
+              "workloads",
+              "architecture"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "actions/setup-go": {
       "latest": "v6",
@@ -371,7 +427,17 @@
         "cache-dependency-path",
         "mirror",
         "mirror-token"
-      ]
+      ],
+      "migrations": {
+        "v5→v6": {
+          "inputChanges": {
+            "added": [],
+            "removed": [
+              "always-auth"
+            ]
+          }
+        }
+      }
     },
     "actions/setup-python": {
       "latest": "v6",
@@ -397,7 +463,18 @@
         "freethreaded",
         "pip-version",
         "pip-install"
-      ]
+      ],
+      "migrations": {
+        "v5→v6": {
+          "inputChanges": {
+            "added": [
+              "pip-version",
+              "pip-install"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "actions/stale": {
       "latest": "v10",
@@ -470,7 +547,18 @@
         "ignore-pr-updates",
         "include-only-assigned",
         "only-issue-types"
-      ]
+      ],
+      "migrations": {
+        "v9→v10": {
+          "inputChanges": {
+            "added": [
+              "sort-by",
+              "only-issue-types"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "actions/upload-artifact": {
       "latest": "v7",
@@ -493,7 +581,17 @@
         "overwrite",
         "include-hidden-files",
         "archive"
-      ]
+      ],
+      "migrations": {
+        "v6→v7": {
+          "inputChanges": {
+            "added": [
+              "archive"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "actions/upload-pages-artifact": {
       "latest": "v4",
@@ -634,7 +732,17 @@
         "vex",
         "config",
         "cache-db"
-      ]
+      ],
+      "migrations": {
+        "v6→v7": {
+          "inputChanges": {
+            "added": [
+              "config"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "appleboy/telegram-action": {
       "latest": "v1",
@@ -748,7 +856,36 @@
         "propagate-tags",
         "keep-null-value-keys",
         "max-retries"
-      ]
+      ],
+      "migrations": {
+        "v1→v2": {
+          "inputChanges": {
+            "added": [
+              "wait-max-delay-seconds",
+              "codedeploy-deployment-config",
+              "service-managed-ebs-volume-name",
+              "service-managed-ebs-volume",
+              "run-task",
+              "run-task-container-overrides",
+              "run-task-security-groups",
+              "run-task-subnets",
+              "run-task-assign-public-IP",
+              "run-task-capacity-provider-strategy",
+              "run-task-launch-type",
+              "run-task-started-by",
+              "run-task-tags",
+              "run-task-managed-ebs-volume-name",
+              "run-task-managed-ebs-volume",
+              "wait-for-task-stopped",
+              "enable-ecs-managed-tags",
+              "propagate-tags",
+              "keep-null-value-keys",
+              "max-retries"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "aws-actions/amazon-ecs-render-task-definition": {
       "latest": "v1",
@@ -796,7 +933,23 @@
         "include-nested-stacks-change-set",
         "execute-change-set-id",
         "deployment-mode"
-      ]
+      ],
+      "migrations": {
+        "v1→v2": {
+          "inputChanges": {
+            "added": [
+              "mode",
+              "fail-on-empty-changeset",
+              "include-nested-stacks-change-set",
+              "execute-change-set-id",
+              "deployment-mode"
+            ],
+            "removed": [
+              "no-fail-on-empty-changeset"
+            ]
+          }
+        }
+      }
     },
     "aws-actions/aws-secretsmanager-get-secrets": {
       "latest": "v2",
@@ -808,7 +961,18 @@
         "parse-json-secrets",
         "name-transformation",
         "auto-select-family-attempt-timeout"
-      ]
+      ],
+      "migrations": {
+        "v1→v2": {
+          "inputChanges": {
+            "added": [
+              "name-transformation",
+              "auto-select-family-attempt-timeout"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "aws-actions/configure-aws-credentials": {
       "latest": "v6",
@@ -850,7 +1014,17 @@
         "allowed-account-ids",
         "force-skip-oidc",
         "action-timeout-s"
-      ]
+      ],
+      "migrations": {
+        "v5→v6": {
+          "inputChanges": {
+            "added": [
+              "transitive-tag-keys"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "azure/aks-set-context": {
       "latest": "v4",
@@ -869,7 +1043,18 @@
         "use-kubelogin",
         "public-fqdn",
         "resource-type"
-      ]
+      ],
+      "migrations": {
+        "v3→v4": {
+          "inputChanges": {
+            "added": [
+              "public-fqdn",
+              "resource-type"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "azure/cli": {
       "latest": "v2",
@@ -945,7 +1130,20 @@
         "name",
         "skip-tls-verify",
         "resource-type"
-      ]
+      ],
+      "migrations": {
+        "v4→v5": {
+          "inputChanges": {
+            "added": [
+              "server-side",
+              "timeout",
+              "annotate-resources",
+              "resource-type"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "azure/login": {
       "latest": "v2",
@@ -983,7 +1181,25 @@
         "clean",
         "restart",
         "sitecontainers-config"
-      ]
+      ],
+      "migrations": {
+        "v1→v2": {
+          "inputChanges": {
+            "added": [
+              "images",
+              "configuration-file",
+              "startup-command",
+              "resource-group-name",
+              "type",
+              "target-path",
+              "clean",
+              "restart",
+              "sitecontainers-config"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "bahmutov/npm-install": {
       "latest": "v1",
@@ -1062,7 +1278,58 @@
         "skip_cve_package",
         "skip_download",
         "prisma-api-url"
-      ]
+      ],
+      "migrations": {
+        "v11→v12": {
+          "inputChanges": {
+            "added": [
+              "file",
+              "compact",
+              "api-key",
+              "output_bc_ids",
+              "use_enforcement_rules",
+              "skip_results_upload",
+              "soft_fail",
+              "framework",
+              "skip_framework",
+              "external_checks_dirs",
+              "external_checks_repos",
+              "output_format",
+              "output_file_path",
+              "download_external_modules",
+              "enable_secrets_scan_all_files",
+              "log_level",
+              "config_file",
+              "baseline",
+              "soft_fail_on",
+              "hard_fail_on",
+              "container_user",
+              "docker_image",
+              "dockerfile_path",
+              "var_file",
+              "github_pat",
+              "tfc_token",
+              "tf_registry_token",
+              "ckv_validate_secrets",
+              "vcs_base_url",
+              "vcs_username",
+              "vcs_token",
+              "bitbucket_token",
+              "bitbucket_app_password",
+              "bitbucket_username",
+              "repo_root_for_plan_enrichment",
+              "deep_analysis",
+              "policy_metadata_filter",
+              "policy_metadata_filter_exception",
+              "skip_path",
+              "skip_cve_package",
+              "skip_download",
+              "prisma-api-url"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "browser-actions/setup-chrome": {
       "latest": "v2",
@@ -1199,7 +1466,33 @@
         "verbose",
         "version",
         "working-directory"
-      ]
+      ],
+      "migrations": {
+        "v4→v5": {
+          "inputChanges": {
+            "added": [
+              "base_sha",
+              "binary",
+              "disable_telem",
+              "force",
+              "gcov_args",
+              "gcov_executable",
+              "gcov_ignore",
+              "gcov_include",
+              "recurse_submodules",
+              "report_type",
+              "run_command",
+              "skip_validation",
+              "swift_project",
+              "use_pypi"
+            ],
+            "removed": [
+              "file",
+              "plugin"
+            ]
+          }
+        }
+      }
     },
     "coverallsapp/github-action": {
       "latest": "v2",
@@ -1229,7 +1522,27 @@
         "fail-on-error",
         "coverage-reporter-version",
         "coverage-reporter-platform"
-      ]
+      ],
+      "migrations": {
+        "v1→v2": {
+          "inputChanges": {
+            "added": [
+              "file",
+              "files",
+              "format",
+              "build-number",
+              "allow-empty",
+              "compare-ref",
+              "compare-sha",
+              "measure",
+              "fail-on-error",
+              "coverage-reporter-version",
+              "coverage-reporter-platform"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "cypress-io/github-action": {
       "latest": "v7",
@@ -1274,7 +1587,17 @@
         "wait-on",
         "wait-on-timeout",
         "working-directory"
-      ]
+      ],
+      "migrations": {
+        "v6→v7": {
+          "inputChanges": {
+            "added": [
+              "package-manager-cache"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "dawidd6/action-download-artifact": {
       "latest": "v16",
@@ -1364,7 +1687,17 @@
         "nodemailerdebug",
         "envelope_from",
         "envelope_to"
-      ]
+      ],
+      "migrations": {
+        "v10→v11": {
+          "inputChanges": {
+            "added": [
+              "headers"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "docker/bake-action": {
       "latest": "v7",
@@ -1393,7 +1726,17 @@
         "source",
         "targets",
         "github-token"
-      ]
+      ],
+      "migrations": {
+        "v6→v7": {
+          "inputChanges": {
+            "added": [],
+            "removed": [
+              "workdir"
+            ]
+          }
+        }
+      }
     },
     "docker/build-push-action": {
       "latest": "v7",
@@ -1511,7 +1854,19 @@
         "keep-state",
         "cache-binary",
         "cleanup"
-      ]
+      ],
+      "migrations": {
+        "v3→v4": {
+          "inputChanges": {
+            "added": [],
+            "removed": [
+              "config",
+              "config-inline",
+              "install"
+            ]
+          }
+        }
+      }
     },
     "docker/setup-qemu-action": {
       "latest": "v4",
@@ -1545,7 +1900,17 @@
         "list-files",
         "initial-fetch-depth",
         "predicate-quantifier"
-      ]
+      ],
+      "migrations": {
+        "v2→v3": {
+          "inputChanges": {
+            "added": [
+              "predicate-quantifier"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "dtolnay/rust-toolchain": {
       "latest": "v1",
@@ -1592,7 +1957,18 @@
         "tag",
         "tag_push",
         "github_token"
-      ]
+      ],
+      "migrations": {
+        "v8→v9": {
+          "inputChanges": {
+            "added": [
+              "fetch",
+              "tag_push"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "EndBug/version-check": {
       "latest": "v2",
@@ -1607,7 +1983,17 @@
         "static-checking",
         "token",
         "github-api-url"
-      ]
+      ],
+      "migrations": {
+        "v1→v2": {
+          "inputChanges": {
+            "added": [
+              "github-api-url"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "erlef/setup-beam": {
       "latest": "v1",
@@ -1698,7 +2084,19 @@
         "access_token_subject",
         "id_token_audience",
         "id_token_include_email"
-      ]
+      ],
+      "migrations": {
+        "v2→v3": {
+          "inputChanges": {
+            "added": [],
+            "removed": [
+              "retries",
+              "backoff",
+              "backoff_limit"
+            ]
+          }
+        }
+      }
     },
     "google-github-actions/deploy-cloud-functions": {
       "latest": "v4",
@@ -1780,7 +2178,17 @@
         "region",
         "gcloud_version",
         "gcloud_component"
-      ]
+      ],
+      "migrations": {
+        "v2→v3": {
+          "inputChanges": {
+            "added": [],
+            "removed": [
+              "env_vars_file"
+            ]
+          }
+        }
+      }
     },
     "google-github-actions/get-gke-credentials": {
       "latest": "v3",
@@ -1845,7 +2253,56 @@
         "skip-github-release",
         "skip-github-pull-request",
         "changelog-host"
-      ]
+      ],
+      "migrations": {
+        "v3→v4": {
+          "inputChanges": {
+            "added": [
+              "target-branch",
+              "include-component-in-tag",
+              "skip-github-pull-request"
+            ],
+            "removed": [
+              "clean",
+              "package-name",
+              "bump-minor-pre-major",
+              "bump-patch-for-minor-pre-major",
+              "changelog-path",
+              "command",
+              "version-file",
+              "extra-files",
+              "default-branch",
+              "changelog-types",
+              "signoff",
+              "monorepo-tags",
+              "pull-request-title-pattern",
+              "pull-request-header",
+              "draft",
+              "draft-pull-request",
+              "changelog-notes-type",
+              "versioning-strategy",
+              "release-as",
+              "prerelease",
+              "component",
+              "include-v-in-tag",
+              "tag-separator",
+              "snapshot-labels",
+              "bootstrap-sha",
+              "last-release-sha",
+              "always-link-local",
+              "separate-pull-requests",
+              "plugins",
+              "labels",
+              "release-labels",
+              "skip-labeling",
+              "sequential-calls",
+              "group-pull-request-title-pattern",
+              "release-search-depth",
+              "commit-search-depth"
+            ]
+          }
+        }
+      }
     },
     "google-github-actions/setup-gcloud": {
       "latest": "v3",
@@ -1861,7 +2318,19 @@
         "install_components",
         "skip_install",
         "cache"
-      ]
+      ],
+      "migrations": {
+        "v2→v3": {
+          "inputChanges": {
+            "added": [
+              "cache"
+            ],
+            "removed": [
+              "skip_tool_cache"
+            ]
+          }
+        }
+      }
     },
     "google-github-actions/upload-cloud-storage": {
       "latest": "v3",
@@ -2059,7 +2528,18 @@
         "force-arch",
         "show-versioninfo",
         "project"
-      ]
+      ],
+      "migrations": {
+        "v1→v2": {
+          "inputChanges": {
+            "added": [
+              "force-arch",
+              "project"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "ludeeus/action-shellcheck": {
       "latest": "v2",
@@ -2134,7 +2614,20 @@
         "create_annotated_tag",
         "fetch_all_tags",
         "dry_run"
-      ]
+      ],
+      "migrations": {
+        "v5→v6": {
+          "inputChanges": {
+            "added": [
+              "default_prerelease_bump",
+              "custom_release_rules",
+              "commit_sha",
+              "fetch_all_tags"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "mattallty/jest-github-action": {
       "latest": "v1",
@@ -2204,7 +2697,18 @@
         "resolve_ignore_classname",
         "skip_comment_without_tests",
         "pr_id"
-      ]
+      ],
+      "migrations": {
+        "v5→v6": {
+          "inputChanges": {
+            "added": [
+              "include_skipped",
+              "job_summary_text"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "ocaml/setup-ocaml": {
       "latest": "v3",
@@ -2224,7 +2728,18 @@
         "dune-cache",
         "cache-prefix",
         "github-token"
-      ]
+      ],
+      "migrations": {
+        "v2→v3": {
+          "inputChanges": {
+            "added": [],
+            "removed": [
+              "opam-depext",
+              "opam-depext-flags"
+            ]
+          }
+        }
+      }
     },
     "oxsecurity/megalinter": {
       "latest": "v9",
@@ -2372,7 +2887,19 @@
         "working_dir",
         "memory_limit",
         "container_workdir"
-      ]
+      ],
+      "migrations": {
+        "v5→v6": {
+          "inputChanges": {
+            "added": [
+              "ssh_port",
+              "memory_limit",
+              "container_workdir"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "pnpm/action-setup": {
       "latest": "v4",
@@ -2391,7 +2918,18 @@
         "cache_dependency_path",
         "package_json_file",
         "standalone"
-      ]
+      ],
+      "migrations": {
+        "v3→v4": {
+          "inputChanges": {
+            "added": [
+              "cache",
+              "cache_dependency_path"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "pulumi/actions": {
       "latest": "v6",
@@ -2442,7 +2980,22 @@
         "log-verbosity",
         "log-flow",
         "debug"
-      ]
+      ],
+      "migrations": {
+        "v5→v6": {
+          "inputChanges": {
+            "added": [
+              "exclude",
+              "exclude-dependents",
+              "continue-on-error",
+              "log-verbosity",
+              "log-flow",
+              "debug"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "release-drafter/release-drafter": {
       "latest": "v6",
@@ -2470,7 +3023,17 @@
         "disable-releaser",
         "disable-autolabeler",
         "initial-commits-since"
-      ]
+      ],
+      "migrations": {
+        "v5→v6": {
+          "inputChanges": {
+            "added": [
+              "initial-commits-since"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "reviewdog/action-eslint": {
       "latest": "v1",
@@ -2512,7 +3075,22 @@
         "go_version",
         "go_version_file",
         "cache"
-      ]
+      ],
+      "migrations": {
+        "v1→v2": {
+          "inputChanges": {
+            "added": [
+              "fail_level",
+              "reviewdog_version",
+              "golangci_lint_version",
+              "go_version",
+              "go_version_file",
+              "cache"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "reviewdog/action-shellcheck": {
       "latest": "v1",
@@ -2605,7 +3183,23 @@
         "coverage",
         "tools",
         "github-token"
-      ]
+      ],
+      "migrations": {
+        "v1→v2": {
+          "inputChanges": {
+            "added": [
+              "php-version-file",
+              "ini-file",
+              "github-token"
+            ],
+            "removed": [
+              "extension-csv",
+              "ini-values-csv",
+              "pecl"
+            ]
+          }
+        }
+      }
     },
     "slackapi/slack-github-action": {
       "latest": "v2",
@@ -2625,7 +3219,30 @@
         "token",
         "webhook",
         "webhook-type"
-      ]
+      ],
+      "migrations": {
+        "v1→v2": {
+          "inputChanges": {
+            "added": [
+              "api",
+              "errors",
+              "method",
+              "payload-templated",
+              "proxy",
+              "retries",
+              "token",
+              "webhook",
+              "webhook-type"
+            ],
+            "removed": [
+              "channel-id",
+              "slack-message",
+              "payload-file-path-parsed",
+              "update-ts"
+            ]
+          }
+        }
+      }
     },
     "snyk/actions/docker": {
       "latest": "v1",
@@ -2684,7 +3301,20 @@
         "generate_release_notes",
         "append_body",
         "make_latest"
-      ]
+      ],
+      "migrations": {
+        "v1→v2": {
+          "inputChanges": {
+            "added": [
+              "preserve_order",
+              "working_directory",
+              "overwrite_files",
+              "make_latest"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "stefanzweifel/git-auto-commit-action": {
       "latest": "v7",
@@ -2720,7 +3350,18 @@
         "create_branch",
         "create_git_tag_only",
         "internal_git_binary"
-      ]
+      ],
+      "migrations": {
+        "v6→v7": {
+          "inputChanges": {
+            "added": [
+              "tag_name",
+              "skip_push"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "subosito/flutter-action": {
       "latest": "v2",
@@ -2739,7 +3380,25 @@
         "pub-cache-path",
         "dry-run",
         "git-source"
-      ]
+      ],
+      "migrations": {
+        "v1→v2": {
+          "inputChanges": {
+            "added": [
+              "flutter-version-file",
+              "architecture",
+              "cache",
+              "cache-key",
+              "cache-path",
+              "pub-cache-key",
+              "pub-cache-path",
+              "dry-run",
+              "git-source"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "Swatinem/rust-cache": {
       "latest": "v2",
@@ -2764,7 +3423,35 @@
         "cache-bin",
         "lookup-only",
         "cmd-format"
-      ]
+      ],
+      "migrations": {
+        "v1→v2": {
+          "inputChanges": {
+            "added": [
+              "prefix-key",
+              "shared-key",
+              "add-job-id-key",
+              "add-rust-environment-hash-key",
+              "env-vars",
+              "workspaces",
+              "cache-directories",
+              "cache-targets",
+              "cache-all-crates",
+              "cache-workspace-crates",
+              "save-if",
+              "cache-provider",
+              "cache-bin",
+              "lookup-only",
+              "cmd-format"
+            ],
+            "removed": [
+              "sharedKey",
+              "working-directory",
+              "target-dir"
+            ]
+          }
+        }
+      }
     },
     "swift-actions/setup-swift": {
       "latest": "v2",
@@ -2774,7 +3461,17 @@
       "inputs": [
         "swift-version",
         "skip-verify-signature"
-      ]
+      ],
+      "migrations": {
+        "v1→v2": {
+          "inputChanges": {
+            "added": [
+              "skip-verify-signature"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "tibdex/github-app-token": {
       "latest": "v2",
@@ -2790,7 +3487,23 @@
         "private_key",
         "repositories",
         "revoke"
-      ]
+      ],
+      "migrations": {
+        "v1→v2": {
+          "inputChanges": {
+            "added": [
+              "installation_retrieval_mode",
+              "installation_retrieval_payload",
+              "repositories",
+              "revoke"
+            ],
+            "removed": [
+              "installation_id",
+              "repository"
+            ]
+          }
+        }
+      }
     },
     "tj-actions/changed-files": {
       "latest": "v47",
@@ -2906,7 +3619,18 @@
         "use_posix_path_separator",
         "tags_pattern",
         "tags_ignore_pattern"
-      ]
+      ],
+      "migrations": {
+        "v46→v47": {
+          "inputChanges": {
+            "added": [
+              "exclude_symlinks",
+              "skip_same_sha"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "trufflesecurity/trufflehog": {
       "latest": "v3",
