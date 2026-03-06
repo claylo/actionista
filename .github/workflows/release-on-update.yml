@@ -1,0 +1,95 @@
+# Release on Index Update
+# When an index update PR merges to main, bump patch version, tag, release,
+# and notify claylo-marketplace to update its listing.
+
+name: Release on Update
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'skills/github-actions/index.json'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    name: Tag and Release
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    # Skip if the commit was made by this workflow (prevent loops)
+    if: "!contains(github.event.head_commit.message, '[skip release]')"
+
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Compute next version
+        id: version
+        run: |
+          current=$(jq -r '.version' .claude-plugin/plugin.json)
+          IFS='.' read -r major minor patch <<< "$current"
+          next="${major}.${minor}.$((patch + 1))"
+          echo "current=$current" >> $GITHUB_OUTPUT
+          echo "next=$next" >> $GITHUB_OUTPUT
+          echo "tag=v${next}" >> $GITHUB_OUTPUT
+          echo "Bumping ${current} → ${next}"
+
+      - name: Bump plugin.json version
+        run: |
+          jq --arg v "${{ steps.version.outputs.next }}" '.version = $v' .claude-plugin/plugin.json > tmp.json
+          mv tmp.json .claude-plugin/plugin.json
+
+      - name: Commit version bump
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .claude-plugin/plugin.json
+          git commit -m "chore: bump version to ${{ steps.version.outputs.next }} [skip release]"
+          git push
+
+      - name: Build release notes
+        id: notes
+        run: |
+          prev_tag=$(git tag --sort=-v:refname | head -1)
+          {
+            echo "notes<<NOTES_EOF"
+            echo "Automated index update — action versions refreshed from GitHub."
+            echo ""
+            echo "**Version:** ${{ steps.version.outputs.next }}"
+            echo ""
+            if [ -n "$prev_tag" ]; then
+              changed=$(git diff "${prev_tag}"..HEAD -- skills/github-actions/index.json | grep '^[+-].*"latest' | head -20)
+              if [ -n "$changed" ]; then
+                echo "### Version changes"
+                echo '```diff'
+                echo "$changed"
+                echo '```'
+              fi
+            fi
+            echo ""
+            echo "[Full changelog →](https://github.com/claylo/actionista/blob/main/CHANGELOG.md)"
+            echo "NOTES_EOF"
+          } >> $GITHUB_OUTPUT
+
+      - name: Create release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git tag "${{ steps.version.outputs.tag }}"
+          git push origin "${{ steps.version.outputs.tag }}"
+          gh release create "${{ steps.version.outputs.tag }}" \
+            --title "${{ steps.version.outputs.tag }}: Index update" \
+            --notes "${{ steps.notes.outputs.notes }}"
+
+      - name: Notify marketplace
+        env:
+          GH_TOKEN: ${{ secrets.CROSS_REPO_PAT }}
+        run: |
+          gh api repos/claylo/claylo-marketplace/dispatches \
+            -f event_type=plugin-update \
+            -f 'client_payload[plugin]=actionista' \
+            -f 'client_payload[version]=${{ steps.version.outputs.next }}'
