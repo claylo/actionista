@@ -13,7 +13,8 @@ A Claude Code plugin for GitHub Actions assistance — helps create, review, and
 ## Installation
 
 ```bash
-claude plugin install claylo/actionista
+/plugin marketplace add claylo/claylo-marketplace
+/plugin install actionista@claylo-marketplace
 ```
 
 ## Usage
