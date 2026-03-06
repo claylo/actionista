@@ -104,12 +104,13 @@ handle_list_actions() {
     fi
 
     if [[ -n "$category" ]]; then
-        jq --arg c "$category" '{
-            category: $c,
-            actions: [.actions | to_entries[] | select(.value.category == $c) | {name: .key, latest: .value.latest, description: .value.description}]
-        } | if .actions | length == 0 then
-            {error: ("No actions found in category: " + $c), available_categories: [.actions | to_entries[].value.category] | unique}
-        else . end' "$INDEX_PATH"
+        jq --arg c "$category" '
+            [.actions | to_entries[] | select(.value.category == $c) | {name: .key, latest: .value.latest, description: .value.description}] as $matched |
+            if ($matched | length) == 0 then
+                {error: ("No actions found in category: " + $c), available_categories: ([.actions[].category] | unique | sort)}
+            else
+                {category: $c, actions: $matched}
+            end' "$INDEX_PATH"
     else
         jq '{
             total: (.actions | length),
@@ -137,7 +138,7 @@ handle_check_workflow() {
 
     # Extract uses: directives from workflow
     local uses_lines
-    uses_lines=$(grep -oE 'uses:[[:space:]]*[^ ]+' "$file" | sed 's/uses:[[:space:]]*//' | sort -u)
+    uses_lines=$(grep -v '^[[:space:]]*#' "$file" | grep -oE 'uses:[[:space:]]*[^ ]+' | sed 's/uses:[[:space:]]*//' | sort -u)
 
     if [[ -z "$uses_lines" ]]; then
         jq -n --arg f "$file" '{file: $f, message: "No action references found", issues: []}'
@@ -229,20 +230,20 @@ handle_request() {
     local request="$1"
 
     local id method params
-    id=$(echo "$request" | jq -r '.id // empty')
+    id=$(echo "$request" | jq -c '.id // empty')
     method=$(echo "$request" | jq -r '.method // empty')
     params=$(echo "$request" | jq -c '.params // {}')
 
     # Notifications (no id) — don't respond
-    if [[ -z "$id" ]]; then
+    if [[ -z "$id" || "$id" == "null" ]]; then
         return
     fi
 
     case "$method" in
         initialize)
-            jq -n --arg id "$id" '{
+            jq -n --argjson id "$id" '{
                 jsonrpc: "2.0",
-                id: ($id | tonumber),
+                id: $id,
                 result: {
                     protocolVersion: "2024-11-05",
                     capabilities: {tools: {}},
@@ -254,9 +255,9 @@ handle_request() {
         tools/list)
             local tools
             tools=$(tools_json)
-            jq -n --arg id "$id" --argjson tools "$tools" '{
+            jq -n --argjson id "$id" --argjson tools "$tools" '{
                 jsonrpc: "2.0",
-                id: ($id | tonumber),
+                id: $id,
                 result: {tools: $tools}
             }'
             ;;
@@ -291,26 +292,26 @@ handle_request() {
                     fi
                     ;;
                 *)
-                    jq -n --arg id "$id" --arg name "$tool_name" '{
+                    jq -n --argjson id "$id" --arg name "$tool_name" '{
                         jsonrpc: "2.0",
-                        id: ($id | tonumber),
+                        id: $id,
                         error: {code: -32601, message: ("Unknown tool: " + $name)}
                     }'
                     return
                     ;;
             esac
 
-            jq -n --arg id "$id" --arg text "$result" '{
+            jq -n --argjson id "$id" --arg text "$result" '{
                 jsonrpc: "2.0",
-                id: ($id | tonumber),
+                id: $id,
                 result: {content: [{type: "text", text: $text}]}
             }'
             ;;
 
         *)
-            jq -n --arg id "$id" --arg m "$method" '{
+            jq -n --argjson id "$id" --arg m "$method" '{
                 jsonrpc: "2.0",
-                id: ($id | tonumber),
+                id: $id,
                 error: {code: -32601, message: ("Method not found: " + $m)}
             }'
             ;;
