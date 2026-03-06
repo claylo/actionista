@@ -1,0 +1,24 @@
+# gh-coda config
+# See: https://github.com/lovelesslabs/gh-coda
+
+# Merge settings
+auto_merge: true
+delete_branch_on_merge: true
+allow_squash_merge: true
+allow_merge_commit: false
+allow_rebase_merge: true
+
+# Features
+enable_discussions: false
+enable_projects: false
+enable_wiki: false
+
+# Security
+enable_secret_scanning: true
+enable_secret_scanning_push_protection: true
+dependabot_alerts: true
+dependabot_security_updates: true
+
+# 1Password secrets sync (optional)
+# secrets_tags: github-actions
+# secrets_app: actions

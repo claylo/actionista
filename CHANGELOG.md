@@ -49,7 +49,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **MCP Server**: Bash-based stdio JSON-RPC server with tools:
   - `lookup_action` — look up version info for a specific action
   - `list_actions` — list tracked actions by category
-  - `check_workflow` — report outdated action versions in workflow files
+  - `check_workflow` — report outdated action versions in workflow files, with migration guidance
+- **Migration diffs**: `update-index` now computes input changes between major versions
+  - Fetches previous major version's `action.yml` via GraphQL
+  - Records added/removed inputs in `migrations` field per action
+  - 48 of 118 tracked actions have migration data
+  - Preserves Claude-written `summary` and `notes` fields across updates
+- **Claude Code workflows**: Added `claude.yml` and `claude-code-review.yml`
 
 ### Fixed
 
@@ -60,5 +66,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- `update-index.yml` now uses `claude-code-action` instead of `peter-evans/create-pull-request` — Claude reads release notes for major bumps and enriches migration entries with summaries
 - `.mcp.json` now uses built-in bash MCP server instead of external binary
 - Bumped plugin version to 0.2.0
