@@ -22,7 +22,7 @@ tools_json() {
 [
   {
     "name": "lookup_action",
-    "description": "Look up version info for a GitHub Action. Returns latest version, full version tag, description, category, deprecated versions, and input parameters.",
+    "description": "Look up version info for a GitHub Action. Returns latest version, full version tag, commit SHA for pinning, description, category, deprecated versions, and input parameters. Includes a ready-to-paste 'pinned' reference.",
     "inputSchema": {
       "type": "object",
       "properties": {
@@ -91,7 +91,8 @@ handle_lookup_action() {
             jq -n --arg a "$action" '{error: ("Action not found: " + $a)}'
         fi
     else
-        jq -n --arg a "$action" --argjson info "$result" '{action: $a} + $info'
+        jq -n --arg a "$action" --argjson info "$result" \
+            '{action: $a} + $info + (if $info.sha then {pinned: ($a + "@" + $info.sha + " # " + $info.latestFull)} else {} end)'
     fi
 }
 
@@ -173,9 +174,20 @@ handle_check_workflow() {
         local latest
         latest=$(echo "$index_entry" | jq -r '.latest')
 
-        if [[ "$version" != "$latest" ]]; then
-            local latest_full deprecated
+        # If version is a SHA, check against the index SHA
+        local index_sha is_sha="false"
+        index_sha=$(echo "$index_entry" | jq -r '.sha // empty')
+        if [[ ${#version} -ge 40 && "$version" =~ ^[0-9a-f]+$ ]]; then
+            is_sha="true"
+            if [[ "$version" == "$index_sha" ]]; then
+                continue  # SHA-pinned and up to date
+            fi
+        fi
+
+        if [[ "$version" != "$latest" || "$is_sha" == "true" ]]; then
+            local latest_full deprecated sha_val
             latest_full=$(echo "$index_entry" | jq -r '.latestFull')
+            sha_val="$index_sha"
             deprecated=$(echo "$index_entry" | jq -r --arg v "$version" '.deprecated // [] | if map(. == $v) | any then "true" else "false" end')
 
             # Find applicable migration data
@@ -208,12 +220,13 @@ handle_check_workflow() {
 
             issues=$(echo "$issues" | jq \
                 --arg a "$action" --arg cur "$version" --arg lat "$latest" \
-                --arg latf "$latest_full" --arg dep "$deprecated" \
+                --arg latf "$latest_full" --arg sha "$sha_val" --arg dep "$deprecated" \
                 --argjson mig "$migration" \
                 '. + [{
                     action: $a, current: $cur, latest: $lat, latestFull: $latf,
                     deprecated: ($dep == "true")
-                } + (if $mig != null then {migration: $mig} else {} end)]')
+                } + (if $sha != "" then {sha: $sha, pinned: ($a + "@" + $sha + " # " + $latf)} else {} end)
+                + (if $mig != null then {migration: $mig} else {} end)]')
             outdated=$((outdated + 1))
         fi
     done <<< "$uses_lines"
@@ -247,7 +260,7 @@ handle_request() {
                 result: {
                     protocolVersion: "2024-11-05",
                     capabilities: {tools: {}},
-                    serverInfo: {name: "actionista", version: "0.2.0"}
+                    serverInfo: {name: "actionista", version: "0.3.0"}
                 }
             }'
             ;;

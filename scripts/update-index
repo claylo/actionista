@@ -14,7 +14,7 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 TRACKED_ACTIONS="$SCRIPT_DIR/../skills/github-actions/tracked-actions.yaml"
 INDEX_PATH="$SCRIPT_DIR/../skills/github-actions/index.json"
-BATCH_SIZE=50
+BATCH_SIZE=20
 
 # ============================================================================
 # Helpers
@@ -129,14 +129,14 @@ main() {
   repo${i}: repository(owner: \"$owner\", name: \"$repo\") {
     nameWithOwner
     description
-    latestRelease { tagName }
+    latestRelease { tagName tag { target { ... on Commit { sha: oid } ... on Tag { tagTarget: target { ... on Commit { sha: oid } } } } } }
     refs(refPrefix: \"refs/tags/\", first: 1, orderBy: {field: TAG_COMMIT_DATE, direction: DESC}) {
-      nodes { name }
+      nodes { name target { ... on Commit { sha: oid } ... on Tag { tagTarget: target { ... on Commit { sha: oid } } } } }
     }
     actionYml: object(expression: \"HEAD:action.yml\") { ... on Blob { text } }
     actionYaml: object(expression: \"HEAD:action.yaml\") { ... on Blob { text } }
     releases(first: 10, orderBy: {field: CREATED_AT, direction: DESC}) {
-      nodes { tagName isPrerelease }
+      nodes { tagName isPrerelease tag { target { ... on Commit { sha: oid } ... on Tag { tagTarget: target { ... on Commit { sha: oid } } } } } }
     }
   }"
         done
@@ -170,12 +170,24 @@ main() {
                 continue
             fi
 
-            local tag_name
-            tag_name=$(echo "$repo_data" | jq -r '
-                (.releases.nodes // [] | map(select(.isPrerelease == false and (.tagName | test("^v\\d")))) | .[0].tagName) //
-                .latestRelease.tagName //
-                (.refs.nodes[0].name) //
-                empty')
+            local tag_data tag_name sha
+            tag_data=$(echo "$repo_data" | jq '
+                def release_sha: (.tag.target.sha // .tag.target.tagTarget.sha // null);
+                def ref_sha: (.target.sha // .target.tagTarget.sha // null);
+                def best_release:
+                    [.[] | select(.isPrerelease == false and (.tagName | test("^v\\d")))] |
+                    if length == 0 then null else
+                        (map(.tagName | ltrimstr("v") | split(".")[0] | tonumber) | max) as $max |
+                        ([.[] | select(.tagName | test("^v" + ($max | tostring) + "\\.\\d"))] | .[0]) //
+                        ([.[] | select(.tagName | startswith("v" + ($max | tostring)))] | .[0])
+                    end;
+                (.releases.nodes // [] | best_release | select(.) | {tag: .tagName, sha: release_sha}) //
+                (.latestRelease | select(.tagName) | {tag: .tagName, sha: release_sha}) //
+                (.refs.nodes[0] | select(.name) | {tag: .name, sha: ref_sha}) //
+                {tag: null, sha: null}')
+
+            tag_name=$(echo "$tag_data" | jq -r '.tag // empty')
+            sha=$(echo "$tag_data" | jq -r '.sha // empty')
 
             if [[ -z "$tag_name" ]]; then
                 echo "    warning: ${action} — no tags found, skipped"
@@ -211,6 +223,7 @@ main() {
                 --arg action "$action" \
                 --arg latest "$major_version" \
                 --arg latestFull "$tag_name" \
+                --arg sha "$sha" \
                 --arg description "$description" \
                 --arg category "$category" \
                 --argjson deprecated "$deprecated" \
@@ -218,6 +231,7 @@ main() {
                 '{
                     ($action): (
                         {latest: $latest, latestFull: $latestFull, description: $description, category: $category}
+                        + (if $sha != "" then {sha: $sha} else {} end)
                         + (if $deprecated | length > 0 then {deprecated: $deprecated} else {} end)
                         + (if $inputs != null and ($inputs | length) > 0 then {inputs: $inputs} else {} end)
                     )
