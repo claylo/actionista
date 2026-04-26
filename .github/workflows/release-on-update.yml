@@ -8,7 +8,7 @@ on:
   push:
     branches: [main]
     paths:
-      - 'skills/github-actions/index.json'
+      - 'skills/actionista/actions-index.json'
 
 permissions:
   contents: write
@@ -62,7 +62,7 @@ jobs:
             echo "**Version:** ${{ steps.version.outputs.next }}"
             echo ""
             if [ -n "$prev_tag" ]; then
-              changed=$(git diff "${prev_tag}"..HEAD -- skills/github-actions/index.json | grep '^[+-].*"latest' | head -20)
+              changed=$(git diff "${prev_tag}"..HEAD -- skills/actionista/actions-index.json | grep '^[+-].*"latest' | head -20)
               if [ -n "$changed" ]; then
                 echo "### Version changes"
                 echo '```diff'

@@ -1,0 +1,10 @@
+project:
+  type: generic
+
+version_files:
+  - path: ".claude-plugin/plugin.json"
+    format: json
+    field: version
+  - path: "skills/*/SKILL.md"
+    format: frontmatter
+    field: "metadata.version"

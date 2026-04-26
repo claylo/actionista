@@ -2,7 +2,7 @@
 # update-index — Fetch latest versions for all tracked GitHub Actions
 #
 # Uses batched GraphQL queries (one API call per ~50 actions) to update
-# skills/github-actions/index.json with current version data and migration info.
+# actions-index.json with current version data and migration info.
 #
 # Requirements:
 #   - gh (authenticated)
@@ -12,8 +12,9 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-TRACKED_ACTIONS="$SCRIPT_DIR/../skills/github-actions/tracked-actions.yaml"
-INDEX_PATH="$SCRIPT_DIR/../skills/github-actions/index.json"
+SKILL_DIR="$SCRIPT_DIR/.."
+TRACKED_ACTIONS="$SKILL_DIR/tracked-actions.yaml"
+INDEX_PATH="$SKILL_DIR/actions-index.json"
 BATCH_SIZE=20
 
 # ============================================================================

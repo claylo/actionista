@@ -36,12 +36,12 @@ jobs:
       - name: Update index
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: scripts/update-index 2>&1 | tee /tmp/update-output.txt
+        run: skills/actionista/scripts/update-index 2>&1 | tee /tmp/update-output.txt
 
       - name: Check for changes
         id: changes
         run: |
-          if git diff --quiet skills/github-actions/index.json; then
+          if git diff --quiet skills/actionista/actions-index.json; then
             echo "changed=false" >> $GITHUB_OUTPUT
           else
             echo "changed=true" >> $GITHUB_OUTPUT
@@ -68,7 +68,7 @@ jobs:
             msg+=$'\n\n'"${summary_line}"
           fi
 
-          git add skills/github-actions/index.json
+          git add skills/actionista/actions-index.json
           git commit -m "$msg"
           git push
 
@@ -78,7 +78,7 @@ jobs:
           echo "## Dry Run - Changes Found" >> $GITHUB_STEP_SUMMARY
           echo "The following changes would be made:" >> $GITHUB_STEP_SUMMARY
           echo '```diff' >> $GITHUB_STEP_SUMMARY
-          git diff skills/github-actions/index.json >> $GITHUB_STEP_SUMMARY
+          git diff skills/actionista/actions-index.json >> $GITHUB_STEP_SUMMARY
           echo '```' >> $GITHUB_STEP_SUMMARY
 
       - name: No changes
