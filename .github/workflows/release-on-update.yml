@@ -8,7 +8,7 @@ on:
   push:
     branches: [main]
     paths:
-      - 'skills/github-actions/index.json'
+      - 'skills/actionista/actions-index.json'
 
 permissions:
   contents: write
@@ -23,7 +23,7 @@ jobs:
     if: "!contains(github.event.head_commit.message, '[skip release]')"
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           fetch-depth: 0
 
@@ -62,7 +62,7 @@ jobs:
             echo "**Version:** ${{ steps.version.outputs.next }}"
             echo ""
             if [ -n "$prev_tag" ]; then
-              changed=$(git diff "${prev_tag}"..HEAD -- skills/github-actions/index.json | grep '^[+-].*"latest' | head -20)
+              changed=$(git diff "${prev_tag}"..HEAD -- skills/actionista/actions-index.json | grep '^[+-].*"latest' | head -20)
               if [ -n "$changed" ]; then
                 echo "### Version changes"
                 echo '```diff'

@@ -1,5 +1,6 @@
 # Claude Code local settings
 .claude/*.local.md
+.claude/projects/
 
 # Node modules (for update script)
 node_modules/
@@ -11,6 +12,10 @@ Thumbs.db
 # Editor
 .idea/
 .vscode/
+.zed/
+
+# Cursor local settings
+.cursor/*.local.*
 *.swp
 *.swo
 
@@ -20,3 +25,6 @@ Thumbs.db
 # release artifacts
 scratch/
 dist/
+
+PRIVATE_MEMORY.md
+.private-journal

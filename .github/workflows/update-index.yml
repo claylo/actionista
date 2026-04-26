@@ -1,5 +1,6 @@
 # Update Actions Index
-# Fetches latest versions for all tracked GitHub Actions daily
+# Fetches latest versions for all tracked GitHub Actions daily.
+# Commits directly to main, triggering release-on-update.yml for packaging.
 
 name: Update Index
 
@@ -9,15 +10,12 @@ on:
   workflow_dispatch:
     inputs:
       dry-run:
-        description: 'Dry run (no PR created)'
+        description: 'Dry run (no commit)'
         type: boolean
         default: false
 
 permissions:
   contents: write
-  pull-requests: write
-  issues: write
-  id-token: write
 
 concurrency:
   group: update-index
@@ -30,51 +28,49 @@ jobs:
     timeout-minutes: 10
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
 
       - name: Install yq
-        uses: mikefarah/yq@v4
+        uses: mikefarah/yq@5a7e72a743649b1b3a47d1a1d8214f3453173c51 # v4.52.4
 
       - name: Update index
-        id: update
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: scripts/update-index
+        run: skills/actionista/scripts/update-index 2>&1 | tee /tmp/update-output.txt
 
       - name: Check for changes
         id: changes
         run: |
-          if git diff --quiet skills/github-actions/index.json; then
+          if git diff --quiet skills/actionista/actions-index.json; then
             echo "changed=false" >> $GITHUB_OUTPUT
           else
             echo "changed=true" >> $GITHUB_OUTPUT
           fi
 
-      - name: Commit and create PR with Claude
+      - name: Commit and push
         if: steps.changes.outputs.changed == 'true' && inputs.dry-run != true
-        uses: anthropics/claude-code-action@v1
-        with:
-          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          prompt: |
-            The actions index has been updated by scripts/update-index. Review the
-            changes in skills/github-actions/index.json, then:
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-            1. Check `git diff skills/github-actions/index.json` to see what changed.
+          version_changes=$(grep -E '^[[:space:]]+\S+/\S+:' /tmp/update-output.txt | head -20 || true)
+          total_changes=$(grep -E '^[[:space:]]+\S+/\S+:' /tmp/update-output.txt | wc -l | tr -d ' ')
+          summary_line=$(grep -E '^Summary:' /tmp/update-output.txt || true)
 
-            2. For any actions with new `migrations` entries that have `inputChanges`
-               but no `summary` field, look up the GitHub release notes for that
-               action's latest major version (use `gh release view` or `gh api`) and
-               write a concise 1-2 sentence `summary` explaining what changed and a
-               `notes` field with actionable migration steps. Edit the index.json
-               directly to add these fields.
+          msg="chore: update actions index"
+          if [[ -n "$version_changes" ]]; then
+            msg+=$'\n\n'"${version_changes}"
+            if [[ "$total_changes" -gt 20 ]]; then
+              msg+=$'\n'"  ... and $((total_changes - 20)) more"
+            fi
+          fi
+          if [[ -n "$summary_line" ]]; then
+            msg+=$'\n\n'"${summary_line}"
+          fi
 
-            3. Create a new branch named "update-index-$(date +%Y%m%d)"
-            4. Commit the updated index.json with a concise conventional commit
-               message summarizing what changed (version bumps, new actions, etc.)
-            5. Create a PR with a summary of the version changes, highlighting any
-               major version bumps and their migration impact.
-
-            Label the PR with "automated" and "dependencies".
+          git add skills/actionista/actions-index.json
+          git commit -m "$msg"
+          git push
 
       - name: Dry run summary
         if: inputs.dry-run == true && steps.changes.outputs.changed == 'true'
@@ -82,7 +78,7 @@ jobs:
           echo "## Dry Run - Changes Found" >> $GITHUB_STEP_SUMMARY
           echo "The following changes would be made:" >> $GITHUB_STEP_SUMMARY
           echo '```diff' >> $GITHUB_STEP_SUMMARY
-          git diff skills/github-actions/index.json >> $GITHUB_STEP_SUMMARY
+          git diff skills/actionista/actions-index.json >> $GITHUB_STEP_SUMMARY
           echo '```' >> $GITHUB_STEP_SUMMARY
 
       - name: No changes

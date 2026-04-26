@@ -192,10 +192,16 @@ categories:
       - actions/deploy-pages
       - actions/upload-pages-artifact
 
+  ai-assistants:
+    description: AI-powered code review and assistance actions
+    actions:
+      - anthropics/claude-code-action
+
   utilities:
     description: General utility actions
     actions:
       - actions/github-script
+      - mikefarah/yq
       - dorny/paths-filter
       - tj-actions/changed-files
       - hmarr/auto-approve-action
