@@ -8,3 +8,6 @@ version_files:
   - path: "skills/*/SKILL.md"
     format: frontmatter
     field: "metadata.version"
+  - path: "tile.json"
+    format: json
+    field: version

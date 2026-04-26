@@ -1,0 +1,11 @@
+{
+  "name": "claylo/actionista",
+  "version": "1.0.0",
+  "summary": "GitHub Actions agent skill - helps create, review, and optimize workflows with up-to-date action versions and best practices",
+  "entrypoint": "README.md",
+  "skills": {
+    "actionista": {
+      "path": "skills/actionista/SKILL.md"
+    }
+  }
+}

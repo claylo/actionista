@@ -2,7 +2,7 @@
 # When an index update PR merges to main, bump patch version, tag, release,
 # and notify claylo-marketplace to update its listing.
 
-name: Release on Update
+name: Release on Index Update
 
 on:
   push:
@@ -88,12 +88,3 @@ jobs:
           gh release create "${{ steps.version.outputs.tag }}" \
             --title "${{ steps.version.outputs.tag }}: Index update" \
             --notes "${{ steps.notes.outputs.notes }}"
-
-      - name: Notify marketplace
-        env:
-          GH_TOKEN: ${{ secrets.CROSS_REPO_PAT }}
-        run: |
-          gh api repos/claylo/claylo-marketplace/dispatches \
-            -f event_type=plugin-update \
-            -f 'client_payload[plugin]=actionista' \
-            -f 'client_payload[version]=${{ steps.version.outputs.next }}'

@@ -1,168 +1,90 @@
 # Actionista
 
-A Claude Code plugin for GitHub Actions assistance — helps create, review, and optimize workflows with up-to-date action versions and best practices.
-
-## Features
-
-- **Version Awareness**: Tracks 100+ popular GitHub Actions with their latest versions
-- **Pattern Knowledge**: Matrix builds, caching, reusable workflows, concurrency, and more
-- **Security Guidance**: Secrets management, OIDC, runner hardening, supply chain security
-- **Active Analysis**: Reviews existing workflows and suggests improvements
-- **ASCII Flowcharts**: Generates visual workflow representations
+A Claude Code plugin for GitHub Actions — creates, reviews, and optimizes workflows with current action versions, SHA pinning, and best practices.
 
 ## Installation
+
+### Via marketplace (recommended)
 
 ```bash
 /plugin marketplace add claylo/claylo-marketplace
 /plugin install actionista@claylo-marketplace
 ```
 
-## Usage
+### Standalone skill
 
-### Automatic Assistance
+The `skills/actionista/` directory is a self-contained [Agent Skill](https://agentskills.io). Copy it into `~/.claude/skills/` or `.claude/skills/` to use without the plugin wrapper.
 
-The plugin automatically activates when you work with:
-
-- GitHub Actions workflow files (`.github/workflows/*.yml`)
-- Any YAML file containing workflow syntax
-- Questions about CI/CD, GitHub Actions, or specific actions
-
-**Example queries that trigger the skill:**
-
-```
-"How do I set up caching in my Node.js workflow?"
-"What's the latest version of actions/checkout?"
-"Help me create a matrix build for multiple Node versions"
-"How do I use OIDC with AWS?"
-```
-
-### Commands
-
-#### `/review-workflow`
-
-Review and analyze GitHub Actions workflow files for issues and improvements.
+You may also install `actionista` using [npx skills](https://github.com/vercel-labs/skills).
 
 ```bash
-# Review a specific workflow
-/review-workflow .github/workflows/ci.yml
-
-# Review all workflows in the project
-/review-workflow --all
-
-# Review and auto-fix safe issues (version bumps, add caching)
-/review-workflow --fix
-
-# Validate workflow syntax only
-/review-workflow --validate
+npx skills add claylo/actionista
 ```
 
-### Workflow Analyzer Agent
+## What it does
 
-The workflow analyzer agent activates automatically when you create or modify workflow files. It can:
+- Tracks 120+ GitHub Actions with latest versions, SHAs, and migration diffs (updated daily)
+- Creates workflow YAML with correct permissions, concurrency, caching, and matrix builds
+- Reviews existing workflows for outdated actions, security issues, and performance problems
+- Detects local tooling (`actionlint`, `act`) and suggests installation if missing
+- Includes a workflow-analyzer subagent for proactive review after workflow edits
 
-- Identify outdated action versions
-- Suggest performance optimizations (caching, parallelization)
-- Find security issues (permissions, script injection)
-- Recommend best practices
-- Generate ASCII flowcharts of job dependencies
+## How it works
 
-## Actions Index
+The skill activates automatically when you work with GitHub Actions — workflow files, CI/CD questions, or any action by name. No commands to remember.
 
-The plugin maintains an index of 100+ popular GitHub Actions organized by category:
+```
+"Set up a CI workflow for this Node.js project"
+"What's the latest version of actions/checkout?"
+"Review my workflows for security issues"
+"Add caching to this build"
+```
+
+## Actions index
+
+The plugin maintains `actions-index.json` with version data for 121 actions across 19 categories:
 
 | Category | Examples |
 |----------|----------|
-| **Core GitHub** | checkout, cache, upload-artifact, download-artifact |
-| **Language Setup** | setup-node, setup-python, setup-go, setup-java |
-| **Cloud Providers** | aws-actions/*, azure/*, google-github-actions/* |
-| **Docker** | docker/build-push-action, docker/login-action |
-| **Security** | github/codeql-action, aquasecurity/trivy-action |
-| **Release** | release-please-action, goreleaser-action |
-| **Testing** | codecov-action, cypress-io/github-action |
+| Core | checkout, cache, upload-artifact, github-script |
+| Languages | setup-node, setup-python, setup-go, setup-java, rust-toolchain |
+| Cloud | aws-actions/\*, azure/\*, google-github-actions/\* |
+| Docker | build-push-action, login-action, metadata-action |
+| Security | codeql-action, trivy-action, trufflehog |
+| Release | release-please-action, goreleaser-action, action-gh-release |
 
-The index is updated daily via GitHub Actions and submitted as a PR for review.
+Each entry includes the latest version, full version tag, commit SHA for pinning, input parameters, deprecated versions, and migration data for major version bumps.
 
-## Skill Content
-
-The plugin includes comprehensive documentation on:
-
-### Patterns
-- Matrix builds with include/exclude
-- Dependency caching strategies
-- Artifact handling
-- Reusable workflows
-- Concurrency control
-- Environment management
-- Composite actions
-
-### Security
-- Secrets management and OIDC
-- Security hardening
-- Supply chain protection
-
-### References
-- Complete workflow syntax
-- Expression language and contexts
-- Trigger events
-- Runner configuration
-- Permissions and OIDC
-- Troubleshooting guide
-
-### Examples
-- Node.js CI workflow
-- Rust CI workflow
-- AWS deployment with OIDC
-- Release automation with release-please
-
-## Development
-
-### Update the Actions Index
-
-The index is updated automatically via GitHub Actions, but you can run it manually:
+The index updates daily via GitHub Actions. Run it manually:
 
 ```bash
-cd /path/to/actionista
-scripts/update-index
+skills/actionista/scripts/update-index
 ```
 
 Requires `gh` (authenticated), `yq`, and `jq`.
 
-### Test Locally
+## Skill contents
 
-```bash
-# Test with plugin directory
-claude --plugin-dir /path/to/actionista
+All reference material lives in `skills/actionista/references/`:
 
-# Or install for a project
-cd your-project
-claude plugin install /path/to/actionista --scope project
-```
+| Topic | Files |
+|-------|-------|
+| Workflow syntax, expressions, triggers | `workflow-syntax.md`, `expressions.md`, `triggers.md` |
+| Runners, permissions, troubleshooting | `runners.md`, `permissions.md`, `troubleshooting.md` |
+| Patterns | `patterns-*.md` (matrix, caching, artifacts, reusable workflows, concurrency, environments, composite actions) |
+| Security | `security-*.md` (secrets/OIDC, hardening, supply chain) |
+| Schema | `github-action.schema.json` |
 
-## MCP Server
-
-The plugin includes a built-in MCP server that provides tools for querying the actions index:
-
-| Tool | Description |
-|------|-------------|
-| `lookup_action` | Look up version info for a specific action |
-| `list_actions` | List tracked actions, optionally filtered by category |
-| `check_workflow` | Report outdated action versions in a workflow file |
-
-The MCP server starts automatically when the plugin is loaded in Claude Code.
+Working templates in `examples/`: Node.js CI, Rust CI, AWS deployment with OIDC, release-please.
 
 ## Contributing
 
-Contributions welcome! Areas of interest:
+Contributions welcome:
 
-- Adding more actions to `tracked-actions.yaml`
-- Improving pattern documentation
-- Adding more workflow examples
-- Building the MCP server
+- Add actions to `skills/actionista/tracked-actions.yaml`
+- Improve reference docs or add examples
+- Report issues with version detection or migration data
 
 ## License
 
 MIT
-
----
-
-Built with [Claude Code](https://claude.ai/code)
