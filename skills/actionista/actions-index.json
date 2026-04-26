@@ -1,8 +1,8 @@
 {
   "_metadata": {
-    "generated": "2026-03-19T14:44:37Z",
+    "generated": "2026-04-26T03:08:59Z",
     "generator": "actionista",
-    "actionCount": 118,
+    "actionCount": 121,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
   },
   "actions": {
@@ -58,10 +58,10 @@
     },
     "actions-rust-lang/setup-rust-toolchain": {
       "latest": "v1",
-      "latestFull": "v1.15.4",
+      "latestFull": "v1.16.0",
       "description": "Setup a specific Rust toolchain with extra features like problem matchers",
       "category": "setup-languages",
-      "sha": "150fca883cd4034361b621bd4e6a9d34e5143606",
+      "sha": "2b1f5e9b395427c92ee4e3331786ca3c37afe2d7",
       "inputs": [
         "toolchain",
         "target",
@@ -76,6 +76,7 @@
         "cache-provider",
         "cache-all-crates",
         "cache-workspace-crates",
+        "cache-save-if",
         "matcher",
         "rustflags",
         "override",
@@ -84,10 +85,10 @@
     },
     "actions/cache": {
       "latest": "v5",
-      "latestFull": "v5.0.4",
+      "latestFull": "v5.0.5",
       "description": "Cache dependencies and build outputs in GitHub Actions",
       "category": "core",
-      "sha": "668228422ae6a00e4ad889ee87cd7109ec5666a7",
+      "sha": "27d5ce7f107fe9357f9df03efb73ab90386fccae",
       "deprecated": [
         "v1",
         "v2",
@@ -140,15 +141,16 @@
       ]
     },
     "actions/configure-pages": {
-      "latest": "v5",
-      "latestFull": "v5.0.0",
+      "latest": "v6",
+      "latestFull": "v6.0.0",
       "description": "An action to enable Pages and extract various metadata about a site. It can also be used to configur",
       "category": "documentation",
-      "sha": "983d7736d9b0ae728b81ab479565c72886d7745b",
+      "sha": "45bfe0192ca1faeb007ade9deae92b16b8254a0d",
       "deprecated": [
         "v1",
         "v2",
-        "v3"
+        "v3",
+        "v4"
       ],
       "inputs": [
         "static_site_generator",
@@ -224,14 +226,15 @@
       }
     },
     "actions/deploy-pages": {
-      "latest": "v4",
-      "latestFull": "v4.0.5",
+      "latest": "v5",
+      "latestFull": "v5.0.0",
       "description": "GitHub Action to publish artifacts to GitHub Pages for deployments",
       "category": "documentation",
-      "sha": "d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e",
+      "sha": "cd2ce8fcbc39b97be8ca5fce6e763baed58fa128",
       "deprecated": [
         "v1",
-        "v2"
+        "v2",
+        "v3"
       ],
       "inputs": [
         "token",
@@ -281,18 +284,19 @@
       }
     },
     "actions/github-script": {
-      "latest": "v8",
-      "latestFull": "v8",
+      "latest": "v9",
+      "latestFull": "v9.0.0",
       "description": "Write workflows scripting the GitHub API in JavaScript",
       "category": "core",
-      "sha": "ed597411d8f924073f98dfc5c65a23a2325f34cd",
+      "sha": "3a2844b7e9c422d3c10d287c895573f7108da1b3",
       "deprecated": [
         "v1",
         "v2",
         "v3",
         "v4",
         "v5",
-        "v6"
+        "v6",
+        "v7"
       ],
       "inputs": [
         "script",
@@ -363,10 +367,10 @@
     },
     "actions/setup-go": {
       "latest": "v6",
-      "latestFull": "v6.3.0",
+      "latestFull": "v6.4.0",
       "description": "Set up your GitHub Actions workflow with a specific version of Go",
       "category": "setup-languages",
-      "sha": "4b73464bb391d4059bd26b0524d20df3927bd417",
+      "sha": "4a3601121dd01d1626a1e23e37211e3254c1c06c",
       "deprecated": [
         "v1",
         "v2",
@@ -430,10 +434,10 @@
     },
     "actions/setup-node": {
       "latest": "v6",
-      "latestFull": "v6.3.0",
+      "latestFull": "v6.4.0",
       "description": "Set up your GitHub Actions workflow with a specific version of node.js",
       "category": "setup-languages",
-      "sha": "53b83947a5a98c8d113130e565377fae1a50d02f",
+      "sha": "48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e",
       "deprecated": [
         "v1",
         "v2",
@@ -590,10 +594,10 @@
     },
     "actions/upload-artifact": {
       "latest": "v7",
-      "latestFull": "v7.0.0",
+      "latestFull": "v7.0.1",
       "description": "",
       "category": "core",
-      "sha": "bbbca2ddaa5d8feaa63e36b76fdaad77386f024f",
+      "sha": "043fb46d1a93c77aae656e7c1c64a875d1fc6a0a",
       "deprecated": [
         "v1",
         "v2",
@@ -623,20 +627,32 @@
       }
     },
     "actions/upload-pages-artifact": {
-      "latest": "v4",
-      "latestFull": "v4.0.0",
+      "latest": "v5",
+      "latestFull": "v5.0.0",
       "description": "A composite action for packaging and uploading an artifact that can be deployed to GitHub Pages.",
       "category": "documentation",
-      "sha": "7b1f4a764d45c48632c6b24a0339c27f5614fb0b",
+      "sha": "fc324d3547104276b827a68afc52ff2a11cc49c9",
       "deprecated": [
         "v1",
-        "v2"
+        "v2",
+        "v3"
       ],
       "inputs": [
         "name",
         "path",
-        "retention-days"
-      ]
+        "retention-days",
+        "include-hidden-files"
+      ],
+      "migrations": {
+        "v4→v5": {
+          "inputChanges": {
+            "added": [
+              "include-hidden-files"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "actions/upload-release-asset": {
       "latest": "v1",
@@ -653,10 +669,10 @@
     },
     "ad-m/github-push-action": {
       "latest": "v1",
-      "latestFull": "v1.0.0",
+      "latestFull": "v1.1.0",
       "description": "GitHub actions to push back to repository eg. updated code",
       "category": "git-operations",
-      "sha": "77c5b412c50b723d2a4fbc6d71fb5723bcd439aa",
+      "sha": "4cc74773234f74829a8c21bc4d69dd4be9cfa599",
       "inputs": [
         "github_token",
         "github_url",
@@ -672,12 +688,40 @@
         "directory"
       ]
     },
+    "amannn/action-semantic-pull-request": {
+      "latest": "v6",
+      "latestFull": "v6.1.1",
+      "description": "A GitHub Action that ensures that your PR title matches the Conventional Commits spec",
+      "category": "linting",
+      "sha": "48f256284bd46cdaab1048c3721360e808335d50",
+      "deprecated": [
+        "v1",
+        "v2",
+        "v3",
+        "v4"
+      ],
+      "inputs": [
+        "types",
+        "scopes",
+        "requireScope",
+        "disallowScopes",
+        "subjectPattern",
+        "subjectPatternError",
+        "validateSingleCommit",
+        "validateSingleCommitMatchesPrTitle",
+        "githubBaseUrl",
+        "ignoreLabels",
+        "headerPattern",
+        "headerPatternCorrespondence",
+        "wip"
+      ]
+    },
     "amondnet/vercel-action": {
-      "latest": "v41",
-      "latestFull": "v41.1.4",
+      "latest": "v42",
+      "latestFull": "v42.2.0",
       "description": "This action make a deployment with github actions instead of Vercel builder.",
       "category": "infrastructure",
-      "sha": "888da851026e0573da056b061931bcb765a915c4",
+      "sha": "4b810e26f7bb2a331c698af186f890cbf20d5f72",
       "deprecated": [
         "v1",
         "v2",
@@ -717,7 +761,8 @@
         "v36",
         "v37",
         "v38",
-        "v39"
+        "v39",
+        "v40"
       ],
       "inputs": [
         "vercel-token",
@@ -725,6 +770,7 @@
         "github-comment",
         "github-token",
         "github-deployment",
+        "github-deployment-environment",
         "working-directory",
         "vercel-project-id",
         "vercel-org-id",
@@ -735,15 +781,28 @@
         "now-args",
         "now-project-id",
         "now-org-id",
-        "alias-domains"
+        "alias-domains",
+        "target",
+        "prebuilt",
+        "vercel-output-dir",
+        "force",
+        "env",
+        "build-env",
+        "regions",
+        "archive",
+        "root-directory",
+        "auto-assign-custom-domains",
+        "custom-environment",
+        "public",
+        "with-cache"
       ]
     },
     "anchore/scan-action": {
       "latest": "v7",
-      "latestFull": "v7.3.2",
+      "latestFull": "v7.4.0",
       "description": "Anchore container analysis and scan provided as a GitHub Action",
       "category": "security",
-      "sha": "7037fa011853d5a11690026fb85feee79f4c946c",
+      "sha": "e1165082ffb1fe366ebaf02d8526e7c4989ea9d2",
       "deprecated": [
         "v1",
         "v2",
@@ -778,6 +837,49 @@
         }
       }
     },
+    "anthropics/claude-code-action": {
+      "latest": "v1",
+      "latestFull": "v1.0.107",
+      "description": "",
+      "category": "ai-assistants",
+      "sha": "567fe954a4527e81f132d87d1bdbcc94f7737434",
+      "inputs": [
+        "trigger_phrase",
+        "assignee_trigger",
+        "label_trigger",
+        "base_branch",
+        "branch_prefix",
+        "branch_name_template",
+        "allowed_bots",
+        "allowed_non_write_users",
+        "include_comments_by_actor",
+        "exclude_comments_by_actor",
+        "prompt",
+        "settings",
+        "anthropic_api_key",
+        "claude_code_oauth_token",
+        "github_token",
+        "use_bedrock",
+        "use_vertex",
+        "use_foundry",
+        "claude_args",
+        "additional_permissions",
+        "use_sticky_comment",
+        "classify_inline_comments",
+        "use_commit_signing",
+        "ssh_signing_key",
+        "bot_id",
+        "bot_name",
+        "track_progress",
+        "include_fix_links",
+        "path_to_claude_code_executable",
+        "path_to_bun_executable",
+        "display_report",
+        "show_full_output",
+        "plugins",
+        "plugin_marketplaces"
+      ]
+    },
     "appleboy/telegram-action": {
       "latest": "v1",
       "latestFull": "v1.0.1",
@@ -801,15 +903,16 @@
         "debug",
         "format",
         "disable_web_page_preview",
-        "disable_notification"
+        "disable_notification",
+        "message_thread_id"
       ]
     },
     "aquasecurity/trivy-action": {
       "latest": "v0",
-      "latestFull": "0.35.0",
+      "latestFull": "v0.36.0",
       "description": "Runs Trivy as GitHub action to scan your Docker container image for vulnerabilities",
       "category": "security",
-      "sha": "57a97c7e7821a5776cebc9bb87c984fa69cba8f1",
+      "sha": "ed142fd0673e97e23eac54620cfb913e5ce36c25",
       "inputs": [
         "scan-type",
         "image-ref",
@@ -844,10 +947,10 @@
     },
     "aws-actions/amazon-ecr-login": {
       "latest": "v2",
-      "latestFull": "v2.0.2",
+      "latestFull": "v2.1.4",
       "description": "Logs into Amazon ECR with the local Docker client.",
       "category": "cloud-aws",
-      "sha": "c962da2960ed15f492addc26fffa274485265950",
+      "sha": "19d944daaa35f0fa1d3f7f8af1d3f2e5de25c5b7",
       "inputs": [
         "http-proxy",
         "mask-password",
@@ -858,10 +961,10 @@
     },
     "aws-actions/amazon-ecs-deploy-task-definition": {
       "latest": "v2",
-      "latestFull": "v2.6.0",
+      "latestFull": "v2.6.1",
       "description": "Registers an Amazon ECS task definition and deploys it to an ECS service.",
       "category": "cloud-aws",
-      "sha": "cbf54ec46642b86ff78c2f5793da6746954cf8ff",
+      "sha": "fc8fc60f3a60ffd500fcb13b209c59d221ac8c8c",
       "inputs": [
         "task-definition",
         "desired-count",
@@ -927,10 +1030,10 @@
     },
     "aws-actions/amazon-ecs-render-task-definition": {
       "latest": "v1",
-      "latestFull": "v1.8.3",
+      "latestFull": "v1.8.4",
       "description": "Inserts a container image URI into an Amazon ECS task definition JSON file.",
       "category": "cloud-aws",
-      "sha": "6b89923a897d41e9ad789181d8865b532ecf973c",
+      "sha": "77954e213ba1f9f9cb016b86a1d4f6fcdea0d57e",
       "inputs": [
         "task-definition",
         "task-definition-arn",
@@ -949,10 +1052,10 @@
     },
     "aws-actions/aws-cloudformation-github-deploy": {
       "latest": "v2",
-      "latestFull": "v2.0.0",
+      "latestFull": "v2.1.0",
       "description": "Deploys AWS CloudFormation Stacks",
       "category": "cloud-aws",
-      "sha": "c6cd26bb03f19ebe84c84e9cdbedfb307bf44fb4",
+      "sha": "64bde66a4001208fc0917038be8846d99c9d0585",
       "inputs": [
         "mode",
         "name",
@@ -992,35 +1095,27 @@
       }
     },
     "aws-actions/aws-secretsmanager-get-secrets": {
-      "latest": "v2",
-      "latestFull": "v2.0.10",
+      "latest": "v3",
+      "latestFull": "v3.0.1",
       "description": "",
       "category": "cloud-aws",
-      "sha": "a9a7eb4e2f2871d30dc5b892576fde60a2ecc802",
+      "sha": "2cb1a461cbd4865ac4299648312e4704c646cd53",
+      "deprecated": [
+        "v1"
+      ],
       "inputs": [
         "secret-ids",
         "parse-json-secrets",
         "name-transformation",
         "auto-select-family-attempt-timeout"
-      ],
-      "migrations": {
-        "v1→v2": {
-          "inputChanges": {
-            "added": [
-              "name-transformation",
-              "auto-select-family-attempt-timeout"
-            ],
-            "removed": []
-          }
-        }
-      }
+      ]
     },
     "aws-actions/configure-aws-credentials": {
       "latest": "v6",
-      "latestFull": "v6.0.0",
+      "latestFull": "v6.1.0",
       "description": "Configure AWS credential environment variables for use in other GitHub Actions.",
       "category": "cloud-aws",
-      "sha": "8df5847569e6427dd6c4fb1cf565c83acfa8afa7",
+      "sha": "ec61189d14ec14c8efccab744f656cffd0e33f37",
       "deprecated": [
         "v1",
         "v2",
@@ -1029,6 +1124,8 @@
       ],
       "inputs": [
         "aws-region",
+        "aws-profile",
+        "overwrite-aws-profile",
         "role-to-assume",
         "aws-access-key-id",
         "aws-secret-access-key",
@@ -1061,6 +1158,8 @@
         "v5→v6": {
           "inputChanges": {
             "added": [
+              "aws-profile",
+              "overwrite-aws-profile",
               "transitive-tag-keys"
             ],
             "removed": []
@@ -1069,14 +1168,15 @@
       }
     },
     "azure/aks-set-context": {
-      "latest": "v4",
-      "latestFull": "v4.0.3",
+      "latest": "v5",
+      "latestFull": "v5.0.0",
       "description": "GitHub Action for setting context (retrieving Kubeconfig) before interacting with Kubernetes cluster",
       "category": "cloud-azure",
-      "sha": "c7eb093e5a5d47caa333f64974d5fd1cd4bf069d",
+      "sha": "60623acbdcbbdcf799ad50a1adf8703874339f8b",
       "deprecated": [
         "v1",
-        "v2"
+        "v2",
+        "v3"
       ],
       "inputs": [
         "resource-group",
@@ -1086,25 +1186,17 @@
         "use-kubelogin",
         "public-fqdn",
         "resource-type"
-      ],
-      "migrations": {
-        "v3→v4": {
-          "inputChanges": {
-            "added": [
-              "public-fqdn",
-              "resource-type"
-            ],
-            "removed": []
-          }
-        }
-      }
+      ]
     },
     "azure/cli": {
-      "latest": "v2",
-      "latestFull": "v2.2.0",
+      "latest": "v3",
+      "latestFull": "v3.0.0",
       "description": "Automate your GitHub workflows using Azure CLI scripts",
       "category": "cloud-azure",
-      "sha": "9f7ce6f37c31b777ec6c6b6d1dfe7db79f497956",
+      "sha": "9eb25b8360668fb0ecbafa808d40e2197b2f5f52",
+      "deprecated": [
+        "v1"
+      ],
       "inputs": [
         "inlineScript",
         "azcliversion"
@@ -1124,10 +1216,10 @@
     },
     "azure/functions-action": {
       "latest": "v1",
-      "latestFull": "v1.5.4",
+      "latestFull": "v1.5.6",
       "description": "Enable GitHub developers to deploy to Azure Function Apps using GitHub Actions",
       "category": "cloud-azure",
-      "sha": "02a16c5f3a5707fa97fca56c202cc2ef6cc7dccb",
+      "sha": "bc63708cc6539760eea18d8a7de4ce8ef5fdf593",
       "inputs": [
         "app-name",
         "package",
@@ -1142,15 +1234,16 @@
       ]
     },
     "azure/k8s-deploy": {
-      "latest": "v5",
-      "latestFull": "v5.1.0",
+      "latest": "v6",
+      "latestFull": "v6.0.0",
       "description": "GitHub Action for deploying to Kubernetes clusters",
       "category": "cloud-azure",
-      "sha": "c8cfec839dc09896b3b8cc40cd13d04792680771",
+      "sha": "c7ebd0d5f39477a23f1b5dea0f52e6db04adf28e",
       "deprecated": [
         "v1",
         "v2",
-        "v3"
+        "v3",
+        "v4"
       ],
       "inputs": [
         "namespace",
@@ -1177,20 +1270,7 @@
         "name",
         "skip-tls-verify",
         "resource-type"
-      ],
-      "migrations": {
-        "v4→v5": {
-          "inputChanges": {
-            "added": [
-              "server-side",
-              "timeout",
-              "annotate-resources",
-              "resource-type"
-            ],
-            "removed": []
-          }
-        }
-      }
+      ]
     },
     "azure/login": {
       "latest": "v3",
@@ -1215,10 +1295,10 @@
     },
     "azure/webapps-deploy": {
       "latest": "v3",
-      "latestFull": "v3.0.7",
+      "latestFull": "v3.0.8",
       "description": "Enable GitHub developers to deploy to Azure WebApps using GitHub Actions",
       "category": "cloud-azure",
-      "sha": "84a80cfe7e9889f35148ed88c307e6e93bf02578",
+      "sha": "02a81bead70021f5284939794bcec79c271ab383",
       "deprecated": [
         "v1"
       ],
@@ -1253,10 +1333,10 @@
     },
     "bahmutov/npm-install": {
       "latest": "v1",
-      "latestFull": "v1.11.2",
+      "latestFull": "v1.12.1",
       "description": "GitHub Action for install npm dependencies with caching without any configuration",
       "category": "package-managers",
-      "sha": "3e063b974f0d209807684aa23e534b3dde517fd9",
+      "sha": "20216767ca67f0f7b4d095dc5859c5700a6581cb",
       "inputs": [
         "working-directory",
         "useLockFile",
@@ -1440,10 +1520,10 @@
     },
     "cloudflare/wrangler-action": {
       "latest": "v3",
-      "latestFull": "v3.14.1",
+      "latestFull": "v3.15.0",
       "description": "🧙‍♀️ easily deploy cloudflare workers applications using wrangler and github actions",
       "category": "infrastructure",
-      "sha": "da0e0dfe58b7a431659754fdf3f186c529afbe65",
+      "sha": "9acf94ace14e7dc412b076f2c5c20b8ce93c79cd",
       "deprecated": [
         "v1"
       ],
@@ -1464,15 +1544,16 @@
       ]
     },
     "codecov/codecov-action": {
-      "latest": "v5",
-      "latestFull": "v5.5.3",
+      "latest": "v6",
+      "latestFull": "v6.0.0",
       "description": "GitHub Action that uploads coverage to Codecov :open_umbrella: ",
       "category": "testing",
-      "sha": "1af58845a975a7985b0beb0cbe6fbbb71a41dbad",
+      "sha": "57e3a136b779b570ffcdbf80b3bdc90e7fab3de2",
       "deprecated": [
         "v1",
         "v2",
-        "v3"
+        "v3",
+        "v4"
       ],
       "inputs": [
         "base_sha",
@@ -1524,33 +1605,7 @@
         "verbose",
         "version",
         "working-directory"
-      ],
-      "migrations": {
-        "v4→v5": {
-          "inputChanges": {
-            "added": [
-              "base_sha",
-              "binary",
-              "disable_telem",
-              "force",
-              "gcov_args",
-              "gcov_executable",
-              "gcov_ignore",
-              "gcov_include",
-              "recurse_submodules",
-              "report_type",
-              "run_command",
-              "skip_validation",
-              "swift_project",
-              "use_pypi"
-            ],
-            "removed": [
-              "file",
-              "plugin"
-            ]
-          }
-        }
-      }
+      ]
     },
     "coverallsapp/github-action": {
       "latest": "v2",
@@ -1605,10 +1660,10 @@
     },
     "cypress-io/github-action": {
       "latest": "v7",
-      "latestFull": "v7.1.7",
+      "latestFull": "v7.1.9",
       "description": "GitHub Action for running Cypress end-to-end & component tests",
       "category": "testing",
-      "sha": "ed2d88ccbbf936c5aac087dd43e10425abc3534f",
+      "sha": "783cb3f07983868532cabaedaa1e6c00ff4786a8",
       "deprecated": [
         "v1",
         "v2",
@@ -1660,11 +1715,11 @@
       }
     },
     "dawidd6/action-download-artifact": {
-      "latest": "v19",
-      "latestFull": "v19",
+      "latest": "v20",
+      "latestFull": "v20",
       "description": ":gear: A GitHub Action to download an artifact associated with given workflow and commit or other cr",
       "category": "utilities",
-      "sha": "8a338493df3d275e4a7a63bcff3b8fe97e51a927",
+      "sha": "8305c0f1062bb0d184d09ef4493ecb9288447732",
       "deprecated": [
         "v1",
         "v2",
@@ -1682,7 +1737,8 @@
         "v14",
         "v15",
         "v16",
-        "v17"
+        "v17",
+        "v18"
       ],
       "inputs": [
         "github_token",
@@ -1761,10 +1817,10 @@
     },
     "docker/bake-action": {
       "latest": "v7",
-      "latestFull": "v7.0.0",
+      "latestFull": "v7.1.0",
       "description": "GitHub Action to use Docker Buildx Bake as a high-level build command",
       "category": "docker",
-      "sha": "82490499d2e5613fcead7e128237ef0b0ea210f7",
+      "sha": "a66e1c87e2eca0503c343edf1d208c716d54b8a8",
       "deprecated": [
         "v1",
         "v2",
@@ -1786,12 +1842,15 @@
         "set",
         "source",
         "targets",
+        "vars",
         "github-token"
       ],
       "migrations": {
         "v6→v7": {
           "inputChanges": {
-            "added": [],
+            "added": [
+              "vars"
+            ],
             "removed": [
               "workdir"
             ]
@@ -1801,10 +1860,10 @@
     },
     "docker/build-push-action": {
       "latest": "v7",
-      "latestFull": "v7.0.0",
+      "latestFull": "v7.1.0",
       "description": "GitHub Action to build and push Docker images with Buildx",
       "category": "docker",
-      "sha": "d08e5c354a6adb9ed34480a06d141179aa583294",
+      "sha": "bcafcacb16a39f128d818304e6c9c0c18556b85f",
       "deprecated": [
         "v1",
         "v2",
@@ -1850,10 +1909,10 @@
     },
     "docker/login-action": {
       "latest": "v4",
-      "latestFull": "v4.0.0",
+      "latestFull": "v4.1.0",
       "description": "GitHub Action to login against a Docker registry",
       "category": "docker",
-      "sha": "b45d80f862d83dbcd57f89517bcf500b2ab88fb2",
+      "sha": "4907a6ddec9925e35a0a9e82d7399ccc52663121",
       "deprecated": [
         "v1",
         "v2"
@@ -1968,17 +2027,7 @@
         "list-files",
         "initial-fetch-depth",
         "predicate-quantifier"
-      ],
-      "migrations": {
-        "v3→v4": {
-          "inputChanges": {
-            "added": [
-              "predicate-quantifier"
-            ],
-            "removed": []
-          }
-        }
-      }
+      ]
     },
     "dtolnay/rust-toolchain": {
       "latest": "v1",
@@ -1994,11 +2043,11 @@
       ]
     },
     "EndBug/add-and-commit": {
-      "latest": "v9",
-      "latestFull": "v9.1.4",
+      "latest": "v10",
+      "latestFull": "v10.0.0",
       "description": ":octocat: Automatically commit changes made in your workflow run directly to your repo",
       "category": "git-operations",
-      "sha": "a94899bca583c204427a224a7af87c02f9b325d5",
+      "sha": "290ea2c423ad77ca9c62ae0f5b224379612c0321",
       "deprecated": [
         "v1",
         "v2",
@@ -2006,7 +2055,8 @@
         "v4",
         "v5",
         "v6",
-        "v7"
+        "v7",
+        "v8"
       ],
       "inputs": [
         "add",
@@ -2027,25 +2077,17 @@
         "tag",
         "tag_push",
         "github_token"
-      ],
-      "migrations": {
-        "v8→v9": {
-          "inputChanges": {
-            "added": [
-              "fetch",
-              "tag_push"
-            ],
-            "removed": []
-          }
-        }
-      }
+      ]
     },
     "EndBug/version-check": {
-      "latest": "v2",
-      "latestFull": "v2.1.7",
+      "latest": "v3",
+      "latestFull": "v3.0.0",
       "description": ":octocat: An action that allows you to check whether your npm package version has been updated",
       "category": "utilities",
-      "sha": "5102328418c0130d66ca712d755c303e93368ce2",
+      "sha": "095362f3cd50f690c8fa0e6afeea81834bd8d320",
+      "deprecated": [
+        "v1"
+      ],
       "inputs": [
         "diff-search",
         "file-name",
@@ -2054,24 +2096,14 @@
         "static-checking",
         "token",
         "github-api-url"
-      ],
-      "migrations": {
-        "v1→v2": {
-          "inputChanges": {
-            "added": [
-              "github-api-url"
-            ],
-            "removed": []
-          }
-        }
-      }
+      ]
     },
     "erlef/setup-beam": {
       "latest": "v1",
-      "latestFull": "v1.23.0",
+      "latestFull": "v1.24.0",
       "description": "Set up your BEAM-based GitHub Actions workflow (Erlang, Elixir, Gleam, ...)",
       "category": "setup-languages",
-      "sha": "ee09b1e59bb240681c382eb1f0abc6a04af72764",
+      "sha": "fc68ffb90438ef2936bbb3251622353b3dcb2f93",
       "inputs": [
         "github-token",
         "otp-version",
@@ -2089,10 +2121,10 @@
     },
     "github/codeql-action/analyze": {
       "latest": "v4",
-      "latestFull": "v4.33.0",
+      "latestFull": "v4.35.2",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "b1bff81932f5cdfc8695c7752dcee935dcd061c8",
+      "sha": "95e58e9a2cdfd71adc6e0353d5c52f41a045d225",
       "deprecated": [
         "v1",
         "v2"
@@ -2100,10 +2132,10 @@
     },
     "github/codeql-action/autobuild": {
       "latest": "v4",
-      "latestFull": "v4.33.0",
+      "latestFull": "v4.35.2",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "b1bff81932f5cdfc8695c7752dcee935dcd061c8",
+      "sha": "95e58e9a2cdfd71adc6e0353d5c52f41a045d225",
       "deprecated": [
         "v1",
         "v2"
@@ -2111,10 +2143,10 @@
     },
     "github/codeql-action/init": {
       "latest": "v4",
-      "latestFull": "v4.33.0",
+      "latestFull": "v4.35.2",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "b1bff81932f5cdfc8695c7752dcee935dcd061c8",
+      "sha": "95e58e9a2cdfd71adc6e0353d5c52f41a045d225",
       "deprecated": [
         "v1",
         "v2"
@@ -2442,10 +2474,10 @@
     },
     "goreleaser/goreleaser-action": {
       "latest": "v7",
-      "latestFull": "v7.0.0",
+      "latestFull": "v7.1.0",
       "description": "GitHub Action for GoReleaser",
       "category": "release",
-      "sha": "ec59f474b9834571250b370d4735c50f8e2d1e29",
+      "sha": "e24998b8b67b290c2fa8b7c14fcfa7de2c5c9b8c",
       "deprecated": [
         "v1",
         "v2",
@@ -2456,17 +2488,28 @@
       "inputs": [
         "distribution",
         "version",
+        "version-file",
         "args",
         "workdir",
         "install-only"
-      ]
+      ],
+      "migrations": {
+        "v6→v7": {
+          "inputChanges": {
+            "added": [
+              "version-file"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "graalvm/setup-graalvm": {
       "latest": "v1",
-      "latestFull": "v1.5.0",
+      "latestFull": "v1.5.2",
       "description": "Set up your GitHub Actions workflow with a specific GraalVM distribution.",
       "category": "setup-languages",
-      "sha": "f744c72a42b1995d7b0cbc314bde4bace7ac1fe1",
+      "sha": "60c26726de13f8b90771df4bc1641a52a3159994",
       "inputs": [
         "java-version",
         "java-package",
@@ -2486,15 +2529,16 @@
       ]
     },
     "gradle/actions/setup-gradle": {
-      "latest": "v5",
-      "latestFull": "v5.0.2",
+      "latest": "v6",
+      "latestFull": "v6.1.0",
       "description": "A collection of GitHub Actions to accelerate your Gradle Builds on GitHub",
       "category": "mobile",
-      "sha": "0723195856401067f7a2779048b490ace7a47d7c",
+      "sha": "50e97c2cd7a37755bbfafc9c5b7cafaece252f6e",
       "deprecated": [
         "v1",
         "v2",
-        "v3"
+        "v3",
+        "v4"
       ]
     },
     "hashicorp/setup-terraform": {
@@ -2532,10 +2576,10 @@
     },
     "haskell-actions/setup": {
       "latest": "v2",
-      "latestFull": "v2.10.3",
+      "latestFull": "v2.11.0",
       "description": "Setting up GHC, cabal, stack on for Haskell-related CIs",
       "category": "setup-languages",
-      "sha": "f9150cb1d140e9a9271700670baa38991e6fa25c",
+      "sha": "cd0d9bdd65b20557f41bea4dbe43d0b5fbbfe553",
       "inputs": [
         "ghc-version",
         "cabal-version",
@@ -2610,11 +2654,14 @@
       ]
     },
     "julia-actions/setup-julia": {
-      "latest": "v2",
-      "latestFull": "v2.7.0",
+      "latest": "v3",
+      "latestFull": "v3.0.1",
       "description": "This action sets up a Julia environment for use in actions by downloading a specified version of Jul",
       "category": "setup-languages",
-      "sha": "4c0cb0fce8556fdb04a90347310e5db8b1f98fb9",
+      "sha": "f6f565d9f7cf12f53dc8045742460d6260ad3b39",
+      "deprecated": [
+        "v1"
+      ],
       "inputs": [
         "version",
         "include-all-prereleases",
@@ -2624,11 +2671,10 @@
         "project"
       ],
       "migrations": {
-        "v1→v2": {
+        "v2→v3": {
           "inputChanges": {
             "added": [
-              "force-arch",
-              "project"
+              "force-arch"
             ],
             "removed": []
           }
@@ -2741,12 +2787,26 @@
         "check-name"
       ]
     },
+    "mikefarah/yq": {
+      "latest": "v4",
+      "latestFull": "v4.53.2",
+      "description": "yq is a portable command-line YAML, JSON, XML, CSV, TOML, HCL  and properties processor",
+      "category": "utilities",
+      "sha": "751d8ad57b84f1794661bc70c0afb92a22ad7b3c",
+      "deprecated": [
+        "v1",
+        "v2"
+      ],
+      "inputs": [
+        "cmd"
+      ]
+    },
     "mikepenz/action-junit-report": {
       "latest": "v6",
-      "latestFull": "v6.3.1",
+      "latestFull": "v6.4.0",
       "description": "Reports junit test results as GitHub Pull Request Check",
       "category": "testing",
-      "sha": "49b2ca06f62aa7ef83ae6769a2179271e160d8e4",
+      "sha": "bccf2e31636835cf0874589931c4116687171386",
       "deprecated": [
         "v1",
         "v2",
@@ -2812,15 +2872,14 @@
     },
     "ocaml/setup-ocaml": {
       "latest": "v3",
-      "latestFull": "v3.4.8",
+      "latestFull": "v3.6.1",
       "description": "GitHub Action for the OCaml programming language",
       "category": "setup-languages",
-      "sha": "dec6499fef64fc5d7ed43d43a87251b7b1c306f5",
+      "sha": "e32b06a3e831ff2fbc6f08cf35be2085e3918014",
       "deprecated": [
         "v1"
       ],
       "inputs": [
-        "allow-prerelease-opam",
         "ocaml-compiler",
         "opam-repositories",
         "opam-pin",
@@ -2828,12 +2887,18 @@
         "opam-disable-sandboxing",
         "dune-cache",
         "cache-prefix",
+        "windows-compiler",
+        "windows-environment",
+        "allow-prerelease-opam",
         "github-token"
       ],
       "migrations": {
         "v2→v3": {
           "inputChanges": {
-            "added": [],
+            "added": [
+              "windows-compiler",
+              "windows-environment"
+            ],
             "removed": [
               "opam-depext",
               "opam-depext-flags"
@@ -2925,10 +2990,10 @@
     },
     "peter-evans/create-pull-request": {
       "latest": "v8",
-      "latestFull": "v8.1.0",
+      "latestFull": "v8.1.1",
       "description": "A GitHub action to create a pull request for changes to your repository in the actions workspace",
       "category": "git-operations",
-      "sha": "c0f553fe549906ede9cf27b5156039d195d2ece0",
+      "sha": "5f6978faf089d4d20b00c7766989d076bb2fc7f1",
       "deprecated": [
         "v1",
         "v2",
@@ -3009,15 +3074,16 @@
       }
     },
     "pnpm/action-setup": {
-      "latest": "v5",
-      "latestFull": "v5.0.0",
+      "latest": "v6",
+      "latestFull": "v6.0.3",
       "description": "Install pnpm package manager",
       "category": "package-managers",
-      "sha": "fc06bc1257f339d1d5d8b3a19a8cae5388b55320",
+      "sha": "903f9c1a6ebcba6cf41d87230be49611ac97822e",
       "deprecated": [
         "v1",
         "v2",
-        "v3"
+        "v3",
+        "v4"
       ],
       "inputs": [
         "version",
@@ -3098,10 +3164,10 @@
     },
     "release-drafter/release-drafter": {
       "latest": "v7",
-      "latestFull": "v7.1.1",
+      "latestFull": "v7.2.0",
       "description": "Drafts your next release notes as pull requests are merged into master. ",
       "category": "release",
-      "sha": "139054aeaa9adc52ab36ddf67437541f039b88e2",
+      "sha": "5de93583980a40bd78603b6dfdcda5b4df377b32",
       "deprecated": [
         "v1",
         "v2",
@@ -3225,10 +3291,10 @@
     },
     "ruby/setup-ruby": {
       "latest": "v1",
-      "latestFull": "v1.295.0",
+      "latestFull": "v1.305.0",
       "description": "An action to download a prebuilt Ruby and add it to the PATH in 5 seconds",
       "category": "setup-languages",
-      "sha": "319994f95fa847cf3fb3cd3dbe89f6dcde9f178f",
+      "sha": "0cb964fd540e0a24c900370abf38a33466142735",
       "inputs": [
         "ruby-version",
         "rubygems",
@@ -3318,10 +3384,10 @@
     },
     "slackapi/slack-github-action": {
       "latest": "v3",
-      "latestFull": "v3.0.0",
+      "latestFull": "v3.0.2",
       "description": "Send data into Slack using this GitHub Action!",
       "category": "notifications",
-      "sha": "e090a7a7c0b2d9b7ae32bd34f086e680ce260b06",
+      "sha": "03ea5433c137af7c0495bc0cad1af10403fc800c",
       "deprecated": [
         "v1"
       ],
@@ -3377,11 +3443,14 @@
       ]
     },
     "softprops/action-gh-release": {
-      "latest": "v2",
-      "latestFull": "v2.6.1",
+      "latest": "v3",
+      "latestFull": "v3.0.0",
       "description": "📦 :octocat: GitHub Action for creating GitHub Releases",
       "category": "release",
-      "sha": "153bb8e04406b158c6c84fc1615b65b24149a1fe",
+      "sha": "b4309332981a82ec1c5618f44dd2e27cc8bfbfda",
+      "deprecated": [
+        "v1"
+      ],
       "inputs": [
         "body",
         "body_path",
@@ -3402,21 +3471,7 @@
         "previous_tag",
         "append_body",
         "make_latest"
-      ],
-      "migrations": {
-        "v1→v2": {
-          "inputChanges": {
-            "added": [
-              "preserve_order",
-              "working_directory",
-              "overwrite_files",
-              "previous_tag",
-              "make_latest"
-            ],
-            "removed": []
-          }
-        }
-      }
+      ]
     },
     "stefanzweifel/git-auto-commit-action": {
       "latest": "v7",
@@ -3468,10 +3523,10 @@
     },
     "subosito/flutter-action": {
       "latest": "v2",
-      "latestFull": "v2.22.0",
+      "latestFull": "v2.23.0",
       "description": "Flutter environment for use in GitHub Actions. It works on Linux, Windows, and macOS.",
       "category": "mobile",
-      "sha": "0ca7a949e71ae44c8e688a51c5e7e93b2c87e295",
+      "sha": "1a449444c387b1966244ae4d4f8c696479add0b2",
       "inputs": [
         "channel",
         "flutter-version",
@@ -3616,10 +3671,10 @@
     },
     "tj-actions/changed-files": {
       "latest": "v47",
-      "latestFull": "v47.0.5",
+      "latestFull": "v47.0.6",
       "description": ":octocat: Github action to retrieve all (added, copied, modified, deleted, renamed, type changed, un",
       "category": "utilities",
-      "sha": "22103cc46bda19c2b464ffe86db46df6922fd323",
+      "sha": "9426d40962ed5378910ee2e21d5f8c6fcbf2dd96",
       "deprecated": [
         "v1",
         "v2",
@@ -3744,10 +3799,10 @@
     },
     "trufflesecurity/trufflehog": {
       "latest": "v3",
-      "latestFull": "v3.93.8",
+      "latestFull": "v3.95.2",
       "description": "Find, verify, and analyze leaked credentials",
       "category": "security",
-      "sha": "6c05c4a00b91aa542267d8e32a8254774799d68d",
+      "sha": "17456f8c7d042d8c82c9a8ca9e937231f9f42e26",
       "deprecated": [
         "v1"
       ],
