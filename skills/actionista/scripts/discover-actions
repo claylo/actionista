@@ -1,0 +1,244 @@
+#!/usr/bin/env bash
+# discover-actions — Survey GitHub Marketplace for popular actions
+#
+# Scrapes the marketplace listing and detail pages to report:
+#   1. GitHub's category taxonomy (canonical slugs with frequency)
+#   2. Popular actions not in tracked-actions.yaml (sorted by stars)
+#   3. Our tracked actions mapped to their GitHub categories
+#
+# Requirements:
+#   - curl
+#   - jq
+#   - yq
+
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+SKILL_DIR="$SCRIPT_DIR/.."
+TRACKED_YAML="$SKILL_DIR/tracked-actions.yaml"
+CACHE_DIR="$SCRIPT_DIR/.discover-cache"
+PAGES=30
+FRESH=false
+
+# ============================================================================
+# Helpers
+# ============================================================================
+
+usage() {
+    cat <<EOF
+discover-actions — Survey GitHub Marketplace for popular actions
+
+Usage: $(basename "$0") [OPTIONS]
+
+Options:
+  --pages N   Marketplace pages to fetch (default: 30, ~20 per page)
+  --fresh     Clear cache and re-fetch everything
+  -h, --help  Show this help
+
+Cache: $CACHE_DIR/
+  Detail pages are cached individually. Re-runs skip already-fetched pages.
+  Use --fresh to wipe and start over.
+EOF
+    exit 0
+}
+
+check_requirements() {
+    local missing=()
+    command -v curl &>/dev/null || missing+=("curl")
+    command -v jq &>/dev/null || missing+=("jq")
+    command -v yq &>/dev/null || missing+=("yq")
+
+    if [[ ${#missing[@]} -gt 0 ]]; then
+        echo "error: missing required tools: ${missing[*]}" >&2
+        exit 1
+    fi
+}
+
+CURL_OPTS=(
+    -s
+    -H 'accept: application/json'
+    -H 'github-verified-fetch: true'
+    -H 'x-requested-with: XMLHttpRequest'
+)
+
+# ============================================================================
+# Main
+# ============================================================================
+
+main() {
+    check_requirements
+
+    for arg in "$@"; do
+        case "$arg" in
+            --pages=*) PAGES="${arg#*=}" ;;
+            --fresh) FRESH=true ;;
+            -h|--help) usage ;;
+            *) echo "Unknown: $arg (try --help)" >&2; exit 1 ;;
+        esac
+    done
+
+    $FRESH && rm -rf "$CACHE_DIR"
+    mkdir -p "$CACHE_DIR/details" "$CACHE_DIR/pages"
+
+    # ── Phase 1: Fetch marketplace listing pages ──
+
+    local slugs_file="$CACHE_DIR/slugs.txt"
+    if [[ ! -f "$slugs_file" ]]; then
+        echo "Fetching marketplace pages 1-${PAGES}..." >&2
+
+        # Globbing: [1-N] sequences the requests, #1 in -o maps to the glob value
+        curl "${CURL_OPTS[@]}" \
+            --parallel --parallel-max 20 \
+            "https://github.com/marketplace?page=[1-${PAGES}]&type=actions" \
+            -o "$CACHE_DIR/pages/page-#1.json"
+
+        # Extract slugs from valid pages
+        find "$CACHE_DIR/pages" -name '*.json' -print0 \
+            | xargs -0 grep -l '"results"' \
+            | sort -V \
+            | xargs cat \
+            | jq -r '.results[]?.slug // empty' \
+            | grep -v '^$' > "$slugs_file"
+
+        echo "  $(wc -l < "$slugs_file" | tr -d ' ') action slugs" >&2
+    else
+        echo "Using cached slugs ($(wc -l < "$slugs_file" | tr -d ' '))" >&2
+    fi
+
+    # ── Phase 2: Fetch detail for each action ──
+
+    local to_fetch=0
+    local total
+    total=$(wc -l < "$slugs_file" | tr -d ' ')
+
+    # Build a brace-list of unfetched slugs for curl globbing
+    local fetch_slugs=()
+    while IFS= read -r slug; do
+        [[ -z "$slug" ]] && continue
+        [[ -f "$CACHE_DIR/details/${slug}.json" ]] && continue
+        fetch_slugs+=("$slug")
+    done < "$slugs_file"
+    to_fetch=${#fetch_slugs[@]}
+
+    if (( to_fetch > 0 )); then
+        echo "  Fetching $to_fetch details..." >&2
+
+        # Curl brace-list globbing: {a,b,c} expands to one request per slug,
+        # #1 in -o maps to the current slug value.
+        local brace_list
+        brace_list=$(IFS=,; echo "${fetch_slugs[*]}")
+
+        curl "${CURL_OPTS[@]}" \
+            --parallel --parallel-max 20 \
+            "https://github.com/marketplace/actions/{${brace_list}}" \
+            -o "$CACHE_DIR/details/#1.json"
+    fi
+    echo "  $to_fetch new, $((total - to_fetch)) cached" >&2
+
+    # ── Phase 3: Consolidate into JSONL ──
+
+    local actions_file="$CACHE_DIR/actions.jsonl"
+
+    find "$CACHE_DIR/details" -name '*.json' -print0 \
+        | xargs -0 grep -l '"payload"' \
+        | sort \
+        | xargs cat \
+        | jq -c '
+            if .payload.action then {
+                owner_repo: (.payload.action.externalUsesPathPrefix | rtrimstr("@")),
+                display: .payload.action.name,
+                categories: [.payload.action.categories[]?.slug],
+                stars: (.payload.action.stars // 0),
+                verified: (.payload.action.isVerifiedOwner // false)
+            } else empty end
+        ' > "$actions_file" 2>/dev/null
+
+    local bad_count
+    bad_count=$(find "$CACHE_DIR/details" -name '*.json' -print0 \
+        | xargs -0 grep -L '"payload"' 2>/dev/null | wc -l | tr -d ' ')
+    if (( bad_count > 0 )); then
+        echo "  warning: $bad_count cached files have stale rate-limit responses (re-run with --fresh)" >&2
+    fi
+
+    local actions_total
+    actions_total=$(wc -l < "$actions_file" | tr -d ' ')
+    echo "  $actions_total actions with detail data" >&2
+
+    # ── Phase 4: Build tracked set as JSON for jq joins ──
+
+    local tracked_json="$CACHE_DIR/tracked.json"
+    yq -o=json '.categories' "$TRACKED_YAML" \
+        | jq '{
+            actions: [to_entries[] | .key as $cat | (.value.actions // [])[] |
+                {key: (. | split("/")[0:2] | join("/") | ascii_downcase), category: $cat}
+            ] | group_by(.key) | map({key: .[0].key, value: .[0].category}) | from_entries
+        }' > "$tracked_json" 2>/dev/null
+
+    local tracked_total
+    tracked_total=$(jq '.actions | length' "$tracked_json")
+
+    # ══════════════════════════════════════════════════════════════════════
+    # Reports — all done in jq, no shell loops
+    # ══════════════════════════════════════════════════════════════════════
+
+    echo "" >&2
+
+    # Category taxonomy
+    echo "┌──────────────────────────────────────────────────┐"
+    echo "│  GitHub Marketplace Category Slugs               │"
+    echo "└──────────────────────────────────────────────────┘"
+    echo ""
+    jq -sr '[.[].categories[]] | group_by(.) | map({slug: .[0], count: length})
+        | sort_by(-.count)[] | "  \(.count | tostring | (" " * (4 - length)) + .)  \(.slug)"
+    ' "$actions_file"
+
+    # Gap report: popular actions not tracked
+    echo ""
+    echo "┌──────────────────────────────────────────────────┐"
+    echo "│  Popular Actions NOT Tracked                     │"
+    echo "└──────────────────────────────────────────────────┘"
+    echo ""
+    printf "  %-45s %6s  %s\n" "OWNER/REPO" "STARS" "CATEGORIES"
+    echo "  ───────────────────────────────────────────────────────────────────────────"
+    jq -r --slurpfile t "$tracked_json" '
+        ($t[0].actions) as $tracked |
+        (.owner_repo | split("/")[0:2] | join("/") | ascii_downcase) as $key |
+        select($tracked[$key] == null)
+    ' "$actions_file" \
+        | jq -sr 'sort_by(-.stars)[] |
+            "  \(.owner_repo | . + (" " * ([45 - length, 1] | max)))  \(.stars | tostring | (" " * ([5 - length, 0] | max)) + .)  \(.categories | join(", "))"
+        '
+
+    # Category mapping: our tracked actions with GitHub categories
+    echo ""
+    echo "┌──────────────────────────────────────────────────┐"
+    echo "│  Tracked Actions → GitHub Categories             │"
+    echo "└──────────────────────────────────────────────────┘"
+    echo ""
+    printf "  %-40s %-20s  %s\n" "ACTION" "OUR CATEGORY" "GITHUB CATEGORIES"
+    echo "  ───────────────────────────────────────────────────────────────────────────"
+    jq -r --slurpfile t "$tracked_json" '
+        ($t[0].actions) as $tracked |
+        (.owner_repo | split("/")[0:2] | join("/") | ascii_downcase) as $key |
+        $tracked[$key] as $our_cat |
+        select($our_cat != null) |
+        "  \(.owner_repo | . + (" " * ([40 - length, 0] | max)))  \($our_cat | . + (" " * ([20 - length, 0] | max)))  \(.categories | join(", "))"
+    ' "$actions_file"
+
+    # Summary
+    local overlap
+    overlap=$(jq -r --slurpfile t "$tracked_json" '
+        ($t[0].actions) as $tracked |
+        (.owner_repo | split("/")[0:2] | join("/") | ascii_downcase) as $key |
+        select($tracked[$key] != null) | .owner_repo
+    ' "$actions_file" | sort -u | wc -l | tr -d ' ')
+
+    echo ""
+    echo "  Marketplace surveyed: $actions_total"
+    echo "  We track:            $tracked_total"
+    echo "  Overlap:             $overlap"
+    echo "  Not tracked:         $((actions_total - overlap))"
+    echo ""
+}
+
+main "$@"
