@@ -109,6 +109,7 @@ main() {
     echo ""
 
     local all_entries='{}'
+    local batch_failures=0
     # Track actions needing migration diff: "action major_num" pairs
     local migration_actions=()
     local migration_majors=()
@@ -147,6 +148,7 @@ main() {
         response=$(gh api graphql -f query="$query" 2>/dev/null) || true
 
         if [[ -z "$response" ]] || ! echo "$response" | jq -e '.data' &>/dev/null; then
+            batch_failures=$((batch_failures + 1))
             echo "    warning: batch ${batch_num} failed entirely, using existing data"
             for (( i=batch; i < end; i++ )); do
                 local fb
@@ -356,15 +358,35 @@ main() {
         fi
     fi
 
-    # Build final index
-    local action_count now
+    # Build final index — with safety checks
+    local action_count existing_count now
     action_count=$(echo "$all_entries" | jq 'length')
+    existing_count=$(echo "$existing" | jq 'length')
     now=$(date -u +%Y-%m-%dT%H:%M:%SZ)
 
-    jq -n \
+    if [[ "$action_count" -eq 0 ]]; then
+        echo "" >&2
+        echo "error: ended up with 0 actions — all batches likely failed (${batch_failures}/${batch_count} failed)" >&2
+        echo "Refusing to overwrite index. Existing file preserved." >&2
+        exit 1
+    fi
+
+    if [[ "$existing_count" -gt 0 ]]; then
+        local loss_pct=$(( (existing_count - action_count) * 100 / existing_count ))
+        if [[ "$loss_pct" -gt 10 ]]; then
+            echo "" >&2
+            echo "error: would drop from ${existing_count} to ${action_count} actions (${loss_pct}% loss)" >&2
+            echo "${batch_failures}/${batch_count} batch(es) failed. Refusing to overwrite index." >&2
+            exit 1
+        fi
+    fi
+
+    local tmp_index="${INDEX_PATH}.tmp"
+    trap 'rm -f "$tmp_index"' EXIT
+
+    if ! echo "$all_entries" | jq \
         --arg generated "$now" \
         --argjson count "$action_count" \
-        --argjson actions "$all_entries" \
         '{
             _metadata: {
                 generated: $generated,
@@ -372,11 +394,16 @@ main() {
                 actionCount: $count,
                 note: "This index is updated daily by .github/workflows/update-index.yml"
             },
-            actions: $actions
-        }' > "$INDEX_PATH"
+            actions: .
+        }' > "$tmp_index"; then
+        echo "error: jq failed to build index — existing file preserved" >&2
+        exit 1
+    fi
+
+    mv "$tmp_index" "$INDEX_PATH"
 
     echo ""
-    echo "Updated index: ${action_count} actions"
+    echo "Updated index: ${action_count} actions (${batch_failures}/${batch_count} batch failures)"
 
     # Summary: compare against existing
     local added=0 updated=0 unchanged=0 migrations=0
@@ -398,6 +425,9 @@ main() {
 
     echo ""
     echo "Summary: ${added} added, ${updated} updated, ${unchanged} unchanged, ${migrations} with migrations"
+    if [[ "$batch_failures" -gt 0 ]]; then
+        echo "Warning: ${batch_failures}/${batch_count} batch(es) failed — some actions may be stale"
+    fi
 }
 
 main "$@"
