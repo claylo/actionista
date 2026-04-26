@@ -1,6 +1,12 @@
 # gh-coda config
 # See: https://github.com/lovelesslabs/gh-coda
 
+description: "GitHub Actions agent skill - helps create, review, and optimize workflows with up-to-date action versions and best practices"
+topics:
+  - claude-plugin
+  - github-actions
+  - agent-skill
+
 # Merge settings
 auto_merge: true
 delete_branch_on_merge: true
@@ -20,5 +26,5 @@ dependabot_alerts: true
 dependabot_security_updates: true
 
 # 1Password secrets sync (optional)
-# secrets_tags: github-actions
-# secrets_app: actions
+secrets_tags: claylo-github-actions
+secrets_app: actions

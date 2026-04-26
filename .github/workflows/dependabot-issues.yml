@@ -1,0 +1,112 @@
+name: Dependabot via Issues
+
+on:
+  schedule:
+    - cron: "17 6 * * 1"
+  workflow_dispatch:
+
+concurrency:
+  group: dependabot-issues
+  cancel-in-progress: false
+
+jobs:
+  dependabot-alert-issues:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      issues: write
+      security-events: read
+    steps:
+      - name: Open issues for Dependabot alerts
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
+        with:
+          github-token: ${{ secrets.DEPENDABOT_ISSUES_TOKEN }}
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const labelName = "dependabot-alert";
+
+            async function ensureLabel() {
+              try {
+                await github.rest.issues.getLabel({ owner, repo, name: labelName });
+              } catch (err) {
+                if (err.status !== 404) throw err;
+                await github.rest.issues.createLabel({
+                  owner,
+                  repo,
+                  name: labelName,
+                  color: "b60205",
+                  description: "Dependabot security alerts",
+                });
+              }
+            }
+
+            function alertTitle(alert) {
+              const name = alert.dependency?.package?.name || "dependency";
+              const ghsa = alert.security_advisory?.ghsa_id || "unknown-alert";
+              const severity = alert.security_advisory?.severity || "unknown";
+              return `Dependabot alert: ${name} (${severity}, ${ghsa})`;
+            }
+
+            function alertBody(alert) {
+              const pkg = alert.dependency?.package?.name || "unknown";
+              const ecosystem = alert.dependency?.package?.ecosystem || "unknown";
+              const manifest = alert.dependency?.manifest_path || "unknown";
+              const advisory = alert.security_advisory || {};
+              const ghsa = advisory.ghsa_id || "unknown";
+              const cves = (advisory.identifiers || [])
+                .filter((id) => id.type === "CVE")
+                .map((id) => id.value)
+                .join(", ");
+              const severity = advisory.severity || "unknown";
+              const summary = advisory.summary || "No summary provided.";
+              const url = alert.html_url || advisory.references?.[0]?.url || "";
+              const vulnerable = alert.security_vulnerability?.vulnerable_version_range || "unknown";
+              const patched = alert.security_vulnerability?.first_patched_version?.identifier || "unknown";
+
+              const lines = [
+                `Package: ${pkg}`,
+                `Ecosystem: ${ecosystem}`,
+                `Manifest: ${manifest}`,
+                `Severity: ${severity}`,
+                `Advisory: ${ghsa}${cves ? ` (${cves})` : ""}`,
+                `Vulnerable versions: ${vulnerable}`,
+                `Patched in: ${patched}`,
+              ];
+
+              if (url) {
+                lines.push(`URL: ${url}`);
+              }
+
+              lines.push("", summary);
+              return lines.join("\n");
+            }
+
+            await ensureLabel();
+
+            const alerts = await github.paginate(github.rest.dependabot.listAlertsForRepo, {
+              owner,
+              repo,
+              state: "open",
+              per_page: 100,
+            });
+
+            for (const alert of alerts) {
+              const ghsa = alert.security_advisory?.ghsa_id;
+              if (!ghsa) continue;
+              const search = await github.rest.search.issuesAndPullRequests({
+                q: `repo:${owner}/${repo} is:issue is:open "${ghsa}"`,
+                per_page: 1,
+              });
+              if (search.data.items.length > 0) continue;
+
+              await github.rest.issues.create({
+                owner,
+                repo,
+                title: alertTitle(alert),
+                body: alertBody(alert),
+                labels: [labelName],
+              });
+            }
+

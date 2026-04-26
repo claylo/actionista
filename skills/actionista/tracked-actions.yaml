@@ -132,6 +132,7 @@ categories:
       - reviewdog/action-shellcheck
       - ludeeus/action-shellcheck
       - chartboost/ruff-action
+      - amannn/action-semantic-pull-request
 
   release:
     description: Release automation
