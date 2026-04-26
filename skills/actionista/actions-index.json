@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-04-26T03:08:59Z",
+    "generated": "2026-04-26T06:41:05Z",
     "generator": "actionista",
     "actionCount": 121,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -51,6 +51,116 @@
             "removed": [
               "payload",
               "only_mention_fail"
+            ]
+          }
+        }
+      }
+    },
+    "EndBug/add-and-commit": {
+      "latest": "v10",
+      "latestFull": "v10.0.0",
+      "description": ":octocat: Automatically commit changes made in your workflow run directly to your repo",
+      "category": "git-operations",
+      "sha": "290ea2c423ad77ca9c62ae0f5b224379612c0321",
+      "deprecated": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5",
+        "v6",
+        "v7",
+        "v8"
+      ],
+      "inputs": [
+        "add",
+        "author_name",
+        "author_email",
+        "commit",
+        "committer_name",
+        "committer_email",
+        "cwd",
+        "default_author",
+        "fetch",
+        "message",
+        "new_branch",
+        "pathspec_error_handling",
+        "pull",
+        "push",
+        "remove",
+        "tag",
+        "tag_push",
+        "github_token"
+      ]
+    },
+    "EndBug/version-check": {
+      "latest": "v3",
+      "latestFull": "v3.0.0",
+      "description": ":octocat: An action that allows you to check whether your npm package version has been updated",
+      "category": "utilities",
+      "sha": "095362f3cd50f690c8fa0e6afeea81834bd8d320",
+      "deprecated": [
+        "v1"
+      ],
+      "inputs": [
+        "diff-search",
+        "file-name",
+        "file-url",
+        "assume-same-version",
+        "static-checking",
+        "token",
+        "github-api-url"
+      ]
+    },
+    "Swatinem/rust-cache": {
+      "latest": "v2",
+      "latestFull": "v2.9.1",
+      "description": "A GitHub Action that implements smart caching for rust/cargo projects ",
+      "category": "package-managers",
+      "sha": "c19371144df3bb44fab255c43d04cbc2ab54d1c4",
+      "inputs": [
+        "prefix-key",
+        "shared-key",
+        "key",
+        "add-job-id-key",
+        "add-rust-environment-hash-key",
+        "env-vars",
+        "workspaces",
+        "cache-directories",
+        "cache-targets",
+        "cache-on-failure",
+        "cache-all-crates",
+        "cache-workspace-crates",
+        "save-if",
+        "cache-provider",
+        "cache-bin",
+        "lookup-only",
+        "cmd-format"
+      ],
+      "migrations": {
+        "v1→v2": {
+          "inputChanges": {
+            "added": [
+              "prefix-key",
+              "shared-key",
+              "add-job-id-key",
+              "add-rust-environment-hash-key",
+              "env-vars",
+              "workspaces",
+              "cache-directories",
+              "cache-targets",
+              "cache-all-crates",
+              "cache-workspace-crates",
+              "save-if",
+              "cache-provider",
+              "cache-bin",
+              "lookup-only",
+              "cmd-format"
+            ],
+            "removed": [
+              "sharedKey",
+              "working-directory",
+              "target-dir"
             ]
           }
         }
@@ -2042,62 +2152,6 @@
         "components"
       ]
     },
-    "EndBug/add-and-commit": {
-      "latest": "v10",
-      "latestFull": "v10.0.0",
-      "description": ":octocat: Automatically commit changes made in your workflow run directly to your repo",
-      "category": "git-operations",
-      "sha": "290ea2c423ad77ca9c62ae0f5b224379612c0321",
-      "deprecated": [
-        "v1",
-        "v2",
-        "v3",
-        "v4",
-        "v5",
-        "v6",
-        "v7",
-        "v8"
-      ],
-      "inputs": [
-        "add",
-        "author_name",
-        "author_email",
-        "commit",
-        "committer_name",
-        "committer_email",
-        "cwd",
-        "default_author",
-        "fetch",
-        "message",
-        "new_branch",
-        "pathspec_error_handling",
-        "pull",
-        "push",
-        "remove",
-        "tag",
-        "tag_push",
-        "github_token"
-      ]
-    },
-    "EndBug/version-check": {
-      "latest": "v3",
-      "latestFull": "v3.0.0",
-      "description": ":octocat: An action that allows you to check whether your npm package version has been updated",
-      "category": "utilities",
-      "sha": "095362f3cd50f690c8fa0e6afeea81834bd8d320",
-      "deprecated": [
-        "v1"
-      ],
-      "inputs": [
-        "diff-search",
-        "file-name",
-        "file-url",
-        "assume-same-version",
-        "static-checking",
-        "token",
-        "github-api-url"
-      ]
-    },
     "erlef/setup-beam": {
       "latest": "v1",
       "latestFull": "v1.24.0",
@@ -3557,60 +3611,6 @@
               "git-source"
             ],
             "removed": []
-          }
-        }
-      }
-    },
-    "Swatinem/rust-cache": {
-      "latest": "v2",
-      "latestFull": "v2.9.1",
-      "description": "A GitHub Action that implements smart caching for rust/cargo projects ",
-      "category": "package-managers",
-      "sha": "c19371144df3bb44fab255c43d04cbc2ab54d1c4",
-      "inputs": [
-        "prefix-key",
-        "shared-key",
-        "key",
-        "add-job-id-key",
-        "add-rust-environment-hash-key",
-        "env-vars",
-        "workspaces",
-        "cache-directories",
-        "cache-targets",
-        "cache-on-failure",
-        "cache-all-crates",
-        "cache-workspace-crates",
-        "save-if",
-        "cache-provider",
-        "cache-bin",
-        "lookup-only",
-        "cmd-format"
-      ],
-      "migrations": {
-        "v1→v2": {
-          "inputChanges": {
-            "added": [
-              "prefix-key",
-              "shared-key",
-              "add-job-id-key",
-              "add-rust-environment-hash-key",
-              "env-vars",
-              "workspaces",
-              "cache-directories",
-              "cache-targets",
-              "cache-all-crates",
-              "cache-workspace-crates",
-              "save-if",
-              "cache-provider",
-              "cache-bin",
-              "lookup-only",
-              "cmd-format"
-            ],
-            "removed": [
-              "sharedKey",
-              "working-directory",
-              "target-dir"
-            ]
           }
         }
       }
