@@ -1,6 +1,6 @@
 {
   "name": "actionista",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "GitHub Actions assistant - helps create, review, and optimize workflows with up-to-date action versions and best practices",
   "author": {
     "name": "Clay Loveless",
