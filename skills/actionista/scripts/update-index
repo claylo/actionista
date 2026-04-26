@@ -382,7 +382,6 @@ main() {
     fi
 
     local tmp_index="${INDEX_PATH}.tmp"
-    trap 'rm -f "$tmp_index"' EXIT
 
     if ! echo "$all_entries" | jq \
         --arg generated "$now" \
