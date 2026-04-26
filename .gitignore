@@ -19,6 +19,9 @@ Thumbs.db
 *.swp
 *.swo
 
+# Script caches
+skills/actionista/scripts/.discover-cache/
+
 # Logs
 *.log
 

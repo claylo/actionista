@@ -42,16 +42,19 @@ jobs:
           echo "tag=v${next}" >> $GITHUB_OUTPUT
           echo "Bumping ${current} → ${next}"
 
-      - name: Bump plugin.json version
+      - name: Bump version in all manifests
+        env:
+          NEXT: ${{ steps.version.outputs.next }}
         run: |
-          jq --arg v "${{ steps.version.outputs.next }}" '.version = $v' .claude-plugin/plugin.json > tmp.json
-          mv tmp.json .claude-plugin/plugin.json
+          jq --arg v "$NEXT" '.version = $v' .claude-plugin/plugin.json > tmp.json && mv tmp.json .claude-plugin/plugin.json
+          jq --arg v "$NEXT" '.version = $v' tile.json > tmp.json && mv tmp.json tile.json
+          sed -i "s/^  version: .*/  version: ${NEXT}/" skills/actionista/SKILL.md
 
       - name: Commit version bump
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add .claude-plugin/plugin.json
+          git add .claude-plugin/plugin.json tile.json skills/actionista/SKILL.md
           git commit -m "chore: bump version to ${{ steps.version.outputs.next }} [skip release]"
           git push
 

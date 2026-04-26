@@ -213,10 +213,23 @@ main() {
                 inputs=$(echo "$action_text" | yq -o=json '.inputs | keys' 2>/dev/null || echo "null")
             fi
 
-            # Queue for migration diff if major > 1
+            local entry_migrations=""
+
+            # Queue for migration diff if major > 1 AND version actually changed
             if [[ -n "$major_num" && "$major_num" -gt 1 ]]; then
-                migration_actions+=("$action")
-                migration_majors+=("$major_num")
+                local prev_full
+                prev_full=$(echo "$existing" | jq -r --arg a "$action" '.[$a].latestFull // empty')
+                if [[ "$prev_full" == "$tag_name" ]]; then
+                    # Version unchanged — carry forward existing migrations
+                    local prev_mig
+                    prev_mig=$(echo "$existing" | jq -c --arg a "$action" '.[$a].migrations // empty')
+                    if [[ -n "$prev_mig" && "$prev_mig" != "null" ]]; then
+                        entry_migrations="$prev_mig"
+                    fi
+                else
+                    migration_actions+=("$action")
+                    migration_majors+=("$major_num")
+                fi
             fi
 
             local entry
@@ -238,16 +251,23 @@ main() {
                     )
                 }')
 
+            # Attach carried-forward migrations (from unchanged actions)
+            if [[ -n "$entry_migrations" ]]; then
+                entry=$(echo "$entry" | jq --arg a "$action" --argjson m "$entry_migrations" '.[$a].migrations = $m')
+            fi
+
             all_entries=$(echo "$all_entries" "$entry" | jq -s 'add')
         done
     done
 
     # Second pass: fetch previous major action.yml for migration diffs
     local mig_total=${#migration_actions[@]}
+    local carried_forward
+    carried_forward=$(echo "$all_entries" | jq '[to_entries[] | select(.value.migrations)] | length')
     if [[ $mig_total -gt 0 ]]; then
         local mig_batch_count=$(( (mig_total + BATCH_SIZE - 1) / BATCH_SIZE ))
         echo ""
-        echo "Computing migrations for ${mig_total} actions (${mig_batch_count} batch(es))..."
+        echo "Computing migrations for ${mig_total} changed actions (${mig_batch_count} batch(es)), ${carried_forward} carried forward..."
 
         for (( batch=0; batch < mig_total; batch += BATCH_SIZE )); do
             local batch_num=$(( batch / BATCH_SIZE + 1 ))
@@ -329,6 +349,11 @@ main() {
                 fi
             done
         done
+    else
+        if (( carried_forward > 0 )); then
+            echo ""
+            echo "No version changes — ${carried_forward} migrations carried forward"
+        fi
     fi
 
     # Build final index
