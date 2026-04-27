@@ -10,7 +10,7 @@ description: >-
 license: MIT
 metadata:
   repository: https://github.com/claylo/actionista
-  version: 1.0.1
+  version: 1.1.0
 name: actionista
 ---
 
