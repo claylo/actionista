@@ -1,6 +1,7 @@
 name: 'Lint PR'
 
 on:
+  # Safe: only reads PR title metadata, never checks out or executes PR code
   pull_request_target:
     types:
       - opened
@@ -20,7 +21,8 @@ jobs:
     permissions:
       pull-requests: read
     steps:
-      - uses: amannn/action-semantic-pull-request@48f256284bd46cdaab1048c3721360e808335d50 # v6.1.1
+      - name: Lint PR title
+        uses: amannn/action-semantic-pull-request@48f256284bd46cdaab1048c3721360e808335d50 # v6.1.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

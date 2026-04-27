@@ -42,19 +42,21 @@ jobs:
         id: changes
         run: |
           if git diff --quiet skills/actionista/actions-index.json; then
-            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "changed=false" >> "$GITHUB_OUTPUT"
           else
-            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Commit and push
         if: steps.changes.outputs.changed == 'true' && inputs.dry-run != true
+        env:
+          GH_TOKEN: ${{ secrets.CROSS_REPO_PAT }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           version_changes=$(grep -E '^[[:space:]]+\S+/\S+:' /tmp/update-output.txt | head -20 || true)
-          total_changes=$(grep -E '^[[:space:]]+\S+/\S+:' /tmp/update-output.txt | wc -l | tr -d ' ')
+          total_changes=$(grep -cE '^[[:space:]]+\S+/\S+:' /tmp/update-output.txt || true)
           summary_line=$(grep -E '^Summary:' /tmp/update-output.txt || true)
 
           msg="chore: update actions index"
@@ -70,17 +72,20 @@ jobs:
 
           git add skills/actionista/actions-index.json
           git commit -m "$msg"
+          git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git"
           git push
 
       - name: Dry run summary
         if: inputs.dry-run == true && steps.changes.outputs.changed == 'true'
         run: |
-          echo "## Dry Run - Changes Found" >> $GITHUB_STEP_SUMMARY
-          echo "The following changes would be made:" >> $GITHUB_STEP_SUMMARY
-          echo '```diff' >> $GITHUB_STEP_SUMMARY
-          git diff skills/actionista/actions-index.json >> $GITHUB_STEP_SUMMARY
-          echo '```' >> $GITHUB_STEP_SUMMARY
+          {
+            echo "## Dry Run - Changes Found"
+            echo "The following changes would be made:"
+            echo '```diff'
+            git diff skills/actionista/actions-index.json
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
 
       - name: No changes
         if: steps.changes.outputs.changed == 'false'
-        run: echo "No changes to index - all actions are up to date" >> $GITHUB_STEP_SUMMARY
+        run: echo "No changes to index - all actions are up to date" >> "$GITHUB_STEP_SUMMARY"
