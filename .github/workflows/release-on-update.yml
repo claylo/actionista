@@ -31,15 +31,20 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Install yq
+        uses: mikefarah/yq@751d8ad57b84f1794661bc70c0afb92a22ad7b3c # v4.53.2
+
       - name: Compute next version
         id: version
         run: |
           current=$(jq -r '.version' .claude-plugin/plugin.json)
           IFS='.' read -r major minor patch <<< "$current"
           next="${major}.${minor}.$((patch + 1))"
-          echo "current=$current" >> $GITHUB_OUTPUT
-          echo "next=$next" >> $GITHUB_OUTPUT
-          echo "tag=v${next}" >> $GITHUB_OUTPUT
+          {
+            echo "current=${current}"
+            echo "next=${next}"
+            echo "tag=v${next}"
+          } >> "$GITHUB_OUTPUT"
           echo "Bumping ${current} → ${next}"
 
       - name: Bump version in all manifests
@@ -48,7 +53,7 @@ jobs:
         run: |
           jq --arg v "$NEXT" '.version = $v' .claude-plugin/plugin.json > tmp.json && mv tmp.json .claude-plugin/plugin.json
           jq --arg v "$NEXT" '.version = $v' tile.json > tmp.json && mv tmp.json tile.json
-          sed -i "s/^  version: .*/  version: ${NEXT}/" skills/actionista/SKILL.md
+          yq --front-matter=process -i '.metadata.version = strenv(NEXT)' skills/actionista/SKILL.md
 
       - name: Commit version bump
         run: |
@@ -80,7 +85,7 @@ jobs:
             echo ""
             echo "[Full changelog →](https://github.com/claylo/actionista/blob/main/CHANGELOG.md)"
             echo "NOTES_EOF"
-          } >> $GITHUB_OUTPUT
+          } >> "$GITHUB_OUTPUT"
 
       - name: Create release
         env:
