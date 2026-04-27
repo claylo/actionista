@@ -14,6 +14,10 @@ metadata:
 name: actionista
 ---
 
+<SUBAGENT-STOP>
+If you were dispatched as a subagent to execute a specific task, skip this skill.
+</SUBAGENT-STOP>
+
 # GitHub Actions Expertise
 
 Comprehensive knowledge for creating, reviewing, and optimizing GitHub Actions workflows with current action versions and best practices.
@@ -215,6 +219,7 @@ When reviewing workflows, check:
 - [ ] Conditional execution (`if:`) used appropriately
 - [ ] `continue-on-error` only where truly needed
 - [ ] Retry logic for flaky external calls
+- [ ] Workflows that push, tag, or create releases use a PAT or deploy key if they need to trigger downstream workflows (`GITHUB_TOKEN` events do not trigger other workflows)
 
 ### Maintainability
 - [ ] Descriptive job and step names

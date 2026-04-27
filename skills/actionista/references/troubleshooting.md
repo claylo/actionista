@@ -41,6 +41,45 @@ permissions:
     token: ${{ secrets.PAT }}
 ```
 
+## Workflow Trigger Failures
+
+### Downstream workflow does not run after push/tag/release
+
+**Cause**: The upstream workflow used `GITHUB_TOKEN` to push commits, create tags, or create releases. Events created by `GITHUB_TOKEN` **do not trigger other workflows**. This is a deliberate GitHub limitation to prevent infinite loops. There is no error and no log entry — the downstream workflow simply never fires.
+
+**Symptoms**:
+- Workflow A pushes to `main`, Workflow B has `on: push: branches: [main]` — B never runs
+- Workflow A creates a release, Workflow B has `on: release: types: [published]` — B never runs
+- Everything works when you push manually or via the GitHub UI
+
+**Solutions**:
+
+Use a Personal Access Token (PAT) or GitHub App token for the operation that needs to trigger downstream workflows:
+
+```yaml
+# Push with a PAT so downstream workflows fire
+- name: Commit and push
+  env:
+    GH_TOKEN: ${{ secrets.MY_PAT }}
+  run: |
+    git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git"
+    git push
+
+# Or create a release with a PAT
+- name: Create release
+  env:
+    GH_TOKEN: ${{ secrets.MY_PAT }}
+  run: |
+    gh release create v1.0.0 --title "v1.0.0" --notes "Release notes"
+```
+
+**Alternatives**:
+- Use `workflow_run` to chain workflows explicitly (but this requires the upstream workflow name, not the event)
+- Use a GitHub App installation token (more scoped than a PAT)
+- Use a deploy key with write access (for push-only scenarios)
+
+**Important**: When using a PAT to trigger downstream workflows, add loop prevention to avoid infinite chains (e.g., `[skip ci]` in commit messages, `if: "!contains(...)"` conditions).
+
 ## Checkout Errors
 
 ### "Shallow clone detected"
