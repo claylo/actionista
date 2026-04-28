@@ -3,14 +3,14 @@ description: >-
   Creates, debugs, and optimizes GitHub Actions workflow YAML files. Recommends
   current action versions with SHA pinning from a daily-updated index of 260+
   actions. Configures matrix builds, dependency caching, reusable workflows, OIDC
-  authentication, secrets management, and runner selection. Includes a
-  workflow-analyzer agent for reviewing existing workflows. Use when the user
-  asks about GitHub Actions, workflows, CI/CD, .github/workflows, any action by name
-  (actions/checkout, setup-node, setup-python, etc.), or workflow analysis.
+  authentication, secrets management, and runner selection. Includes a workflow-analyzer
+  agent for reviewing existing workflows. Use when the user asks about GitHub
+  Actions, workflows, CI/CD, .github/workflows, any action by name (actions/checkout,
+  setup-node, setup-python, etc.), or workflow analysis.
 license: MIT
 metadata:
   repository: https://github.com/claylo/actionista
-  version: 1.1.0
+  version: 1.2.0
 name: actionista
 ---
 
