@@ -1,12 +1,12 @@
 ---
 description: >-
   Creates, debugs, and optimizes GitHub Actions workflow YAML files. Recommends
-  current action versions with SHA pinning from a daily-updated index of 120+
+  current action versions with SHA pinning from a daily-updated index of 260+
   actions. Configures matrix builds, dependency caching, reusable workflows, OIDC
-  authentication, secrets management, and runner selection. Reviews existing workflows for
-  outdated actions, security issues, and performance problems. Use when the user
+  authentication, secrets management, and runner selection. Includes a
+  workflow-analyzer agent for reviewing existing workflows. Use when the user
   asks about GitHub Actions, workflows, CI/CD, .github/workflows, any action by name
-  (actions/checkout, setup-node, setup-python, etc.), or workflow optimization.
+  (actions/checkout, setup-node, setup-python, etc.), or workflow analysis.
 license: MIT
 metadata:
   repository: https://github.com/claylo/actionista
@@ -20,7 +20,19 @@ If you were dispatched as a subagent to execute a specific task, skip this skill
 
 # GitHub Actions Expertise
 
-Comprehensive knowledge for creating, reviewing, and optimizing GitHub Actions workflows with current action versions and best practices.
+Comprehensive knowledge for creating, debugging, and optimizing GitHub Actions workflows with current action versions and best practices.
+
+## Agents
+
+This skill includes specialized agents in the `agents/` directory.
+
+| Agent | When to Use |
+|-------|-------------|
+| `workflow-analyzer` | Any request to review, check, audit, optimize, or analyze existing workflow files |
+
+**When a user requests workflow analysis, review, or optimization of existing workflows, ALWAYS dispatch the `workflow-analyzer` agent. Do not perform the analysis inline.**
+
+This skill (SKILL.md) handles workflow **creation** and reference. The agent handles workflow **review**.
 
 ## Environment
 
@@ -35,7 +47,54 @@ If either tool is missing, suggest the user install them:
 
 ### Action Versions
 
-Consult `actions-index.json` in this skill directory for current versions of 120+ popular actions. The index is updated daily and organized by category.
+Consult `actions-index.json` in this skill directory for current versions of 264 popular actions. The index is updated daily and organized by category.
+
+**Do not read the entire file.** Use `jq` to query only what you need.
+
+### Using the Index
+
+The index has a top-level `_metadata` object and an `actions` object keyed by action name (e.g., `actions/checkout`).
+
+Each action entry has these fields:
+
+| Field | Always Present | Description |
+|-------|:--------------:|-------------|
+| `latest` | ✓ | Latest major version tag (e.g., `v6`) |
+| `latestFull` | ✓ | Full semver version (e.g., `v6.0.2`) |
+| `sha` | ✓ | Commit SHA for the latest release — use this for SHA pinning |
+| `description` | ✓ | Short description of the action |
+| `category` | ✓ | One of: `core`, `setup-languages`, `build-tools`, `testing`, `linting`, `release`, `security`, `docker`, `cloud-aws`, `cloud-azure`, `cloud-gcp`, `infrastructure`, `kubernetes`, `notifications`, `git-operations`, `package-managers`, `documentation`, `mobile`, `ai-assistants`, `utilities` |
+| `inputs` | mostly | Array of accepted input names |
+| `deprecated` | sometimes | Array of deprecated major versions |
+| `migrations` | sometimes | Breaking changes between major versions, including added/removed inputs |
+
+#### jq Examples
+
+**Get SHA pin + version comment for an action:**
+```bash
+jq -r '.actions["actions/cache"] | "- uses: actions/cache@\(.sha)  # \(.latestFull)"' actions-index.json
+# Output: - uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae  # v5.0.5
+```
+
+**Get latest version of an action:**
+```bash
+jq -r '.actions["actions/checkout"].latestFull' actions-index.json
+```
+
+**List all actions in a category:**
+```bash
+jq -r '[.actions | to_entries[] | select(.value.category == "setup-languages")] | sort_by(.key) | .[] | "\(.key) \(.value.latestFull)"' actions-index.json
+```
+
+**Check if a version is deprecated:**
+```bash
+jq '.actions["actions/checkout"].deprecated // []' actions-index.json
+```
+
+**Get migration notes between versions:**
+```bash
+jq '.actions["8398a7/action-slack"].migrations' actions-index.json
+```
 
 **Always verify versions** before recommending — use the index or fetch from GitHub releases if needed.
 
@@ -84,9 +143,9 @@ Full JSON Schema for workflow validation: `references/github-action.schema.json`
 ### Dependency Caching
 
 ```yaml
-- uses: actions/setup-node@v4
+- uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e  # v6.4.0
   with:
-    node-version: '20'
+    node-version: '22'
     cache: 'npm'
 ```
 
@@ -153,9 +212,11 @@ jobs:
 
 ### Pin Action Versions
 
+**NEVER fabricate a SHA.** The `actions-index.json` file is right here in this skill directory with the correct full 40-character SHA for every tracked action. Use `jq` to read it. There is no excuse for generating, guessing, or completing a partial SHA from memory — LLMs will confidently produce hex strings that look correct but point at nonexistent commits. A fabricated SHA defeats the entire purpose of pinning and is a security-critical failure. Always read the real SHA from the index.
+
 ```yaml
-# Good: Pin to full SHA
-- uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11  # v4.1.1
+# Good: Pin to full SHA (read from actions-index.json)
+- uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd  # v6.0.2
 
 # Acceptable: Pin to major version
 - uses: actions/checkout@v6
@@ -168,8 +229,6 @@ jobs:
 ### OIDC for Cloud Authentication
 
 Prefer OIDC over long-lived credentials. See `references/security-secrets.md` for setup guides for AWS, GCP, and Azure.
-
-When reviewing workflows, generate an ASCII flowchart showing job dependencies.
 
 ## Validating Workflows
 
@@ -193,39 +252,9 @@ Before pushing workflow changes, verify correctness:
 
 4. **Validate secrets access** — workflows fail silently when secrets are missing. Verify required secrets exist in repo/org settings before relying on them.
 
-## Workflow Analysis Checklist
+## Workflow Analysis
 
-When reviewing workflows, check:
-
-### Versions
-- [ ] All actions use current major versions (consult `actions-index.json`)
-- [ ] Consider pinning to SHA for security-critical workflows
-- [ ] No deprecated action versions
-
-### Performance
-- [ ] Dependencies are cached appropriately
-- [ ] Parallel jobs where dependencies allow
-- [ ] `timeout-minutes` set to prevent runaway jobs
-- [ ] `fail-fast: false` if matrix jobs are independent
-
-### Security
-- [ ] Minimal `permissions` declared
-- [ ] No secrets in logs (`add-mask` for dynamic secrets)
-- [ ] OIDC preferred over long-lived credentials
-- [ ] Third-party actions reviewed for security
-
-### Reliability
-- [ ] `concurrency` configured to prevent duplicate runs
-- [ ] Conditional execution (`if:`) used appropriately
-- [ ] `continue-on-error` only where truly needed
-- [ ] Retry logic for flaky external calls
-- [ ] Workflows that push, tag, or create releases use a PAT or deploy key if they need to trigger downstream workflows (`GITHUB_TOKEN` events do not trigger other workflows)
-
-### Maintainability
-- [ ] Descriptive job and step names
-- [ ] Reusable workflows for shared logic
-- [ ] Environment variables for repeated values
-- [ ] Comments for complex logic
+For workflow review, auditing, and optimization of existing workflows, dispatch the `workflow-analyzer` agent. See the [Agents](#agents) section above.
 
 ## Additional Resources
 
@@ -252,5 +281,5 @@ All reference files are in `references/`:
 
 Working templates in `examples/`: `ci-node.yaml`, `ci-rust.yaml`, `deploy-aws.yaml`, `release-please.yaml`
 
-- **`actions-index.json`** — Current versions of 120+ popular actions (updated daily)
+- **`actions-index.json`** — Current versions of 260+ popular actions (updated daily)
 - **`tracked-actions.yaml`** — List of tracked actions by category
