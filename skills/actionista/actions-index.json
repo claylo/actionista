@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-04-27T06:57:44Z",
+    "generated": "2026-04-28T06:58:47Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -471,11 +471,11 @@
       ]
     },
     "JetBrains/qodana-action": {
-      "latest": "v2025",
-      "latestFull": "v2025.3.2",
+      "latest": "v2026",
+      "latestFull": "v2026.1.0",
       "description": "⚙️ Scan your Go, Java, Kotlin, PHP, Python, JavaScript, TypeScript, .NET projects at GitHub with Qod",
       "category": "linting",
-      "sha": "89eb4357efd2b52e639f3216e63edaf33b82622b",
+      "sha": "d7b5ec2fbec32197ef447c450e00589ed5f34fd5",
       "deprecated": [
         "v1",
         "v2",
@@ -2499,7 +2499,8 @@
         "v2020",
         "v2021",
         "v2022",
-        "v2023"
+        "v2023",
+        "v2024"
       ],
       "inputs": [
         "args",
@@ -3530,6 +3531,7 @@
       "inputs": [
         "dotnet-version",
         "dotnet-quality",
+        "dotnet-channel",
         "global-json-file",
         "source-url",
         "owner",
@@ -3978,10 +3980,10 @@
     },
     "amondnet/vercel-action": {
       "latest": "v42",
-      "latestFull": "v42.2.0",
+      "latestFull": "v42.2.1",
       "description": "This action make a deployment with github actions instead of Vercel builder.",
       "category": "infrastructure",
-      "sha": "4b810e26f7bb2a331c698af186f890cbf20d5f72",
+      "sha": "4b001a441d80e00aeed3680a3719d1d8b95998c5",
       "deprecated": [
         "v1",
         "v2",
@@ -4130,10 +4132,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.107",
+      "latestFull": "v1.0.108",
       "description": "",
       "category": "ai-assistants",
-      "sha": "567fe954a4527e81f132d87d1bdbcc94f7737434",
+      "sha": "11a9dadd198803a0cea6bd53da3e0e8a762fc6ea",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -4544,10 +4546,10 @@
     },
     "aws-actions/aws-cloudformation-github-deploy": {
       "latest": "v2",
-      "latestFull": "v2.1.0",
+      "latestFull": "v2.2.0",
       "description": "Deploys AWS CloudFormation Stacks",
       "category": "cloud-aws",
-      "sha": "64bde66a4001208fc0917038be8846d99c9d0585",
+      "sha": "81e3b03d2266bcb76c4bcc37a7d71d9cb67838bb",
       "inputs": [
         "mode",
         "name",
@@ -4567,6 +4569,8 @@
         "change-set-name",
         "include-nested-stacks-change-set",
         "execute-change-set-id",
+        "s3-bucket",
+        "s3-prefix",
         "deployment-mode"
       ],
       "migrations": {
@@ -4577,6 +4581,8 @@
               "fail-on-empty-changeset",
               "include-nested-stacks-change-set",
               "execute-change-set-id",
+              "s3-bucket",
+              "s3-prefix",
               "deployment-mode"
             ],
             "removed": [
@@ -5730,10 +5736,10 @@
     },
     "cypress-io/github-action": {
       "latest": "v7",
-      "latestFull": "v7.1.9",
+      "latestFull": "v7.1.10",
       "description": "GitHub Action for running Cypress end-to-end & component tests",
       "category": "testing",
-      "sha": "783cb3f07983868532cabaedaa1e6c00ff4786a8",
+      "sha": "c495c3ddffba403ba11be95fffb67e25203b3799",
       "deprecated": [
         "v1",
         "v2",
@@ -8956,10 +8962,10 @@
     },
     "securego/gosec": {
       "latest": "v2",
-      "latestFull": "v2.25.0",
+      "latestFull": "v2.26.1",
       "description": "Go security checker",
       "category": "security",
-      "sha": "223e19b8856e00f02cc67804499a83f77e208f3c",
+      "sha": "4a3bd8af174872c778439083ded7adbf3747e770",
       "inputs": [
         "args"
       ]
@@ -9426,10 +9432,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.75.22",
+      "latestFull": "v2.75.23",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "cf525cb33f51aca27cd6fa02034117ab963ff9f1",
+      "sha": "481c34c1cf3a84c68b5e46f4eccfc82af798415a",
       "inputs": [
         "tool",
         "checksum",
