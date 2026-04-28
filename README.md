@@ -23,7 +23,7 @@ npx skills add claylo/actionista
 
 ## What it does
 
-- Tracks 120+ GitHub Actions with latest versions, SHAs, and migration diffs (updated daily)
+- Tracks 260+ GitHub Actions with latest versions, SHAs, and migration diffs (updated daily)
 - Creates workflow YAML with correct permissions, concurrency, caching, and matrix builds
 - Reviews existing workflows for outdated actions, security issues, and performance problems
 - Detects local tooling (`actionlint`, `act`) and suggests installation if missing
@@ -42,16 +42,28 @@ The skill activates automatically when you work with GitHub Actions — workflow
 
 ## Actions index
 
-The plugin maintains `actions-index.json` with version data for 121 actions across 19 categories:
+The plugin maintains `actions-index.json` with version data for 264 actions across 20 categories:
 
 | Category | Examples |
 |----------|----------|
 | Core | checkout, cache, upload-artifact, github-script |
 | Languages | setup-node, setup-python, setup-go, setup-java, rust-toolchain |
+| Build tools | gradle, cmake, cargo, sccache, ccache |
+| Package managers | pnpm, npm, rust-cache, poetry, miniconda |
+| Testing | pytest, vitest, jest, cargo-test |
+| Linting | eslint, ruff, clippy, rustfmt |
 | Cloud | aws-actions/\*, azure/\*, google-github-actions/\* |
+| Infrastructure | terraform, ansible, cloudformation, pulumi |
+| Kubernetes | kubectl, helm, kind, k3s, argocd |
 | Docker | build-push-action, login-action, metadata-action |
 | Security | codeql-action, trivy-action, trufflehog |
 | Release | release-please-action, goreleaser-action, action-gh-release |
+| Git operations | git-auto-commit, create-pull-request, tag |
+| Notifications | slack-github-action, discord, teams |
+| Documentation | mkdocs, sphinx, typedoc, hugo |
+| Mobile | flutter, react-native, xcode, eas |
+| AI assistants | claude, chatgpt, codex |
+| Utilities | miscellaneous utility actions |
 
 Each entry includes the latest version, full version tag, commit SHA for pinning, input parameters, deprecated versions, and migration data for major version bumps.
 
