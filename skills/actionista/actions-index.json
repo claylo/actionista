@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-04-28T06:58:47Z",
+    "generated": "2026-04-29T06:54:19Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -2886,10 +2886,10 @@
     },
     "SonarSource/sonarqube-scan-action": {
       "latest": "v7",
-      "latestFull": "v7.1.0",
+      "latestFull": "v7.2.0",
       "description": "",
       "category": "linting",
-      "sha": "299e4b793aaa83bf2aba7c9c14bedbb485688ec4",
+      "sha": "55e44800a8f495208cce6e4e82f5dedb45fcf0ef",
       "deprecated": [
         "v1",
         "v2",
@@ -2901,8 +2901,19 @@
         "args",
         "projectBaseDir",
         "scannerVersion",
-        "scannerBinariesUrl"
-      ]
+        "scannerBinariesUrl",
+        "skipSignatureVerification"
+      ],
+      "migrations": {
+        "v6→v7": {
+          "inputChanges": {
+            "added": [
+              "skipSignatureVerification"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "Songmu/tagpr": {
       "latest": "v1",
@@ -4132,10 +4143,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.108",
+      "latestFull": "v1.0.110",
       "description": "",
       "category": "ai-assistants",
-      "sha": "11a9dadd198803a0cea6bd53da3e0e8a762fc6ea",
+      "sha": "ef50f123a3a9be95b60040d042717517407c7256",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -5834,11 +5845,11 @@
       }
     },
     "dawidd6/action-download-artifact": {
-      "latest": "v20",
-      "latestFull": "v20",
+      "latest": "v21",
+      "latestFull": "v21",
       "description": ":gear: A GitHub Action to download an artifact associated with given workflow and commit or other cr",
       "category": "utilities",
-      "sha": "8305c0f1062bb0d184d09ef4493ecb9288447732",
+      "sha": "b6e2e70617bc3265edd6dab6c906732b2f1ae151",
       "deprecated": [
         "v1",
         "v2",
@@ -5857,7 +5868,8 @@
         "v15",
         "v16",
         "v17",
-        "v18"
+        "v18",
+        "v19"
       ],
       "inputs": [
         "github_token",
@@ -5886,11 +5898,11 @@
       ]
     },
     "dawidd6/action-send-mail": {
-      "latest": "v16",
-      "latestFull": "v16",
+      "latest": "v17",
+      "latestFull": "v17",
       "description": ":gear: A GitHub Action to send an email to multiple recipients",
       "category": "notifications",
-      "sha": "d38f3f7cd391cdebfe0d38efc3998b935e951c4f",
+      "sha": "42942bc2f8fba4e611b459a018967a6a7c78c68c",
       "deprecated": [
         "v1",
         "v2",
@@ -5905,7 +5917,8 @@
         "v11",
         "v12",
         "v13",
-        "v14"
+        "v14",
+        "v15"
       ],
       "inputs": [
         "connection_url",
@@ -9432,10 +9445,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.75.23",
+      "latestFull": "v2.75.25",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "481c34c1cf3a84c68b5e46f4eccfc82af798415a",
+      "sha": "1329c298aa20c3257846c9b2e0e55967df3e3c37",
       "inputs": [
         "tool",
         "checksum",
