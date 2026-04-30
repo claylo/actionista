@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-04-29T06:54:19Z",
+    "generated": "2026-04-30T06:56:56Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -2885,17 +2885,18 @@
       }
     },
     "SonarSource/sonarqube-scan-action": {
-      "latest": "v7",
-      "latestFull": "v7.2.0",
+      "latest": "v8",
+      "latestFull": "v8.0.0",
       "description": "",
       "category": "linting",
-      "sha": "55e44800a8f495208cce6e4e82f5dedb45fcf0ef",
+      "sha": "59db25f34e16620e48ab4bb9e4a5dce155cb5432",
       "deprecated": [
         "v1",
         "v2",
         "v3",
         "v4",
-        "v5"
+        "v5",
+        "v6"
       ],
       "inputs": [
         "args",
@@ -2903,17 +2904,7 @@
         "scannerVersion",
         "scannerBinariesUrl",
         "skipSignatureVerification"
-      ],
-      "migrations": {
-        "v6→v7": {
-          "inputChanges": {
-            "added": [
-              "skipSignatureVerification"
-            ],
-            "removed": []
-          }
-        }
-      }
+      ]
     },
     "Songmu/tagpr": {
       "latest": "v1",
@@ -3991,10 +3982,10 @@
     },
     "amondnet/vercel-action": {
       "latest": "v42",
-      "latestFull": "v42.2.1",
+      "latestFull": "v42.3.0",
       "description": "This action make a deployment with github actions instead of Vercel builder.",
       "category": "infrastructure",
-      "sha": "4b001a441d80e00aeed3680a3719d1d8b95998c5",
+      "sha": "de09aeac2ace6599ec9b11ef87558759a496bac4",
       "deprecated": [
         "v1",
         "v2",
@@ -4057,6 +4048,7 @@
         "alias-domains",
         "target",
         "prebuilt",
+        "vercel-build",
         "vercel-output-dir",
         "force",
         "env",
@@ -4067,7 +4059,8 @@
         "auto-assign-custom-domains",
         "custom-environment",
         "public",
-        "with-cache"
+        "with-cache",
+        "experimental-api"
       ]
     },
     "anc95/ChatGPT-CodeReview": {
@@ -4631,10 +4624,10 @@
     },
     "aws-actions/aws-lambda-deploy": {
       "latest": "v1",
-      "latestFull": "v1.1.0",
+      "latestFull": "v1.1.1",
       "description": "Deploys a Lambda function.",
       "category": "cloud-aws",
-      "sha": "29ea35c124579506cf0475e20df36198eb670d89",
+      "sha": "20039225425cbacb648cf1ffe08cc221f19b65a0",
       "inputs": [
         "function-name",
         "package-type",
@@ -8440,6 +8433,7 @@
       "sha": "66325aad6443cb7cf89c4bfcd414aea2367cda94",
       "inputs": [
         "repo-token",
+        "base-ref",
         "clean-script",
         "install-script",
         "build-script",
@@ -8648,10 +8642,10 @@
     },
     "release-drafter/release-drafter": {
       "latest": "v7",
-      "latestFull": "v7.2.0",
+      "latestFull": "v7.2.1",
       "description": "Drafts your next release notes as pull requests are merged into master. ",
       "category": "release",
-      "sha": "5de93583980a40bd78603b6dfdcda5b4df377b32",
+      "sha": "563bf132657a13ded0b01fcb723c5a58cdd824e2",
       "deprecated": [
         "v1",
         "v2",
@@ -8674,8 +8668,7 @@
         "header",
         "footer",
         "dry-run",
-        "filter-by-range",
-        "initial-commits-since"
+        "filter-by-range"
       ],
       "migrations": {
         "v6→v7": {
@@ -8687,7 +8680,8 @@
             ],
             "removed": [
               "disable-releaser",
-              "disable-autolabeler"
+              "disable-autolabeler",
+              "initial-commits-since"
             ]
           }
         }
@@ -9445,10 +9439,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.75.25",
+      "latestFull": "v2.75.27",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "1329c298aa20c3257846c9b2e0e55967df3e3c37",
+      "sha": "7769b73c2ec98c38dfcf2e18c83cfd4880c038c1",
       "inputs": [
         "tool",
         "checksum",
@@ -9900,10 +9894,10 @@
     },
     "w9jds/firebase-action": {
       "latest": "v15",
-      "latestFull": "v15.15.0",
+      "latestFull": "v15.16.0",
       "description": "GitHub Action for interacting with Firebase",
       "category": "cloud-gcp",
-      "sha": "a1dca4c0e5fc6122087431e4c7ab2733628b7795",
+      "sha": "b0e2d3d72d52c7e16467cde7282c9ddbe11a8aa0",
       "deprecated": [
         "v1",
         "v2",
