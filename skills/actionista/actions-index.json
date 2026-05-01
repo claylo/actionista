@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-04-30T06:56:56Z",
+    "generated": "2026-05-01T06:58:53Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4136,10 +4136,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.110",
+      "latestFull": "v1.0.111",
       "description": "",
       "category": "ai-assistants",
-      "sha": "ef50f123a3a9be95b60040d042717517407c7256",
+      "sha": "fefa07e9c665b7320f08c3b525980457f22f58aa",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -4459,10 +4459,10 @@
     },
     "aws-actions/amazon-ecs-deploy-task-definition": {
       "latest": "v2",
-      "latestFull": "v2.6.1",
+      "latestFull": "v2.6.2",
       "description": "Registers an Amazon ECS task definition and deploys it to an ECS service.",
       "category": "cloud-aws",
-      "sha": "fc8fc60f3a60ffd500fcb13b209c59d221ac8c8c",
+      "sha": "a310a830f5c14e583e35d84e4e1ec7dd177c3c9c",
       "inputs": [
         "task-definition",
         "desired-count",
@@ -4528,10 +4528,10 @@
     },
     "aws-actions/amazon-ecs-render-task-definition": {
       "latest": "v1",
-      "latestFull": "v1.8.4",
+      "latestFull": "v1.8.5",
       "description": "Inserts a container image URI into an Amazon ECS task definition JSON file.",
       "category": "cloud-aws",
-      "sha": "77954e213ba1f9f9cb016b86a1d4f6fcdea0d57e",
+      "sha": "6853cfae8c3a7d978fbf68b5a55453395541dfbb",
       "inputs": [
         "task-definition",
         "task-definition-arn",
@@ -8392,10 +8392,10 @@
     },
     "pnpm/action-setup": {
       "latest": "v6",
-      "latestFull": "v6.0.3",
+      "latestFull": "v6.0.4",
       "description": "Install pnpm package manager",
       "category": "package-managers",
-      "sha": "903f9c1a6ebcba6cf41d87230be49611ac97822e",
+      "sha": "26f6d4f2c533a43e6b5da0b4a5dd983f98f7b49a",
       "deprecated": [
         "v1",
         "v2",
