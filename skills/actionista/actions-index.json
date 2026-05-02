@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-05-01T06:58:53Z",
+    "generated": "2026-05-02T06:43:28Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4945,10 +4945,10 @@
     },
     "bencherdev/bencher": {
       "latest": "v0",
-      "latestFull": "v0.6.3",
+      "latestFull": "v0.6.4",
       "description": "🐰 Bencher - Continuous Benchmarking",
       "category": "testing",
-      "sha": "46d007c103827da37db1a25b705dc73d3aaff7e6",
+      "sha": "fa25a72c516046b4c0e31659bef70c5266b0f94d",
       "inputs": [
         "version"
       ]
@@ -6460,10 +6460,10 @@
     },
     "github/branch-deploy": {
       "latest": "v11",
-      "latestFull": "v11.1.2",
+      "latestFull": "v11.1.4",
       "description": "Enabling Branch Deployments through IssueOps with GitHub Actions - If you find this project useful, ",
       "category": "infrastructure",
-      "sha": "fded0351b6b79f854b335c11b3d93063461dd288",
+      "sha": "ddf8ca48e9cdb2d2c7c71dee428308b19af9313f",
       "deprecated": [
         "v1",
         "v2",
@@ -6529,10 +6529,10 @@
     },
     "github/codeql-action/analyze": {
       "latest": "v4",
-      "latestFull": "v4.35.2",
+      "latestFull": "v4.35.3",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "95e58e9a2cdfd71adc6e0353d5c52f41a045d225",
+      "sha": "e46ed2cbd01164d986452f91f178727624ae40d7",
       "deprecated": [
         "v1",
         "v2"
@@ -6540,10 +6540,10 @@
     },
     "github/codeql-action/autobuild": {
       "latest": "v4",
-      "latestFull": "v4.35.2",
+      "latestFull": "v4.35.3",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "95e58e9a2cdfd71adc6e0353d5c52f41a045d225",
+      "sha": "e46ed2cbd01164d986452f91f178727624ae40d7",
       "deprecated": [
         "v1",
         "v2"
@@ -6551,10 +6551,10 @@
     },
     "github/codeql-action/init": {
       "latest": "v4",
-      "latestFull": "v4.35.2",
+      "latestFull": "v4.35.3",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "95e58e9a2cdfd71adc6e0353d5c52f41a045d225",
+      "sha": "e46ed2cbd01164d986452f91f178727624ae40d7",
       "deprecated": [
         "v1",
         "v2"
@@ -9022,10 +9022,10 @@
     },
     "slackapi/slack-github-action": {
       "latest": "v3",
-      "latestFull": "v3.0.2",
+      "latestFull": "v3.0.3",
       "description": "Send data into Slack using this GitHub Action!",
       "category": "notifications",
-      "sha": "03ea5433c137af7c0495bc0cad1af10403fc800c",
+      "sha": "45a88b9581bfab2566dc881e2cd66d334e621e2c",
       "deprecated": [
         "v1"
       ],
@@ -9439,10 +9439,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.75.27",
+      "latestFull": "v2.75.28",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "7769b73c2ec98c38dfcf2e18c83cfd4880c038c1",
+      "sha": "51cd0b8c0499559d9a4d75c0f5c67bec3a894ec8",
       "inputs": [
         "tool",
         "checksum",
