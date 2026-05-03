@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-05-02T06:43:28Z",
+    "generated": "2026-05-03T06:55:15Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -5211,10 +5211,10 @@
     },
     "cargo-bins/cargo-binstall": {
       "latest": "v1",
-      "latestFull": "v1.18.1",
+      "latestFull": "v1.19.0",
       "description": "Binary installation for rust projects",
       "category": "build-tools",
-      "sha": "dc19f1e48450eefe5a29b8da6c6b00a87d730b37",
+      "sha": "4852a15cf01e4f33958ce547326406fe78f27c38",
       "inputs": [
         "version"
       ]
@@ -7119,10 +7119,10 @@
     },
     "houseabsolute/actions-rust-cross": {
       "latest": "v1",
-      "latestFull": "v1.0.6",
+      "latestFull": "v1.0.7",
       "description": "GitHub Action to compile Rust with cross",
       "category": "build-tools",
-      "sha": "a8cc74d61047fa553b4e908b4b10e70029f00ca6",
+      "sha": "fe6ede73c7f0a50412ec05994e2aa5a7bf635eac",
       "inputs": [
         "target",
         "command",
@@ -8392,10 +8392,10 @@
     },
     "pnpm/action-setup": {
       "latest": "v6",
-      "latestFull": "v6.0.4",
+      "latestFull": "v6.0.5",
       "description": "Install pnpm package manager",
       "category": "package-managers",
-      "sha": "26f6d4f2c533a43e6b5da0b4a5dd983f98f7b49a",
+      "sha": "8912a9102ac27614460f54aedde9e1e7f9aec20d",
       "deprecated": [
         "v1",
         "v2",
@@ -9255,10 +9255,10 @@
     },
     "step-security/harden-runner": {
       "latest": "v2",
-      "latestFull": "v2.19.0",
+      "latestFull": "v2.19.1",
       "description": "Harden-Runner is a CI/CD security agent that works like an EDR for GitHub Actions runners. It monito",
       "category": "security",
-      "sha": "8d3c67de8e2fe68ef647c8db1e6a09f647780f40",
+      "sha": "a5ad31d6a139d249332a2605b85202e8c0b78450",
       "inputs": [
         "allowed-endpoints",
         "egress-policy",
@@ -9439,10 +9439,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.75.28",
+      "latestFull": "v2.75.29",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "51cd0b8c0499559d9a4d75c0f5c67bec3a894ec8",
+      "sha": "b5fddbb5361bce8a06fb168c9d403a6cc552b084",
       "inputs": [
         "tool",
         "checksum",
