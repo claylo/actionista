@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-05-03T06:55:15Z",
+    "generated": "2026-05-04T07:06:55Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -8490,16 +8490,17 @@
       ]
     },
     "pulumi/actions": {
-      "latest": "v6",
-      "latestFull": "v6.6.1",
+      "latest": "v7",
+      "latestFull": "v7.0.0",
       "description": "Deploy continuously to your cloud of choice, using your favorite language, Pulumi, and GitHub!",
       "category": "infrastructure",
-      "sha": "8582a9e8cc630786854029b4e09281acd6794b58",
+      "sha": "8e5e406f4007fca908480587cb9893c07090f58d",
       "deprecated": [
         "v1",
         "v2",
         "v3",
-        "v4"
+        "v4",
+        "v5"
       ],
       "inputs": [
         "command",
@@ -8539,22 +8540,7 @@
         "log-verbosity",
         "log-flow",
         "debug"
-      ],
-      "migrations": {
-        "v5→v6": {
-          "inputChanges": {
-            "added": [
-              "exclude",
-              "exclude-dependents",
-              "continue-on-error",
-              "log-verbosity",
-              "log-flow",
-              "debug"
-            ],
-            "removed": []
-          }
-        }
-      }
+      ]
     },
     "pypa/cibuildwheel": {
       "latest": "v3",
@@ -8959,10 +8945,10 @@
     },
     "sbt/setup-sbt": {
       "latest": "v1",
-      "latestFull": "v1.1.22",
+      "latestFull": "v1.1.23",
       "description": "setup-sbt installs the official sbt runner",
       "category": "setup-languages",
-      "sha": "508b753e53cb6095967669e0911487d2b9bc9f41",
+      "sha": "93e926cbdb4a428e41b4ef754124ec82925ffdc2",
       "inputs": [
         "sbt-runner-version"
       ]
@@ -9176,10 +9162,10 @@
     },
     "softprops/turnstyle": {
       "latest": "v3",
-      "latestFull": "v3.2.3",
+      "latestFull": "v3.2.4",
       "description": "🎟️A GitHub Action for serializing workflow runs",
       "category": "utilities",
-      "sha": "e565d2d86403c5d23533937e95980570545e5586",
+      "sha": "e15e934b3f69ee283ba389ea05c8886baa656d93",
       "deprecated": [
         "v1"
       ],
@@ -9189,6 +9175,7 @@
         "continue-after-seconds",
         "abort-after-seconds",
         "same-branch-only",
+        "branch",
         "job-to-wait-for",
         "step-to-wait-for",
         "initial-wait-seconds",
@@ -9198,6 +9185,7 @@
         "v2→v3": {
           "inputChanges": {
             "added": [
+              "branch",
               "queue-name"
             ],
             "removed": []
@@ -9439,10 +9427,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.75.29",
+      "latestFull": "v2.75.30",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "b5fddbb5361bce8a06fb168c9d403a6cc552b084",
+      "sha": "db5fb34fa772531a3ece57ca434f579eb334e0fb",
       "inputs": [
         "tool",
         "checksum",
