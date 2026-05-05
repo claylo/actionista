@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-05-04T07:06:55Z",
+    "generated": "2026-05-05T06:50:34Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -58,10 +58,10 @@
     },
     "AndreasAugustin/actions-template-sync": {
       "latest": "v2",
-      "latestFull": "v2.5.2",
+      "latestFull": "v2.5.3",
       "description": ":octocat: Github action for syncing other repositories (templates) with current repository. Any git ",
       "category": "git-operations",
-      "sha": "8ec19a5f2721ffb81ff809aa340ddf75e6a85ea6",
+      "sha": "8a0f668b83c32a0f673353086d74f12b8853d4f5",
       "inputs": [
         "source_gh_token",
         "target_gh_token",
@@ -3114,11 +3114,11 @@
       ]
     },
     "actions/add-to-project": {
-      "latest": "v1",
-      "latestFull": "v1.0.2",
+      "latest": "v2",
+      "latestFull": "v2.0.0",
       "description": "Automate adding issues and pull requests to GitHub projects",
       "category": "core",
-      "sha": "244f685bbc3b7adfa8466e08b698b5577571133e",
+      "sha": "5afcf98fcd03f1c2f92c3c83f58ae24323cc57fd",
       "inputs": [
         "project-url",
         "github-token",
@@ -4136,10 +4136,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.111",
+      "latestFull": "v1.0.112",
       "description": "",
       "category": "ai-assistants",
-      "sha": "fefa07e9c665b7320f08c3b525980457f22f58aa",
+      "sha": "2cc1ac1331eac7a6a96d716dd204dd2888d0fcd2",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -5740,10 +5740,10 @@
     },
     "cypress-io/github-action": {
       "latest": "v7",
-      "latestFull": "v7.1.10",
+      "latestFull": "v7.2.0",
       "description": "GitHub Action for running Cypress end-to-end & component tests",
       "category": "testing",
-      "sha": "c495c3ddffba403ba11be95fffb67e25203b3799",
+      "sha": "b7a7441d775af8f8b9d19945c10dd689a51dba68",
       "deprecated": [
         "v1",
         "v2",
@@ -9427,10 +9427,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.75.30",
+      "latestFull": "v2.77.0",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "db5fb34fa772531a3ece57ca434f579eb334e0fb",
+      "sha": "7ea35f098a7369cd23488403f58be9c491a6c55f",
       "inputs": [
         "tool",
         "checksum",
