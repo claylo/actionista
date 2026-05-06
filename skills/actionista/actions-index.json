@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-05-05T06:50:34Z",
+    "generated": "2026-05-06T07:00:27Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -3501,10 +3501,10 @@
     },
     "actions/labeler": {
       "latest": "v6",
-      "latestFull": "v6.0.1",
+      "latestFull": "v6.1.0",
       "description": "An action for automatically labelling pull requests",
       "category": "core",
-      "sha": "634933edcd8ababfe52f92936142cc22ac488b1b",
+      "sha": "f27b608878404679385c85cfa523b85ccb86e213",
       "deprecated": [
         "v1",
         "v2",
@@ -4136,10 +4136,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.112",
+      "latestFull": "v1.0.113",
       "description": "",
       "category": "ai-assistants",
-      "sha": "2cc1ac1331eac7a6a96d716dd204dd2888d0fcd2",
+      "sha": "7d7d3055f1fdc9a97a040c69ead9ba392fa6326a",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -4680,10 +4680,10 @@
     },
     "aws-actions/configure-aws-credentials": {
       "latest": "v6",
-      "latestFull": "v6.1.0",
+      "latestFull": "v6.1.1",
       "description": "Configure AWS credential environment variables for use in other GitHub Actions.",
       "category": "cloud-aws",
-      "sha": "ec61189d14ec14c8efccab744f656cffd0e33f37",
+      "sha": "d979d5b3a71173a29b74b5b88418bfda9437d885",
       "deprecated": [
         "v1",
         "v2",
@@ -5135,10 +5135,10 @@
     },
     "browser-actions/setup-chrome": {
       "latest": "v2",
-      "latestFull": "v2.1.1",
+      "latestFull": "v2.1.2",
       "description": "Set up your GitHub Actions workflow with a specific version of chromium ",
       "category": "testing",
-      "sha": "4f8e94349a351df0f048634f25fec36c3c91eded",
+      "sha": "2e1d749697dd1612b833dba4a722266286fbefcd",
       "inputs": [
         "chrome-version",
         "install-dependencies",
@@ -5148,10 +5148,10 @@
     },
     "browser-actions/setup-firefox": {
       "latest": "v1",
-      "latestFull": "v1.7.1",
+      "latestFull": "v1.7.2",
       "description": "Set up your GitHub Actions workflow with a specific version of firefox",
       "category": "testing",
-      "sha": "fcf821c621167805dd63a29662bd7cb5676c81a8",
+      "sha": "0bc507ddf224827e3b1af68e014d5e42ab93e795",
       "inputs": [
         "firefox-version"
       ]
@@ -5740,10 +5740,10 @@
     },
     "cypress-io/github-action": {
       "latest": "v7",
-      "latestFull": "v7.2.0",
+      "latestFull": "v7.3.0",
       "description": "GitHub Action for running Cypress end-to-end & component tests",
       "category": "testing",
-      "sha": "b7a7441d775af8f8b9d19945c10dd689a51dba68",
+      "sha": "dace029018fcdf86e0df89a31bc3cfa5b32570d8",
       "deprecated": [
         "v1",
         "v2",
@@ -5759,6 +5759,7 @@
         "config",
         "config-file",
         "env",
+        "expose",
         "group",
         "headed",
         "parallel",
@@ -5787,6 +5788,7 @@
         "v6→v7": {
           "inputChanges": {
             "added": [
+              "expose",
               "package-manager-cache"
             ],
             "removed": []
@@ -9427,10 +9429,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.77.0",
+      "latestFull": "v2.77.1",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "7ea35f098a7369cd23488403f58be9c491a6c55f",
+      "sha": "cca35edeb1d01366c2843b68fc3ca441446d73d3",
       "inputs": [
         "tool",
         "checksum",
