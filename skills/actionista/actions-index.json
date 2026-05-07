@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-05-06T07:00:27Z",
+    "generated": "2026-05-07T07:04:38Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4136,10 +4136,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.113",
+      "latestFull": "v1.0.115",
       "description": "",
       "category": "ai-assistants",
-      "sha": "7d7d3055f1fdc9a97a040c69ead9ba392fa6326a",
+      "sha": "9db782c3a17ef2bfc274cd17411bc3e0a5ba1345",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -4445,10 +4445,10 @@
     },
     "aws-actions/amazon-ecr-login": {
       "latest": "v2",
-      "latestFull": "v2.1.4",
+      "latestFull": "v2.1.5",
       "description": "Logs into Amazon ECR with the local Docker client.",
       "category": "cloud-aws",
-      "sha": "19d944daaa35f0fa1d3f7f8af1d3f2e5de25c5b7",
+      "sha": "fa648b43de3d4d023bcb3f89ed6940096949c419",
       "inputs": [
         "http-proxy",
         "mask-password",
@@ -4720,7 +4720,8 @@
         "use-existing-credentials",
         "allowed-account-ids",
         "force-skip-oidc",
-        "action-timeout-s"
+        "action-timeout-s",
+        "custom-tags"
       ],
       "migrations": {
         "v5→v6": {
@@ -4955,10 +4956,10 @@
     },
     "benchmark-action/github-action-benchmark": {
       "latest": "v1",
-      "latestFull": "v1.22.0",
+      "latestFull": "v1.22.1",
       "description": "GitHub Action for continuous benchmarking to keep performance",
       "category": "testing",
-      "sha": "a60cea5bc7b49e15c1f58f411161f99e0df48372",
+      "sha": "52576c92bccf6ac60c8223ec7eb2565637cae9ba",
       "inputs": [
         "name",
         "tool",
@@ -5211,10 +5212,10 @@
     },
     "cargo-bins/cargo-binstall": {
       "latest": "v1",
-      "latestFull": "v1.19.0",
+      "latestFull": "v1.19.1",
       "description": "Binary installation for rust projects",
       "category": "build-tools",
-      "sha": "4852a15cf01e4f33958ce547326406fe78f27c38",
+      "sha": "aaa84a43aec4955a42c5ffc65d258961e39f276e",
       "inputs": [
         "version"
       ]
@@ -6922,10 +6923,10 @@
     },
     "graalvm/setup-graalvm": {
       "latest": "v1",
-      "latestFull": "v1.5.2",
+      "latestFull": "v1.5.3",
       "description": "Set up your GitHub Actions workflow with a specific GraalVM distribution.",
       "category": "setup-languages",
-      "sha": "60c26726de13f8b90771df4bc1641a52a3159994",
+      "sha": "bef4b0e916c7dd079bf60fb95d49139f67e32c5f",
       "inputs": [
         "java-version",
         "java-package",
