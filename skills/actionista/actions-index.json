@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-05-07T07:04:38Z",
+    "generated": "2026-05-08T06:40:30Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4136,10 +4136,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.115",
+      "latestFull": "v1.0.116",
       "description": "",
       "category": "ai-assistants",
-      "sha": "9db782c3a17ef2bfc274cd17411bc3e0a5ba1345",
+      "sha": "939ae9c056ecf8a1a01409ddd1c4eadec5f8c77b",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -4721,7 +4721,8 @@
         "allowed-account-ids",
         "force-skip-oidc",
         "action-timeout-s",
-        "custom-tags"
+        "custom-tags",
+        "sts-endpoint"
       ],
       "migrations": {
         "v5→v6": {
@@ -5222,10 +5223,10 @@
     },
     "changesets/action": {
       "latest": "v1",
-      "latestFull": "v1.7.0",
+      "latestFull": "v1.8.0",
       "description": "",
       "category": "release",
-      "sha": "6a0a831ff30acef54f2c6aa1cbbc1096b066edaf",
+      "sha": "63a615b9cd06ba9a3e6d13796c7fbcb080a60a0b",
       "inputs": [
         "github-token",
         "publish",
@@ -5236,7 +5237,8 @@
         "setupGitUser",
         "createGithubReleases",
         "commitMode",
-        "branch"
+        "branch",
+        "prDraft"
       ]
     },
     "check-spelling/check-spelling": {
@@ -6532,10 +6534,10 @@
     },
     "github/codeql-action/analyze": {
       "latest": "v4",
-      "latestFull": "v4.35.3",
+      "latestFull": "v4.35.4",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "e46ed2cbd01164d986452f91f178727624ae40d7",
+      "sha": "68bde559dea0fdcac2102bfdf6230c5f70eb485e",
       "deprecated": [
         "v1",
         "v2"
@@ -6543,10 +6545,10 @@
     },
     "github/codeql-action/autobuild": {
       "latest": "v4",
-      "latestFull": "v4.35.3",
+      "latestFull": "v4.35.4",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "e46ed2cbd01164d986452f91f178727624ae40d7",
+      "sha": "68bde559dea0fdcac2102bfdf6230c5f70eb485e",
       "deprecated": [
         "v1",
         "v2"
@@ -6554,10 +6556,10 @@
     },
     "github/codeql-action/init": {
       "latest": "v4",
-      "latestFull": "v4.35.3",
+      "latestFull": "v4.35.4",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "e46ed2cbd01164d986452f91f178727624ae40d7",
+      "sha": "68bde559dea0fdcac2102bfdf6230c5f70eb485e",
       "deprecated": [
         "v1",
         "v2"
@@ -9885,10 +9887,10 @@
     },
     "w9jds/firebase-action": {
       "latest": "v15",
-      "latestFull": "v15.16.0",
+      "latestFull": "v15.17.0",
       "description": "GitHub Action for interacting with Firebase",
       "category": "cloud-gcp",
-      "sha": "b0e2d3d72d52c7e16467cde7282c9ddbe11a8aa0",
+      "sha": "d0c951464c912d53fdc73770a5711c96c5a88671",
       "deprecated": [
         "v1",
         "v2",
