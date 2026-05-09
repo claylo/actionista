@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-05-08T06:40:30Z",
+    "generated": "2026-05-09T06:47:02Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -3088,10 +3088,10 @@
     },
     "actions-rust-lang/setup-rust-toolchain": {
       "latest": "v1",
-      "latestFull": "v1.16.0",
+      "latestFull": "v1.16.1",
       "description": "Setup a specific Rust toolchain with extra features like problem matchers",
       "category": "setup-languages",
-      "sha": "2b1f5e9b395427c92ee4e3331786ca3c37afe2d7",
+      "sha": "46268bd060767258de96ed93c1251119784f2ab6",
       "inputs": [
         "toolchain",
         "target",
@@ -3294,6 +3294,7 @@
         "private-key",
         "owner",
         "repositories",
+        "enterprise",
         "skip-token-revoke",
         "github-api-url",
         "permission-actions",
@@ -3367,14 +3368,15 @@
       }
     },
     "actions/dependency-review-action": {
-      "latest": "v4",
-      "latestFull": "v4.9.0",
+      "latest": "v5",
+      "latestFull": "v5.0.0",
       "description": "A GitHub Action for detecting vulnerable dependencies and invalid licenses in your PRs",
       "category": "core",
-      "sha": "2031cfc080254a8a887f58cffee85186f0e49e48",
+      "sha": "a1d282b36b6f3519aa1f3fc636f609c47dddb294",
       "deprecated": [
         "v1",
-        "v2"
+        "v2",
+        "v3"
       ],
       "inputs": [
         "repo-token",
@@ -3399,20 +3401,7 @@
         "show-openssf-scorecard",
         "warn-on-openssf-scorecard-level",
         "show-patched-versions"
-      ],
-      "migrations": {
-        "v3→v4": {
-          "inputChanges": {
-            "added": [
-              "warn-only",
-              "show-openssf-scorecard",
-              "warn-on-openssf-scorecard-level",
-              "show-patched-versions"
-            ],
-            "removed": []
-          }
-        }
-      }
+      ]
     },
     "actions/deploy-pages": {
       "latest": "v5",
@@ -4136,10 +4125,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.116",
+      "latestFull": "v1.0.119",
       "description": "",
       "category": "ai-assistants",
-      "sha": "939ae9c056ecf8a1a01409ddd1c4eadec5f8c77b",
+      "sha": "476e359e6203e73dad705c8b322e333fabbd7416",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -5163,7 +5152,7 @@
       "latestFull": "v17",
       "description": "Build software only once and put it in a global cache",
       "category": "package-managers",
-      "sha": "1eb2ef646ac0255473d23a5907ad7b04ce94065c",
+      "sha": "5f2d7c5294214f71b873db4b969586b980625e71",
       "deprecated": [
         "v1",
         "v2",
@@ -8397,10 +8386,10 @@
     },
     "pnpm/action-setup": {
       "latest": "v6",
-      "latestFull": "v6.0.5",
+      "latestFull": "v6.0.6",
       "description": "Install pnpm package manager",
       "category": "package-managers",
-      "sha": "8912a9102ac27614460f54aedde9e1e7f9aec20d",
+      "sha": "91ab88e2619ed1f46221f0ba42d1492c02baf788",
       "deprecated": [
         "v1",
         "v2",
@@ -8633,10 +8622,10 @@
     },
     "release-drafter/release-drafter": {
       "latest": "v7",
-      "latestFull": "v7.2.1",
+      "latestFull": "v7.3.0",
       "description": "Drafts your next release notes as pull requests are merged into master. ",
       "category": "release",
-      "sha": "563bf132657a13ded0b01fcb723c5a58cdd824e2",
+      "sha": "c2e2804cc59f45f57076a99af580d0fedb697927",
       "deprecated": [
         "v1",
         "v2",
@@ -9432,10 +9421,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.77.1",
+      "latestFull": "v2.77.2",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "cca35edeb1d01366c2843b68fc3ca441446d73d3",
+      "sha": "3fa6878dc4ae603f73960271565a082bf196ab96",
       "inputs": [
         "tool",
         "checksum",
