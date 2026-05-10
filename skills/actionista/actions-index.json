@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-05-09T06:47:02Z",
+    "generated": "2026-05-10T06:58:39Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -2908,10 +2908,10 @@
     },
     "Songmu/tagpr": {
       "latest": "v1",
-      "latestFull": "v1.18.3",
+      "latestFull": "v1.19.0",
       "description": "automatically creates and updates a pull request for unreleased items, tag them when they are merged",
       "category": "release",
-      "sha": "9bbb945b2fb025126186661e27d55485e3fc6df6",
+      "sha": "555e72cee68c09d43dc2337dc9ba890955b630da",
       "inputs": [
         "version",
         "config"
@@ -9421,10 +9421,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.77.2",
+      "latestFull": "v2.77.3",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "3fa6878dc4ae603f73960271565a082bf196ab96",
+      "sha": "e3134ec54b36203e18f2d1e80652058bd078dd91",
       "inputs": [
         "tool",
         "checksum",
