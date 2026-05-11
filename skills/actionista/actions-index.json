@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-05-10T06:58:39Z",
+    "generated": "2026-05-11T07:17:38Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -7134,13 +7134,14 @@
     },
     "hynek/build-and-inspect-python-package": {
       "latest": "v2",
-      "latestFull": "v2.17.0",
+      "latestFull": "v2.18.0",
       "description": "Build and Inspect Python Packages in GitHub Actions",
       "category": "build-tools",
-      "sha": "fe0a0fb1925ca263d076ca4f2c13e93a6e92a33e",
+      "sha": "d44ca7d91762de7a7d5436ddae667c6da6d1c3df",
       "inputs": [
         "path",
         "skip-wheel",
+        "skip-sdist",
         "upload-name-suffix",
         "attest-build-provenance-github",
         "python-version",
@@ -7151,6 +7152,7 @@
           "inputChanges": {
             "added": [
               "skip-wheel",
+              "skip-sdist",
               "upload-name-suffix",
               "attest-build-provenance-github",
               "python-version",
@@ -7263,10 +7265,10 @@
     },
     "julia-actions/setup-julia": {
       "latest": "v3",
-      "latestFull": "v3.0.1",
+      "latestFull": "v3.0.2",
       "description": "This action sets up a Julia environment for use in actions by downloading a specified version of Jul",
       "category": "setup-languages",
-      "sha": "f6f565d9f7cf12f53dc8045742460d6260ad3b39",
+      "sha": "fa02766e078afaaf09b14210362cee14137e6a32",
       "deprecated": [
         "v1"
       ],
@@ -8669,10 +8671,10 @@
     },
     "release-plz/action": {
       "latest": "v0",
-      "latestFull": "v0.5.128",
+      "latestFull": "v0.5.129",
       "description": "GitHub action for https://github.com/release-plz/release-plz",
       "category": "release",
-      "sha": "1528104d2ca23787631a1c1f022abb64b34c1e11",
+      "sha": "064f4d1e36c843611ddf013be726beaa4ad804db",
       "inputs": [
         "command",
         "registry",
@@ -9421,10 +9423,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.77.3",
+      "latestFull": "v2.77.5",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "e3134ec54b36203e18f2d1e80652058bd078dd91",
+      "sha": "fa0dd4cd0a40696e6f9766370614a5ce482e6aa8",
       "inputs": [
         "tool",
         "checksum",
@@ -9549,7 +9551,6 @@
         "owner",
         "repo",
         "githubBaseUrl",
-        "isGitea",
         "releaseAssetNamePattern",
         "uploadPlainBinary",
         "uploadWorkflowArtifacts",
