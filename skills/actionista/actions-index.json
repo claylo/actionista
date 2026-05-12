@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-05-11T07:17:38Z",
+    "generated": "2026-05-12T07:03:25Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -213,10 +213,10 @@
     },
     "EmbarkStudios/cargo-deny-action": {
       "latest": "v2",
-      "latestFull": "v2.0.17",
+      "latestFull": "v2.0.18",
       "description": "❌ GitHub Action for cargo-deny 🦀",
       "category": "security",
-      "sha": "91bf2b620e09e18d6eb78b92e7861937469acedb",
+      "sha": "6c8f9facfa5047ec02d8485b6bf52b587b7777d1",
       "inputs": [
         "command",
         "arguments",
@@ -3864,7 +3864,8 @@
         "path",
         "min-severity",
         "fail-on-findings",
-        "format"
+        "format",
+        "sarif-output"
       ]
     },
     "amannn/action-semantic-pull-request": {
@@ -4125,10 +4126,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.119",
+      "latestFull": "v1.0.120",
       "description": "",
       "category": "ai-assistants",
-      "sha": "476e359e6203e73dad705c8b322e333fabbd7416",
+      "sha": "dde2242db6af13460b916652159b6ba19a598f30",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -4936,10 +4937,10 @@
     },
     "bencherdev/bencher": {
       "latest": "v0",
-      "latestFull": "v0.6.4",
+      "latestFull": "v0.6.5",
       "description": "🐰 Bencher - Continuous Benchmarking",
       "category": "testing",
-      "sha": "fa25a72c516046b4c0e31659bef70c5266b0f94d",
+      "sha": "99117a626dc634b8ad817f38abcf4876b3b0668b",
       "inputs": [
         "version"
       ]
@@ -5790,10 +5791,10 @@
     },
     "davelosert/vitest-coverage-report-action": {
       "latest": "v2",
-      "latestFull": "v2.11.2",
+      "latestFull": "v2.12.0",
       "description": "A GitHub Action to report vitest test coverage results",
       "category": "testing",
-      "sha": "3c50566c523e04813df28de8f7c48dd97d663f1c",
+      "sha": "02f3c2e641286b7fa308cd3e430783103ce6103b",
       "inputs": [
         "github-token",
         "vite-config-path",
@@ -5803,6 +5804,7 @@
         "file-coverage-mode",
         "file-coverage-expanded",
         "show-uncovered-lines",
+        "sort-by",
         "file-coverage-root-path",
         "working-directory",
         "name",
@@ -5819,6 +5821,7 @@
               "file-coverage-mode",
               "file-coverage-expanded",
               "show-uncovered-lines",
+              "sort-by",
               "file-coverage-root-path",
               "name",
               "pr-number",
@@ -8388,10 +8391,10 @@
     },
     "pnpm/action-setup": {
       "latest": "v6",
-      "latestFull": "v6.0.6",
+      "latestFull": "v6.0.7",
       "description": "Install pnpm package manager",
       "category": "package-managers",
-      "sha": "91ab88e2619ed1f46221f0ba42d1492c02baf788",
+      "sha": "739bfe42ca9233c5e6aca07c1a25a9d34aca49b0",
       "deprecated": [
         "v1",
         "v2",
@@ -8848,10 +8851,10 @@
     },
     "ruby/setup-ruby": {
       "latest": "v1",
-      "latestFull": "v1.306.0",
+      "latestFull": "v1.307.0",
       "description": "An action to download a prebuilt Ruby and add it to the PATH in 5 seconds",
       "category": "setup-languages",
-      "sha": "c4e5b1316158f92e3d49443a9d58b31d25ac0f8f",
+      "sha": "6aaa311d81eba98ae12eaffbcb63296ace0efcde",
       "inputs": [
         "ruby-version",
         "rubygems",
@@ -9423,10 +9426,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.77.5",
+      "latestFull": "v2.77.6",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "fa0dd4cd0a40696e6f9766370614a5ce482e6aa8",
+      "sha": "c070f87102a1c75b3183910f391c1cb887fe13c8",
       "inputs": [
         "tool",
         "checksum",
@@ -9784,10 +9787,10 @@
     },
     "trufflesecurity/trufflehog": {
       "latest": "v3",
-      "latestFull": "v3.95.2",
+      "latestFull": "v3.95.3",
       "description": "Find, verify, and analyze leaked credentials",
       "category": "security",
-      "sha": "17456f8c7d042d8c82c9a8ca9e937231f9f42e26",
+      "sha": "37b77001d0174ebec2fcca2bd83ff83a6d45a3ab",
       "deprecated": [
         "v1"
       ],
