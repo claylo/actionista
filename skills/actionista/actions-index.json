@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-05-12T07:03:25Z",
+    "generated": "2026-05-13T07:07:31Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -3128,10 +3128,10 @@
     },
     "actions/ai-inference": {
       "latest": "v2",
-      "latestFull": "v2.0.7",
+      "latestFull": "v2.1.0",
       "description": "An action for calling AI models with GitHub Models",
       "category": "core",
-      "sha": "e09e65981758de8b2fdab13c2bfb7c7d5493b0b6",
+      "sha": "17ff458cb182449bbb2e43701fcd98f6af8f6570",
       "inputs": [
         "prompt",
         "prompt-file",
@@ -3149,7 +3149,10 @@
         "enable-github-mcp",
         "github-mcp-token",
         "github-mcp-toolsets",
-        "custom-headers"
+        "custom-headers",
+        "provider",
+        "copilot-cli-path",
+        "copilot-allow-tools"
       ],
       "migrations": {
         "v1→v2": {
@@ -3159,7 +3162,10 @@
               "temperature",
               "top-p",
               "github-mcp-toolsets",
-              "custom-headers"
+              "custom-headers",
+              "provider",
+              "copilot-cli-path",
+              "copilot-allow-tools"
             ],
             "removed": []
           }
@@ -3281,10 +3287,10 @@
     },
     "actions/create-github-app-token": {
       "latest": "v3",
-      "latestFull": "v3.1.1",
+      "latestFull": "v3.2.0",
       "description": "GitHub Action for creating a GitHub App Installation Access Token",
       "category": "core",
-      "sha": "1b10c78c7865c340bc4f6099eb2f838309f1e8c3",
+      "sha": "bcd2ba49218906704ab6c1aa796996da409d3eb1",
       "deprecated": [
         "v1"
       ],
@@ -3357,6 +3363,7 @@
           "inputChanges": {
             "added": [
               "client-id",
+              "enterprise",
               "permission-artifact-metadata",
               "permission-attestations",
               "permission-discussions",
@@ -3865,7 +3872,11 @@
         "min-severity",
         "fail-on-findings",
         "format",
-        "sarif-output"
+        "sarif-output",
+        "baseline",
+        "save-baseline",
+        "policy",
+        "fail-on-policy"
       ]
     },
     "amannn/action-semantic-pull-request": {
@@ -4126,10 +4137,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.120",
+      "latestFull": "v1.0.121",
       "description": "",
       "category": "ai-assistants",
-      "sha": "dde2242db6af13460b916652159b6ba19a598f30",
+      "sha": "f4fb5c6cdccc1ee7af63692f5d08d56efaa64cc8",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -5371,13 +5382,14 @@
       ]
     },
     "cloudflare/wrangler-action": {
-      "latest": "v3",
-      "latestFull": "v3.15.0",
+      "latest": "v4",
+      "latestFull": "v4.0.0",
       "description": "🧙‍♀️ easily deploy cloudflare workers applications using wrangler and github actions",
       "category": "infrastructure",
-      "sha": "9acf94ace14e7dc412b076f2c5c20b8ce93c79cd",
+      "sha": "ebbaa1584979971c8614a24965b4405ff95890e0",
       "deprecated": [
-        "v1"
+        "v1",
+        "v2"
       ],
       "inputs": [
         "apiToken",
@@ -6998,10 +7010,10 @@
     },
     "hashicorp/setup-terraform": {
       "latest": "v4",
-      "latestFull": "v4.0.0",
+      "latestFull": "v4.0.1",
       "description": "Sets up Terraform CLI in your GitHub Actions workflow.",
       "category": "infrastructure",
-      "sha": "5e8dbf3c6d9deaf4193ca7a8fb23f2ac83bb6c85",
+      "sha": "dfe3c3f87815947d99a8997f908cb6525fc44e9e",
       "deprecated": [
         "v1",
         "v2"
@@ -8046,10 +8058,10 @@
     },
     "peaceiris/actions-gh-pages": {
       "latest": "v4",
-      "latestFull": "v4.0.0",
+      "latestFull": "v4.1.0",
       "description": "GitHub Actions for GitHub Pages 🚀 Deploy static files and publish your site easily. Static-Site-Gene",
       "category": "documentation",
-      "sha": "4f9cc6602d3f66b9c108549d475ec49e8ef4d45e",
+      "sha": "84c30a85c19949d7eee79c4ff27748b70285e453",
       "deprecated": [
         "v1",
         "v2"
@@ -8391,10 +8403,10 @@
     },
     "pnpm/action-setup": {
       "latest": "v6",
-      "latestFull": "v6.0.7",
+      "latestFull": "v6.0.8",
       "description": "Install pnpm package manager",
       "category": "package-managers",
-      "sha": "739bfe42ca9233c5e6aca07c1a25a9d34aca49b0",
+      "sha": "0e279bb959325dab635dd2c09392533439d90093",
       "deprecated": [
         "v1",
         "v2",
@@ -9426,10 +9438,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.77.6",
+      "latestFull": "v2.77.7",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "c070f87102a1c75b3183910f391c1cb887fe13c8",
+      "sha": "3235f8901fd37ffed0052b276cec25a362fb82e9",
       "inputs": [
         "tool",
         "checksum",
