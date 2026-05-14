@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-05-13T07:07:31Z",
+    "generated": "2026-05-14T07:05:33Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -3876,7 +3876,9 @@
         "baseline",
         "save-baseline",
         "policy",
-        "fail-on-policy"
+        "fail-on-policy",
+        "evidence-pack",
+        "verify-evidence-pack"
       ]
     },
     "amannn/action-semantic-pull-request": {
@@ -4137,10 +4139,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.121",
+      "latestFull": "v1.0.122",
       "description": "",
       "category": "ai-assistants",
-      "sha": "f4fb5c6cdccc1ee7af63692f5d08d56efaa64cc8",
+      "sha": "86eb26bf0139bdd75acd15ea5f00f45ee0a284c2",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -4625,10 +4627,10 @@
     },
     "aws-actions/aws-lambda-deploy": {
       "latest": "v1",
-      "latestFull": "v1.1.1",
+      "latestFull": "v1.1.2",
       "description": "Deploys a Lambda function.",
       "category": "cloud-aws",
-      "sha": "20039225425cbacb648cf1ffe08cc221f19b65a0",
+      "sha": "d496277188b89f0be02d7a2216fc912c0427702a",
       "inputs": [
         "function-name",
         "package-type",
@@ -8976,10 +8978,10 @@
     },
     "shivammathur/setup-php": {
       "latest": "v2",
-      "latestFull": "2.37.0",
+      "latestFull": "2.37.1",
       "description": "GitHub action to set up PHP with extensions, php.ini configuration, coverage drivers, and various to",
       "category": "setup-languages",
-      "sha": "accd6127cb78bee3e8082180cb391013d204ef9f",
+      "sha": "7c071dfe9dc99bdf297fa79cb49ea005b9fcadbc",
       "inputs": [
         "php-version",
         "php-version-file",
@@ -9254,10 +9256,10 @@
     },
     "step-security/harden-runner": {
       "latest": "v2",
-      "latestFull": "v2.19.1",
+      "latestFull": "v2.19.2",
       "description": "Harden-Runner is a CI/CD security agent that works like an EDR for GitHub Actions runners. It monito",
       "category": "security",
-      "sha": "a5ad31d6a139d249332a2605b85202e8c0b78450",
+      "sha": "9ca718d3bf646d6534007c269a635b3e54cadf99",
       "inputs": [
         "allowed-endpoints",
         "egress-policy",
@@ -9892,10 +9894,10 @@
     },
     "w9jds/firebase-action": {
       "latest": "v15",
-      "latestFull": "v15.17.0",
+      "latestFull": "v15.18.0",
       "description": "GitHub Action for interacting with Firebase",
       "category": "cloud-gcp",
-      "sha": "d0c951464c912d53fdc73770a5711c96c5a88671",
+      "sha": "0a4f77dac6df6028b126dd9635acbb7ec0b714cc",
       "deprecated": [
         "v1",
         "v2",
