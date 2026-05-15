@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-05-14T07:05:33Z",
+    "generated": "2026-05-15T07:11:53Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -155,10 +155,10 @@
     },
     "Apple-Actions/upload-testflight-build": {
       "latest": "v5",
-      "latestFull": "v5.0.0",
+      "latestFull": "v5.2.1",
       "description": "A GitHub Action that Uploads a build to Apple TestFlight",
       "category": "mobile",
-      "sha": "9af5bd758aaff3f82a372079a38f029d60a7163b",
+      "sha": "1ad58030672057aa084b4e96beb6f7a8c627f9e6",
       "deprecated": [
         "v1",
         "v2",
@@ -4139,10 +4139,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.122",
+      "latestFull": "v1.0.123",
       "description": "",
       "category": "ai-assistants",
-      "sha": "86eb26bf0139bdd75acd15ea5f00f45ee0a284c2",
+      "sha": "51ea8ea73a139f2a74ff649e3092c25a904aed7e",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -6434,15 +6434,16 @@
     },
     "github/accessibility-scanner": {
       "latest": "v3",
-      "latestFull": "v3.1.0",
+      "latestFull": "v3.2.0",
       "description": "Finds potential accessibility gaps, files GitHub issues to track them, and attempts to fix them with",
       "category": "ai-assistants",
-      "sha": "c8d6e40b7922475b58433b3fbb98ada7f135b450",
+      "sha": "1b9502344c5fa3ecc95e88c5d97da9e498a73ef4",
       "deprecated": [
         "v1"
       ],
       "inputs": [
         "urls",
+        "url_configs",
         "repository",
         "token",
         "base_url",
@@ -6462,6 +6463,7 @@
         "v2→v3": {
           "inputChanges": {
             "added": [
+              "url_configs",
               "base_url"
             ],
             "removed": []
@@ -9256,10 +9258,10 @@
     },
     "step-security/harden-runner": {
       "latest": "v2",
-      "latestFull": "v2.19.2",
+      "latestFull": "v2.19.3",
       "description": "Harden-Runner is a CI/CD security agent that works like an EDR for GitHub Actions runners. It monito",
       "category": "security",
-      "sha": "9ca718d3bf646d6534007c269a635b3e54cadf99",
+      "sha": "ab7a9404c0f3da075243ca237b5fac12c98deaa5",
       "inputs": [
         "allowed-endpoints",
         "egress-policy",
@@ -9440,10 +9442,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.77.7",
+      "latestFull": "v2.78.1",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "3235f8901fd37ffed0052b276cec25a362fb82e9",
+      "sha": "184183c2401be73c3bf42c2e61268aa5855379c1",
       "inputs": [
         "tool",
         "checksum",
