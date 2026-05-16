@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-05-15T07:11:53Z",
+    "generated": "2026-05-16T06:50:58Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -3877,6 +3877,9 @@
         "save-baseline",
         "policy",
         "fail-on-policy",
+        "supply-chain",
+        "supply-chain-online",
+        "fail-on-supply-chain",
         "evidence-pack",
         "verify-evidence-pack"
       ]
@@ -5615,7 +5618,8 @@
         "customRepositories",
         "disableDefaultRepos",
         "extraJvmArgs",
-        "useContainerImage"
+        "useContainerImage",
+        "launcher"
       ]
     },
     "coverallsapp/github-action": {
@@ -6542,10 +6546,10 @@
     },
     "github/codeql-action/analyze": {
       "latest": "v4",
-      "latestFull": "v4.35.4",
+      "latestFull": "v4.35.5",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "68bde559dea0fdcac2102bfdf6230c5f70eb485e",
+      "sha": "9e0d7b8d25671d64c341c19c0152d693099fb5ba",
       "deprecated": [
         "v1",
         "v2"
@@ -6553,10 +6557,10 @@
     },
     "github/codeql-action/autobuild": {
       "latest": "v4",
-      "latestFull": "v4.35.4",
+      "latestFull": "v4.35.5",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "68bde559dea0fdcac2102bfdf6230c5f70eb485e",
+      "sha": "9e0d7b8d25671d64c341c19c0152d693099fb5ba",
       "deprecated": [
         "v1",
         "v2"
@@ -6564,10 +6568,10 @@
     },
     "github/codeql-action/init": {
       "latest": "v4",
-      "latestFull": "v4.35.4",
+      "latestFull": "v4.35.5",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "68bde559dea0fdcac2102bfdf6230c5f70eb485e",
+      "sha": "9e0d7b8d25671d64c341c19c0152d693099fb5ba",
       "deprecated": [
         "v1",
         "v2"
