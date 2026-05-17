@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-05-16T06:50:58Z",
+    "generated": "2026-05-17T07:01:34Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -8005,10 +8005,10 @@
     },
     "oxsecurity/megalinter": {
       "latest": "v9",
-      "latestFull": "v9.4.0",
+      "latestFull": "v9.5.0",
       "description": "🦙 MegaLinter analyzes 50 languages, 22 formats, 21 tooling formats, excessive copy-pastes, spelling ",
       "category": "linting",
-      "sha": "8fbdead70d1409964ab3d5afa885e18ee85388bb",
+      "sha": "0e3ce9b9c8c10effb9b269509cc47ca17cae31c7",
       "deprecated": [
         "v1",
         "v2",
@@ -8871,10 +8871,10 @@
     },
     "ruby/setup-ruby": {
       "latest": "v1",
-      "latestFull": "v1.307.0",
+      "latestFull": "v1.308.0",
       "description": "An action to download a prebuilt Ruby and add it to the PATH in 5 seconds",
       "category": "setup-languages",
-      "sha": "6aaa311d81eba98ae12eaffbcb63296ace0efcde",
+      "sha": "97ecb7b512899eb71ab1bf2310a624c6f1589ac6",
       "inputs": [
         "ruby-version",
         "rubygems",
@@ -9446,10 +9446,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.78.1",
+      "latestFull": "v2.78.2",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "184183c2401be73c3bf42c2e61268aa5855379c1",
+      "sha": "3771e22aa892e03fd35585fae288baad1755695c",
       "inputs": [
         "tool",
         "checksum",
