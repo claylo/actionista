@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-05-17T07:01:34Z",
+    "generated": "2026-05-18T07:28:31Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -3881,7 +3881,12 @@
         "supply-chain-online",
         "fail-on-supply-chain",
         "evidence-pack",
-        "verify-evidence-pack"
+        "verify-evidence-pack",
+        "policy-promotion-manifest",
+        "policy-promotion-pack",
+        "policy-promotion-output",
+        "policy-promotion-dry-run",
+        "fail-on-policy-promotion"
       ]
     },
     "amannn/action-semantic-pull-request": {
@@ -4953,10 +4958,10 @@
     },
     "bencherdev/bencher": {
       "latest": "v0",
-      "latestFull": "v0.6.5",
+      "latestFull": "v0.6.6",
       "description": "🐰 Bencher - Continuous Benchmarking",
       "category": "testing",
-      "sha": "99117a626dc634b8ad817f38abcf4876b3b0668b",
+      "sha": "50fb1e138651a46d2fb704fab1adab38c181552e",
       "inputs": [
         "version"
       ]
@@ -7618,10 +7623,10 @@
     },
     "mikepenz/action-junit-report": {
       "latest": "v6",
-      "latestFull": "v6.4.0",
+      "latestFull": "v6.4.1",
       "description": "Reports junit test results as GitHub Pull Request Check",
       "category": "testing",
-      "sha": "bccf2e31636835cf0874589931c4116687171386",
+      "sha": "3a81627bfac62268172037048872e8ebd4207e6d",
       "deprecated": [
         "v1",
         "v2",
