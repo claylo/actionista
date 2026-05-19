@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-05-18T07:28:31Z",
+    "generated": "2026-05-19T07:18:42Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4147,10 +4147,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.123",
+      "latestFull": "v1.0.124",
       "description": "",
       "category": "ai-assistants",
-      "sha": "51ea8ea73a139f2a74ff649e3092c25a904aed7e",
+      "sha": "24492741e0ccfdef4c1d19da8e11e0f373d07494",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -5419,10 +5419,10 @@
     },
     "codecov/codecov-action": {
       "latest": "v6",
-      "latestFull": "v6.0.0",
+      "latestFull": "v6.0.1",
       "description": "GitHub Action that uploads coverage to Codecov :open_umbrella: ",
       "category": "testing",
-      "sha": "57e3a136b779b570ffcdbf80b3bdc90e7fab3de2",
+      "sha": "e79a6962e0d4c0c17b229090214935d2e33f8354",
       "deprecated": [
         "v1",
         "v2",
@@ -8969,12 +8969,13 @@
     },
     "sbt/setup-sbt": {
       "latest": "v1",
-      "latestFull": "v1.1.23",
+      "latestFull": "v1.1.24",
       "description": "setup-sbt installs the official sbt runner",
       "category": "setup-languages",
-      "sha": "93e926cbdb4a428e41b4ef754124ec82925ffdc2",
+      "sha": "2e222825582620cc38d2a54e674f3c01b7c14f5d",
       "inputs": [
-        "sbt-runner-version"
+        "sbt-runner-version",
+        "disk-cache"
       ]
     },
     "securego/gosec": {
