@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-05-19T07:18:42Z",
+    "generated": "2026-05-20T07:18:53Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -2886,10 +2886,10 @@
     },
     "SonarSource/sonarqube-scan-action": {
       "latest": "v8",
-      "latestFull": "v8.0.0",
+      "latestFull": "v8.1.0",
       "description": "",
       "category": "linting",
-      "sha": "59db25f34e16620e48ab4bb9e4a5dce155cb5432",
+      "sha": "7006c4492b2e0ee0f816d36501671557c97f5995",
       "deprecated": [
         "v1",
         "v2",
@@ -4147,10 +4147,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.124",
+      "latestFull": "v1.0.127",
       "description": "",
       "category": "ai-assistants",
-      "sha": "24492741e0ccfdef4c1d19da8e11e0f373d07494",
+      "sha": "1dc994ee7a008f0ecc866d9ac23ef036b7229f84",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -6267,11 +6267,11 @@
       ]
     },
     "einaregilsson/beanstalk-deploy": {
-      "latest": "v22",
-      "latestFull": "v22",
+      "latest": "v23",
+      "latestFull": "v23",
       "description": "GitHub action (and command line script) to deploy apps to Elastic Beanstalk",
       "category": "infrastructure",
-      "sha": "27edd8a0ebe8656ac70654372c73f06f7e9a1027",
+      "sha": "a67044fa332b06e68985b06d361934c28ab09007",
       "deprecated": [
         "v1",
         "v2",
@@ -6292,7 +6292,8 @@
         "v17",
         "v18",
         "v19",
-        "v20"
+        "v20",
+        "v21"
       ],
       "inputs": [
         "aws_access_key",
@@ -6309,17 +6310,7 @@
         "wait_for_deployment",
         "wait_for_environment_recovery",
         "max_backoff_retries"
-      ],
-      "migrations": {
-        "v21→v22": {
-          "inputChanges": {
-            "added": [
-              "max_backoff_retries"
-            ],
-            "removed": []
-          }
-        }
-      }
+      ]
     },
     "erlef/setup-beam": {
       "latest": "v1",
@@ -6910,10 +6901,10 @@
     },
     "goreleaser/goreleaser-action": {
       "latest": "v7",
-      "latestFull": "v7.2.1",
+      "latestFull": "v7.2.2",
       "description": "GitHub Action for GoReleaser",
       "category": "release",
-      "sha": "1a80836c5c9d9e5755a25cb59ec6f45a3b5f41a8",
+      "sha": "5daf1e915a5f0af01ddbcd89a43b8061ff4f1a89",
       "deprecated": [
         "v1",
         "v2",
@@ -9452,10 +9443,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.78.2",
+      "latestFull": "v2.79.2",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "3771e22aa892e03fd35585fae288baad1755695c",
+      "sha": "213ccc1a076163c093f914550b94feb90fab916d",
       "inputs": [
         "tool",
         "checksum",
