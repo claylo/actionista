@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-05-20T07:18:53Z",
+    "generated": "2026-05-21T07:22:14Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -179,10 +179,10 @@
     },
     "DeLaGuardo/setup-clojure": {
       "latest": "v13",
-      "latestFull": "13.6.0",
+      "latestFull": "13.6.1",
       "description": "GitHub Action to provision clojure's most popular build tools for Linux, Mac OS X and Windows.",
       "category": "setup-languages",
-      "sha": "02f5a82b79a547523e664fe8a7a32ea14884d7b2",
+      "sha": "4c7a6f613e5089821bb3bb2a33a3ee115578580d",
       "deprecated": [
         "v1",
         "v2",
@@ -3695,10 +3695,10 @@
     },
     "actions/stale": {
       "latest": "v10",
-      "latestFull": "v10.2.0",
+      "latestFull": "v10.3.0",
       "description": "Marks issues and pull requests that have not had recent interaction",
       "category": "core",
-      "sha": "b5d41d4e1d5dceea10e7104786b73624c18a190f",
+      "sha": "eb5cf3af3ac0a1aa4c9c45633dd1ae542a27a899",
       "deprecated": [
         "v1",
         "v2",
@@ -4147,10 +4147,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.127",
+      "latestFull": "v1.0.128",
       "description": "",
       "category": "ai-assistants",
-      "sha": "1dc994ee7a008f0ecc866d9ac23ef036b7229f84",
+      "sha": "20c8abf165d5f85ab3fc970db9498436377dc9d1",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -8867,10 +8867,10 @@
     },
     "ruby/setup-ruby": {
       "latest": "v1",
-      "latestFull": "v1.308.0",
+      "latestFull": "v1.310.0",
       "description": "An action to download a prebuilt Ruby and add it to the PATH in 5 seconds",
       "category": "setup-languages",
-      "sha": "97ecb7b512899eb71ab1bf2310a624c6f1589ac6",
+      "sha": "afeafc3d1ab54a631816aba4c914a0081c12ff2f",
       "inputs": [
         "ruby-version",
         "rubygems",
@@ -9443,10 +9443,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.79.2",
+      "latestFull": "v2.79.3",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "213ccc1a076163c093f914550b94feb90fab916d",
+      "sha": "65851e10cd6c377f11a60e600abc07cb08643468",
       "inputs": [
         "tool",
         "checksum",
