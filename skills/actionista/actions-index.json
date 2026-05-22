@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-05-21T07:22:14Z",
+    "generated": "2026-05-22T07:18:40Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4147,10 +4147,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.128",
+      "latestFull": "v1.0.131",
       "description": "",
       "category": "ai-assistants",
-      "sha": "20c8abf165d5f85ab3fc970db9498436377dc9d1",
+      "sha": "4481e6d3c7bbb88db2a928ca3444c536f589c7c1",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -4166,6 +4166,11 @@
         "settings",
         "anthropic_api_key",
         "claude_code_oauth_token",
+        "anthropic_federation_rule_id",
+        "anthropic_organization_id",
+        "anthropic_service_account_id",
+        "anthropic_workspace_id",
+        "anthropic_oidc_audience",
         "github_token",
         "use_bedrock",
         "use_vertex",
@@ -6001,10 +6006,10 @@
     },
     "docker/bake-action": {
       "latest": "v7",
-      "latestFull": "v7.1.0",
+      "latestFull": "v7.2.0",
       "description": "GitHub Action to use Docker Buildx Bake as a high-level build command",
       "category": "docker",
-      "sha": "a66e1c87e2eca0503c343edf1d208c716d54b8a8",
+      "sha": "6614cfa25eff9a0b2b2697efb0b6159e7680d584",
       "deprecated": [
         "v1",
         "v2",
@@ -6044,10 +6049,10 @@
     },
     "docker/build-push-action": {
       "latest": "v7",
-      "latestFull": "v7.1.0",
+      "latestFull": "v7.2.0",
       "description": "GitHub Action to build and push Docker images with Buildx",
       "category": "docker",
-      "sha": "bcafcacb16a39f128d818304e6c9c0c18556b85f",
+      "sha": "f9f3042f7e2789586610d6e8b85c8f03e5195baf",
       "deprecated": [
         "v1",
         "v2",
@@ -6594,10 +6599,10 @@
     },
     "golangci/golangci-lint-action": {
       "latest": "v9",
-      "latestFull": "v9.2.0",
+      "latestFull": "v9.2.1",
       "description": "Official GitHub Action for golangci-lint from its authors",
       "category": "linting",
-      "sha": "1e7e51e771db61008b38414a730f564565cf7c20",
+      "sha": "82606bf257cbaff209d206a39f5134f0cfbfd2ee",
       "deprecated": [
         "v1",
         "v2",
@@ -9259,10 +9264,10 @@
     },
     "step-security/harden-runner": {
       "latest": "v2",
-      "latestFull": "v2.19.3",
+      "latestFull": "v2.19.4",
       "description": "Harden-Runner is a CI/CD security agent that works like an EDR for GitHub Actions runners. It monito",
       "category": "security",
-      "sha": "ab7a9404c0f3da075243ca237b5fac12c98deaa5",
+      "sha": "9af89fc71515a100421586dfdb3dc9c984fbf411",
       "inputs": [
         "allowed-endpoints",
         "egress-policy",
@@ -9443,10 +9448,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.79.3",
+      "latestFull": "v2.79.4",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "65851e10cd6c377f11a60e600abc07cb08643468",
+      "sha": "e0eafa9a0d485c37f97c0f7beb930a58a2facbac",
       "inputs": [
         "tool",
         "checksum",
