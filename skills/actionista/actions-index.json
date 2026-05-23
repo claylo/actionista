@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-05-22T07:18:40Z",
+    "generated": "2026-05-23T06:59:26Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -213,10 +213,10 @@
     },
     "EmbarkStudios/cargo-deny-action": {
       "latest": "v2",
-      "latestFull": "v2.0.18",
+      "latestFull": "v2.0.19",
       "description": "❌ GitHub Action for cargo-deny 🦀",
       "category": "security",
-      "sha": "6c8f9facfa5047ec02d8485b6bf52b587b7777d1",
+      "sha": "a531616d8ce3b9177443e48a1159bc945a099823",
       "inputs": [
         "command",
         "arguments",
@@ -4147,10 +4147,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.131",
+      "latestFull": "v1.0.133",
       "description": "",
       "category": "ai-assistants",
-      "sha": "4481e6d3c7bbb88db2a928ca3444c536f589c7c1",
+      "sha": "787c5a0ce96a9a6cfb050ea0c8f4c05f2447c251",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -6098,10 +6098,10 @@
     },
     "docker/login-action": {
       "latest": "v4",
-      "latestFull": "v4.1.0",
+      "latestFull": "v4.2.0",
       "description": "GitHub Action to login against a Docker registry",
       "category": "docker",
-      "sha": "4907a6ddec9925e35a0a9e82d7399ccc52663121",
+      "sha": "650006c6eb7dba73a995cc03b0b2d7f5ca915bee",
       "deprecated": [
         "v1",
         "v2"
@@ -6118,10 +6118,10 @@
     },
     "docker/metadata-action": {
       "latest": "v6",
-      "latestFull": "v6.0.0",
+      "latestFull": "v6.1.0",
       "description": "GitHub Action to extract metadata (tags, labels) from Git reference and GitHub events for Docker",
       "category": "docker",
-      "sha": "030e881283bb7a6894de51c315a6bfe6a94e05cf",
+      "sha": "80c7e94dd9b9319bd5eb7a0e0fe9291e23a2a2e9",
       "deprecated": [
         "v1",
         "v2",
@@ -6144,10 +6144,10 @@
     },
     "docker/setup-buildx-action": {
       "latest": "v4",
-      "latestFull": "v4.0.0",
+      "latestFull": "v4.1.0",
       "description": "GitHub Action to set up Docker Buildx",
       "category": "docker",
-      "sha": "4d04d5d9486b7bd6fa91e7baf45bbb4f8b9deedd",
+      "sha": "d7f5e7f509e45cec5c76c4d5afdd7de93d0b3df5",
       "deprecated": [
         "v1",
         "v2"
@@ -6547,10 +6547,10 @@
     },
     "github/codeql-action/analyze": {
       "latest": "v4",
-      "latestFull": "v4.35.5",
+      "latestFull": "v4.36.0",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "9e0d7b8d25671d64c341c19c0152d693099fb5ba",
+      "sha": "7211b7c8077ea37d8641b6271f6a365a22a5fbfa",
       "deprecated": [
         "v1",
         "v2"
@@ -6558,10 +6558,10 @@
     },
     "github/codeql-action/autobuild": {
       "latest": "v4",
-      "latestFull": "v4.35.5",
+      "latestFull": "v4.36.0",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "9e0d7b8d25671d64c341c19c0152d693099fb5ba",
+      "sha": "7211b7c8077ea37d8641b6271f6a365a22a5fbfa",
       "deprecated": [
         "v1",
         "v2"
@@ -6569,10 +6569,10 @@
     },
     "github/codeql-action/init": {
       "latest": "v4",
-      "latestFull": "v4.35.5",
+      "latestFull": "v4.36.0",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "9e0d7b8d25671d64c341c19c0152d693099fb5ba",
+      "sha": "7211b7c8077ea37d8641b6271f6a365a22a5fbfa",
       "deprecated": [
         "v1",
         "v2"
@@ -7386,10 +7386,10 @@
     },
     "lukka/get-cmake": {
       "latest": "v4",
-      "latestFull": "v4.3.2",
+      "latestFull": "v4.3.3",
       "description": "Install and Cache latest CMake and Ninja for your workflows on your GitHub",
       "category": "build-tools",
-      "sha": "7bfc9baacbbdcb5e37957ad05c3546b3e222be3c",
+      "sha": "591817e96fcad43505fb4eae36172462abb3a42e",
       "deprecated": [
         "v1",
         "v2"
@@ -9448,10 +9448,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.79.4",
+      "latestFull": "v2.79.5",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "e0eafa9a0d485c37f97c0f7beb930a58a2facbac",
+      "sha": "6c1f7cf125e42770ff087ea443901b487cc5471a",
       "inputs": [
         "tool",
         "checksum",
