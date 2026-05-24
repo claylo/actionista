@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-05-23T06:59:26Z",
+    "generated": "2026-05-24T07:10:21Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -3842,11 +3842,12 @@
     },
     "ad-m/github-push-action": {
       "latest": "v1",
-      "latestFull": "v1.1.0",
+      "latestFull": "v1.2.0",
       "description": "GitHub actions to push back to repository eg. updated code",
       "category": "git-operations",
-      "sha": "4cc74773234f74829a8c21bc4d69dd4be9cfa599",
+      "sha": "fdfe7e83ff42edf5d49846b69f3c78d806169d51",
       "inputs": [
+        "token",
         "github_token",
         "github_url",
         "ssh",
@@ -3858,7 +3859,8 @@
         "push_to_submodules",
         "tags",
         "push_only_tags",
-        "directory"
+        "directory",
+        "pull"
       ]
     },
     "affaan-m/agentshield": {
@@ -9448,10 +9450,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.79.5",
+      "latestFull": "v2.79.6",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "6c1f7cf125e42770ff087ea443901b487cc5471a",
+      "sha": "f48d2f8ba2b452934c948b7be1a768079c3632ff",
       "inputs": [
         "tool",
         "checksum",
