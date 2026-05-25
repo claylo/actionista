@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-05-24T07:10:21Z",
+    "generated": "2026-05-25T07:38:52Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -3842,10 +3842,10 @@
     },
     "ad-m/github-push-action": {
       "latest": "v1",
-      "latestFull": "v1.2.0",
+      "latestFull": "v1.3.0",
       "description": "GitHub actions to push back to repository eg. updated code",
       "category": "git-operations",
-      "sha": "fdfe7e83ff42edf5d49846b69f3c78d806169d51",
+      "sha": "881a6320fdb16eb5318c5054f31c218aec2b324c",
       "inputs": [
         "token",
         "github_token",
@@ -9450,10 +9450,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.79.6",
+      "latestFull": "v2.79.7",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "f48d2f8ba2b452934c948b7be1a768079c3632ff",
+      "sha": "d9be7d8cda89035c9c843f78bd44d4f72d8403d4",
       "inputs": [
         "tool",
         "checksum",
