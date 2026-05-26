@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-05-25T07:38:52Z",
+    "generated": "2026-05-26T07:17:35Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -3128,10 +3128,10 @@
     },
     "actions/ai-inference": {
       "latest": "v2",
-      "latestFull": "v2.1.0",
+      "latestFull": "v2.1.1",
       "description": "An action for calling AI models with GitHub Models",
       "category": "core",
-      "sha": "17ff458cb182449bbb2e43701fcd98f6af8f6570",
+      "sha": "a7805884c80886efc241e94a5351df715968a0ad",
       "inputs": [
         "prompt",
         "prompt-file",
@@ -4738,9 +4738,7 @@
         "use-existing-credentials",
         "allowed-account-ids",
         "force-skip-oidc",
-        "action-timeout-s",
-        "custom-tags",
-        "sts-endpoint"
+        "action-timeout-s"
       ],
       "migrations": {
         "v5→v6": {
@@ -8650,10 +8648,10 @@
     },
     "release-drafter/release-drafter": {
       "latest": "v7",
-      "latestFull": "v7.3.0",
+      "latestFull": "v7.3.1",
       "description": "Drafts your next release notes as pull requests are merged into master. ",
       "category": "release",
-      "sha": "c2e2804cc59f45f57076a99af580d0fedb697927",
+      "sha": "693d20e7c1ce1a81d3a41962f85914253b518449",
       "deprecated": [
         "v1",
         "v2",
@@ -8967,10 +8965,10 @@
     },
     "sbt/setup-sbt": {
       "latest": "v1",
-      "latestFull": "v1.1.24",
+      "latestFull": "v1.2.0",
       "description": "setup-sbt installs the official sbt runner",
       "category": "setup-languages",
-      "sha": "2e222825582620cc38d2a54e674f3c01b7c14f5d",
+      "sha": "4ed7b7ec4bfa2074fe48554c09e341267397247c",
       "inputs": [
         "sbt-runner-version",
         "disk-cache"
@@ -9450,10 +9448,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.79.7",
+      "latestFull": "v2.79.8",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "d9be7d8cda89035c9c843f78bd44d4f72d8403d4",
+      "sha": "920ab1831fbf4fb3ef75c8ead83556c918bb7290",
       "inputs": [
         "tool",
         "checksum",
