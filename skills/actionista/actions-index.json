@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-05-26T07:17:35Z",
+    "generated": "2026-05-27T07:31:20Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4698,10 +4698,10 @@
     },
     "aws-actions/configure-aws-credentials": {
       "latest": "v6",
-      "latestFull": "v6.1.1",
+      "latestFull": "v6.1.2",
       "description": "Configure AWS credential environment variables for use in other GitHub Actions.",
       "category": "cloud-aws",
-      "sha": "d979d5b3a71173a29b74b5b88418bfda9437d885",
+      "sha": "acca2b1b2070338fb9fd1ca27ecee81d687e58e5",
       "deprecated": [
         "v1",
         "v2",
@@ -4738,7 +4738,9 @@
         "use-existing-credentials",
         "allowed-account-ids",
         "force-skip-oidc",
-        "action-timeout-s"
+        "action-timeout-s",
+        "custom-tags",
+        "sts-endpoint"
       ],
       "migrations": {
         "v5→v6": {
@@ -4746,7 +4748,9 @@
             "added": [
               "aws-profile",
               "overwrite-aws-profile",
-              "transitive-tag-keys"
+              "transitive-tag-keys",
+              "custom-tags",
+              "sts-endpoint"
             ],
             "removed": []
           }
@@ -9448,10 +9452,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.79.8",
+      "latestFull": "v2.79.9",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "920ab1831fbf4fb3ef75c8ead83556c918bb7290",
+      "sha": "8f531eaecd1898bc3da7d104ad91bee98d1b97bd",
       "inputs": [
         "tool",
         "checksum",
