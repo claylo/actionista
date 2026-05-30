@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-05-29T07:25:31Z",
+    "generated": "2026-05-30T07:04:56Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -9069,10 +9069,10 @@
     },
     "snok/container-retention-policy": {
       "latest": "v3",
-      "latestFull": "v3.0.1",
+      "latestFull": "v3.1.0",
       "description": "GitHub action for pruning old GHCR container image versions.",
       "category": "docker",
-      "sha": "3b0972b2276b171b212f8c4efbca59ebba26eceb",
+      "sha": "d3bdcf5ce9b05f685154e4a16c39233b245e3d53",
       "deprecated": [
         "v1"
       ],
@@ -9464,10 +9464,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.79.13",
+      "latestFull": "v2.79.15",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "15413b256f995d819248ea62704771a959284285",
+      "sha": "0fd46367812ee04360509b4169d9f659d6892bb2",
       "inputs": [
         "tool",
         "checksum",
@@ -9842,10 +9842,10 @@
     },
     "unikraft/kraftkit": {
       "latest": "v0",
-      "latestFull": "v0.12.12",
+      "latestFull": "v0.12.13",
       "description": "Build and use highly customized and ultra-lightweight unikernel VMs.",
       "category": "docker",
-      "sha": "4131cda90feb984697b4e86be6aed9bf51a5a114",
+      "sha": "8f5e5dd34ac04c2ac0f43c6499548f2db238e845",
       "inputs": [
         "after",
         "run",
