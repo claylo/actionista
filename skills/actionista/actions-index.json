@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-05-30T07:04:56Z",
+    "generated": "2026-05-31T07:22:46Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -8781,7 +8781,8 @@
         "eslint_flags",
         "workdir",
         "tool_name",
-        "node_options"
+        "node_options",
+        "only_changed"
       ]
     },
     "reviewdog/action-golangci-lint": {
@@ -9116,10 +9117,10 @@
     },
     "snok/install-poetry": {
       "latest": "v1",
-      "latestFull": "v1.4.1",
+      "latestFull": "v1.4.2",
       "description": "Github action for installing and configuring Poetry",
       "category": "package-managers",
-      "sha": "76e04a911780d5b312d89783f7b1cd627778900a",
+      "sha": "a783c322200f0519c7926aa6faa857c4e23e9263",
       "inputs": [
         "version",
         "virtualenvs-create",
@@ -9464,10 +9465,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.79.15",
+      "latestFull": "v2.80.0",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "0fd46367812ee04360509b4169d9f659d6892bb2",
+      "sha": "50b4a718b59c718df4ef27a3b445f86cd57b9f00",
       "inputs": [
         "tool",
         "checksum",
