@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-05-31T07:22:46Z",
+    "generated": "2026-06-01T07:51:17Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4397,7 +4397,9 @@
         "tool-dir",
         "tool-bin-dir",
         "manifest-file",
+        "download-from-astral-mirror",
         "add-problem-matchers",
+        "quiet",
         "resolution-strategy"
       ],
       "migrations": {
@@ -9465,10 +9467,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.80.0",
+      "latestFull": "v2.81.1",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "50b4a718b59c718df4ef27a3b445f86cd57b9f00",
+      "sha": "e49978b799e49ff429d162b7a30601a569ab6538",
       "inputs": [
         "tool",
         "checksum",
