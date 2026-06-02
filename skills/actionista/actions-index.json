@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-06-01T07:51:17Z",
+    "generated": "2026-06-02T07:43:21Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -2908,10 +2908,10 @@
     },
     "Songmu/tagpr": {
       "latest": "v1",
-      "latestFull": "v1.19.0",
+      "latestFull": "v1.20.0",
       "description": "automatically creates and updates a pull request for unreleased items, tag them when they are merged",
       "category": "release",
-      "sha": "555e72cee68c09d43dc2337dc9ba890955b630da",
+      "sha": "e84001bd5dac8defa0c75b3913937d284a3b3660",
       "inputs": [
         "version",
         "config"
@@ -4701,10 +4701,10 @@
     },
     "aws-actions/configure-aws-credentials": {
       "latest": "v6",
-      "latestFull": "v6.1.3",
+      "latestFull": "v6.2.0",
       "description": "Configure AWS credential environment variables for use in other GitHub Actions.",
       "category": "cloud-aws",
-      "sha": "99214aa6889fcddfa57764031d71add364327e59",
+      "sha": "e7f100cf4c008499ea8adda475de1042d6975c7b",
       "deprecated": [
         "v1",
         "v2",
@@ -5768,10 +5768,10 @@
     },
     "cypress-io/github-action": {
       "latest": "v7",
-      "latestFull": "v7.3.0",
+      "latestFull": "v7.4.0",
       "description": "GitHub Action for running Cypress end-to-end & component tests",
       "category": "testing",
-      "sha": "dace029018fcdf86e0df89a31bc3cfa5b32570d8",
+      "sha": "948d67d3074f1bbb6379c8bdbb04e95d2f8e593f",
       "deprecated": [
         "v1",
         "v2",
@@ -8995,10 +8995,10 @@
     },
     "securego/gosec": {
       "latest": "v2",
-      "latestFull": "v2.26.1",
+      "latestFull": "v2.27.1",
       "description": "Go security checker",
       "category": "security",
-      "sha": "4a3bd8af174872c778439083ded7adbf3747e770",
+      "sha": "9e6a9843d7a4a6e3e9a8539b02612c8a4aa3f889",
       "inputs": [
         "args"
       ]
@@ -9828,10 +9828,10 @@
     },
     "trufflesecurity/trufflehog": {
       "latest": "v3",
-      "latestFull": "v3.95.3",
+      "latestFull": "v3.95.4",
       "description": "Find, verify, and analyze leaked credentials",
       "category": "security",
-      "sha": "37b77001d0174ebec2fcca2bd83ff83a6d45a3ab",
+      "sha": "d411fff7b8879a62509f3fa98c07f247ac089a51",
       "deprecated": [
         "v1"
       ],
