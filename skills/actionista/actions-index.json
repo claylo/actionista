@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-06-02T07:43:21Z",
+    "generated": "2026-06-03T07:47:03Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -3233,10 +3233,10 @@
     },
     "actions/checkout": {
       "latest": "v6",
-      "latestFull": "v6.0.2",
+      "latestFull": "v6.0.3",
       "description": "Action for checking out a repo",
       "category": "core",
-      "sha": "de0fac2e4500dabe0009e67214ff5f5447ce83dd",
+      "sha": "df4cb1c069e1874edd31b4311f1884172cec0e10",
       "deprecated": [
         "v1",
         "v2",
@@ -4150,10 +4150,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.133",
+      "latestFull": "v1.0.134",
       "description": "",
       "category": "ai-assistants",
-      "sha": "787c5a0ce96a9a6cfb050ea0c8f4c05f2447c251",
+      "sha": "36a69b6a90b850823f86de06fdfd56264772ad98",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -4209,6 +4209,11 @@
         "claude_args",
         "anthropic_api_key",
         "claude_code_oauth_token",
+        "anthropic_federation_rule_id",
+        "anthropic_organization_id",
+        "anthropic_service_account_id",
+        "anthropic_workspace_id",
+        "anthropic_oidc_audience",
         "use_bedrock",
         "use_vertex",
         "use_foundry",
@@ -5246,10 +5251,10 @@
     },
     "changesets/action": {
       "latest": "v1",
-      "latestFull": "v1.8.0",
+      "latestFull": "v1.9.0",
       "description": "",
       "category": "release",
-      "sha": "63a615b9cd06ba9a3e6d13796c7fbcb080a60a0b",
+      "sha": "a45c4d594aa4e2c509dc14a9f2b3b67ba3780d0d",
       "inputs": [
         "github-token",
         "publish",
@@ -6357,18 +6362,19 @@
       ]
     },
     "expo/expo-github-action": {
-      "latest": "v8",
-      "latestFull": "8.2.1",
+      "latest": "v9",
+      "latestFull": "9.0.0",
       "description": "Expo GitHub Action makes it easy to automate EAS builds or updates",
       "category": "mobile",
-      "sha": "c7b66a9c327a43a8fa7c0158e7f30d6040d2481e",
+      "sha": "eab7a230208c952974db8c3245cfd78402c7b385",
       "deprecated": [
         "v1",
         "v2",
         "v3",
         "v4",
         "v5",
-        "v6"
+        "v6",
+        "v7"
       ],
       "inputs": [
         "expo-version",
@@ -6565,10 +6571,10 @@
     },
     "github/codeql-action/analyze": {
       "latest": "v4",
-      "latestFull": "v4.36.0",
+      "latestFull": "v4.36.1",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "7211b7c8077ea37d8641b6271f6a365a22a5fbfa",
+      "sha": "87557b9c84dde89fdd9b10e88954ac2f4248e463",
       "deprecated": [
         "v1",
         "v2"
@@ -6576,10 +6582,10 @@
     },
     "github/codeql-action/autobuild": {
       "latest": "v4",
-      "latestFull": "v4.36.0",
+      "latestFull": "v4.36.1",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "7211b7c8077ea37d8641b6271f6a365a22a5fbfa",
+      "sha": "87557b9c84dde89fdd9b10e88954ac2f4248e463",
       "deprecated": [
         "v1",
         "v2"
@@ -6587,10 +6593,10 @@
     },
     "github/codeql-action/init": {
       "latest": "v4",
-      "latestFull": "v4.36.0",
+      "latestFull": "v4.36.1",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "7211b7c8077ea37d8641b6271f6a365a22a5fbfa",
+      "sha": "87557b9c84dde89fdd9b10e88954ac2f4248e463",
       "deprecated": [
         "v1",
         "v2"
@@ -8004,10 +8010,10 @@
     },
     "overtrue/phplint": {
       "latest": "v9",
-      "latestFull": "9.7.1",
+      "latestFull": "9.7.2",
       "description": ":bug:  A tool that can speed up linting of php files by running several lint processes at once.",
       "category": "linting",
-      "sha": "69ec6707970ef95bdc6cd7489e407dbf9ff2981b",
+      "sha": "f9d3fb3c6b6af49fce0fa8d712da1c38da41fe65",
       "deprecated": [
         "v1",
         "v2",
@@ -9467,10 +9473,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.81.1",
+      "latestFull": "v2.81.3",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "e49978b799e49ff429d162b7a30601a569ab6538",
+      "sha": "25435dc8dd3baed7417e0c96d3fe89013a5b2e09",
       "inputs": [
         "tool",
         "checksum",
@@ -9828,7 +9834,7 @@
     },
     "trufflesecurity/trufflehog": {
       "latest": "v3",
-      "latestFull": "v3.95.4",
+      "latestFull": "v3.95.5",
       "description": "Find, verify, and analyze leaked credentials",
       "category": "security",
       "sha": "d411fff7b8879a62509f3fa98c07f247ac089a51",
