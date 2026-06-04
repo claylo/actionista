@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-06-03T07:47:03Z",
+    "generated": "2026-06-04T07:42:33Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4150,10 +4150,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.134",
+      "latestFull": "v1.0.135",
       "description": "",
       "category": "ai-assistants",
-      "sha": "36a69b6a90b850823f86de06fdfd56264772ad98",
+      "sha": "70a6e5256e9e2366a1ed5c041904a982ba3a328f",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -4367,10 +4367,10 @@
     },
     "astral-sh/setup-uv": {
       "latest": "v8",
-      "latestFull": "v8.1.0",
+      "latestFull": "v8.2.0",
       "description": "Set up your GitHub Actions workflow with a specific version of https://docs.astral.sh/uv/",
       "category": "setup-languages",
-      "sha": "08807647e7069bb48b6ef5acd8ec9567f424441b",
+      "sha": "fac544c07dec837d0ccb6301d7b5580bf5edae39",
       "deprecated": [
         "v1",
         "v2",
@@ -4411,7 +4411,9 @@
         "v7→v8": {
           "inputChanges": {
             "added": [
-              "no-project"
+              "no-project",
+              "download-from-astral-mirror",
+              "quiet"
             ],
             "removed": []
           }
@@ -4570,6 +4572,8 @@
         "log-configuration-options",
         "docker-labels",
         "command",
+        "task-role-arn",
+        "execution-role-arn",
         "env-files",
         "secrets"
       ]
@@ -6962,10 +6966,10 @@
     },
     "graalvm/setup-graalvm": {
       "latest": "v1",
-      "latestFull": "v1.5.3",
+      "latestFull": "v1.5.4",
       "description": "Set up your GitHub Actions workflow with a specific GraalVM distribution.",
       "category": "setup-languages",
-      "sha": "bef4b0e916c7dd079bf60fb95d49139f67e32c5f",
+      "sha": "329c42c5f4c343bceb505f0b28cc8499bc2bf174",
       "inputs": [
         "java-version",
         "java-package",
@@ -9927,10 +9931,10 @@
     },
     "w9jds/firebase-action": {
       "latest": "v15",
-      "latestFull": "v15.19.0",
+      "latestFull": "v15.19.1",
       "description": "GitHub Action for interacting with Firebase",
       "category": "cloud-gcp",
-      "sha": "a95a1d1dfeea8f7efbe0eb13fd3bf429cb4ac437",
+      "sha": "b3c725170700a48b168a32972e7aaa4c92bf1061",
       "deprecated": [
         "v1",
         "v2",
