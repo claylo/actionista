@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-06-04T07:42:33Z",
+    "generated": "2026-06-05T07:34:01Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -2903,7 +2903,8 @@
         "projectBaseDir",
         "scannerVersion",
         "scannerBinariesUrl",
-        "skipSignatureVerification"
+        "skipSignatureVerification",
+        "scannerBinariesAuthHeader"
       ]
     },
     "Songmu/tagpr": {
@@ -4150,10 +4151,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.135",
+      "latestFull": "v1.0.137",
       "description": "",
       "category": "ai-assistants",
-      "sha": "70a6e5256e9e2366a1ed5c041904a982ba3a328f",
+      "sha": "41ea7642c1436fa0ee57aae58347904b71a5af27",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -5533,10 +5534,10 @@
     },
     "conan-io/setup-conan": {
       "latest": "v1",
-      "latestFull": "v1.3.0",
+      "latestFull": "v1.4.0",
       "description": "A GitHub Action to install and configure the Conan package manager in your workflow",
       "category": "build-tools",
-      "sha": "2f4bd34e8e0af00e1a77a66e1d284e06d71d703f",
+      "sha": "ed3942a6883243f4af84e13e49c972f9440fa1c2",
       "inputs": [
         "version",
         "config_urls",
@@ -6575,10 +6576,10 @@
     },
     "github/codeql-action/analyze": {
       "latest": "v4",
-      "latestFull": "v4.36.1",
+      "latestFull": "v4.36.2",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "87557b9c84dde89fdd9b10e88954ac2f4248e463",
+      "sha": "8aad20d150bbac5944a9f9d289da16a4b0d87c1e",
       "deprecated": [
         "v1",
         "v2"
@@ -6586,10 +6587,10 @@
     },
     "github/codeql-action/autobuild": {
       "latest": "v4",
-      "latestFull": "v4.36.1",
+      "latestFull": "v4.36.2",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "87557b9c84dde89fdd9b10e88954ac2f4248e463",
+      "sha": "8aad20d150bbac5944a9f9d289da16a4b0d87c1e",
       "deprecated": [
         "v1",
         "v2"
@@ -6597,10 +6598,10 @@
     },
     "github/codeql-action/init": {
       "latest": "v4",
-      "latestFull": "v4.36.1",
+      "latestFull": "v4.36.2",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "87557b9c84dde89fdd9b10e88954ac2f4248e463",
+      "sha": "8aad20d150bbac5944a9f9d289da16a4b0d87c1e",
       "deprecated": [
         "v1",
         "v2"
@@ -9477,10 +9478,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.81.3",
+      "latestFull": "v2.81.5",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "25435dc8dd3baed7417e0c96d3fe89013a5b2e09",
+      "sha": "4bc351f7f2614e48088386e2a0ad917ca3a7e4ba",
       "inputs": [
         "tool",
         "checksum",
