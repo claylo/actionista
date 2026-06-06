@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-06-05T07:34:01Z",
+    "generated": "2026-06-06T07:08:20Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4151,10 +4151,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.137",
+      "latestFull": "v1.0.139",
       "description": "",
       "category": "ai-assistants",
-      "sha": "41ea7642c1436fa0ee57aae58347904b71a5af27",
+      "sha": "64de744025ca9e24df2b88204b4f1e968f39f009",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -4423,10 +4423,10 @@
     },
     "asyncapi/cli": {
       "latest": "v6",
-      "latestFull": "v6.0.0",
+      "latestFull": "v6.0.1",
       "description": "CLI to work with your AsyncAPI files. You can validate them and in the future use a generator and ev",
       "category": "utilities",
-      "sha": "94148460e505a8f61b08874d7613b54dffa75d9b",
+      "sha": "6cc220f1be6e883d4a1995570d0cb43f7fc60a4f",
       "deprecated": [
         "v1",
         "v2",
@@ -9478,10 +9478,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.81.5",
+      "latestFull": "v2.81.6",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "4bc351f7f2614e48088386e2a0ad917ca3a7e4ba",
+      "sha": "59012be0884e296ca2da49b530610e72c49039ad",
       "inputs": [
         "tool",
         "checksum",
