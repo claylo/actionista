@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-06-07T07:28:03Z",
+    "generated": "2026-06-08T07:47:30Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -8593,13 +8593,14 @@
       ]
     },
     "pypa/cibuildwheel": {
-      "latest": "v3",
-      "latestFull": "v3.4.1",
+      "latest": "v4",
+      "latestFull": "v4.0.0",
       "description": "🎡 Build Python wheels for all the platforms with minimal configuration. ",
       "category": "build-tools",
-      "sha": "8d2b08b68458a16aeb24b64e68a09ab1c8e82084",
+      "sha": "f03ac7617d6cff873ccf24cc0d567ef5ba5a9e6d",
       "deprecated": [
-        "v1"
+        "v1",
+        "v2"
       ],
       "inputs": [
         "package-dir",
@@ -9214,10 +9215,10 @@
     },
     "softprops/turnstyle": {
       "latest": "v3",
-      "latestFull": "v3.2.4",
+      "latestFull": "v3.3.1",
       "description": "🎟️A GitHub Action for serializing workflow runs",
       "category": "utilities",
-      "sha": "e15e934b3f69ee283ba389ea05c8886baa656d93",
+      "sha": "fa86562458e34a9067f0dc1316a76b3975b1c413",
       "deprecated": [
         "v1"
       ],
@@ -9231,14 +9232,16 @@
         "job-to-wait-for",
         "step-to-wait-for",
         "initial-wait-seconds",
-        "queue-name"
+        "queue-name",
+        "retries"
       ],
       "migrations": {
         "v2→v3": {
           "inputChanges": {
             "added": [
               "branch",
-              "queue-name"
+              "queue-name",
+              "retries"
             ],
             "removed": []
           }
@@ -9479,10 +9482,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.81.7",
+      "latestFull": "v2.81.8",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "56545b37b57562edd73171cb6c62cc509db4c34e",
+      "sha": "0631aa6515c7d545823c67cfae7ef4fc7f490154",
       "inputs": [
         "tool",
         "checksum",
