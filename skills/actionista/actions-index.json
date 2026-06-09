@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-06-08T07:47:30Z",
+    "generated": "2026-06-09T07:19:08Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4151,10 +4151,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.140",
+      "latestFull": "v1.0.141",
       "description": "",
       "category": "ai-assistants",
-      "sha": "fbda2eb1bdc90d319b8d853f5deb53bca199a7c1",
+      "sha": "593d7a5c4e0073569f74772c2b7b64c30ec14707",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -5246,10 +5246,10 @@
     },
     "cargo-bins/cargo-binstall": {
       "latest": "v1",
-      "latestFull": "v1.19.1",
+      "latestFull": "v1.20.0",
       "description": "Binary installation for rust projects",
       "category": "build-tools",
-      "sha": "aaa84a43aec4955a42c5ffc65d258961e39f276e",
+      "sha": "30b5ca8b54e1dcffd9548bc87ede1531310fdc67",
       "inputs": [
         "version"
       ]
@@ -8904,10 +8904,10 @@
     },
     "ruby/setup-ruby": {
       "latest": "v1",
-      "latestFull": "v1.310.0",
+      "latestFull": "v1.312.0",
       "description": "An action to download a prebuilt Ruby and add it to the PATH in 5 seconds",
       "category": "setup-languages",
-      "sha": "afeafc3d1ab54a631816aba4c914a0081c12ff2f",
+      "sha": "12fd324f1d0b43274fdc8130f6980590a667c455",
       "inputs": [
         "ruby-version",
         "rubygems",
@@ -9018,10 +9018,10 @@
     },
     "shivammathur/setup-php": {
       "latest": "v2",
-      "latestFull": "2.37.1",
+      "latestFull": "2.37.2",
       "description": "GitHub action to set up PHP with extensions, php.ini configuration, coverage drivers, and various to",
       "category": "setup-languages",
-      "sha": "7c071dfe9dc99bdf297fa79cb49ea005b9fcadbc",
+      "sha": "f3e473d116dcccaddc5834248c87452386958240",
       "inputs": [
         "php-version",
         "php-version-file",
