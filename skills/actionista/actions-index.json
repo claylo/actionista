@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-06-09T07:19:08Z",
+    "generated": "2026-06-10T07:33:59Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -2886,10 +2886,10 @@
     },
     "SonarSource/sonarqube-scan-action": {
       "latest": "v8",
-      "latestFull": "v8.1.0",
+      "latestFull": "v8.2.0",
       "description": "",
       "category": "linting",
-      "sha": "7006c4492b2e0ee0f816d36501671557c97f5995",
+      "sha": "713881670b6b3676cda39549040e2d88c70d582e",
       "deprecated": [
         "v1",
         "v2",
@@ -2905,7 +2905,17 @@
         "scannerBinariesUrl",
         "skipSignatureVerification",
         "scannerBinariesAuthHeader"
-      ]
+      ],
+      "migrations": {
+        "v7→v8": {
+          "inputChanges": {
+            "added": [
+              "scannerBinariesAuthHeader"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "Songmu/tagpr": {
       "latest": "v1",
@@ -4151,10 +4161,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.141",
+      "latestFull": "v1.0.142",
       "description": "",
       "category": "ai-assistants",
-      "sha": "593d7a5c4e0073569f74772c2b7b64c30ec14707",
+      "sha": "11ba60486e4aec9ddfeafcf4bb3f00b028ac2c16",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -6992,10 +7002,10 @@
     },
     "gradle/actions/setup-gradle": {
       "latest": "v6",
-      "latestFull": "v6.1.0",
+      "latestFull": "v6.1.1",
       "description": "A collection of GitHub Actions to accelerate your Gradle Builds on GitHub",
       "category": "build-tools",
-      "sha": "50e97c2cd7a37755bbfafc9c5b7cafaece252f6e",
+      "sha": "5e2ebd065dc2488b7a6ad670704656cbbe1e8f60",
       "deprecated": [
         "v1",
         "v2",
@@ -8726,10 +8736,10 @@
     },
     "release-plz/action": {
       "latest": "v0",
-      "latestFull": "v0.5.129",
+      "latestFull": "v0.5.130",
       "description": "GitHub action for https://github.com/release-plz/release-plz",
       "category": "release",
-      "sha": "064f4d1e36c843611ddf013be726beaa4ad804db",
+      "sha": "e8792575c7f2366cf6ff3ccc33ead9ace5b691c7",
       "inputs": [
         "command",
         "registry",
@@ -9482,10 +9492,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.81.8",
+      "latestFull": "v2.81.9",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "0631aa6515c7d545823c67cfae7ef4fc7f490154",
+      "sha": "fd2f5e3d644b484055ebf4268f474c565f148f25",
       "inputs": [
         "tool",
         "checksum",
