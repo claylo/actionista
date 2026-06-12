@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-06-11T07:45:30Z",
+    "generated": "2026-06-12T07:42:25Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4161,10 +4161,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.144",
+      "latestFull": "v1.0.146",
       "description": "",
       "category": "ai-assistants",
-      "sha": "0f97b95b6536c26e5f6bd90faec370d41695beca",
+      "sha": "0cb4f3e5e764d2e00407d29b6bf0aa9df0976d88",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -7526,10 +7526,10 @@
     },
     "maierj/fastlane-action": {
       "latest": "v3",
-      "latestFull": "v3.1.0",
+      "latestFull": "v3.2.0",
       "description": "A GitHub action for executing fastlane lanes.",
       "category": "mobile",
-      "sha": "5a3b971aaa26776459bb26894d6c1a1a84a311a7",
+      "sha": "182983d8f94bad9884001c03c1c2786f4c7165ed",
       "deprecated": [
         "v1"
       ],
@@ -8914,10 +8914,10 @@
     },
     "ruby/setup-ruby": {
       "latest": "v1",
-      "latestFull": "v1.312.0",
+      "latestFull": "v1.313.0",
       "description": "An action to download a prebuilt Ruby and add it to the PATH in 5 seconds",
       "category": "setup-languages",
-      "sha": "12fd324f1d0b43274fdc8130f6980590a667c455",
+      "sha": "89f90524b88a01fe6e0b732220432cc6142926af",
       "inputs": [
         "ruby-version",
         "rubygems",
@@ -9946,10 +9946,10 @@
     },
     "w9jds/firebase-action": {
       "latest": "v15",
-      "latestFull": "v15.19.1",
+      "latestFull": "v15.20.0",
       "description": "GitHub Action for interacting with Firebase",
       "category": "cloud-gcp",
-      "sha": "b3c725170700a48b168a32972e7aaa4c92bf1061",
+      "sha": "47ca9cd931889c1fb7bc67f51597278159cb7c9e",
       "deprecated": [
         "v1",
         "v2",
