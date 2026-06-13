@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-06-12T07:42:25Z",
+    "generated": "2026-06-13T07:22:42Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4161,10 +4161,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.146",
+      "latestFull": "v1.0.148",
       "description": "",
       "category": "ai-assistants",
-      "sha": "0cb4f3e5e764d2e00407d29b6bf0aa9df0976d88",
+      "sha": "d5726de019ec4498aa667642bc3a80fca83aa102",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -4484,10 +4484,10 @@
     },
     "aws-actions/amazon-ecr-login": {
       "latest": "v2",
-      "latestFull": "v2.1.5",
+      "latestFull": "v2.1.6",
       "description": "Logs into Amazon ECR with the local Docker client.",
       "category": "cloud-aws",
-      "sha": "fa648b43de3d4d023bcb3f89ed6940096949c419",
+      "sha": "d539f0932e70871a027e9d5a9d8fc38589180a64",
       "inputs": [
         "http-proxy",
         "mask-password",
@@ -7002,10 +7002,10 @@
     },
     "gradle/actions/setup-gradle": {
       "latest": "v6",
-      "latestFull": "v6.1.1",
+      "latestFull": "v6.2.0",
       "description": "A collection of GitHub Actions to accelerate your Gradle Builds on GitHub",
       "category": "build-tools",
-      "sha": "5e2ebd065dc2488b7a6ad670704656cbbe1e8f60",
+      "sha": "3f131e8634966bd73d06cc69884922b02e6faf92",
       "deprecated": [
         "v1",
         "v2",
@@ -8604,10 +8604,10 @@
     },
     "pypa/cibuildwheel": {
       "latest": "v4",
-      "latestFull": "v4.0.0",
+      "latestFull": "v4.1.0",
       "description": "🎡 Build Python wheels for all the platforms with minimal configuration. ",
       "category": "build-tools",
-      "sha": "f03ac7617d6cff873ccf24cc0d567ef5ba5a9e6d",
+      "sha": "294735312765b09d24a2fbec22660ce817587d55",
       "deprecated": [
         "v1",
         "v2"
@@ -8932,10 +8932,10 @@
     },
     "rubygems/release-gem": {
       "latest": "v1",
-      "latestFull": "v1.2.0",
+      "latestFull": "v1.4.0",
       "description": "The official GitHub Action for publishing your gem files to RubyGems.org",
       "category": "release",
-      "sha": "6317d8d1f7e28c24d28f6eff169ea854948bd9f7",
+      "sha": "052cc82692552de3ef2b81fd670e41d13cba8092",
       "inputs": [
         "token",
         "await-release",
