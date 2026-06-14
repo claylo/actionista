@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-06-13T07:22:42Z",
+    "generated": "2026-06-14T07:39:55Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4468,10 +4468,10 @@
     },
     "awalsh128/cache-apt-pkgs-action": {
       "latest": "v1",
-      "latestFull": "v1.6.0",
+      "latestFull": "v1.6.1",
       "description": "Cache APT packages in GitHub Actions",
       "category": "package-managers",
-      "sha": "acb598e5ddbc6f68a970c5da0688d2f3a9f04d05",
+      "sha": "681749ae568c81c2037cb9185e38b709b261bd2f",
       "inputs": [
         "packages",
         "version",
