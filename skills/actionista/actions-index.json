@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-06-14T07:39:55Z",
+    "generated": "2026-06-15T08:04:43Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4990,10 +4990,10 @@
     },
     "bencherdev/bencher": {
       "latest": "v0",
-      "latestFull": "v0.6.6",
+      "latestFull": "v0.6.7",
       "description": "🐰 Bencher - Continuous Benchmarking",
       "category": "testing",
-      "sha": "50fb1e138651a46d2fb704fab1adab38c181552e",
+      "sha": "ec56bb69a7f34096002ca3384d10e2f6676b063e",
       "inputs": [
         "version"
       ]
@@ -9007,10 +9007,10 @@
     },
     "sbt/setup-sbt": {
       "latest": "v1",
-      "latestFull": "v1.2.1",
+      "latestFull": "v1.3.0",
       "description": "setup-sbt installs the official sbt runner",
       "category": "setup-languages",
-      "sha": "af116cce31c00823d3903ce687f9cda3a4f19f1b",
+      "sha": "18c5326132e2b0900fd6bd70f8b2b212364d11c8",
       "inputs": [
         "sbt-runner-version",
         "disk-cache"
