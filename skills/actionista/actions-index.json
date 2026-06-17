@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-06-16T08:02:30Z",
+    "generated": "2026-06-17T07:55:52Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -6978,10 +6978,10 @@
     },
     "graalvm/setup-graalvm": {
       "latest": "v1",
-      "latestFull": "v1.5.4",
+      "latestFull": "v1.5.5",
       "description": "Set up your GitHub Actions workflow with a specific GraalVM distribution.",
       "category": "setup-languages",
-      "sha": "329c42c5f4c343bceb505f0b28cc8499bc2bf174",
+      "sha": "809afe62741147990fbf405045cd15e61bffedfe",
       "inputs": [
         "java-version",
         "java-package",
