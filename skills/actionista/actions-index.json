@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-06-17T07:55:52Z",
+    "generated": "2026-06-18T07:45:56Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -74,6 +74,7 @@
         "pr_body",
         "pr_labels",
         "pr_reviewers",
+        "pr_assignees",
         "pr_commit_msg",
         "hostname",
         "is_dry_run",
@@ -3274,7 +3275,8 @@
         "lfs",
         "submodules",
         "set-safe-directory",
-        "github-server-url"
+        "github-server-url",
+        "allow-unsafe-pr-checkout"
       ]
     },
     "actions/configure-pages": {
@@ -3598,10 +3600,10 @@
     },
     "actions/setup-java": {
       "latest": "v5",
-      "latestFull": "v5.2.0",
+      "latestFull": "v5.3.0",
       "description": "Set up your GitHub Actions workflow with a specific version of Java",
       "category": "setup-languages",
-      "sha": "be666c2fcd27ec809703dec50e508c2fdc7f6654",
+      "sha": "ad2b38190b15e4d6bdf0c97fb4fca8412226d287",
       "deprecated": [
         "v1",
         "v2",
@@ -4161,10 +4163,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.149",
+      "latestFull": "v1.0.151",
       "description": "",
       "category": "ai-assistants",
-      "sha": "4d7e1f0cd85743fdc93b1c8040ab54395da024e2",
+      "sha": "806af32823ef69c8ef357086c573a902af641307",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -5847,10 +5849,10 @@
     },
     "davelosert/vitest-coverage-report-action": {
       "latest": "v2",
-      "latestFull": "v2.12.0",
+      "latestFull": "v2.12.1",
       "description": "A GitHub Action to report vitest test coverage results",
       "category": "testing",
-      "sha": "02f3c2e641286b7fa308cd3e430783103ce6103b",
+      "sha": "3c054a2d2e2ca45446417ad5d6d5eb33092af8f1",
       "inputs": [
         "github-token",
         "vite-config-path",
@@ -6978,10 +6980,10 @@
     },
     "graalvm/setup-graalvm": {
       "latest": "v1",
-      "latestFull": "v1.5.5",
+      "latestFull": "v1.5.6",
       "description": "Set up your GitHub Actions workflow with a specific GraalVM distribution.",
       "category": "setup-languages",
-      "sha": "809afe62741147990fbf405045cd15e61bffedfe",
+      "sha": "6f3fa030c4b8f77c1f554a860f593a654538fa38",
       "inputs": [
         "java-version",
         "java-package",
@@ -8689,10 +8691,10 @@
     },
     "release-drafter/release-drafter": {
       "latest": "v7",
-      "latestFull": "v7.3.1",
+      "latestFull": "v7.4.0",
       "description": "Drafts your next release notes as pull requests are merged into master. ",
       "category": "release",
-      "sha": "693d20e7c1ce1a81d3a41962f85914253b518449",
+      "sha": "ed4bc48ec97379be2258e7b7ac2624a3e26ab809",
       "deprecated": [
         "v1",
         "v2",
@@ -9492,10 +9494,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.81.11",
+      "latestFull": "v2.82.0",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "15449e3094499af05d8d964a1c884208e4b8b595",
+      "sha": "b8cecb83565409bcc297b2df6e77f030b2a468d5",
       "inputs": [
         "tool",
         "checksum",
@@ -9946,10 +9948,10 @@
     },
     "w9jds/firebase-action": {
       "latest": "v15",
-      "latestFull": "v15.20.0",
+      "latestFull": "v15.21.0",
       "description": "GitHub Action for interacting with Firebase",
       "category": "cloud-gcp",
-      "sha": "47ca9cd931889c1fb7bc67f51597278159cb7c9e",
+      "sha": "68b1c70385289f30c520d3f50fbd666150f87c70",
       "deprecated": [
         "v1",
         "v2",
