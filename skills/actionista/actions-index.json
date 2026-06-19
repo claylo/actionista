@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-06-18T07:45:56Z",
+    "generated": "2026-06-19T07:56:43Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -3244,16 +3244,17 @@
       ]
     },
     "actions/checkout": {
-      "latest": "v6",
-      "latestFull": "v6.0.3",
+      "latest": "v7",
+      "latestFull": "v7.0.0",
       "description": "Action for checking out a repo",
       "category": "core",
-      "sha": "df4cb1c069e1874edd31b4311f1884172cec0e10",
+      "sha": "9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0",
       "deprecated": [
         "v1",
         "v2",
         "v3",
-        "v4"
+        "v4",
+        "v5"
       ],
       "inputs": [
         "repository",
@@ -3277,7 +3278,17 @@
         "set-safe-directory",
         "github-server-url",
         "allow-unsafe-pr-checkout"
-      ]
+      ],
+      "migrations": {
+        "v6→v7": {
+          "inputChanges": {
+            "added": [
+              "allow-unsafe-pr-checkout"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "actions/configure-pages": {
       "latest": "v6",
@@ -4163,10 +4174,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.151",
+      "latestFull": "v1.0.152",
       "description": "",
       "category": "ai-assistants",
-      "sha": "806af32823ef69c8ef357086c573a902af641307",
+      "sha": "51705da45eecce209d4700538bf8377d5b5fc695",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -7730,10 +7741,10 @@
     },
     "mshick/add-pr-comment": {
       "latest": "v3",
-      "latestFull": "v3.11.0",
+      "latestFull": "v3.12.0",
       "description": "uses: mshick/add-pr-comment@v3",
       "category": "notifications",
-      "sha": "8e4927817251f1ff60c001f04568532b38e0b4a0",
+      "sha": "ec328af66588ab8f77cdeb2c264f14aba45bbf59",
       "deprecated": [
         "v1"
       ],
@@ -7765,7 +7776,10 @@
         "commit-sha",
         "find",
         "replace",
-        "delete-on-status"
+        "delete-on-status",
+        "create-minimized",
+        "delete-method",
+        "minimize-reason"
       ],
       "migrations": {
         "v2→v3": {
@@ -7779,7 +7793,10 @@
               "truncate-separator",
               "comment-target",
               "commit-sha",
-              "delete-on-status"
+              "delete-on-status",
+              "create-minimized",
+              "delete-method",
+              "minimize-reason"
             ],
             "removed": []
           }
@@ -9855,10 +9872,10 @@
     },
     "trufflesecurity/trufflehog": {
       "latest": "v3",
-      "latestFull": "v3.95.5",
+      "latestFull": "v3.95.6",
       "description": "Find, verify, and analyze leaked credentials",
       "category": "security",
-      "sha": "d411fff7b8879a62509f3fa98c07f247ac089a51",
+      "sha": "30d5bb91af1a771378349dbbb0c82129392acf70",
       "deprecated": [
         "v1"
       ],
@@ -9948,10 +9965,10 @@
     },
     "w9jds/firebase-action": {
       "latest": "v15",
-      "latestFull": "v15.21.0",
+      "latestFull": "v15.22.0",
       "description": "GitHub Action for interacting with Firebase",
       "category": "cloud-gcp",
-      "sha": "68b1c70385289f30c520d3f50fbd666150f87c70",
+      "sha": "19d0a485d5819ca458411f9eb3562b1e2882c7ea",
       "deprecated": [
         "v1",
         "v2",
