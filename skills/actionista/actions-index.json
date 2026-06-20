@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-06-19T07:56:43Z",
+    "generated": "2026-06-20T07:24:15Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -6515,7 +6515,8 @@
         "open_grouped_issues",
         "reduced_motion",
         "color_scheme",
-        "scans"
+        "scans",
+        "dry_run"
       ],
       "migrations": {
         "v2→v3": {
@@ -8509,7 +8510,7 @@
       "latestFull": "v2",
       "description": "GitHub Action that adds compressed size changes to your PRs.",
       "category": "linting",
-      "sha": "66325aad6443cb7cf89c4bfcd414aea2367cda94",
+      "sha": "f322c295dde06a1cb7ccaef105732dd8a726d1d9",
       "inputs": [
         "repo-token",
         "base-ref",
@@ -9213,10 +9214,10 @@
     },
     "softprops/action-gh-release": {
       "latest": "v3",
-      "latestFull": "v3.0.0",
+      "latestFull": "v3.0.1",
       "description": "📦 :octocat: GitHub Action for creating GitHub Releases",
       "category": "release",
-      "sha": "b4309332981a82ec1c5618f44dd2e27cc8bfbfda",
+      "sha": "718ea10b132b3b2eba29c1007bb80653f286566b",
       "deprecated": [
         "v1"
       ],
@@ -9458,10 +9459,10 @@
     },
     "super-linter/super-linter": {
       "latest": "v8",
-      "latestFull": "v8.6.0",
+      "latestFull": "v8.7.0",
       "description": "Combination of multiple linters to run as a GitHub Action or standalone",
       "category": "linting",
-      "sha": "9e863354e3ff62e0727d37183162c4a88873df41",
+      "sha": "4ce20838b8ab83717e78138c5b3a1407148e0918",
       "deprecated": [
         "v1",
         "v2",
