@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-06-21T07:42:44Z",
+    "generated": "2026-06-22T08:06:55Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -5726,10 +5726,10 @@
     },
     "cpp-linter/cpp-linter-action": {
       "latest": "v2",
-      "latestFull": "v2.18.0",
+      "latestFull": "v2.19.0",
       "description": "A Github Action for linting C/C++ code integrating clang-tidy and clang-format to collect feedback p",
       "category": "linting",
-      "sha": "77c390c5ba9c947ebc185a3e49cc754f1558abb5",
+      "sha": "4f2a4033eda6119c3bf1a4d30857a4c61c11c247",
       "inputs": [
         "style",
         "extensions",
@@ -9512,10 +9512,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.82.1",
+      "latestFull": "v2.82.2",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "8b3c737da4b541bf0fb5a3e0488ff20535badac9",
+      "sha": "9e1e5806d4a4822de933115878265be9aaa786d9",
       "inputs": [
         "tool",
         "checksum",
