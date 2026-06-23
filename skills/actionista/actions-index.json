@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-06-22T08:06:55Z",
+    "generated": "2026-06-23T07:19:52Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4174,10 +4174,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.153",
+      "latestFull": "v1.0.154",
       "description": "",
       "category": "ai-assistants",
-      "sha": "2fee15510437d71399d9139ed60433470484a8fb",
+      "sha": "30544b674398ee15c84819bd87caf8a87e8c7b55",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -5287,7 +5287,6 @@
         "github-token",
         "publish",
         "version",
-        "cwd",
         "commit",
         "title",
         "setupGitUser",
@@ -7613,22 +7612,28 @@
     },
     "mattzcarey/shippie": {
       "latest": "v0",
-      "latestFull": "v0.20.0",
+      "latestFull": "v0.21.1",
       "description": "extendable code review and QA agent 🚢",
       "category": "ai-assistants",
-      "sha": "b1083edc4ba630076541087b0fbdcb111ea111fd",
+      "sha": "cd33a75a5867df56a47127e9f9042d6feb5755ff",
       "inputs": [
-        "MODEL_STRING",
+        "MODEL",
         "REVIEW_LANGUAGE",
-        "OPENAI_API_KEY",
-        "GOOGLE_GENERATIVE_AI_API_KEY",
-        "ANTHROPIC_API_KEY",
-        "GITHUB_TOKEN",
-        "BASE_URL",
-        "MAX_STEPS",
-        "TELEMETRY",
+        "THINKING_LEVEL",
         "IGNORE",
-        "DEBUG"
+        "CUSTOM_INSTRUCTIONS",
+        "MCP_SERVERS",
+        "ANTHROPIC_API_KEY",
+        "OPENAI_API_KEY",
+        "OPENROUTER_API_KEY",
+        "CLOUDFLARE_API_KEY",
+        "CLOUDFLARE_ACCOUNT_ID",
+        "CLOUDFLARE_GATEWAY_ID",
+        "TELEMETRY",
+        "PR_NUMBER",
+        "BASE_SHA",
+        "HEAD_SHA",
+        "GITHUB_TOKEN"
       ]
     },
     "maxim-lobanov/setup-xcode": {
@@ -9966,10 +9971,10 @@
     },
     "w9jds/firebase-action": {
       "latest": "v15",
-      "latestFull": "v15.22.0",
+      "latestFull": "v15.22.1",
       "description": "GitHub Action for interacting with Firebase",
       "category": "cloud-gcp",
-      "sha": "19d0a485d5819ca458411f9eb3562b1e2882c7ea",
+      "sha": "fb9061988465d393a2456a3983a93e6cae2e892b",
       "deprecated": [
         "v1",
         "v2",
