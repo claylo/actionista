@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-06-23T07:19:52Z",
+    "generated": "2026-06-24T07:16:01Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -3222,15 +3222,16 @@
       }
     },
     "actions/cache": {
-      "latest": "v5",
-      "latestFull": "v5.0.5",
+      "latest": "v6",
+      "latestFull": "v6.0.0",
       "description": "Cache dependencies and build outputs in GitHub Actions",
       "category": "core",
-      "sha": "27d5ce7f107fe9357f9df03efb73ab90386fccae",
+      "sha": "2c8a9bd7457de244a408f35966fab2fb45fda9c8",
       "deprecated": [
         "v1",
         "v2",
-        "v3"
+        "v3",
+        "v4"
       ],
       "inputs": [
         "path",
@@ -3578,10 +3579,10 @@
     },
     "actions/setup-go": {
       "latest": "v6",
-      "latestFull": "v6.4.0",
+      "latestFull": "v6.5.0",
       "description": "Set up your GitHub Actions workflow with a specific version of Go",
       "category": "setup-languages",
-      "sha": "4a3601121dd01d1626a1e23e37211e3254c1c06c",
+      "sha": "924ae3a1cded613372ab5595356fb5720e22ba16",
       "deprecated": [
         "v1",
         "v2",
@@ -3682,10 +3683,10 @@
     },
     "actions/setup-python": {
       "latest": "v6",
-      "latestFull": "v6.2.0",
+      "latestFull": "v6.3.0",
       "description": "Set up your GitHub Actions workflow with a specific version of Python",
       "category": "setup-languages",
-      "sha": "a309ff8b426b58ec0e2a45f0f869d46889d02405",
+      "sha": "ece7cb06caefa5fff74198d8649806c4678c61a1",
       "deprecated": [
         "v1",
         "v2",
@@ -4174,10 +4175,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.154",
+      "latestFull": "v1.0.155",
       "description": "",
       "category": "ai-assistants",
-      "sha": "30544b674398ee15c84819bd87caf8a87e8c7b55",
+      "sha": "80b31826338489861333dc17217865dfe8085cdc",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -7190,10 +7191,10 @@
     },
     "houseabsolute/actions-rust-cross": {
       "latest": "v1",
-      "latestFull": "v1.0.7",
+      "latestFull": "v1.0.8",
       "description": "GitHub Action to compile Rust with cross",
       "category": "build-tools",
-      "sha": "fe6ede73c7f0a50412ec05994e2aa5a7bf635eac",
+      "sha": "21b0f18dc621b25bfae556ff2791fca4173121e8",
       "inputs": [
         "target",
         "command",
@@ -7612,10 +7613,10 @@
     },
     "mattzcarey/shippie": {
       "latest": "v0",
-      "latestFull": "v0.21.1",
+      "latestFull": "v0.21.2",
       "description": "extendable code review and QA agent 🚢",
       "category": "ai-assistants",
-      "sha": "cd33a75a5867df56a47127e9f9042d6feb5755ff",
+      "sha": "c70064c83192f17c7725489f7227fb8441ae51f3",
       "inputs": [
         "MODEL",
         "REVIEW_LANGUAGE",
@@ -9517,10 +9518,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.82.2",
+      "latestFull": "v2.82.3",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "9e1e5806d4a4822de933115878265be9aaa786d9",
+      "sha": "ace6ebe54a6a0c86dfb5f7764b17f793b6925bc3",
       "inputs": [
         "tool",
         "checksum",
