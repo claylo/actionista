@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-06-24T07:16:01Z",
+    "generated": "2026-06-25T07:16:15Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4175,10 +4175,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.155",
+      "latestFull": "v1.0.157",
       "description": "",
       "category": "ai-assistants",
-      "sha": "80b31826338489861333dc17217865dfe8085cdc",
+      "sha": "428971d2ecd6e3a7cb0ee0da2a3a8b33fdb3678d",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -8715,10 +8715,10 @@
     },
     "release-drafter/release-drafter": {
       "latest": "v7",
-      "latestFull": "v7.4.0",
+      "latestFull": "v7.5.0",
       "description": "Drafts your next release notes as pull requests are merged into master. ",
       "category": "release",
-      "sha": "ed4bc48ec97379be2258e7b7ac2624a3e26ab809",
+      "sha": "73b95fa1c286dfd6802a4f949b07dad6149f2b0f",
       "deprecated": [
         "v1",
         "v2",
@@ -9972,10 +9972,10 @@
     },
     "w9jds/firebase-action": {
       "latest": "v15",
-      "latestFull": "v15.22.1",
+      "latestFull": "v15.22.2",
       "description": "GitHub Action for interacting with Firebase",
       "category": "cloud-gcp",
-      "sha": "fb9061988465d393a2456a3983a93e6cae2e892b",
+      "sha": "70d39b2466da3de1cd23e00a1c5dcec8bf2f2440",
       "deprecated": [
         "v1",
         "v2",
