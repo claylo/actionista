@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-06-25T07:16:15Z",
+    "generated": "2026-06-26T07:22:18Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -378,10 +378,10 @@
     },
     "FirebaseExtended/action-hosting-deploy": {
       "latest": "v0",
-      "latestFull": "v0.10.0",
+      "latestFull": "v0.11.0",
       "description": "Automatically deploy shareable previews for your Firebase Hosting sites",
       "category": "cloud-gcp",
-      "sha": "e2eda2e106cfa35cdbcf4ac9ddaf6c4756df2c8c",
+      "sha": "500ac625ca2dd40cbd15f7659af953801858032a",
       "inputs": [
         "repoToken",
         "firebaseServiceAccount",
@@ -3100,10 +3100,10 @@
     },
     "actions-rust-lang/setup-rust-toolchain": {
       "latest": "v1",
-      "latestFull": "v1.16.1",
+      "latestFull": "v1.17.0",
       "description": "Setup a specific Rust toolchain with extra features like problem matchers",
       "category": "setup-languages",
-      "sha": "46268bd060767258de96ed93c1251119784f2ab6",
+      "sha": "166cdcfd11aee3cb47222f9ddb555ce30ddb9659",
       "inputs": [
         "toolchain",
         "target",
@@ -3119,6 +3119,7 @@
         "cache-all-crates",
         "cache-workspace-crates",
         "cache-save-if",
+        "cache-targets",
         "matcher",
         "rustflags",
         "override",
@@ -3542,10 +3543,10 @@
     },
     "actions/setup-dotnet": {
       "latest": "v5",
-      "latestFull": "v5.3.0",
+      "latestFull": "v5.4.0",
       "description": "Set up your GitHub Actions workflow with a specific version of the .NET core sdk",
       "category": "setup-languages",
-      "sha": "9a946fdbd5fb07b82b2f5a4466058b876ab72bb2",
+      "sha": "26b0ec14cb23fa6904739307f278c14f94c95bf1",
       "deprecated": [
         "v1",
         "v2",
@@ -3612,10 +3613,10 @@
     },
     "actions/setup-java": {
       "latest": "v5",
-      "latestFull": "v5.3.0",
+      "latestFull": "v5.4.0",
       "description": "Set up your GitHub Actions workflow with a specific version of Java",
       "category": "setup-languages",
-      "sha": "ad2b38190b15e4d6bdf0c97fb4fca8412226d287",
+      "sha": "1bcf9fb12cf4aa7d266a90ae39939e61372fe520",
       "deprecated": [
         "v1",
         "v2",
@@ -4175,10 +4176,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.157",
+      "latestFull": "v1.0.158",
       "description": "",
       "category": "ai-assistants",
-      "sha": "428971d2ecd6e3a7cb0ee0da2a3a8b33fdb3678d",
+      "sha": "521136812280ae7ef256e06045655b9da02793f0",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -5957,11 +5958,11 @@
       ]
     },
     "dawidd6/action-send-mail": {
-      "latest": "v17",
-      "latestFull": "v17",
+      "latest": "v18",
+      "latestFull": "v18",
       "description": ":gear: A GitHub Action to send an email to multiple recipients",
       "category": "notifications",
-      "sha": "42942bc2f8fba4e611b459a018967a6a7c78c68c",
+      "sha": "94de994a9f6fffee200243214e17002e2920bb59",
       "deprecated": [
         "v1",
         "v2",
@@ -5977,7 +5978,8 @@
         "v12",
         "v13",
         "v14",
-        "v15"
+        "v15",
+        "v16"
       ],
       "inputs": [
         "connection_url",
@@ -6513,6 +6515,8 @@
         "skip_copilot_assignment",
         "include_screenshots",
         "open_grouped_issues",
+        "file_best_practice_issues",
+        "file_experimental_issues",
         "reduced_motion",
         "color_scheme",
         "scans",
@@ -8715,10 +8719,10 @@
     },
     "release-drafter/release-drafter": {
       "latest": "v7",
-      "latestFull": "v7.5.0",
+      "latestFull": "v7.5.1",
       "description": "Drafts your next release notes as pull requests are merged into master. ",
       "category": "release",
-      "sha": "73b95fa1c286dfd6802a4f949b07dad6149f2b0f",
+      "sha": "4d75298e00d9e34c483e5ff8c68d0ea1c1940c1e",
       "deprecated": [
         "v1",
         "v2",
@@ -9518,10 +9522,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.82.3",
+      "latestFull": "v2.82.4",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "ace6ebe54a6a0c86dfb5f7764b17f793b6925bc3",
+      "sha": "682e7d9e49c5e653d371fc6adbda67653461378a",
       "inputs": [
         "tool",
         "checksum",
@@ -9972,10 +9976,10 @@
     },
     "w9jds/firebase-action": {
       "latest": "v15",
-      "latestFull": "v15.22.2",
+      "latestFull": "v15.22.3",
       "description": "GitHub Action for interacting with Firebase",
       "category": "cloud-gcp",
-      "sha": "70d39b2466da3de1cd23e00a1c5dcec8bf2f2440",
+      "sha": "221518149891c89541cd93a1edc14a03b3e8e53d",
       "deprecated": [
         "v1",
         "v2",
