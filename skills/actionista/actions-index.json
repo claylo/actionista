@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-06-26T07:22:18Z",
+    "generated": "2026-06-27T07:09:03Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -3187,10 +3187,10 @@
     },
     "actions/attest-build-provenance": {
       "latest": "v4",
-      "latestFull": "v4.1.0",
+      "latestFull": "v4.1.1",
       "description": "Action for generating build provenance attestations for workflow artifacts",
       "category": "core",
-      "sha": "a2bbfa25375fe432b6a289bc6b6cd05ecd0c4c32",
+      "sha": "0f67c3f4856b2e3261c31976d6725780e5e4c373",
       "deprecated": [
         "v1",
         "v2"
@@ -3224,10 +3224,10 @@
     },
     "actions/cache": {
       "latest": "v6",
-      "latestFull": "v6.0.0",
+      "latestFull": "v6.1.0",
       "description": "Cache dependencies and build outputs in GitHub Actions",
       "category": "core",
-      "sha": "2c8a9bd7457de244a408f35966fab2fb45fda9c8",
+      "sha": "55cc8345863c7cc4c66a329aec7e433d2d1c52a9",
       "deprecated": [
         "v1",
         "v2",
@@ -4176,10 +4176,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.158",
+      "latestFull": "v1.0.159",
       "description": "",
       "category": "ai-assistants",
-      "sha": "521136812280ae7ef256e06045655b9da02793f0",
+      "sha": "a92e7c70a4da9793dc164451d829089dc057a464",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -4736,10 +4736,10 @@
     },
     "aws-actions/configure-aws-credentials": {
       "latest": "v6",
-      "latestFull": "v6.2.0",
+      "latestFull": "v6.2.1",
       "description": "Configure AWS credential environment variables for use in other GitHub Actions.",
       "category": "cloud-aws",
-      "sha": "e7f100cf4c008499ea8adda475de1042d6975c7b",
+      "sha": "254c19bd240aabef8777f48595e9d2d7b972184b",
       "deprecated": [
         "v1",
         "v2",
@@ -6515,6 +6515,7 @@
         "skip_copilot_assignment",
         "include_screenshots",
         "open_grouped_issues",
+        "group_by",
         "file_best_practice_issues",
         "file_experimental_issues",
         "reduced_motion",
@@ -7401,10 +7402,10 @@
     },
     "ko-build/setup-ko": {
       "latest": "v0",
-      "latestFull": "v0.9",
+      "latestFull": "v0.10",
       "description": "",
       "category": "docker",
-      "sha": "d006021bd0c28d1ce33a07e7943d48b079944c8d",
+      "sha": "61b4d1d396f5b2e7d6bb6fefdce3dc38d1a13445",
       "inputs": [
         "version",
         "use-sudo"
@@ -9522,10 +9523,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.82.4",
+      "latestFull": "v2.82.5",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "682e7d9e49c5e653d371fc6adbda67653461378a",
+      "sha": "bffeee26d4db9be238a4ea78d8826604ebcb594d",
       "inputs": [
         "tool",
         "checksum",
