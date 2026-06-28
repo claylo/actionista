@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-06-27T07:09:03Z",
+    "generated": "2026-06-28T07:25:10Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4483,10 +4483,10 @@
     },
     "awalsh128/cache-apt-pkgs-action": {
       "latest": "v1",
-      "latestFull": "v1.6.1",
+      "latestFull": "v1.6.2",
       "description": "Cache APT packages in GitHub Actions",
       "category": "package-managers",
-      "sha": "681749ae568c81c2037cb9185e38b709b261bd2f",
+      "sha": "5513791f75b039e2a79653b1a92238d3fb8d99b4",
       "inputs": [
         "packages",
         "version",
@@ -5727,10 +5727,10 @@
     },
     "cpp-linter/cpp-linter-action": {
       "latest": "v2",
-      "latestFull": "v2.19.0",
+      "latestFull": "v2.20.0",
       "description": "A Github Action for linting C/C++ code integrating clang-tidy and clang-format to collect feedback p",
       "category": "linting",
-      "sha": "4f2a4033eda6119c3bf1a4d30857a4c61c11c247",
+      "sha": "8e85cd02c8c3fe3ae527c94b5683fe2366b144ed",
       "inputs": [
         "style",
         "extensions",
@@ -5753,7 +5753,8 @@
         "format-review",
         "passive-reviews",
         "jobs",
-        "cache-enable"
+        "cache-enable",
+        "summary-output-file"
       ],
       "migrations": {
         "v1→v2": {
@@ -5768,7 +5769,8 @@
               "format-review",
               "passive-reviews",
               "jobs",
-              "cache-enable"
+              "cache-enable",
+              "summary-output-file"
             ],
             "removed": []
           }
@@ -9323,6 +9325,7 @@
         "disable_globbing",
         "create_branch",
         "create_git_tag_only",
+        "disable_pull_request_target_trigger_warning",
         "internal_git_binary"
       ],
       "migrations": {
