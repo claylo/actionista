@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-06-28T07:25:10Z",
+    "generated": "2026-06-29T07:48:23Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -7941,10 +7941,10 @@
     },
     "obi1kenobi/cargo-semver-checks-action": {
       "latest": "v2",
-      "latestFull": "v2.8",
+      "latestFull": "v2.9",
       "description": "A GitHub Action for running cargo-semver-checks",
       "category": "security",
-      "sha": "5b298c9520f7096a4683c0bd981a7ac5a7e249ae",
+      "sha": "6b69fcf40e9b5fb17adeb57e4b6ecd020649a239",
       "inputs": [
         "package",
         "exclude",
@@ -8079,10 +8079,10 @@
     },
     "oxsecurity/megalinter": {
       "latest": "v9",
-      "latestFull": "v9.5.0",
+      "latestFull": "v9.6.0",
       "description": "🦙 MegaLinter analyzes 50 languages, 22 formats, 21 tooling formats, excessive copy-pastes, spelling ",
       "category": "linting",
-      "sha": "0e3ce9b9c8c10effb9b269509cc47ca17cae31c7",
+      "sha": "ef3e84b8b836d76db562d0f3ed7da61e8fd538bc",
       "deprecated": [
         "v1",
         "v2",
@@ -9293,10 +9293,10 @@
     },
     "stefanzweifel/git-auto-commit-action": {
       "latest": "v7",
-      "latestFull": "v7.1.0",
+      "latestFull": "v7.2.0",
       "description": "Automatically commit and push changed files back to GitHub with this GitHub Action for the 80% use c",
       "category": "git-operations",
-      "sha": "04702edda442b2e678b25b537cec683a1493fcb9",
+      "sha": "4a55954c782fc1ea30b9056cd3e7a2b40ca8887d",
       "deprecated": [
         "v1",
         "v2",
@@ -9325,6 +9325,14 @@
         "disable_globbing",
         "create_branch",
         "create_git_tag_only",
+        "before_add_hook",
+        "after_add_hook",
+        "before_commit_hook",
+        "after_commit_hook",
+        "before_tag_hook",
+        "after_tag_hook",
+        "before_push_hook",
+        "after_push_hook",
         "disable_pull_request_target_trigger_warning",
         "internal_git_binary"
       ],
@@ -9333,7 +9341,16 @@
           "inputChanges": {
             "added": [
               "tag_name",
-              "skip_push"
+              "skip_push",
+              "before_add_hook",
+              "after_add_hook",
+              "before_commit_hook",
+              "after_commit_hook",
+              "before_tag_hook",
+              "after_tag_hook",
+              "before_push_hook",
+              "after_push_hook",
+              "disable_pull_request_target_trigger_warning"
             ],
             "removed": []
           }
@@ -9526,10 +9543,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.82.5",
+      "latestFull": "v2.82.6",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "bffeee26d4db9be238a4ea78d8826604ebcb594d",
+      "sha": "9bcaee1dcae34154180f412e2fa69355a7cda9f6",
       "inputs": [
         "tool",
         "checksum",
