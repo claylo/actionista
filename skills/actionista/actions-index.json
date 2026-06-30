@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-06-29T07:48:23Z",
+    "generated": "2026-06-30T07:22:26Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -3630,6 +3630,8 @@
         "architecture",
         "jdkFile",
         "check-latest",
+        "verify-signature",
+        "verify-signature-public-key",
         "server-id",
         "server-username",
         "server-password",
@@ -4176,10 +4178,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.159",
+      "latestFull": "v1.0.160",
       "description": "",
       "category": "ai-assistants",
-      "sha": "a92e7c70a4da9793dc164451d829089dc057a464",
+      "sha": "4633baf5267540f3f8cb58b684f79901d564c280",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -4483,10 +4485,10 @@
     },
     "awalsh128/cache-apt-pkgs-action": {
       "latest": "v1",
-      "latestFull": "v1.6.2",
+      "latestFull": "v1.6.3",
       "description": "Cache APT packages in GitHub Actions",
       "category": "package-managers",
-      "sha": "5513791f75b039e2a79653b1a92238d3fb8d99b4",
+      "sha": "553a35bb8ebd9fcabcb1c9451aa4c98e1b4ca8a9",
       "inputs": [
         "packages",
         "version",
@@ -5805,10 +5807,10 @@
     },
     "cypress-io/github-action": {
       "latest": "v7",
-      "latestFull": "v7.4.0",
+      "latestFull": "v7.4.1",
       "description": "GitHub Action for running Cypress end-to-end & component tests",
       "category": "testing",
-      "sha": "948d67d3074f1bbb6379c8bdbb04e95d2f8e593f",
+      "sha": "fa4a118725a8f001170d49631ea89e5d66fee626",
       "deprecated": [
         "v1",
         "v2",
@@ -6375,10 +6377,10 @@
     },
     "erlef/setup-beam": {
       "latest": "v1",
-      "latestFull": "v1.24.0",
+      "latestFull": "v1.24.1",
       "description": "Set up your BEAM-based GitHub Actions workflow (Erlang, Elixir, Gleam, ...)",
       "category": "setup-languages",
-      "sha": "fc68ffb90438ef2936bbb3251622353b3dcb2f93",
+      "sha": "54075bcc5e249e4758d363f27d099f55d843f124",
       "inputs": [
         "github-token",
         "otp-version",
@@ -6424,11 +6426,11 @@
       ]
     },
     "fwilhe2/setup-kotlin": {
-      "latest": "v1",
-      "latestFull": "v1.8",
+      "latest": "v2",
+      "latestFull": "v2.0",
       "description": "Setup the Kotlin™ cli compiler in GitHub Actions",
       "category": "setup-languages",
-      "sha": "7163c92e0f906bdf586bd76b14143aa61d6b49e4",
+      "sha": "ee9692514da313706b193d808526812102a344e4",
       "inputs": [
         "version",
         "install-native",
@@ -6660,10 +6662,10 @@
     },
     "golangci/golangci-lint-action": {
       "latest": "v9",
-      "latestFull": "v9.2.1",
+      "latestFull": "v9.3.0",
       "description": "Official GitHub Action for golangci-lint from its authors",
       "category": "linting",
-      "sha": "82606bf257cbaff209d206a39f5134f0cfbfd2ee",
+      "sha": "ba0d7d2ec06a0ea1cb5fa41b2e4a3ab91d21278a",
       "deprecated": [
         "v1",
         "v2",
@@ -6967,10 +6969,10 @@
     },
     "goreleaser/goreleaser-action": {
       "latest": "v7",
-      "latestFull": "v7.2.2",
+      "latestFull": "v7.2.3",
       "description": "GitHub Action for GoReleaser",
       "category": "release",
-      "sha": "5daf1e915a5f0af01ddbcd89a43b8061ff4f1a89",
+      "sha": "f06c13b6b1a9625abc9e6e439d9c05a8f2190e94",
       "deprecated": [
         "v1",
         "v2",
@@ -9609,10 +9611,10 @@
     },
     "tailscale/github-action": {
       "latest": "v4",
-      "latestFull": "v4.1.2",
+      "latestFull": "v4.1.3",
       "description": "A GitHub Action to connect your workflow to your Tailscale network.",
       "category": "infrastructure",
-      "sha": "306e68a486fd2350f2bfc3b19fcd143891a4a2d8",
+      "sha": "780049a30b6ff5c378a9e7b389d15ece7a204888",
       "deprecated": [
         "v1",
         "v2"
@@ -9650,10 +9652,10 @@
     },
     "tauri-apps/tauri-action": {
       "latest": "v",
-      "latestFull": "action-v0.6.2",
+      "latestFull": "action-v1.0.0",
       "description": "Build your Web application as a Tauri binary for macOS, Linux and Windows",
       "category": "release",
-      "sha": "84b9d35b5fc46c1e45415bdb6144030364f7ebc5",
+      "sha": "1deb371b0cd8bd54025b384f1cd735e725c4060f",
       "inputs": [
         "releaseId",
         "tagName",
@@ -9904,10 +9906,10 @@
     },
     "trufflesecurity/trufflehog": {
       "latest": "v3",
-      "latestFull": "v3.95.6",
+      "latestFull": "v3.95.7",
       "description": "Find, verify, and analyze leaked credentials",
       "category": "security",
-      "sha": "30d5bb91af1a771378349dbbb0c82129392acf70",
+      "sha": "f446421baf832d6356c42c1743d99abff52ff334",
       "deprecated": [
         "v1"
       ],
