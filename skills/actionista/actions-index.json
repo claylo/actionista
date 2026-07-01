@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-06-30T07:22:26Z",
+    "generated": "2026-07-01T07:34:27Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4178,10 +4178,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.160",
+      "latestFull": "v1.0.161",
       "description": "",
       "category": "ai-assistants",
-      "sha": "4633baf5267540f3f8cb58b684f79901d564c280",
+      "sha": "fad22eb3fa582b7357fc0ea48af6645851b884fd",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -4584,10 +4584,10 @@
     },
     "aws-actions/amazon-ecs-render-task-definition": {
       "latest": "v1",
-      "latestFull": "v1.8.5",
+      "latestFull": "v1.9.0",
       "description": "Inserts a container image URI into an Amazon ECS task definition JSON file.",
       "category": "cloud-aws",
-      "sha": "6853cfae8c3a7d978fbf68b5a55453395541dfbb",
+      "sha": "138c24f321fdbdf7edee4a685519d253cae2cdea",
       "inputs": [
         "task-definition",
         "task-definition-arn",
@@ -5293,11 +5293,12 @@
         "version",
         "commit",
         "title",
-        "setupGitUser",
-        "createGithubReleases",
-        "commitMode",
+        "setup-git-user",
+        "create-github-releases",
+        "push-git-tags",
+        "commit-mode",
         "branch",
-        "prDraft"
+        "pr-draft"
       ]
     },
     "check-spelling/check-spelling": {
@@ -8949,10 +8950,10 @@
     },
     "ruby/setup-ruby": {
       "latest": "v1",
-      "latestFull": "v1.314.0",
+      "latestFull": "v1.315.0",
       "description": "An action to download a prebuilt Ruby and add it to the PATH in 5 seconds",
       "category": "setup-languages",
-      "sha": "9eb537ca036ebaed86729dcb9309076e4c5c3b74",
+      "sha": "0dafeac902942906541bc140009cdbf32665b601",
       "inputs": [
         "ruby-version",
         "rubygems",
@@ -9545,10 +9546,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.82.6",
+      "latestFull": "v2.82.7",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "9bcaee1dcae34154180f412e2fa69355a7cda9f6",
+      "sha": "16b05812d776ae1dfaabc8277e421fb6d2506419",
       "inputs": [
         "tool",
         "checksum",
@@ -9999,10 +10000,10 @@
     },
     "w9jds/firebase-action": {
       "latest": "v15",
-      "latestFull": "v15.22.3",
+      "latestFull": "v15.22.4",
       "description": "GitHub Action for interacting with Firebase",
       "category": "cloud-gcp",
-      "sha": "221518149891c89541cd93a1edc14a03b3e8e53d",
+      "sha": "a1d77669d1c6a9e6f8b731356c6015d981569a7a",
       "deprecated": [
         "v1",
         "v2",
