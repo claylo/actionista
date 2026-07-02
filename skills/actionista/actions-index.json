@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-07-01T07:34:27Z",
+    "generated": "2026-07-02T07:11:50Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -2524,10 +2524,10 @@
     },
     "Kesin11/actions-timeline": {
       "latest": "v3",
-      "latestFull": "v3.1.0",
+      "latestFull": "v3.1.1",
       "description": "An Action shows timeline of a workflow in a run summary.",
       "category": "utilities",
-      "sha": "44c9c178ffb2fb1d9859614a3ffa79ccfb77565e",
+      "sha": "7bf79990b7c09f5dfb570ac30b814ca597bd538e",
       "deprecated": [
         "v1"
       ],
@@ -4178,10 +4178,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.161",
+      "latestFull": "v1.0.162",
       "description": "",
       "category": "ai-assistants",
-      "sha": "fad22eb3fa582b7357fc0ea48af6645851b884fd",
+      "sha": "6c0083bb7289c31716797a039b6367b3079cc46e",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -4515,10 +4515,10 @@
     },
     "aws-actions/amazon-ecs-deploy-task-definition": {
       "latest": "v2",
-      "latestFull": "v2.6.2",
+      "latestFull": "v2.6.3",
       "description": "Registers an Amazon ECS task definition and deploys it to an ECS service.",
       "category": "cloud-aws",
-      "sha": "a310a830f5c14e583e35d84e4e1ec7dd177c3c9c",
+      "sha": "c465972ecbd160473f22e683363b422a5412a3de",
       "inputs": [
         "task-definition",
         "desired-count",
@@ -5289,16 +5289,16 @@
       "sha": "a45c4d594aa4e2c509dc14a9f2b3b67ba3780d0d",
       "inputs": [
         "github-token",
-        "publish",
-        "version",
-        "commit",
-        "title",
-        "setup-git-user",
+        "publish-script",
+        "version-script",
+        "commit-message",
+        "pr-title",
+        "pr-draft",
+        "pr-base-branch",
         "create-github-releases",
         "push-git-tags",
         "commit-mode",
-        "branch",
-        "pr-draft"
+        "setup-git-user"
       ]
     },
     "check-spelling/check-spelling": {
@@ -6054,10 +6054,10 @@
     },
     "docker/bake-action": {
       "latest": "v7",
-      "latestFull": "v7.2.0",
+      "latestFull": "v7.3.0",
       "description": "GitHub Action to use Docker Buildx Bake as a high-level build command",
       "category": "docker",
-      "sha": "6614cfa25eff9a0b2b2697efb0b6159e7680d584",
+      "sha": "d3418bd7d0e9324001bca92fa8ba175ea7e6dc9b",
       "deprecated": [
         "v1",
         "v2",
@@ -6097,10 +6097,10 @@
     },
     "docker/build-push-action": {
       "latest": "v7",
-      "latestFull": "v7.2.0",
+      "latestFull": "v7.3.0",
       "description": "GitHub Action to build and push Docker images with Buildx",
       "category": "docker",
-      "sha": "f9f3042f7e2789586610d6e8b85c8f03e5195baf",
+      "sha": "53b7df96c91f9c12dcc8a07bcb9ccacbed38856a",
       "deprecated": [
         "v1",
         "v2",
@@ -6231,10 +6231,10 @@
     },
     "docker/setup-qemu-action": {
       "latest": "v4",
-      "latestFull": "v4.1.0",
+      "latestFull": "v4.2.0",
       "description": "GitHub Action to install QEMU static binaries",
       "category": "docker",
-      "sha": "06116385d9baf250c9f4dcb4858b16962ea869c3",
+      "sha": "96fe6ef7f33517b61c61be40b68a1882f3264fb8",
       "deprecated": [
         "v1",
         "v2"
@@ -6499,10 +6499,10 @@
     },
     "github/accessibility-scanner": {
       "latest": "v3",
-      "latestFull": "v3.2.0",
+      "latestFull": "v3.3.0",
       "description": "Finds potential accessibility gaps, files GitHub issues to track them, and attempts to fix them with",
       "category": "ai-assistants",
-      "sha": "1b9502344c5fa3ecc95e88c5d97da9e498a73ef4",
+      "sha": "84a8f6de0b0f7df7ac2083386222388d0e74eeb9",
       "deprecated": [
         "v1"
       ],
@@ -6533,7 +6533,11 @@
           "inputChanges": {
             "added": [
               "url_configs",
-              "base_url"
+              "base_url",
+              "group_by",
+              "file_best_practice_issues",
+              "file_experimental_issues",
+              "dry_run"
             ],
             "removed": []
           }
@@ -9043,10 +9047,10 @@
     },
     "sbt/setup-sbt": {
       "latest": "v1",
-      "latestFull": "v1.4.0",
+      "latestFull": "v1.5.0",
       "description": "setup-sbt installs the official sbt runner",
       "category": "setup-languages",
-      "sha": "3afe9cf056c5d139bfc46579af1192d77a2f0821",
+      "sha": "66fb4376e81982c7d92a4074170846fff88e2e30",
       "inputs": [
         "sbt-runner-version",
         "disk-cache"
