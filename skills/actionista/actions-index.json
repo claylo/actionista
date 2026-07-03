@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-07-02T07:11:50Z",
+    "generated": "2026-07-03T07:09:06Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -3644,7 +3644,8 @@
         "job-status",
         "token",
         "mvn-toolchain-id",
-        "mvn-toolchain-vendor"
+        "mvn-toolchain-vendor",
+        "show-download-progress"
       ]
     },
     "actions/setup-node": {
@@ -4178,10 +4179,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.162",
+      "latestFull": "v1.0.163",
       "description": "",
       "category": "ai-assistants",
-      "sha": "6c0083bb7289c31716797a039b6367b3079cc46e",
+      "sha": "769e3bdff9bb7ecfb51bad4c9cba23d6f5fc5ea5",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -6146,10 +6147,10 @@
     },
     "docker/login-action": {
       "latest": "v4",
-      "latestFull": "v4.2.0",
+      "latestFull": "v4.3.0",
       "description": "GitHub Action to login against a Docker registry",
       "category": "docker",
-      "sha": "650006c6eb7dba73a995cc03b0b2d7f5ca915bee",
+      "sha": "c99871dec2022cc055c062a10cc1a1310835ceb4",
       "deprecated": [
         "v1",
         "v2"
@@ -6166,10 +6167,10 @@
     },
     "docker/metadata-action": {
       "latest": "v6",
-      "latestFull": "v6.1.0",
+      "latestFull": "v6.2.0",
       "description": "GitHub Action to extract metadata (tags, labels) from Git reference and GitHub events for Docker",
       "category": "docker",
-      "sha": "80c7e94dd9b9319bd5eb7a0e0fe9291e23a2a2e9",
+      "sha": "dc802804100637a589fabce1cb79ff13a1411302",
       "deprecated": [
         "v1",
         "v2",
@@ -6192,10 +6193,10 @@
     },
     "docker/setup-buildx-action": {
       "latest": "v4",
-      "latestFull": "v4.1.0",
+      "latestFull": "v4.2.0",
       "description": "GitHub Action to set up Docker Buildx",
       "category": "docker",
-      "sha": "d7f5e7f509e45cec5c76c4d5afdd7de93d0b3df5",
+      "sha": "bb05f3f5519dd87d3ba754cc423b652a5edd6d2c",
       "deprecated": [
         "v1",
         "v2"
@@ -6258,10 +6259,10 @@
     },
     "dorny/paths-filter": {
       "latest": "v4",
-      "latestFull": "v4.0.1",
+      "latestFull": "v4.0.2",
       "description": "Conditionally run actions based on files modified by PR, feature branch or pushed commits",
       "category": "git-operations",
-      "sha": "fbd0ab8f3e69293af611ebaee6363fc25e6d187d",
+      "sha": "7b450fff21473bca461d4b92ce414b9d0420d706",
       "deprecated": [
         "v1",
         "v2"
@@ -6615,10 +6616,10 @@
     },
     "github/codeql-action/analyze": {
       "latest": "v4",
-      "latestFull": "v4.36.2",
+      "latestFull": "v4.36.3",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "8aad20d150bbac5944a9f9d289da16a4b0d87c1e",
+      "sha": "54f647b7e1bb85c95cddabcd46b0c578ec92bc1a",
       "deprecated": [
         "v1",
         "v2"
@@ -6626,10 +6627,10 @@
     },
     "github/codeql-action/autobuild": {
       "latest": "v4",
-      "latestFull": "v4.36.2",
+      "latestFull": "v4.36.3",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "8aad20d150bbac5944a9f9d289da16a4b0d87c1e",
+      "sha": "54f647b7e1bb85c95cddabcd46b0c578ec92bc1a",
       "deprecated": [
         "v1",
         "v2"
@@ -6637,10 +6638,10 @@
     },
     "github/codeql-action/init": {
       "latest": "v4",
-      "latestFull": "v4.36.2",
+      "latestFull": "v4.36.3",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "8aad20d150bbac5944a9f9d289da16a4b0d87c1e",
+      "sha": "54f647b7e1bb85c95cddabcd46b0c578ec92bc1a",
       "deprecated": [
         "v1",
         "v2"
@@ -8954,10 +8955,10 @@
     },
     "ruby/setup-ruby": {
       "latest": "v1",
-      "latestFull": "v1.315.0",
+      "latestFull": "v1.316.0",
       "description": "An action to download a prebuilt Ruby and add it to the PATH in 5 seconds",
       "category": "setup-languages",
-      "sha": "0dafeac902942906541bc140009cdbf32665b601",
+      "sha": "d45b1a4e94b71acab930e56e79c6aa188764e7f9",
       "inputs": [
         "ruby-version",
         "rubygems",
@@ -9639,7 +9640,8 @@
         "use-cache",
         "statedir",
         "sha256sum",
-        "ping"
+        "ping",
+        "log-mode"
       ],
       "migrations": {
         "v3→v4": {
@@ -9911,10 +9913,10 @@
     },
     "trufflesecurity/trufflehog": {
       "latest": "v3",
-      "latestFull": "v3.95.7",
+      "latestFull": "v3.95.8",
       "description": "Find, verify, and analyze leaked credentials",
       "category": "security",
-      "sha": "f446421baf832d6356c42c1743d99abff52ff334",
+      "sha": "00155c9dc586f34d189adc83d3ac2698c2ec551f",
       "deprecated": [
         "v1"
       ],
