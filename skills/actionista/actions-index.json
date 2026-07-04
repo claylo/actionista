@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-07-03T07:09:06Z",
+    "generated": "2026-07-04T07:03:42Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4179,10 +4179,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.163",
+      "latestFull": "v1.0.165",
       "description": "",
       "category": "ai-assistants",
-      "sha": "769e3bdff9bb7ecfb51bad4c9cba23d6f5fc5ea5",
+      "sha": "558b1d6cab4085c7753fe402c10bef0fbb92ac7a",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -6016,10 +6016,10 @@
     },
     "denoland/setup-deno": {
       "latest": "v2",
-      "latestFull": "v2.0.4",
+      "latestFull": "v2.0.5",
       "description": "Set up your GitHub Actions workflow with a specific version of Deno",
       "category": "setup-languages",
-      "sha": "667a34cdef165d8d2b2e98dde39547c9daac7282",
+      "sha": "22d081ff2d3a40755e97629de92e3bcbfa7cf2ed",
       "inputs": [
         "deno-version",
         "deno-version-file",
@@ -6147,10 +6147,10 @@
     },
     "docker/login-action": {
       "latest": "v4",
-      "latestFull": "v4.3.0",
+      "latestFull": "v4.4.0",
       "description": "GitHub Action to login against a Docker registry",
       "category": "docker",
-      "sha": "c99871dec2022cc055c062a10cc1a1310835ceb4",
+      "sha": "af1e73f918a031802d376d3c8bbc3fe56130a9b0",
       "deprecated": [
         "v1",
         "v2"
@@ -7007,10 +7007,10 @@
     },
     "graalvm/setup-graalvm": {
       "latest": "v1",
-      "latestFull": "v1.5.6",
+      "latestFull": "v1.6.0",
       "description": "Set up your GitHub Actions workflow with a specific GraalVM distribution.",
       "category": "setup-languages",
-      "sha": "6f3fa030c4b8f77c1f554a860f593a654538fa38",
+      "sha": "cabbb10818fabc989d6dbd508e4846596d20dd2d",
       "inputs": [
         "java-version",
         "java-package",
@@ -9551,10 +9551,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.82.7",
+      "latestFull": "v2.82.8",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "16b05812d776ae1dfaabc8277e421fb6d2506419",
+      "sha": "c93ccc03e00cd0e08e494f5fd058a6c55a6a1907",
       "inputs": [
         "tool",
         "checksum",
@@ -9930,10 +9930,10 @@
     },
     "unikraft/kraftkit": {
       "latest": "v0",
-      "latestFull": "v0.12.13",
+      "latestFull": "v0.12.14",
       "description": "Build and use highly customized and ultra-lightweight unikernel VMs.",
       "category": "docker",
-      "sha": "8f5e5dd34ac04c2ac0f43c6499548f2db238e845",
+      "sha": "c45b05b5fff0e223ac531cec3d4af24f9cc64244",
       "inputs": [
         "after",
         "run",
