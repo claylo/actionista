@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-07-04T07:03:42Z",
+    "generated": "2026-07-05T07:09:35Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -2821,10 +2821,10 @@
     },
     "ReactiveCircus/android-emulator-runner": {
       "latest": "v2",
-      "latestFull": "v2.37.0",
+      "latestFull": "v2.38.0",
       "description": "A GitHub Action for installing, configuring and running hardware-accelerated Android Emulators on ma",
       "category": "testing",
-      "sha": "e89f39f1abbbd05b1113a29cf4db69e7540cae5a",
+      "sha": "a421e43855164a8197daf9d8d40fe71c6996bb0d",
       "inputs": [
         "api-level",
         "system-image-api-level",
