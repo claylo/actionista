@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-07-06T07:37:12Z",
+    "generated": "2026-07-07T07:15:03Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4179,10 +4179,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.165",
+      "latestFull": "v1.0.166",
       "description": "",
       "category": "ai-assistants",
-      "sha": "558b1d6cab4085c7753fe402c10bef0fbb92ac7a",
+      "sha": "f87768c6d25f92ae6efa7175e223ef77d4cbf97f",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -6549,10 +6549,10 @@
     },
     "github/branch-deploy": {
       "latest": "v11",
-      "latestFull": "v11.1.4",
+      "latestFull": "v11.1.5",
       "description": "Enabling Branch Deployments through IssueOps with GitHub Actions - If you find this project useful, ",
       "category": "infrastructure",
-      "sha": "ddf8ca48e9cdb2d2c7c71dee428308b19af9313f",
+      "sha": "de4d10ee17c3117a2076aff489ba03fadf225f35",
       "deprecated": [
         "v1",
         "v2",
@@ -6601,6 +6601,7 @@
         "deploy_message_path",
         "sticky_locks",
         "sticky_locks_for_noop",
+        "disable_lock",
         "allow_sha_deployments",
         "disable_naked_commands",
         "successful_deploy_labels",
@@ -6614,7 +6615,17 @@
         "allow_non_default_target_branch_deployments",
         "deployment_confirmation",
         "deployment_confirmation_timeout"
-      ]
+      ],
+      "migrations": {
+        "v10→v11": {
+          "inputChanges": {
+            "added": [
+              "disable_lock"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "github/codeql-action/analyze": {
       "latest": "v4",
@@ -7009,10 +7020,10 @@
     },
     "graalvm/setup-graalvm": {
       "latest": "v1",
-      "latestFull": "v1.6.0",
+      "latestFull": "v1.6.1",
       "description": "Set up your GitHub Actions workflow with a specific GraalVM distribution.",
       "category": "setup-languages",
-      "sha": "cabbb10818fabc989d6dbd508e4846596d20dd2d",
+      "sha": "8c5543b71f44568342e106336639979e94a8f6de",
       "inputs": [
         "java-version",
         "java-package",
@@ -9553,10 +9564,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.82.9",
+      "latestFull": "v2.82.10",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "4684b8405694ae9dd42c9f39ba901a70ae83f4a3",
+      "sha": "50414676f9f5d50a65992c6dd2ed02641263226c",
       "inputs": [
         "tool",
         "checksum",
