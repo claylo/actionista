@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-07-07T07:15:03Z",
+    "generated": "2026-07-08T06:53:46Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -3613,10 +3613,10 @@
     },
     "actions/setup-java": {
       "latest": "v5",
-      "latestFull": "v5.4.0",
+      "latestFull": "v5.5.0",
       "description": "Set up your GitHub Actions workflow with a specific version of Java",
       "category": "setup-languages",
-      "sha": "1bcf9fb12cf4aa7d266a90ae39939e61372fe520",
+      "sha": "0f481fcb613427c0f801b606911222b5b6f3083a",
       "deprecated": [
         "v1",
         "v2",
@@ -3630,6 +3630,7 @@
         "architecture",
         "jdkFile",
         "check-latest",
+        "set-default",
         "verify-signature",
         "verify-signature-public-key",
         "server-id",
@@ -3646,7 +3647,20 @@
         "mvn-toolchain-id",
         "mvn-toolchain-vendor",
         "show-download-progress"
-      ]
+      ],
+      "migrations": {
+        "v4→v5": {
+          "inputChanges": {
+            "added": [
+              "set-default",
+              "verify-signature",
+              "verify-signature-public-key",
+              "show-download-progress"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "actions/setup-node": {
       "latest": "v6",
@@ -4179,10 +4193,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.166",
+      "latestFull": "v1.0.168",
       "description": "",
       "category": "ai-assistants",
-      "sha": "f87768c6d25f92ae6efa7175e223ef77d4cbf97f",
+      "sha": "ba0aafd4308cbba7165f9f2cdb0cfbed5a3c99ce",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -4398,10 +4412,10 @@
     },
     "astral-sh/setup-uv": {
       "latest": "v8",
-      "latestFull": "v8.3.0",
+      "latestFull": "v8.3.1",
       "description": "Set up your GitHub Actions workflow with a specific version of https://docs.astral.sh/uv/",
       "category": "setup-languages",
-      "sha": "d31148d669074a8d0a63714ba94f3201e7020bc3",
+      "sha": "f98e06938123ccabd21905ea5d0069192241f9f1",
       "deprecated": [
         "v1",
         "v2",
@@ -4741,10 +4755,10 @@
     },
     "aws-actions/configure-aws-credentials": {
       "latest": "v6",
-      "latestFull": "v6.2.1",
+      "latestFull": "v6.2.2",
       "description": "Configure AWS credential environment variables for use in other GitHub Actions.",
       "category": "cloud-aws",
-      "sha": "254c19bd240aabef8777f48595e9d2d7b972184b",
+      "sha": "517a711dbcd0e402f90c77e7e2f81e849156e31d",
       "deprecated": [
         "v1",
         "v2",
@@ -9380,10 +9394,10 @@
     },
     "step-security/harden-runner": {
       "latest": "v2",
-      "latestFull": "v2.19.4",
+      "latestFull": "v2.20.0",
       "description": "Harden-Runner is a CI/CD security agent that works like an EDR for GitHub Actions runners. It monito",
       "category": "security",
-      "sha": "9af89fc71515a100421586dfdb3dc9c984fbf411",
+      "sha": "bf7454d06d71f1098171f2acdf0cd4708d7b5920",
       "inputs": [
         "allowed-endpoints",
         "egress-policy",
