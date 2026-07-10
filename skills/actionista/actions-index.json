@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-07-09T07:15:25Z",
+    "generated": "2026-07-10T07:14:19Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -3742,10 +3742,10 @@
     },
     "actions/stale": {
       "latest": "v10",
-      "latestFull": "v10.3.0",
+      "latestFull": "v10.4.0",
       "description": "Marks issues and pull requests that have not had recent interaction",
       "category": "core",
-      "sha": "eb5cf3af3ac0a1aa4c9c45633dd1ae542a27a899",
+      "sha": "1e223db275d687790206a7acac4d1a11bd6fe629",
       "deprecated": [
         "v1",
         "v2",
@@ -4196,10 +4196,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.169",
+      "latestFull": "v1.0.170",
       "description": "",
       "category": "ai-assistants",
-      "sha": "37b464ce72700f7b2c5ff8d2db7fa7b15df792f5",
+      "sha": "536f2c32a39763739000b0e1ac69ca2647d97ce9",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -9581,10 +9581,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.82.11",
+      "latestFull": "v2.83.0",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "5ebac0d9522d786674368e47e92963ba13f2c376",
+      "sha": "c7eb1735f09259a5035e8e5d44b1406b1cddc0fb",
       "inputs": [
         "tool",
         "checksum",
@@ -9943,10 +9943,10 @@
     },
     "trufflesecurity/trufflehog": {
       "latest": "v3",
-      "latestFull": "v3.95.8",
+      "latestFull": "v3.95.9",
       "description": "Find, verify, and analyze leaked credentials",
       "category": "security",
-      "sha": "00155c9dc586f34d189adc83d3ac2698c2ec551f",
+      "sha": "27b0417c16317ca9a472a9a8092acce143b49c55",
       "deprecated": [
         "v1"
       ],
