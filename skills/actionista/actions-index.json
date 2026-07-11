@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-07-10T07:14:19Z",
+    "generated": "2026-07-11T06:48:56Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4196,10 +4196,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.170",
+      "latestFull": "v1.0.171",
       "description": "",
       "category": "ai-assistants",
-      "sha": "536f2c32a39763739000b0e1ac69ca2647d97ce9",
+      "sha": "e90deca47693f9457b72f2b53c17d7c445a87342",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -6679,10 +6679,10 @@
     },
     "golang/govulncheck-action": {
       "latest": "v1",
-      "latestFull": "v1.0.4",
+      "latestFull": "v1.1.0",
       "description": "[mirror] GitHub action for govulncheck",
       "category": "security",
-      "sha": "b625fbe08f3bccbe446d94fbf87fcc875a4f50ee",
+      "sha": "032d45514ae346b1db93c04b0c90b841c370344f",
       "inputs": [
         "go-version-input",
         "check-latest",
@@ -9142,10 +9142,10 @@
     },
     "slackapi/slack-github-action": {
       "latest": "v3",
-      "latestFull": "v3.0.3",
+      "latestFull": "v3.0.4",
       "description": "Send data into Slack using this GitHub Action!",
       "category": "notifications",
-      "sha": "45a88b9581bfab2566dc881e2cd66d334e621e2c",
+      "sha": "fc46ded2fc4d7f11bfa62864526f920cf1a1167d",
       "deprecated": [
         "v1"
       ],
@@ -9581,10 +9581,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.83.0",
+      "latestFull": "v2.83.1",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "c7eb1735f09259a5035e8e5d44b1406b1cddc0fb",
+      "sha": "2ca9b94c269419b7b0c711c09d0b21c4e1d51145",
       "inputs": [
         "tool",
         "checksum",
@@ -10037,10 +10037,10 @@
     },
     "w9jds/firebase-action": {
       "latest": "v15",
-      "latestFull": "v15.22.4",
+      "latestFull": "v15.23.0",
       "description": "GitHub Action for interacting with Firebase",
       "category": "cloud-gcp",
-      "sha": "a1d77669d1c6a9e6f8b731356c6015d981569a7a",
+      "sha": "0134e55ecfe4bdbb457d879e7de8e86593457d65",
       "deprecated": [
         "v1",
         "v2",
@@ -10127,10 +10127,10 @@
     },
     "withastro/action": {
       "latest": "v6",
-      "latestFull": "v6.1.1",
+      "latestFull": "v6.1.2",
       "description": "A GitHub Action that deploys your Astro project to GitHub Pages",
       "category": "infrastructure",
-      "sha": "b7d53628f8b666036b0238aadb0b984a2a489f26",
+      "sha": "e84f40bd8d2caa9e768ec82ad30dd81f0b280853",
       "deprecated": [
         "v1",
         "v2",
