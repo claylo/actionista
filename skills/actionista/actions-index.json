@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-07-11T06:48:56Z",
+    "generated": "2026-07-12T06:56:24Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -9142,10 +9142,10 @@
     },
     "slackapi/slack-github-action": {
       "latest": "v3",
-      "latestFull": "v3.0.4",
+      "latestFull": "v3.0.5",
       "description": "Send data into Slack using this GitHub Action!",
       "category": "notifications",
-      "sha": "fc46ded2fc4d7f11bfa62864526f920cf1a1167d",
+      "sha": "0d95c9a7becc1e6e297d76df9bc735c44f4cbcbc",
       "deprecated": [
         "v1"
       ],
