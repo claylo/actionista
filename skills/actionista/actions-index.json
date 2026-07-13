@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-07-12T06:56:24Z",
+    "generated": "2026-07-13T07:10:53Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -9296,10 +9296,10 @@
     },
     "softprops/turnstyle": {
       "latest": "v3",
-      "latestFull": "v3.3.1",
+      "latestFull": "v3.3.2",
       "description": "🎟️A GitHub Action for serializing workflow runs",
       "category": "utilities",
-      "sha": "fa86562458e34a9067f0dc1316a76b3975b1c413",
+      "sha": "afaccda0f3c0136fb7cb4a734b9b96be03599948",
       "deprecated": [
         "v1"
       ],
@@ -9581,10 +9581,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.83.1",
+      "latestFull": "v2.83.2",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "2ca9b94c269419b7b0c711c09d0b21c4e1d51145",
+      "sha": "43aecc8d72668fbcfe75c31400bc4f890f1c5853",
       "inputs": [
         "tool",
         "checksum",
