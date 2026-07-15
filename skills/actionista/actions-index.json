@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-07-14T06:47:50Z",
+    "generated": "2026-07-15T06:48:41Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -2920,10 +2920,10 @@
     },
     "Songmu/tagpr": {
       "latest": "v1",
-      "latestFull": "v1.20.0",
+      "latestFull": "v1.20.1",
       "description": "automatically creates and updates a pull request for unreleased items, tag them when they are merged",
       "category": "release",
-      "sha": "e84001bd5dac8defa0c75b3913937d284a3b3660",
+      "sha": "d1b8138b7a31075141b6cd64103de9485ced7ac9",
       "inputs": [
         "version",
         "config"
@@ -4187,10 +4187,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.173",
+      "latestFull": "v1.0.174",
       "description": "",
       "category": "ai-assistants",
-      "sha": "f1bd27ca5b54584506e40e17884d90bdaaa1a9b3",
+      "sha": "12531344451323133b0493233c759991ac61da12",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -5284,10 +5284,10 @@
     },
     "cargo-bins/cargo-binstall": {
       "latest": "v1",
-      "latestFull": "v1.20.1",
+      "latestFull": "v1.21.0",
       "description": "Binary installation for rust projects",
       "category": "build-tools",
-      "sha": "732870f031d2fb36309d0deaf36abcc704a7be65",
+      "sha": "ead08b90bd7b2e6d81963fb9cf0b7239f66d5db4",
       "inputs": [
         "version"
       ]
@@ -5877,10 +5877,10 @@
     },
     "davelosert/vitest-coverage-report-action": {
       "latest": "v2",
-      "latestFull": "v2.12.1",
+      "latestFull": "v2.12.2",
       "description": "A GitHub Action to report vitest test coverage results",
       "category": "testing",
-      "sha": "3c054a2d2e2ca45446417ad5d6d5eb33092af8f1",
+      "sha": "8b157684c6a6b259b97d45e72b44242865c0f6a5",
       "inputs": [
         "github-token",
         "vite-config-path",
@@ -8798,10 +8798,10 @@
     },
     "release-plz/action": {
       "latest": "v0",
-      "latestFull": "v0.5.130",
+      "latestFull": "v0.5.131",
       "description": "GitHub action for https://github.com/release-plz/release-plz",
       "category": "release",
-      "sha": "e8792575c7f2366cf6ff3ccc33ead9ace5b691c7",
+      "sha": "2eb1d8bcb770b4c48ccfaad919734b38b51958c9",
       "inputs": [
         "command",
         "registry",
@@ -8976,10 +8976,10 @@
     },
     "ruby/setup-ruby": {
       "latest": "v1",
-      "latestFull": "v1.317.0",
+      "latestFull": "v1.318.0",
       "description": "An action to download a prebuilt Ruby and add it to the PATH in 5 seconds",
       "category": "setup-languages",
-      "sha": "6e5d382445ae5590b7449d8b3bc8cb1c2c27f617",
+      "sha": "8e41b362d2589a22a44c1cfa214b3c83052c195b",
       "inputs": [
         "ruby-version",
         "rubygems",
@@ -9069,10 +9069,10 @@
     },
     "sbt/setup-sbt": {
       "latest": "v1",
-      "latestFull": "v1.5.0",
+      "latestFull": "v1.5.1",
       "description": "setup-sbt installs the official sbt runner",
       "category": "setup-languages",
-      "sha": "66fb4376e81982c7d92a4074170846fff88e2e30",
+      "sha": "9d56cf12e9b58d219605e1d8bfe69a8395fedde0",
       "inputs": [
         "sbt-runner-version",
         "disk-cache"
@@ -9080,10 +9080,10 @@
     },
     "securego/gosec": {
       "latest": "v2",
-      "latestFull": "v2.27.1",
+      "latestFull": "v2.28.0",
       "description": "Go security checker",
       "category": "security",
-      "sha": "9e6a9843d7a4a6e3e9a8539b02612c8a4aa3f889",
+      "sha": "9e75c0576c9878035d4221392108d458abe10fc3",
       "inputs": [
         "args"
       ]
