@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-07-15T06:48:41Z",
+    "generated": "2026-07-16T06:52:44Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -2887,10 +2887,10 @@
     },
     "SonarSource/sonarqube-scan-action": {
       "latest": "v8",
-      "latestFull": "v8.2.0",
+      "latestFull": "v8.2.1",
       "description": "",
       "category": "linting",
-      "sha": "713881670b6b3676cda39549040e2d88c70d582e",
+      "sha": "22918119ff8e1ca75a623e15c8296b6ea4fbe28f",
       "deprecated": [
         "v1",
         "v2",
@@ -3544,15 +3544,16 @@
       ]
     },
     "actions/setup-dotnet": {
-      "latest": "v5",
-      "latestFull": "v5.4.0",
+      "latest": "v6",
+      "latestFull": "v6.0.0",
       "description": "Set up your GitHub Actions workflow with a specific version of the .NET core sdk",
       "category": "setup-languages",
-      "sha": "26b0ec14cb23fa6904739307f278c14f94c95bf1",
+      "sha": "a98b56852c35b8e3190ac28c8c2271da59106c68",
       "deprecated": [
         "v1",
         "v2",
-        "v3"
+        "v3",
+        "v4"
       ],
       "inputs": [
         "dotnet-version",
@@ -3566,31 +3567,20 @@
         "cache-dependency-path",
         "workloads",
         "architecture"
-      ],
-      "migrations": {
-        "v4→v5": {
-          "inputChanges": {
-            "added": [
-              "dotnet-channel",
-              "workloads",
-              "architecture"
-            ],
-            "removed": []
-          }
-        }
-      }
+      ]
     },
     "actions/setup-go": {
-      "latest": "v6",
-      "latestFull": "v6.5.0",
+      "latest": "v7",
+      "latestFull": "v7.0.0",
       "description": "Set up your GitHub Actions workflow with a specific version of Go",
       "category": "setup-languages",
-      "sha": "924ae3a1cded613372ab5595356fb5720e22ba16",
+      "sha": "b7ad1dad31e06c5925ef5d2fc7ad053ef454303e",
       "deprecated": [
         "v1",
         "v2",
         "v3",
-        "v4"
+        "v4",
+        "v5"
       ],
       "inputs": [
         "go-version",
@@ -3601,17 +3591,7 @@
         "cache-dependency-path",
         "architecture",
         "go-download-base-url"
-      ],
-      "migrations": {
-        "v5→v6": {
-          "inputChanges": {
-            "added": [
-              "go-download-base-url"
-            ],
-            "removed": []
-          }
-        }
-      }
+      ]
     },
     "actions/setup-java": {
       "latest": "v5",
@@ -4187,10 +4167,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.174",
+      "latestFull": "v1.0.175",
       "description": "",
       "category": "ai-assistants",
-      "sha": "12531344451323133b0493233c759991ac61da12",
+      "sha": "1298632ce7736903d02a1435002705aa2a594a6c",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -8022,10 +8002,10 @@
     },
     "ocaml/setup-ocaml": {
       "latest": "v3",
-      "latestFull": "v3.6.1",
+      "latestFull": "v3.7.0",
       "description": "GitHub Action for the OCaml programming language",
       "category": "setup-languages",
-      "sha": "e32b06a3e831ff2fbc6f08cf35be2085e3918014",
+      "sha": "15d660006c1d3110d77c34b7faa3bddefe8b82f0",
       "deprecated": [
         "v1"
       ],
@@ -8976,10 +8956,10 @@
     },
     "ruby/setup-ruby": {
       "latest": "v1",
-      "latestFull": "v1.318.0",
+      "latestFull": "v1.319.0",
       "description": "An action to download a prebuilt Ruby and add it to the PATH in 5 seconds",
       "category": "setup-languages",
-      "sha": "8e41b362d2589a22a44c1cfa214b3c83052c195b",
+      "sha": "003a5c4d8d6321bd302e38f6f0ec593f77f06600",
       "inputs": [
         "ruby-version",
         "rubygems",
@@ -9132,13 +9112,14 @@
       ]
     },
     "slackapi/slack-github-action": {
-      "latest": "v3",
-      "latestFull": "v3.0.5",
+      "latest": "v4",
+      "latestFull": "v4.0.0",
       "description": "Send data into Slack using this GitHub Action!",
       "category": "notifications",
-      "sha": "0d95c9a7becc1e6e297d76df9bc735c44f4cbcbc",
+      "sha": "dcb1066f776dd043e64d0e8ba94ca15cc7e1875d",
       "deprecated": [
-        "v1"
+        "v1",
+        "v2"
       ],
       "inputs": [
         "api",
@@ -10028,10 +10009,10 @@
     },
     "w9jds/firebase-action": {
       "latest": "v15",
-      "latestFull": "v15.23.0",
+      "latestFull": "v15.24.0",
       "description": "GitHub Action for interacting with Firebase",
       "category": "cloud-gcp",
-      "sha": "0134e55ecfe4bdbb457d879e7de8e86593457d65",
+      "sha": "af97ff3f81136bba7d9048915ba5f05ba42a551d",
       "deprecated": [
         "v1",
         "v2",
