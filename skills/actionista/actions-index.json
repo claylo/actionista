@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-07-16T06:52:44Z",
+    "generated": "2026-07-17T06:50:57Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -3595,10 +3595,10 @@
     },
     "actions/setup-java": {
       "latest": "v5",
-      "latestFull": "v5.5.0",
+      "latestFull": "v5.6.0",
       "description": "Set up your GitHub Actions workflow with a specific version of Java",
       "category": "setup-languages",
-      "sha": "0f481fcb613427c0f801b606911222b5b6f3083a",
+      "sha": "03ad4de0992f5dab5e18fcb136590ce7c4a0ac95",
       "deprecated": [
         "v1",
         "v2",
@@ -3629,16 +3629,19 @@
         "token",
         "mvn-toolchain-id",
         "mvn-toolchain-vendor",
-        "show-download-progress"
+        "show-download-progress",
+        "problem-matcher"
       ],
       "migrations": {
         "v4→v5": {
           "inputChanges": {
             "added": [
+              "jdk-file",
               "set-default",
               "verify-signature",
               "verify-signature-public-key",
-              "show-download-progress"
+              "show-download-progress",
+              "problem-matcher"
             ],
             "removed": []
           }
@@ -3696,8 +3699,7 @@
         "update-environment",
         "allow-prereleases",
         "freethreaded",
-        "pip-version",
-        "pip-install"
+        "pip-version"
       ],
       "migrations": {
         "v5→v6": {
@@ -4167,10 +4169,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.175",
+      "latestFull": "v1.0.176",
       "description": "",
       "category": "ai-assistants",
-      "sha": "1298632ce7736903d02a1435002705aa2a594a6c",
+      "sha": "700e7f8316990de46bed556429765647af760efc",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -4855,16 +4857,17 @@
       ]
     },
     "azure/k8s-deploy": {
-      "latest": "v6",
-      "latestFull": "v6.0.0",
+      "latest": "v7",
+      "latestFull": "v7.0.0",
       "description": "GitHub Action for deploying to Kubernetes clusters",
       "category": "kubernetes",
-      "sha": "c7ebd0d5f39477a23f1b5dea0f52e6db04adf28e",
+      "sha": "51ca02a8b7225fbd0924aac359c5b336a5f1e5b4",
       "deprecated": [
         "v1",
         "v2",
         "v3",
-        "v4"
+        "v4",
+        "v5"
       ],
       "inputs": [
         "namespace",
@@ -6617,10 +6620,10 @@
     },
     "github/codeql-action/analyze": {
       "latest": "v4",
-      "latestFull": "v4.37.0",
+      "latestFull": "v4.37.1",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "99df26d4f13ea111d4ec1a7dddef6063f76b97e9",
+      "sha": "7188fc363630916deb702c7fdcf4e481b751f97a",
       "deprecated": [
         "v1",
         "v2"
@@ -6628,10 +6631,10 @@
     },
     "github/codeql-action/autobuild": {
       "latest": "v4",
-      "latestFull": "v4.37.0",
+      "latestFull": "v4.37.1",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "99df26d4f13ea111d4ec1a7dddef6063f76b97e9",
+      "sha": "7188fc363630916deb702c7fdcf4e481b751f97a",
       "deprecated": [
         "v1",
         "v2"
@@ -6639,10 +6642,10 @@
     },
     "github/codeql-action/init": {
       "latest": "v4",
-      "latestFull": "v4.37.0",
+      "latestFull": "v4.37.1",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "99df26d4f13ea111d4ec1a7dddef6063f76b97e9",
+      "sha": "7188fc363630916deb702c7fdcf4e481b751f97a",
       "deprecated": [
         "v1",
         "v2"
@@ -7456,10 +7459,10 @@
     },
     "lukka/get-cmake": {
       "latest": "v4",
-      "latestFull": "v4.3.3",
+      "latestFull": "v4.4.0",
       "description": "Install and Cache latest CMake and Ninja for your workflows on your GitHub",
       "category": "build-tools",
-      "sha": "591817e96fcad43505fb4eae36172462abb3a42e",
+      "sha": "e6906078ebd1ccb8ce51ab4626ac46a1b5a517e3",
       "deprecated": [
         "v1",
         "v2"
@@ -9553,10 +9556,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.83.2",
+      "latestFull": "v2.83.3",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "43aecc8d72668fbcfe75c31400bc4f890f1c5853",
+      "sha": "ed67fa35ac944f3a9b33f12c4dd43b6f31a47e20",
       "inputs": [
         "tool",
         "checksum",
