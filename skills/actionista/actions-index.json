@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-07-19T06:54:27Z",
+    "generated": "2026-07-20T07:08:49Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -3680,16 +3680,17 @@
       ]
     },
     "actions/setup-python": {
-      "latest": "v6",
-      "latestFull": "v6.3.0",
+      "latest": "v7",
+      "latestFull": "v7.0.0",
       "description": "Set up your GitHub Actions workflow with a specific version of Python",
       "category": "setup-languages",
-      "sha": "ece7cb06caefa5fff74198d8649806c4678c61a1",
+      "sha": "5fda3b95a4ea91299a34e894583c3862153e4b97",
       "deprecated": [
         "v1",
         "v2",
         "v3",
-        "v4"
+        "v4",
+        "v5"
       ],
       "inputs": [
         "python-version",
@@ -3705,13 +3706,12 @@
         "pip-version"
       ],
       "migrations": {
-        "v5→v6": {
+        "v6→v7": {
           "inputChanges": {
-            "added": [
-              "pip-version",
+            "added": [],
+            "removed": [
               "pip-install"
-            ],
-            "removed": []
+            ]
           }
         }
       }
@@ -8693,10 +8693,10 @@
     },
     "pypa/gh-action-pypi-publish": {
       "latest": "v1",
-      "latestFull": "v1.14.0",
+      "latestFull": "v1.14.1",
       "description": "The blessed :octocat: GitHub Action, for publishing your :package: distribution files to PyPI, the t",
       "category": "release",
-      "sha": "cef221092ed1bacb1cc03d23a2d87d1d172e277b",
+      "sha": "ba38be9e461d3875417946c167d0b5f3d385a247",
       "inputs": [
         "user",
         "password",
@@ -8737,10 +8737,10 @@
     },
     "release-drafter/release-drafter": {
       "latest": "v7",
-      "latestFull": "v7.5.1",
+      "latestFull": "v7.6.0",
       "description": "Drafts your next release notes as pull requests are merged into master. ",
       "category": "release",
-      "sha": "4d75298e00d9e34c483e5ff8c68d0ea1c1940c1e",
+      "sha": "eada3c96a64734dd381cfbda23511034e328ddb0",
       "deprecated": [
         "v1",
         "v2",
@@ -9055,10 +9055,10 @@
     },
     "sbt/setup-sbt": {
       "latest": "v1",
-      "latestFull": "v1.5.1",
+      "latestFull": "v1.5.2",
       "description": "setup-sbt installs the official sbt runner",
       "category": "setup-languages",
-      "sha": "9d56cf12e9b58d219605e1d8bfe69a8395fedde0",
+      "sha": "6444f4c8111de4b9059c3975def104b03cfaa5f0",
       "inputs": [
         "sbt-runner-version",
         "disk-cache"
