@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-07-20T07:08:49Z",
+    "generated": "2026-07-21T06:54:49Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -3249,10 +3249,10 @@
     },
     "actions/checkout": {
       "latest": "v7",
-      "latestFull": "v7.0.0",
+      "latestFull": "v7.0.1",
       "description": "Action for checking out a repo",
       "category": "core",
-      "sha": "9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0",
+      "sha": "3d3c42e5aac5ba805825da76410c181273ba90b1",
       "deprecated": [
         "v1",
         "v2",
@@ -3282,17 +3282,7 @@
         "set-safe-directory",
         "github-server-url",
         "allow-unsafe-pr-checkout"
-      ],
-      "migrations": {
-        "v6→v7": {
-          "inputChanges": {
-            "added": [
-              "allow-unsafe-pr-checkout"
-            ],
-            "removed": []
-          }
-        }
-      }
+      ]
     },
     "actions/configure-pages": {
       "latest": "v6",
@@ -3524,16 +3514,17 @@
       ]
     },
     "actions/labeler": {
-      "latest": "v6",
-      "latestFull": "v6.2.0",
+      "latest": "v7",
+      "latestFull": "v7.0.0",
       "description": "An action for automatically labelling pull requests",
       "category": "core",
-      "sha": "b8dd2d9be0f68b860e7dae5dae7d772984eacd6d",
+      "sha": "bf12e9b00b37c5c0ca2b87b79b2daf7891dbda13",
       "deprecated": [
         "v1",
         "v2",
         "v3",
-        "v4"
+        "v4",
+        "v5"
       ],
       "inputs": [
         "repo-token",
@@ -4172,10 +4163,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.178",
+      "latestFull": "v1.0.179",
       "description": "",
       "category": "ai-assistants",
-      "sha": "af0559ee4f514d1ef21826982bed13f7edc3c35e",
+      "sha": "b76a0776ae74036e77cd11018083743453d7ad35",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -9559,10 +9550,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.83.4",
+      "latestFull": "v2.84.0",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "07b4745e0c39a41822af610387492e3e53aa222b",
+      "sha": "a6b2e2dcd845ddd7f509ce4f3ed3d922b80cc5d9",
       "inputs": [
         "tool",
         "checksum",
