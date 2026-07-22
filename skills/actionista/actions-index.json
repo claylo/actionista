@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-07-21T06:54:49Z",
+    "generated": "2026-07-22T06:55:51Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4163,10 +4163,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.179",
+      "latestFull": "v1.0.180",
       "description": "",
       "category": "ai-assistants",
-      "sha": "b76a0776ae74036e77cd11018083743453d7ad35",
+      "sha": "fa7e2f0a29a126f0b81cdcf360561b36e44cf608",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -4381,18 +4381,19 @@
       }
     },
     "astral-sh/setup-uv": {
-      "latest": "v8",
-      "latestFull": "v8.3.2",
+      "latest": "v9",
+      "latestFull": "v9.0.0",
       "description": "Set up your GitHub Actions workflow with a specific version of https://docs.astral.sh/uv/",
       "category": "setup-languages",
-      "sha": "11f9893b081a58869d3b5fccaea48c9e9e46f990",
+      "sha": "c771a70e6277c0a99b617c7a806ffedaca235ff9",
       "deprecated": [
         "v1",
         "v2",
         "v3",
         "v4",
         "v5",
-        "v6"
+        "v6",
+        "v7"
       ],
       "inputs": [
         "version",
@@ -4421,19 +4422,7 @@
         "add-problem-matchers",
         "quiet",
         "resolution-strategy"
-      ],
-      "migrations": {
-        "v7→v8": {
-          "inputChanges": {
-            "added": [
-              "no-project",
-              "download-from-astral-mirror",
-              "quiet"
-            ],
-            "removed": []
-          }
-        }
-      }
+      ]
     },
     "asyncapi/cli": {
       "latest": "v6",
@@ -6614,10 +6603,10 @@
     },
     "github/codeql-action/analyze": {
       "latest": "v4",
-      "latestFull": "v4.37.1",
+      "latestFull": "v4.37.3",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "7188fc363630916deb702c7fdcf4e481b751f97a",
+      "sha": "e4fba868fa4b1b91e1fdab776edc8cfbe6e9fb81",
       "deprecated": [
         "v1",
         "v2"
@@ -6625,10 +6614,10 @@
     },
     "github/codeql-action/autobuild": {
       "latest": "v4",
-      "latestFull": "v4.37.1",
+      "latestFull": "v4.37.3",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "7188fc363630916deb702c7fdcf4e481b751f97a",
+      "sha": "e4fba868fa4b1b91e1fdab776edc8cfbe6e9fb81",
       "deprecated": [
         "v1",
         "v2"
@@ -6636,10 +6625,10 @@
     },
     "github/codeql-action/init": {
       "latest": "v4",
-      "latestFull": "v4.37.1",
+      "latestFull": "v4.37.3",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "7188fc363630916deb702c7fdcf4e481b751f97a",
+      "sha": "e4fba868fa4b1b91e1fdab776edc8cfbe6e9fb81",
       "deprecated": [
         "v1",
         "v2"
@@ -8953,10 +8942,10 @@
     },
     "ruby/setup-ruby": {
       "latest": "v1",
-      "latestFull": "v1.319.0",
+      "latestFull": "v1.320.0",
       "description": "An action to download a prebuilt Ruby and add it to the PATH in 5 seconds",
       "category": "setup-languages",
-      "sha": "003a5c4d8d6321bd302e38f6f0ec593f77f06600",
+      "sha": "a30dfa457ad68707b8b910ac3a244714b61c0626",
       "inputs": [
         "ruby-version",
         "rubygems",
