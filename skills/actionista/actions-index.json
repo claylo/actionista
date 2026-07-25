@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-07-24T06:54:40Z",
+    "generated": "2026-07-25T06:50:12Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4163,10 +4163,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.181",
+      "latestFull": "v1.0.183",
       "description": "",
       "category": "ai-assistants",
-      "sha": "44423bdec74b97d67543eb16c110546762c110b2",
+      "sha": "be7b93b1907a4abad570368f3c74b6fe3807510b",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -6125,10 +6125,10 @@
     },
     "docker/login-action": {
       "latest": "v4",
-      "latestFull": "v4.5.0",
+      "latestFull": "v4.5.1",
       "description": "GitHub Action to login against a Docker registry",
       "category": "docker",
-      "sha": "06fb636fac595d6fb4b28a5dfcb21a6f5091859c",
+      "sha": "abd2ef45e78c5afb21d64d4ca52ee8550d9572c7",
       "deprecated": [
         "v1",
         "v2"
@@ -6478,10 +6478,10 @@
     },
     "github/accessibility-scanner": {
       "latest": "v3",
-      "latestFull": "v3.3.0",
+      "latestFull": "v3.4.0",
       "description": "Finds potential accessibility gaps, files GitHub issues to track them, and attempts to fix them with",
       "category": "ai-assistants",
-      "sha": "84a8f6de0b0f7df7ac2083386222388d0e74eeb9",
+      "sha": "da2381e50d31f6e21c4fb6fad14e75f26e682ae1",
       "deprecated": [
         "v1"
       ],
@@ -8635,10 +8635,10 @@
     },
     "pypa/cibuildwheel": {
       "latest": "v4",
-      "latestFull": "v4.1.0",
+      "latestFull": "v4.1.1",
       "description": "🎡 Build Python wheels for all the platforms with minimal configuration. ",
       "category": "build-tools",
-      "sha": "294735312765b09d24a2fbec22660ce817587d55",
+      "sha": "4726cd35bb13f7bde50cf2761f2499ac7b3aa32c",
       "deprecated": [
         "v1",
         "v2"
@@ -9542,10 +9542,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.85.0",
+      "latestFull": "v2.85.1",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "7572810d7dd469b651bb7793945692cf78da5dd7",
+      "sha": "3d7d7cd5ac7f994c1892ae0c06165095b9139094",
       "inputs": [
         "tool",
         "checksum",
@@ -9904,10 +9904,10 @@
     },
     "trufflesecurity/trufflehog": {
       "latest": "v3",
-      "latestFull": "v3.95.9",
+      "latestFull": "v3.96.0",
       "description": "Find, verify, and analyze leaked credentials",
       "category": "security",
-      "sha": "27b0417c16317ca9a472a9a8092acce143b49c55",
+      "sha": "6f3c981e7b77f235fd2702dd74af25fc4b72bf11",
       "deprecated": [
         "v1"
       ],
