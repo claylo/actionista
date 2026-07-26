@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-07-25T06:50:12Z",
+    "generated": "2026-07-26T06:58:04Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -114,10 +114,10 @@
     },
     "Apple-Actions/download-provisioning-profiles": {
       "latest": "v6",
-      "latestFull": "v6.0.0",
+      "latestFull": "v6.1.0",
       "description": "Github Action for downloading provisioning profiles from Apple AppStore Connect",
       "category": "mobile",
-      "sha": "c62019de00bb4395ed414e4a17c98f4e279636de",
+      "sha": "2126b5f86a0e2863cbf4d2d312112b22b943a594",
       "deprecated": [
         "v1",
         "v2",
@@ -4984,10 +4984,10 @@
     },
     "bencherdev/bencher": {
       "latest": "v0",
-      "latestFull": "v0.6.10",
+      "latestFull": "v0.6.11",
       "description": "🐰 Bencher - Continuous Benchmarking",
       "category": "testing",
-      "sha": "d2895af8c867c83b8fe766a6b84d8ccd4df5c315",
+      "sha": "4c83b25441d145ee273adaf74be30f2382e6ba85",
       "inputs": [
         "version"
       ]
@@ -5250,10 +5250,10 @@
     },
     "cargo-bins/cargo-binstall": {
       "latest": "v1",
-      "latestFull": "v1.21.0",
+      "latestFull": "v1.21.1",
       "description": "Binary installation for rust projects",
       "category": "build-tools",
-      "sha": "ead08b90bd7b2e6d81963fb9cf0b7239f66d5db4",
+      "sha": "e00d2c94cc0067b77737821097a62d91c0301baa",
       "inputs": [
         "version"
       ]
@@ -9038,10 +9038,10 @@
     },
     "sbt/setup-sbt": {
       "latest": "v1",
-      "latestFull": "v1.5.2",
+      "latestFull": "v1.5.4",
       "description": "setup-sbt installs the official sbt runner",
       "category": "setup-languages",
-      "sha": "6444f4c8111de4b9059c3975def104b03cfaa5f0",
+      "sha": "f6db8ab474efba716fc7f04441ab33714e4825af",
       "inputs": [
         "sbt-runner-version",
         "disk-cache"
