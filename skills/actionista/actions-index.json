@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-07-27T07:12:14Z",
+    "generated": "2026-07-28T06:56:19Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -3708,11 +3708,11 @@
       }
     },
     "actions/stale": {
-      "latest": "v10",
-      "latestFull": "v10.4.0",
+      "latest": "v11",
+      "latestFull": "v11.0.0",
       "description": "Marks issues and pull requests that have not had recent interaction",
       "category": "core",
-      "sha": "1e223db275d687790206a7acac4d1a11bd6fe629",
+      "sha": "4391f3da665fdf50b6810c1a66712fb9ba21aa93",
       "deprecated": [
         "v1",
         "v2",
@@ -3721,7 +3721,8 @@
         "v5",
         "v6",
         "v7",
-        "v8"
+        "v8",
+        "v9"
       ],
       "inputs": [
         "repo-token",
@@ -3779,18 +3780,7 @@
         "ignore-pr-updates",
         "include-only-assigned",
         "only-issue-types"
-      ],
-      "migrations": {
-        "v9→v10": {
-          "inputChanges": {
-            "added": [
-              "sort-by",
-              "only-issue-types"
-            ],
-            "removed": []
-          }
-        }
-      }
+      ]
     },
     "actions/upload-artifact": {
       "latest": "v7",
@@ -5657,10 +5647,10 @@
     },
     "coverallsapp/github-action": {
       "latest": "v2",
-      "latestFull": "v2.3.6",
+      "latestFull": "v2.3.8",
       "description": "Coveralls Github Action",
       "category": "testing",
-      "sha": "648a8eb78e6d50909eff900e4ec85cab4524a45b",
+      "sha": "8d6379e14d29928660c4ba802d8e85393440b329",
       "inputs": [
         "github-token",
         "path-to-lcov",
