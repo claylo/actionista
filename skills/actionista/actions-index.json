@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-07-28T06:56:19Z",
+    "generated": "2026-07-29T06:58:12Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -3604,6 +3604,7 @@
         "jdk-file",
         "jdkFile",
         "check-latest",
+        "force-download",
         "set-default",
         "verify-signature",
         "verify-signature-public-key",
@@ -6114,10 +6115,10 @@
     },
     "docker/login-action": {
       "latest": "v4",
-      "latestFull": "v4.5.1",
+      "latestFull": "v4.5.2",
       "description": "GitHub Action to login against a Docker registry",
       "category": "docker",
-      "sha": "abd2ef45e78c5afb21d64d4ca52ee8550d9572c7",
+      "sha": "371161bbe7024a29a25c5e19bfcbc0804fe9ad2c",
       "deprecated": [
         "v1",
         "v2"
@@ -9027,10 +9028,10 @@
     },
     "sbt/setup-sbt": {
       "latest": "v1",
-      "latestFull": "v1.5.4",
+      "latestFull": "v1.5.5",
       "description": "setup-sbt installs the official sbt runner",
       "category": "setup-languages",
-      "sha": "f6db8ab474efba716fc7f04441ab33714e4825af",
+      "sha": "d059c39de700f4cc5cb64f9f56577315e44a984e",
       "inputs": [
         "sbt-runner-version",
         "disk-cache"
@@ -9531,10 +9532,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.85.2",
+      "latestFull": "v2.85.3",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "41049aa56687c35e0afa74eed4f09cec4f9afabf",
+      "sha": "18b1216eba7f8039b0f8d131d5473787f0edce68",
       "inputs": [
         "tool",
         "checksum",
