@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-07-29T06:58:12Z",
+    "generated": "2026-07-30T06:56:51Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -473,10 +473,10 @@
     },
     "JetBrains/qodana-action": {
       "latest": "v2026",
-      "latestFull": "v2026.1.3",
+      "latestFull": "v2026.2.0",
       "description": "⚙️ Scan your Go, Java, Kotlin, PHP, Python, JavaScript, TypeScript, .NET projects at GitHub with Qod",
       "category": "linting",
-      "sha": "4861e015da555e86a72b862892aba6c2b93e6891",
+      "sha": "b588768b6e7e6da579e518bc584f79de0d243692",
       "deprecated": [
         "v1",
         "v2",
@@ -2564,10 +2564,10 @@
     },
     "Mozilla-Actions/sccache-action": {
       "latest": "v0",
-      "latestFull": "v0.0.10",
+      "latestFull": "v0.0.11",
       "description": "sccache github action",
       "category": "build-tools",
-      "sha": "9e7fa8a12102821edf02ca5dbea1acd0f89a2696",
+      "sha": "fc920bf0ec8de6ee65d409111f7ec508035751ba",
       "inputs": [
         "version",
         "token",
@@ -3142,47 +3142,42 @@
       ]
     },
     "actions/ai-inference": {
-      "latest": "v2",
-      "latestFull": "v2.1.1",
+      "latest": "v3",
+      "latestFull": "v3",
       "description": "An action for calling AI models with GitHub Models",
       "category": "core",
-      "sha": "a7805884c80886efc241e94a5351df715968a0ad",
+      "sha": "2c43c91ae16266ca159d311430343c67a5ffa222",
+      "deprecated": [
+        "v1"
+      ],
       "inputs": [
         "prompt",
         "prompt-file",
         "input",
         "file_input",
         "model",
-        "endpoint",
         "system-prompt",
         "system-prompt-file",
-        "max-tokens",
-        "max-completion-tokens",
-        "temperature",
-        "top-p",
         "token",
-        "enable-github-mcp",
-        "github-mcp-token",
-        "github-mcp-toolsets",
-        "custom-headers",
         "provider",
         "copilot-cli-path",
         "copilot-allow-tools"
       ],
       "migrations": {
-        "v1→v2": {
+        "v2→v3": {
           "inputChanges": {
-            "added": [
+            "added": [],
+            "removed": [
+              "endpoint",
+              "max-tokens",
               "max-completion-tokens",
               "temperature",
               "top-p",
+              "enable-github-mcp",
+              "github-mcp-token",
               "github-mcp-toolsets",
-              "custom-headers",
-              "provider",
-              "copilot-cli-path",
-              "copilot-allow-tools"
-            ],
-            "removed": []
+              "custom-headers"
+            ]
           }
         }
       }
@@ -3620,6 +3615,8 @@
         "gpg-passphrase",
         "cache",
         "cache-dependency-path",
+        "cache-path",
+        "cache-read-only",
         "job-status",
         "token",
         "mvn-toolchain-id",
@@ -6115,10 +6112,10 @@
     },
     "docker/login-action": {
       "latest": "v4",
-      "latestFull": "v4.5.2",
+      "latestFull": "v4.6.0",
       "description": "GitHub Action to login against a Docker registry",
       "category": "docker",
-      "sha": "371161bbe7024a29a25c5e19bfcbc0804fe9ad2c",
+      "sha": "dbcb813823bdd20940b903addbd779551569679f",
       "deprecated": [
         "v1",
         "v2"
@@ -6987,10 +6984,10 @@
     },
     "graalvm/setup-graalvm": {
       "latest": "v1",
-      "latestFull": "v1.6.1",
+      "latestFull": "v1.6.3",
       "description": "Set up your GitHub Actions workflow with a specific GraalVM distribution.",
       "category": "setup-languages",
-      "sha": "8c5543b71f44568342e106336639979e94a8f6de",
+      "sha": "0def53c0fd8534bc13416c9469f5be45265824fd",
       "inputs": [
         "java-version",
         "java-package",
@@ -7206,11 +7203,14 @@
       ]
     },
     "hynek/build-and-inspect-python-package": {
-      "latest": "v2",
-      "latestFull": "v2.18.0",
+      "latest": "v3",
+      "latestFull": "v3.0.1",
       "description": "Build and Inspect Python Packages in GitHub Actions",
       "category": "build-tools",
-      "sha": "d44ca7d91762de7a7d5436ddae667c6da6d1c3df",
+      "sha": "2abe76da66d0a6a4a227101f9348ee855797cfa5",
+      "deprecated": [
+        "v1"
+      ],
       "inputs": [
         "path",
         "skip-wheel",
@@ -7219,22 +7219,7 @@
         "attest-build-provenance-github",
         "python-version",
         "include-free-threaded"
-      ],
-      "migrations": {
-        "v1→v2": {
-          "inputChanges": {
-            "added": [
-              "skip-wheel",
-              "skip-sdist",
-              "upload-name-suffix",
-              "attest-build-provenance-github",
-              "python-version",
-              "include-free-threaded"
-            ],
-            "removed": []
-          }
-        }
-      }
+      ]
     },
     "irgolic/AutoPR": {
       "latest": "v0",
@@ -8666,10 +8651,10 @@
     },
     "pypa/gh-action-pypi-publish": {
       "latest": "v1",
-      "latestFull": "v1.14.1",
+      "latestFull": "v1.14.2",
       "description": "The blessed :octocat: GitHub Action, for publishing your :package: distribution files to PyPI, the t",
       "category": "release",
-      "sha": "ba38be9e461d3875417946c167d0b5f3d385a247",
+      "sha": "dc37677b2e1c63e2034f94d8a5b11f265b73ba33",
       "inputs": [
         "user",
         "password",
@@ -8710,10 +8695,10 @@
     },
     "release-drafter/release-drafter": {
       "latest": "v7",
-      "latestFull": "v7.6.0",
+      "latestFull": "v7.7.0",
       "description": "Drafts your next release notes as pull requests are merged into master. ",
       "category": "release",
-      "sha": "eada3c96a64734dd381cfbda23511034e328ddb0",
+      "sha": "34d80673e067bdc0c24568d3af899c216adcfaa9",
       "deprecated": [
         "v1",
         "v2",
@@ -9028,10 +9013,10 @@
     },
     "sbt/setup-sbt": {
       "latest": "v1",
-      "latestFull": "v1.5.5",
+      "latestFull": "v1.5.6",
       "description": "setup-sbt installs the official sbt runner",
       "category": "setup-languages",
-      "sha": "d059c39de700f4cc5cb64f9f56577315e44a984e",
+      "sha": "bfea3c5f48abd221b04a6df4798aa5eb8b6a2baf",
       "inputs": [
         "sbt-runner-version",
         "disk-cache"
@@ -9532,10 +9517,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.85.3",
+      "latestFull": "v2.85.4",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "18b1216eba7f8039b0f8d131d5473787f0edce68",
+      "sha": "065d6a08a14e61e89fb0a4c10eecdbdef39c7d8e",
       "inputs": [
         "tool",
         "checksum",
@@ -9988,10 +9973,10 @@
     },
     "w9jds/firebase-action": {
       "latest": "v15",
-      "latestFull": "v15.24.0",
+      "latestFull": "v15.25.0",
       "description": "GitHub Action for interacting with Firebase",
       "category": "cloud-gcp",
-      "sha": "af97ff3f81136bba7d9048915ba5f05ba42a551d",
+      "sha": "0ff05056cc1c4120c4fdf161f360111531dadeac",
       "deprecated": [
         "v1",
         "v2",
