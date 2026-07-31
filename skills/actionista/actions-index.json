@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-07-30T06:56:51Z",
+    "generated": "2026-07-31T07:02:35Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -6465,10 +6465,10 @@
     },
     "github/accessibility-scanner": {
       "latest": "v3",
-      "latestFull": "v3.4.0",
+      "latestFull": "v3.4.1",
       "description": "Finds potential accessibility gaps, files GitHub issues to track them, and attempts to fix them with",
       "category": "ai-assistants",
-      "sha": "da2381e50d31f6e21c4fb6fad14e75f26e682ae1",
+      "sha": "745198705c4aecb2af83732eaafe1f6e3f7787c2",
       "deprecated": [
         "v1"
       ],
@@ -6593,10 +6593,10 @@
     },
     "github/codeql-action/analyze": {
       "latest": "v4",
-      "latestFull": "v4.37.3",
+      "latestFull": "v4.37.4",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "e4fba868fa4b1b91e1fdab776edc8cfbe6e9fb81",
+      "sha": "f205ea1c3313d32999d8d6a48b4f6530d4437b38",
       "deprecated": [
         "v1",
         "v2"
@@ -6604,10 +6604,10 @@
     },
     "github/codeql-action/autobuild": {
       "latest": "v4",
-      "latestFull": "v4.37.3",
+      "latestFull": "v4.37.4",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "e4fba868fa4b1b91e1fdab776edc8cfbe6e9fb81",
+      "sha": "f205ea1c3313d32999d8d6a48b4f6530d4437b38",
       "deprecated": [
         "v1",
         "v2"
@@ -6615,10 +6615,10 @@
     },
     "github/codeql-action/init": {
       "latest": "v4",
-      "latestFull": "v4.37.3",
+      "latestFull": "v4.37.4",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "e4fba868fa4b1b91e1fdab776edc8cfbe6e9fb81",
+      "sha": "f205ea1c3313d32999d8d6a48b4f6530d4437b38",
       "deprecated": [
         "v1",
         "v2"
@@ -9517,10 +9517,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.85.4",
+      "latestFull": "v2.85.5",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "065d6a08a14e61e89fb0a4c10eecdbdef39c7d8e",
+      "sha": "6a1bd70eaac3c8bdf093356838d7ee09fda951cf",
       "inputs": [
         "tool",
         "checksum",
@@ -9973,10 +9973,10 @@
     },
     "w9jds/firebase-action": {
       "latest": "v15",
-      "latestFull": "v15.25.0",
+      "latestFull": "v15.25.1",
       "description": "GitHub Action for interacting with Firebase",
       "category": "cloud-gcp",
-      "sha": "0ff05056cc1c4120c4fdf161f360111531dadeac",
+      "sha": "2ca73e9fbf9557017fb055f7db643a9878c7b9bf",
       "deprecated": [
         "v1",
         "v2",
