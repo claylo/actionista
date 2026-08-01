@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-07-31T07:02:35Z",
+    "generated": "2026-08-01T06:53:10Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -2524,10 +2524,10 @@
     },
     "Kesin11/actions-timeline": {
       "latest": "v3",
-      "latestFull": "v3.1.1",
+      "latestFull": "v3.2.0",
       "description": "An Action shows timeline of a workflow in a run summary.",
       "category": "utilities",
-      "sha": "7bf79990b7c09f5dfb570ac30b814ca597bd538e",
+      "sha": "57fc93f20c6da7fbc14063c6d24a2a5627c799ad",
       "deprecated": [
         "v1"
       ],
@@ -3581,10 +3581,10 @@
     },
     "actions/setup-java": {
       "latest": "v5",
-      "latestFull": "v5.6.0",
+      "latestFull": "v5.7.0",
       "description": "Set up your GitHub Actions workflow with a specific version of Java",
       "category": "setup-languages",
-      "sha": "03ad4de0992f5dab5e18fcb136590ce7c4a0ac95",
+      "sha": "b6effb05e454b25005698d916606bdc6ffcbf961",
       "deprecated": [
         "v1",
         "v2",
@@ -3629,9 +3629,15 @@
           "inputChanges": {
             "added": [
               "jdk-file",
+              "force-download",
               "set-default",
               "verify-signature",
               "verify-signature-public-key",
+              "server-username-env-var",
+              "server-password-env-var",
+              "gpg-passphrase-env-var",
+              "cache-path",
+              "cache-read-only",
               "show-download-progress",
               "problem-matcher"
             ],
@@ -7420,10 +7426,10 @@
     },
     "lukka/get-cmake": {
       "latest": "v4",
-      "latestFull": "v4.4.0",
+      "latestFull": "v4.4.2",
       "description": "Install and Cache latest CMake and Ninja for your workflows on your GitHub",
       "category": "build-tools",
-      "sha": "e6906078ebd1ccb8ce51ab4626ac46a1b5a517e3",
+      "sha": "fffaaafeea488556c2c12dad60690008bc1caacb",
       "deprecated": [
         "v1",
         "v2"
