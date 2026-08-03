@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-08-02T06:56:04Z",
+    "generated": "2026-08-03T07:11:50Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -7014,10 +7014,10 @@
     },
     "gradle/actions/setup-gradle": {
       "latest": "v6",
-      "latestFull": "v6.2.0",
+      "latestFull": "v6.3.0",
       "description": "A collection of GitHub Actions to accelerate your Gradle Builds on GitHub",
       "category": "build-tools",
-      "sha": "3f131e8634966bd73d06cc69884922b02e6faf92",
+      "sha": "9c971963bec38e04b3d30dcc455b5382be2fdbfb",
       "deprecated": [
         "v1",
         "v2",
