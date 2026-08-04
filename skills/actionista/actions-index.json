@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-08-03T07:11:50Z",
+    "generated": "2026-08-04T06:56:04Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4157,10 +4157,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.183",
+      "latestFull": "v1.0.184",
       "description": "",
       "category": "ai-assistants",
-      "sha": "be7b93b1907a4abad570368f3c74b6fe3807510b",
+      "sha": "86180fa9e4d311eed10c9cc49854c53dab5d517a",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -4875,10 +4875,10 @@
     },
     "azure/login": {
       "latest": "v3",
-      "latestFull": "v3.0.0",
+      "latestFull": "v3.0.1",
       "description": "Connect to Azure",
       "category": "cloud-azure",
-      "sha": "532459ea530d8321f2fb9bb10d1e0bcf23869a43",
+      "sha": "f5d393ae46f8fde4be8b75f32e3fc50e654ad0ca",
       "deprecated": [
         "v1"
       ],
@@ -5268,7 +5268,7 @@
         "pr-base-branch",
         "create-github-releases",
         "push-git-tags",
-        "commit-mode"
+        "push-with-git-cli"
       ]
     },
     "check-spelling/check-spelling": {
@@ -5628,10 +5628,10 @@
     },
     "coursier/setup-action": {
       "latest": "v3",
-      "latestFull": "v3.0.0",
+      "latestFull": "v3.0.1",
       "description": "▶️ GitHub Action using Coursier to install JVM and Scala tools",
       "category": "setup-languages",
-      "sha": "fd1707a76b027efdfb66ca79318b4d29b72e5a02",
+      "sha": "63a23764316528a1b627103472030d5a16fc6133",
       "deprecated": [
         "v1"
       ],
@@ -5647,7 +5647,19 @@
         "useContainerImage",
         "launcher",
         "preferredLauncher"
-      ]
+      ],
+      "migrations": {
+        "v2→v3": {
+          "inputChanges": {
+            "added": [
+              "mirrors",
+              "launcher",
+              "preferredLauncher"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "coverallsapp/github-action": {
       "latest": "v2",
@@ -6599,10 +6611,10 @@
     },
     "github/codeql-action/analyze": {
       "latest": "v4",
-      "latestFull": "v4.37.4",
+      "latestFull": "v4.37.5",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "f205ea1c3313d32999d8d6a48b4f6530d4437b38",
+      "sha": "d1ba80a13dd99fba24a470575428917156a28b43",
       "deprecated": [
         "v1",
         "v2"
@@ -6610,10 +6622,10 @@
     },
     "github/codeql-action/autobuild": {
       "latest": "v4",
-      "latestFull": "v4.37.4",
+      "latestFull": "v4.37.5",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "f205ea1c3313d32999d8d6a48b4f6530d4437b38",
+      "sha": "d1ba80a13dd99fba24a470575428917156a28b43",
       "deprecated": [
         "v1",
         "v2"
@@ -6621,10 +6633,10 @@
     },
     "github/codeql-action/init": {
       "latest": "v4",
-      "latestFull": "v4.37.4",
+      "latestFull": "v4.37.5",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "f205ea1c3313d32999d8d6a48b4f6530d4437b38",
+      "sha": "d1ba80a13dd99fba24a470575428917156a28b43",
       "deprecated": [
         "v1",
         "v2"
@@ -8464,10 +8476,10 @@
     },
     "pnpm/action-setup": {
       "latest": "v6",
-      "latestFull": "v6.0.9",
+      "latestFull": "v6.0.10",
       "description": "Install pnpm package manager",
       "category": "package-managers",
-      "sha": "0ebf47130e4866e96fce0953f49152a61190b271",
+      "sha": "0977fd99725f1db4007ccb2928dbb4e90d06cc86",
       "deprecated": [
         "v1",
         "v2",
