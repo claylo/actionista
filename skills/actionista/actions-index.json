@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-08-04T06:56:04Z",
+    "generated": "2026-08-05T06:57:16Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -3614,6 +3614,7 @@
         "gpg-passphrase-env-var",
         "gpg-passphrase",
         "cache",
+        "cache-jdk",
         "cache-dependency-path",
         "cache-path",
         "cache-read-only",
@@ -4157,10 +4158,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.184",
+      "latestFull": "v1.0.185",
       "description": "",
       "category": "ai-assistants",
-      "sha": "86180fa9e4d311eed10c9cc49854c53dab5d517a",
+      "sha": "9db594c7a0e82298c121c18b7f08aa1579ce7341",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -6611,10 +6612,10 @@
     },
     "github/codeql-action/analyze": {
       "latest": "v4",
-      "latestFull": "v4.37.5",
+      "latestFull": "v4.37.6",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "d1ba80a13dd99fba24a470575428917156a28b43",
+      "sha": "5595ccaf912efad79be6eef63a5619ff05969be3",
       "deprecated": [
         "v1",
         "v2"
@@ -6622,10 +6623,10 @@
     },
     "github/codeql-action/autobuild": {
       "latest": "v4",
-      "latestFull": "v4.37.5",
+      "latestFull": "v4.37.6",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "d1ba80a13dd99fba24a470575428917156a28b43",
+      "sha": "5595ccaf912efad79be6eef63a5619ff05969be3",
       "deprecated": [
         "v1",
         "v2"
@@ -6633,10 +6634,10 @@
     },
     "github/codeql-action/init": {
       "latest": "v4",
-      "latestFull": "v4.37.5",
+      "latestFull": "v4.37.6",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "d1ba80a13dd99fba24a470575428917156a28b43",
+      "sha": "5595ccaf912efad79be6eef63a5619ff05969be3",
       "deprecated": [
         "v1",
         "v2"
@@ -8628,10 +8629,10 @@
     },
     "pypa/cibuildwheel": {
       "latest": "v4",
-      "latestFull": "v4.1.1",
+      "latestFull": "v4.2.0",
       "description": "🎡 Build Python wheels for all the platforms with minimal configuration. ",
       "category": "build-tools",
-      "sha": "4726cd35bb13f7bde50cf2761f2499ac7b3aa32c",
+      "sha": "1828c10ab37f080699c7b81cea34097c684a7074",
       "deprecated": [
         "v1",
         "v2"
@@ -9351,10 +9352,10 @@
     },
     "step-security/harden-runner": {
       "latest": "v2",
-      "latestFull": "v2.20.0",
+      "latestFull": "v2.20.1",
       "description": "Harden-Runner is a CI/CD security agent that works like an EDR for GitHub Actions runners. It monito",
       "category": "security",
-      "sha": "bf7454d06d71f1098171f2acdf0cd4708d7b5920",
+      "sha": "b09bb98e06d4d774595224525879c09bc6e98c40",
       "inputs": [
         "allowed-endpoints",
         "egress-policy",
@@ -9535,10 +9536,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.85.7",
+      "latestFull": "v2.85.8",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "67729d5c413db75907f0ad1e39bb04b9c868ff60",
+      "sha": "cb33e69fad06166ca28a42b2575e4dadabf62ee8",
       "inputs": [
         "tool",
         "checksum",
