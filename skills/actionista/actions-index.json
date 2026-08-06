@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-08-05T06:57:16Z",
+    "generated": "2026-08-06T06:57:38Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -2954,10 +2954,10 @@
     },
     "Swatinem/rust-cache": {
       "latest": "v2",
-      "latestFull": "v2.9.1",
+      "latestFull": "v2.9.2",
       "description": "A GitHub Action that implements smart caching for rust/cargo projects ",
       "category": "package-managers",
-      "sha": "c19371144df3bb44fab255c43d04cbc2ab54d1c4",
+      "sha": "6323deb102c322ba6fcbdcafc7e3dddab59af2b6",
       "inputs": [
         "prefix-key",
         "shared-key",
@@ -4158,10 +4158,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.185",
+      "latestFull": "v1.0.186",
       "description": "",
       "category": "ai-assistants",
-      "sha": "9db594c7a0e82298c121c18b7f08aa1579ce7341",
+      "sha": "c038e4dcdedfbbca18dfb17df35a17e40ded4ddc",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -6243,10 +6243,10 @@
     },
     "dorny/paths-filter": {
       "latest": "v4",
-      "latestFull": "v4.0.2",
+      "latestFull": "v4.0.3",
       "description": "Conditionally run actions based on files modified by PR, feature branch or pushed commits",
       "category": "git-operations",
-      "sha": "7b450fff21473bca461d4b92ce414b9d0420d706",
+      "sha": "ceb8a2b8f2d89434be7ff52d3de7ec3738c5cc9d",
       "deprecated": [
         "v1",
         "v2"
@@ -9916,10 +9916,10 @@
     },
     "unikraft/kraftkit": {
       "latest": "v0",
-      "latestFull": "v0.12.14",
+      "latestFull": "v0.12.15",
       "description": "Build and use highly customized and ultra-lightweight unikernel VMs.",
       "category": "docker",
-      "sha": "c45b05b5fff0e223ac531cec3d4af24f9cc64244",
+      "sha": "3e55f74c57579b4169b3f2271a695b0b8b9966a3",
       "inputs": [
         "after",
         "run",
@@ -9992,10 +9992,10 @@
     },
     "w9jds/firebase-action": {
       "latest": "v15",
-      "latestFull": "v15.25.1",
+      "latestFull": "v15.26.0",
       "description": "GitHub Action for interacting with Firebase",
       "category": "cloud-gcp",
-      "sha": "2ca73e9fbf9557017fb055f7db643a9878c7b9bf",
+      "sha": "d22ff47470f4628073cf145378b43b6f198f05ae",
       "deprecated": [
         "v1",
         "v2",
