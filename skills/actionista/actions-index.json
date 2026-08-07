@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-08-06T06:57:38Z",
+    "generated": "2026-08-07T06:27:20Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -3184,10 +3184,10 @@
     },
     "actions/attest-build-provenance": {
       "latest": "v4",
-      "latestFull": "v4.1.1",
+      "latestFull": "v4.2.2",
       "description": "Action for generating build provenance attestations for workflow artifacts",
       "category": "core",
-      "sha": "0f67c3f4856b2e3261c31976d6725780e5e4c373",
+      "sha": "4d101475d8b20a2381f78447822ac1eab6504dd8",
       "deprecated": [
         "v1",
         "v2"
@@ -4158,10 +4158,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.186",
+      "latestFull": "v1.0.187",
       "description": "",
       "category": "ai-assistants",
-      "sha": "c038e4dcdedfbbca18dfb17df35a17e40ded4ddc",
+      "sha": "1623c36729ac1cd5895198cded705a287de7db79",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -4817,10 +4817,10 @@
     },
     "azure/functions-action": {
       "latest": "v1",
-      "latestFull": "v1.5.6",
+      "latestFull": "v1.5.7",
       "description": "Enable GitHub developers to deploy to Azure Function Apps using GitHub Actions",
       "category": "cloud-azure",
-      "sha": "bc63708cc6539760eea18d8a7de4ce8ef5fdf593",
+      "sha": "c5060b3b8bb1ebbcb531abd00c822ecbaa8ea656",
       "inputs": [
         "app-name",
         "package",
@@ -5629,10 +5629,10 @@
     },
     "coursier/setup-action": {
       "latest": "v3",
-      "latestFull": "v3.0.1",
+      "latestFull": "v3.0.2",
       "description": "▶️ GitHub Action using Coursier to install JVM and Scala tools",
       "category": "setup-languages",
-      "sha": "63a23764316528a1b627103472030d5a16fc6133",
+      "sha": "9b7939bf01fd1185ce2babe16135168361bf2c62",
       "deprecated": [
         "v1"
       ],
@@ -7003,10 +7003,10 @@
     },
     "graalvm/setup-graalvm": {
       "latest": "v1",
-      "latestFull": "v1.6.3",
+      "latestFull": "v1.6.4",
       "description": "Set up your GitHub Actions workflow with a specific GraalVM distribution.",
       "category": "setup-languages",
-      "sha": "0def53c0fd8534bc13416c9469f5be45265824fd",
+      "sha": "5298d94fb55a4f185c602eeac5de1b553882abe2",
       "inputs": [
         "java-version",
         "java-package",
@@ -9536,10 +9536,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.85.8",
+      "latestFull": "v2.85.9",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "cb33e69fad06166ca28a42b2575e4dadabf62ee8",
+      "sha": "91ddec75689c4c78665b598d188dc821c5a43e5c",
       "inputs": [
         "tool",
         "checksum",
