@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-08-07T06:27:20Z",
+    "generated": "2026-08-08T06:17:22Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -2519,7 +2519,8 @@
         "github-token",
         "push-fixes",
         "commit-message",
-        "nightly-version"
+        "nightly-version",
+        "use-installed-cli"
       ]
     },
     "Kesin11/actions-timeline": {
@@ -4158,10 +4159,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.187",
+      "latestFull": "v1.0.189",
       "description": "",
       "category": "ai-assistants",
-      "sha": "1623c36729ac1cd5895198cded705a287de7db79",
+      "sha": "6b082c41935b4c8a3b8b0ef85ba4ba4d9eeb8975",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -8911,10 +8912,10 @@
     },
     "reviewdog/action-shellcheck": {
       "latest": "v1",
-      "latestFull": "v1.32.0",
+      "latestFull": "v1.32.1",
       "description": "Run shellcheck with reviewdog",
       "category": "linting",
-      "sha": "4c07458293ac342d477251099501a718ae5ef86e",
+      "sha": "0722bbdb0d47f04c1b53b8734d2422ac63a45ec6",
       "inputs": [
         "github_token",
         "level",
@@ -9536,10 +9537,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.85.9",
+      "latestFull": "v2.85.10",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "91ddec75689c4c78665b598d188dc821c5a43e5c",
+      "sha": "6c6fd71fe4fb72c3697d269963d0e15df8adedad",
       "inputs": [
         "tool",
         "checksum",
@@ -9937,6 +9938,8 @@
         "build",
         "git_clone_depth",
         "force_git",
+        "keep_file_owners",
+        "no_rootfs",
         "plat",
         "target",
         "toolchain",
@@ -9944,11 +9947,21 @@
         "memory",
         "timeout",
         "args",
+        "compress",
+        "env",
+        "kconfig_file",
+        "labels",
         "name",
+        "no_kconfig",
         "output",
         "push",
+        "rom_type",
+        "roms",
         "rootfs",
+        "rootfs_type",
         "rootfs-type",
+        "runtime",
+        "set_kconfig",
         "strategy",
         "dbg"
       ]
