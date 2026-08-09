@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-08-08T06:17:22Z",
+    "generated": "2026-08-09T06:18:09Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -244,11 +244,11 @@
       }
     },
     "EndBug/add-and-commit": {
-      "latest": "v10",
-      "latestFull": "v10.0.0",
+      "latest": "v11",
+      "latestFull": "v11.0.0",
       "description": ":octocat: Automatically commit changes made in your workflow run directly to your repo",
       "category": "git-operations",
-      "sha": "290ea2c423ad77ca9c62ae0f5b224379612c0321",
+      "sha": "645ecc0dd0a57f4d86d26c0aa5fc42c0a856fbca",
       "deprecated": [
         "v1",
         "v2",
@@ -257,7 +257,8 @@
         "v5",
         "v6",
         "v7",
-        "v8"
+        "v8",
+        "v9"
       ],
       "inputs": [
         "add",
@@ -429,10 +430,10 @@
     },
     "JamesIves/github-pages-deploy-action": {
       "latest": "v4",
-      "latestFull": "v4.8.0",
+      "latestFull": "v4.9.0",
       "description": "🚀 Automatically deploy your project to GitHub Pages using GitHub Actions. This action can be configu",
       "category": "documentation",
-      "sha": "d92aa235d04922e8f08b40ce78cc5442fcfbfa2f",
+      "sha": "fa24774553152dd7873cd16ebd8d959b010c5445",
       "deprecated": [
         "v1",
         "v2"
@@ -446,6 +447,7 @@
         "commit-message",
         "clean",
         "clean-exclude",
+        "include-github-folder",
         "dry-run",
         "force",
         "git-config-name",
@@ -453,6 +455,7 @@
         "repository-name",
         "tag",
         "single-commit",
+        "lfs",
         "silent",
         "attempt-limit"
       ]
@@ -7986,10 +7989,10 @@
     },
     "ocaml/setup-ocaml": {
       "latest": "v3",
-      "latestFull": "v3.7.0",
+      "latestFull": "v3.7.1",
       "description": "GitHub Action for the OCaml programming language",
       "category": "setup-languages",
-      "sha": "15d660006c1d3110d77c34b7faa3bddefe8b82f0",
+      "sha": "605a7e998e76e035b82c14d618a6e1010732c4ce",
       "deprecated": [
         "v1"
       ],
@@ -8071,11 +8074,11 @@
       ]
     },
     "oxsecurity/megalinter": {
-      "latest": "v9",
-      "latestFull": "v9.6.0",
+      "latest": "v10",
+      "latestFull": "v10.0.0",
       "description": "🦙 MegaLinter analyzes 50 languages, 22 formats, 21 tooling formats, excessive copy-pastes, spelling ",
       "category": "linting",
-      "sha": "ef3e84b8b836d76db562d0f3ed7da61e8fd538bc",
+      "sha": "15e5b45552097e318c93de385779ce3b1084052c",
       "deprecated": [
         "v1",
         "v2",
@@ -8083,7 +8086,8 @@
         "v4",
         "v5",
         "v6",
-        "v7"
+        "v7",
+        "v8"
       ]
     },
     "pascalgn/automerge-action": {
@@ -9033,10 +9037,10 @@
     },
     "sbt/setup-sbt": {
       "latest": "v1",
-      "latestFull": "v1.5.6",
+      "latestFull": "v1.5.7",
       "description": "setup-sbt installs the official sbt runner",
       "category": "setup-languages",
-      "sha": "bfea3c5f48abd221b04a6df4798aa5eb8b6a2baf",
+      "sha": "8feba82adc7f01ddcf8165b86f778bdb5b82cebc",
       "inputs": [
         "sbt-runner-version",
         "disk-cache"
@@ -9537,10 +9541,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.85.10",
+      "latestFull": "v2.85.11",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "6c6fd71fe4fb72c3697d269963d0e15df8adedad",
+      "sha": "7f4eb899022d8fe70b20c4f3de697aa85c309026",
       "inputs": [
         "tool",
         "checksum",
