@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-08-09T06:18:09Z",
+    "generated": "2026-08-10T06:31:31Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -269,12 +269,14 @@
         "committer_email",
         "cwd",
         "default_author",
+        "dry_run",
         "fetch",
         "message",
         "new_branch",
         "pathspec_error_handling",
         "pull",
         "push",
+        "push_attempts",
         "remove",
         "tag",
         "tag_push",
@@ -6429,10 +6431,10 @@
     },
     "gautamkrishnar/blog-post-workflow": {
       "latest": "v1",
-      "latestFull": "1.9.6",
+      "latestFull": "1.9.7",
       "description": "Show your latest blog posts from any sources or StackOverflow activity or Youtube Videos on your Git",
       "category": "documentation",
-      "sha": "2786e54a01b71aec80a5118c2bd6b5044e842597",
+      "sha": "f177491c77670f150ab4e9b9890254d8eba4164b",
       "inputs": [
         "gh_token",
         "readme_path",
