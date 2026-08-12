@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-08-11T06:21:31Z",
+    "generated": "2026-08-12T06:32:27Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4164,10 +4164,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.190",
+      "latestFull": "v1.0.191",
       "description": "",
       "category": "ai-assistants",
-      "sha": "5ef2e550a465a721f4f45e4a7d3c340c873e1dcc",
+      "sha": "239e3a730883eeb5c53db12b0fc9573b3024b126",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -5260,11 +5260,11 @@
       ]
     },
     "changesets/action": {
-      "latest": "v1",
-      "latestFull": "v1.9.0",
+      "latest": "v2",
+      "latestFull": "v2.0.0",
       "description": "",
       "category": "release",
-      "sha": "a45c4d594aa4e2c509dc14a9f2b3b67ba3780d0d",
+      "sha": "22ccf9aa43179fe9e27dc62e575971d28cce197c",
       "inputs": [
         "github-token",
         "publish-script",
@@ -5276,7 +5276,36 @@
         "create-github-releases",
         "push-git-tags",
         "push-with-git-cli"
-      ]
+      ],
+      "migrations": {
+        "v1→v2": {
+          "inputChanges": {
+            "added": [
+              "publish-script",
+              "version-script",
+              "commit-message",
+              "pr-title",
+              "pr-draft",
+              "pr-base-branch",
+              "create-github-releases",
+              "push-git-tags",
+              "push-with-git-cli"
+            ],
+            "removed": [
+              "publish",
+              "version",
+              "cwd",
+              "commit",
+              "title",
+              "setupGitUser",
+              "createGithubReleases",
+              "commitMode",
+              "branch",
+              "prDraft"
+            ]
+          }
+        }
+      }
     },
     "check-spelling/check-spelling": {
       "latest": "v0",
