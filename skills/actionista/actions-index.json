@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-08-12T06:32:27Z",
+    "generated": "2026-08-13T06:33:30Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4382,11 +4382,11 @@
       }
     },
     "astral-sh/setup-uv": {
-      "latest": "v9",
-      "latestFull": "v9.0.0",
+      "latest": "v10",
+      "latestFull": "v10.0.0",
       "description": "Set up your GitHub Actions workflow with a specific version of https://docs.astral.sh/uv/",
       "category": "setup-languages",
-      "sha": "c771a70e6277c0a99b617c7a806ffedaca235ff9",
+      "sha": "ae62891fec2bb8e7d6c99fc78c9fec3a63790f8d",
       "deprecated": [
         "v1",
         "v2",
@@ -4394,7 +4394,8 @@
         "v4",
         "v5",
         "v6",
-        "v7"
+        "v7",
+        "v8"
       ],
       "inputs": [
         "version",
@@ -5275,7 +5276,8 @@
         "pr-base-branch",
         "create-github-releases",
         "push-git-tags",
-        "push-with-git-cli"
+        "push-with-git-cli",
+        "cwd"
       ],
       "migrations": {
         "v1→v2": {
@@ -9572,10 +9574,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.85.11",
+      "latestFull": "v2.85.12",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "7f4eb899022d8fe70b20c4f3de697aa85c309026",
+      "sha": "b20dedce73af6905cdc30d6611090c9b67557c8d",
       "inputs": [
         "tool",
         "checksum",
