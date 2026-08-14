@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-08-13T06:33:30Z",
+    "generated": "2026-08-14T06:32:27Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4164,10 +4164,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.191",
+      "latestFull": "v1.0.192",
       "description": "",
       "category": "ai-assistants",
-      "sha": "239e3a730883eeb5c53db12b0fc9573b3024b126",
+      "sha": "e63208cb983318a44e3f945e959ef894b707dcfa",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -5262,10 +5262,10 @@
     },
     "changesets/action": {
       "latest": "v2",
-      "latestFull": "v2.0.0",
+      "latestFull": "v2.1.0",
       "description": "",
       "category": "release",
-      "sha": "22ccf9aa43179fe9e27dc62e575971d28cce197c",
+      "sha": "198f833dd7d863100ea6e28967bc9a9fdefadb0a",
       "inputs": [
         "github-token",
         "publish-script",
@@ -5296,7 +5296,6 @@
             "removed": [
               "publish",
               "version",
-              "cwd",
               "commit",
               "title",
               "setupGitUser",
@@ -5752,10 +5751,10 @@
     },
     "cpp-linter/cpp-linter-action": {
       "latest": "v2",
-      "latestFull": "v2.20.0",
+      "latestFull": "v2.21.0",
       "description": "A Github Action for linting C/C++ code integrating clang-tidy and clang-format to collect feedback p",
       "category": "linting",
-      "sha": "8e85cd02c8c3fe3ae527c94b5683fe2366b144ed",
+      "sha": "cab1143a2c149bc41e85b070a9de81716974c18f",
       "inputs": [
         "style",
         "extensions",
@@ -5830,10 +5829,10 @@
     },
     "cypress-io/github-action": {
       "latest": "v7",
-      "latestFull": "v7.4.1",
+      "latestFull": "v7.4.2",
       "description": "GitHub Action for running Cypress end-to-end & component tests",
       "category": "testing",
-      "sha": "fa4a118725a8f001170d49631ea89e5d66fee626",
+      "sha": "c32f12761482a282d24ca0fd7466d8ae86f54ba8",
       "deprecated": [
         "v1",
         "v2",
@@ -6649,10 +6648,10 @@
     },
     "github/codeql-action/analyze": {
       "latest": "v4",
-      "latestFull": "v4.37.6",
+      "latestFull": "v4.37.7",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "5595ccaf912efad79be6eef63a5619ff05969be3",
+      "sha": "ff2f1c621b7f889edc0d3c761ac2e6a3f8cdb0dd",
       "deprecated": [
         "v1",
         "v2"
@@ -6660,10 +6659,10 @@
     },
     "github/codeql-action/autobuild": {
       "latest": "v4",
-      "latestFull": "v4.37.6",
+      "latestFull": "v4.37.7",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "5595ccaf912efad79be6eef63a5619ff05969be3",
+      "sha": "ff2f1c621b7f889edc0d3c761ac2e6a3f8cdb0dd",
       "deprecated": [
         "v1",
         "v2"
@@ -6671,10 +6670,10 @@
     },
     "github/codeql-action/init": {
       "latest": "v4",
-      "latestFull": "v4.37.6",
+      "latestFull": "v4.37.7",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "5595ccaf912efad79be6eef63a5619ff05969be3",
+      "sha": "ff2f1c621b7f889edc0d3c761ac2e6a3f8cdb0dd",
       "deprecated": [
         "v1",
         "v2"
@@ -8132,10 +8131,10 @@
     },
     "pdm-project/setup-pdm": {
       "latest": "v4",
-      "latestFull": "v4.4",
+      "latestFull": "v4.6",
       "description": "A GitHub Action that installs pdm properly for all Python versions",
       "category": "package-managers",
-      "sha": "94a823180e06fcde4ad29308721954a521c96ed0",
+      "sha": "544d7237314ee09c256785bd360f6b30add38b37",
       "deprecated": [
         "v1",
         "v2"
@@ -10042,10 +10041,10 @@
     },
     "w9jds/firebase-action": {
       "latest": "v15",
-      "latestFull": "v15.26.0",
+      "latestFull": "v15.27.0",
       "description": "GitHub Action for interacting with Firebase",
       "category": "cloud-gcp",
-      "sha": "d22ff47470f4628073cf145378b43b6f198f05ae",
+      "sha": "9ad0d519471afe1de970603de47075637414bfe9",
       "deprecated": [
         "v1",
         "v2",
