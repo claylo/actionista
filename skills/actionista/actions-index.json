@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-08-14T06:32:27Z",
+    "generated": "2026-08-15T06:09:07Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -280,6 +280,7 @@
         "remove",
         "tag",
         "tag_push",
+        "allow_unsafe_git_protocols",
         "github_token"
       ]
     },
@@ -4164,10 +4165,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.192",
+      "latestFull": "v1.0.193",
       "description": "",
       "category": "ai-assistants",
-      "sha": "e63208cb983318a44e3f945e959ef894b707dcfa",
+      "sha": "9d7150bc8a3dae8149739a88019d192b579ad90c",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -4286,10 +4287,10 @@
     },
     "appleboy/telegram-action": {
       "latest": "v1",
-      "latestFull": "v1.0.1",
+      "latestFull": "v1.0.2",
       "description": "GitHub Action that sends a Telegram message.",
       "category": "notifications",
-      "sha": "221e6b684967abe813051ee4a37dd61770a83ad3",
+      "sha": "d600df785afe8648bc23cbcf4495d9d30075dcba",
       "inputs": [
         "to",
         "token",
@@ -4383,10 +4384,10 @@
     },
     "astral-sh/setup-uv": {
       "latest": "v10",
-      "latestFull": "v10.0.0",
+      "latestFull": "v10.0.1",
       "description": "Set up your GitHub Actions workflow with a specific version of https://docs.astral.sh/uv/",
       "category": "setup-languages",
-      "sha": "ae62891fec2bb8e7d6c99fc78c9fec3a63790f8d",
+      "sha": "20cfd1bf945f4377ade1205e4dbc17946fc9a30d",
       "deprecated": [
         "v1",
         "v2",
@@ -9389,12 +9390,13 @@
     },
     "step-security/harden-runner": {
       "latest": "v2",
-      "latestFull": "v2.20.1",
+      "latestFull": "v2.21.0",
       "description": "Harden-Runner is a CI/CD security agent that works like an EDR for GitHub Actions runners. It monito",
       "category": "security",
-      "sha": "b09bb98e06d4d774595224525879c09bc6e98c40",
+      "sha": "05e31511f85b41b11d1cf0ef85d0992719546e2c",
       "inputs": [
         "allowed-endpoints",
+        "denied-endpoints",
         "egress-policy",
         "token",
         "disable-telemetry",
@@ -9410,6 +9412,7 @@
         "v1→v2": {
           "inputChanges": {
             "added": [
+              "denied-endpoints",
               "disable-sudo",
               "disable-sudo-and-containers",
               "disable-file-monitoring",
@@ -9573,10 +9576,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.85.12",
+      "latestFull": "v2.85.13",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "b20dedce73af6905cdc30d6611090c9b67557c8d",
+      "sha": "82cd3e7658a6f96c86c0234aeeda1748937cb0a1",
       "inputs": [
         "tool",
         "checksum",
@@ -9935,10 +9938,10 @@
     },
     "trufflesecurity/trufflehog": {
       "latest": "v3",
-      "latestFull": "v3.96.0",
+      "latestFull": "v3.97.0",
       "description": "Find, verify, and analyze leaked credentials",
       "category": "security",
-      "sha": "6f3c981e7b77f235fd2702dd74af25fc4b72bf11",
+      "sha": "bcfcf73aaf4759d4dadc2783177c245a02792318",
       "deprecated": [
         "v1"
       ],
