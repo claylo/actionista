@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-08-15T06:09:07Z",
+    "generated": "2026-08-16T06:10:14Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4287,10 +4287,10 @@
     },
     "appleboy/telegram-action": {
       "latest": "v1",
-      "latestFull": "v1.0.2",
+      "latestFull": "v1.1.1",
       "description": "GitHub Action that sends a Telegram message.",
       "category": "notifications",
-      "sha": "d600df785afe8648bc23cbcf4495d9d30075dcba",
+      "sha": "214f06cfa3d3a588c1472116889437e7c6fd29b1",
       "inputs": [
         "to",
         "token",
@@ -5177,10 +5177,10 @@
     },
     "browser-actions/setup-chrome": {
       "latest": "v2",
-      "latestFull": "v2.1.2",
+      "latestFull": "v2.2.0",
       "description": "Set up your GitHub Actions workflow with a specific version of chromium ",
       "category": "testing",
-      "sha": "2e1d749697dd1612b833dba4a722266286fbefcd",
+      "sha": "48ad923757ca74d66703209fe939badbdf80f2f4",
       "inputs": [
         "chrome-version",
         "install-dependencies",
@@ -5932,11 +5932,11 @@
       }
     },
     "dawidd6/action-download-artifact": {
-      "latest": "v21",
-      "latestFull": "v21",
+      "latest": "v23",
+      "latestFull": "v23",
       "description": ":gear: A GitHub Action to download an artifact associated with given workflow and commit or other cr",
       "category": "utilities",
-      "sha": "b6e2e70617bc3265edd6dab6c906732b2f1ae151",
+      "sha": "57aa996fc1713cc1579039614f4645a7f4841fd4",
       "deprecated": [
         "v1",
         "v2",
@@ -5956,7 +5956,9 @@
         "v16",
         "v17",
         "v18",
-        "v19"
+        "v19",
+        "v20",
+        "v21"
       ],
       "inputs": [
         "github_token",
@@ -6344,7 +6346,7 @@
       "latestFull": "v1",
       "description": "Concise GitHub Action for installing a Rust toolchain",
       "category": "setup-languages",
-      "sha": "e97e2d8cc328f1b50210efc529dca0028893a2d9",
+      "sha": "6c977a6ca4077a0ceb28ffbe03f59d46e9ac8772",
       "inputs": [
         "toolchain",
         "targets",
@@ -9576,10 +9578,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.85.13",
+      "latestFull": "v2.86.1",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "82cd3e7658a6f96c86c0234aeeda1748937cb0a1",
+      "sha": "288e746965032cfcc232e09af2daf5f23c14d780",
       "inputs": [
         "tool",
         "checksum",
