@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-08-16T06:10:14Z",
+    "generated": "2026-08-17T06:13:34Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -5934,7 +5934,7 @@
     "dawidd6/action-download-artifact": {
       "latest": "v23",
       "latestFull": "v23",
-      "description": ":gear: A GitHub Action to download an artifact associated with given workflow and commit or other cr",
+      "description": ":gear: GitHub Action for downloading artifacts associated with given criteria",
       "category": "utilities",
       "sha": "57aa996fc1713cc1579039614f4645a7f4841fd4",
       "deprecated": [
@@ -5989,7 +5989,7 @@
     "dawidd6/action-send-mail": {
       "latest": "v18",
       "latestFull": "v18",
-      "description": ":gear: A GitHub Action to send an email to multiple recipients",
+      "description": ":gear: GitHub Action for sending emails",
       "category": "notifications",
       "sha": "94de994a9f6fffee200243214e17002e2920bb59",
       "deprecated": [
