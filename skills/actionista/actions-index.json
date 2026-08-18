@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-08-17T06:13:34Z",
+    "generated": "2026-08-18T06:11:08Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -3615,6 +3615,10 @@
         "server-username",
         "server-password-env-var",
         "server-password",
+        "mvn-server-credentials",
+        "mvn-repositories",
+        "mvn-repositories-include-central",
+        "mvn-repositories-prioritize-central",
         "settings-path",
         "overwrite-settings",
         "gpg-private-key",
@@ -4165,10 +4169,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.193",
+      "latestFull": "v1.0.194",
       "description": "",
       "category": "ai-assistants",
-      "sha": "9d7150bc8a3dae8149739a88019d192b579ad90c",
+      "sha": "459ad358ae43fea66bfefd0a1f8d840b4b9791fb",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -8997,10 +9001,10 @@
     },
     "rubygems/release-gem": {
       "latest": "v1",
-      "latestFull": "v1.4.0",
+      "latestFull": "v1.4.1",
       "description": "The official GitHub Action for publishing your gem files to RubyGems.org",
       "category": "release",
-      "sha": "052cc82692552de3ef2b81fd670e41d13cba8092",
+      "sha": "7f9650160c1a4e7989fdc9855807bdbd421d8b6b",
       "inputs": [
         "token",
         "await-release",
@@ -9578,10 +9582,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.86.1",
+      "latestFull": "v2.86.3",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "288e746965032cfcc232e09af2daf5f23c14d780",
+      "sha": "5b4d68e2e660441203ab128a23676f1e4faf1532",
       "inputs": [
         "tool",
         "checksum",
