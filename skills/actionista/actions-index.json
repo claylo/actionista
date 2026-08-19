@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-08-18T06:11:08Z",
+    "generated": "2026-08-19T06:11:35Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4169,10 +4169,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.194",
+      "latestFull": "v1.0.195",
       "description": "",
       "category": "ai-assistants",
-      "sha": "459ad358ae43fea66bfefd0a1f8d840b4b9791fb",
+      "sha": "d40ddef4c030e508327d6e35a9c45f3368482c50",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -6637,6 +6637,7 @@
         "skip_successful_noop_labels_if_approved",
         "skip_successful_deploy_labels_if_approved",
         "enforced_deployment_order",
+        "deployment_order_scope",
         "use_security_warnings",
         "allow_non_default_target_branch_deployments",
         "deployment_confirmation",
@@ -7707,10 +7708,10 @@
     },
     "mikefarah/yq": {
       "latest": "v4",
-      "latestFull": "v4.53.3",
+      "latestFull": "v4.53.4",
       "description": "yq is a portable command-line YAML, JSON, XML, CSV, TOML, HCL  and properties processor",
       "category": "utilities",
-      "sha": "1b9b4ac5187171d2e5e3129be0cfa827c7f9d53d",
+      "sha": "ce7026e3195aceac6b6a56a6b81fca4e8e466e36",
       "deprecated": [
         "v1",
         "v2"
