@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-08-19T06:11:35Z",
+    "generated": "2026-08-20T06:11:24Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -245,10 +245,10 @@
     },
     "EndBug/add-and-commit": {
       "latest": "v11",
-      "latestFull": "v11.0.0",
+      "latestFull": "v11.1.1",
       "description": ":octocat: Automatically commit changes made in your workflow run directly to your repo",
       "category": "git-operations",
-      "sha": "645ecc0dd0a57f4d86d26c0aa5fc42c0a856fbca",
+      "sha": "cc9c08ba6c8df3b93a8f2db63e89b98368ae2ae8",
       "deprecated": [
         "v1",
         "v2",
@@ -282,7 +282,19 @@
         "tag_push",
         "allow_unsafe_git_protocols",
         "github_token"
-      ]
+      ],
+      "migrations": {
+        "v10→v11": {
+          "inputChanges": {
+            "added": [
+              "dry_run",
+              "push_attempts",
+              "allow_unsafe_git_protocols"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "EndBug/version-check": {
       "latest": "v3",
@@ -4169,10 +4181,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.195",
+      "latestFull": "v1.0.197",
       "description": "",
       "category": "ai-assistants",
-      "sha": "d40ddef4c030e508327d6e35a9c45f3368482c50",
+      "sha": "5ee796a55f92566ecd7e39d70dd613abcbea0d7c",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -4484,10 +4496,10 @@
     },
     "aws-actions/amazon-ecr-login": {
       "latest": "v2",
-      "latestFull": "v2.1.6",
+      "latestFull": "v2.1.7",
       "description": "Logs into Amazon ECR with the local Docker client.",
       "category": "cloud-aws",
-      "sha": "d539f0932e70871a027e9d5a9d8fc38589180a64",
+      "sha": "03f1aad4c6c7ffd436567f42f9384779290529bd",
       "inputs": [
         "http-proxy",
         "mask-password",
@@ -5267,10 +5279,10 @@
     },
     "changesets/action": {
       "latest": "v2",
-      "latestFull": "v2.1.0",
+      "latestFull": "v2.1.1",
       "description": "",
       "category": "release",
-      "sha": "198f833dd7d863100ea6e28967bc9a9fdefadb0a",
+      "sha": "8488615a623b1b9c987934bb89eae8af6a946ac1",
       "inputs": [
         "github-token",
         "publish-script",
@@ -6220,10 +6232,10 @@
     },
     "docker/setup-buildx-action": {
       "latest": "v4",
-      "latestFull": "v4.2.0",
+      "latestFull": "v4.3.0",
       "description": "GitHub Action to set up Docker Buildx",
       "category": "docker",
-      "sha": "bb05f3f5519dd87d3ba754cc423b652a5edd6d2c",
+      "sha": "37fe631027851001ddb9b187196cc803df7f5f0e",
       "deprecated": [
         "v1",
         "v2"
@@ -10051,10 +10063,10 @@
     },
     "w9jds/firebase-action": {
       "latest": "v15",
-      "latestFull": "v15.27.0",
+      "latestFull": "v15.28.1",
       "description": "GitHub Action for interacting with Firebase",
       "category": "cloud-gcp",
-      "sha": "9ad0d519471afe1de970603de47075637414bfe9",
+      "sha": "5b73b1274a2229c7598af09e6e95addfb75f897b",
       "deprecated": [
         "v1",
         "v2",
