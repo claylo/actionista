@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-08-20T06:11:24Z",
+    "generated": "2026-08-21T06:12:06Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4181,10 +4181,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.197",
+      "latestFull": "v1.0.198",
       "description": "",
       "category": "ai-assistants",
-      "sha": "5ee796a55f92566ecd7e39d70dd613abcbea0d7c",
+      "sha": "3f854a8fb5146b39d5cbf8b57f70d80810e1366f",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -5846,10 +5846,10 @@
     },
     "cypress-io/github-action": {
       "latest": "v7",
-      "latestFull": "v7.4.2",
+      "latestFull": "v7.4.3",
       "description": "GitHub Action for running Cypress end-to-end & component tests",
       "category": "testing",
-      "sha": "c32f12761482a282d24ca0fd7466d8ae86f54ba8",
+      "sha": "09090944bd8aaa2a517cefb6e38bf1aae336b42b",
       "deprecated": [
         "v1",
         "v2",
@@ -7720,10 +7720,10 @@
     },
     "mikefarah/yq": {
       "latest": "v4",
-      "latestFull": "v4.53.4",
+      "latestFull": "v4.53.6",
       "description": "yq is a portable command-line YAML, JSON, XML, CSV, TOML, HCL  and properties processor",
       "category": "utilities",
-      "sha": "ce7026e3195aceac6b6a56a6b81fca4e8e466e36",
+      "sha": "c14f446382944492701b16c1ddb48bb9dbe683e3",
       "deprecated": [
         "v1",
         "v2"
@@ -8041,10 +8041,10 @@
     },
     "ocaml/setup-ocaml": {
       "latest": "v3",
-      "latestFull": "v3.7.1",
+      "latestFull": "v3.7.2",
       "description": "GitHub Action for the OCaml programming language",
       "category": "setup-languages",
-      "sha": "605a7e998e76e035b82c14d618a6e1010732c4ce",
+      "sha": "f92e0606b7ae4873dd1238465ea4bf6f8e40d85c",
       "deprecated": [
         "v1"
       ],
@@ -9595,10 +9595,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.86.3",
+      "latestFull": "v2.86.4",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "5b4d68e2e660441203ab128a23676f1e4faf1532",
+      "sha": "a2a5f6e99e1a31540baa0468acfa302cff0f359f",
       "inputs": [
         "tool",
         "checksum",
