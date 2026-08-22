@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-08-21T06:12:06Z",
+    "generated": "2026-08-22T06:09:36Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4181,10 +4181,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.198",
+      "latestFull": "v1.0.199",
       "description": "",
       "category": "ai-assistants",
-      "sha": "3f854a8fb5146b39d5cbf8b57f70d80810e1366f",
+      "sha": "dcb57747bfceeaa1fa72638cae52295d1d853d4a",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -5948,11 +5948,11 @@
       }
     },
     "dawidd6/action-download-artifact": {
-      "latest": "v23",
-      "latestFull": "v23",
+      "latest": "v24",
+      "latestFull": "v24",
       "description": ":gear: GitHub Action for downloading artifacts associated with given criteria",
       "category": "utilities",
-      "sha": "57aa996fc1713cc1579039614f4645a7f4841fd4",
+      "sha": "d63b86af1b34672e53c440b1b83979861906bad7",
       "deprecated": [
         "v1",
         "v2",
@@ -5974,7 +5974,8 @@
         "v18",
         "v19",
         "v20",
-        "v21"
+        "v21",
+        "v22"
       ],
       "inputs": [
         "github_token",
@@ -6668,10 +6669,10 @@
     },
     "github/codeql-action/analyze": {
       "latest": "v4",
-      "latestFull": "v4.37.7",
+      "latestFull": "v4.37.8",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "ff2f1c621b7f889edc0d3c761ac2e6a3f8cdb0dd",
+      "sha": "db488ddef3bf6cb639b32c2e9a7c0a7ea8271d28",
       "deprecated": [
         "v1",
         "v2"
@@ -6679,10 +6680,10 @@
     },
     "github/codeql-action/autobuild": {
       "latest": "v4",
-      "latestFull": "v4.37.7",
+      "latestFull": "v4.37.8",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "ff2f1c621b7f889edc0d3c761ac2e6a3f8cdb0dd",
+      "sha": "db488ddef3bf6cb639b32c2e9a7c0a7ea8271d28",
       "deprecated": [
         "v1",
         "v2"
@@ -6690,10 +6691,10 @@
     },
     "github/codeql-action/init": {
       "latest": "v4",
-      "latestFull": "v4.37.7",
+      "latestFull": "v4.37.8",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "ff2f1c621b7f889edc0d3c761ac2e6a3f8cdb0dd",
+      "sha": "db488ddef3bf6cb639b32c2e9a7c0a7ea8271d28",
       "deprecated": [
         "v1",
         "v2"
@@ -9089,10 +9090,10 @@
     },
     "sbt/setup-sbt": {
       "latest": "v1",
-      "latestFull": "v1.5.7",
+      "latestFull": "v1.5.8",
       "description": "setup-sbt installs the official sbt runner",
       "category": "setup-languages",
-      "sha": "8feba82adc7f01ddcf8165b86f778bdb5b82cebc",
+      "sha": "c7d2d6258b4bd0d3ec5129e6b3453199d3c79729",
       "inputs": [
         "sbt-runner-version",
         "disk-cache"
@@ -9595,10 +9596,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.86.4",
+      "latestFull": "v2.86.5",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "a2a5f6e99e1a31540baa0468acfa302cff0f359f",
+      "sha": "ba47c86ac325773530516bb756137ac718732518",
       "inputs": [
         "tool",
         "checksum",
