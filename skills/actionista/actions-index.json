@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-08-22T06:09:36Z",
+    "generated": "2026-08-23T06:10:42Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4181,10 +4181,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.199",
+      "latestFull": "v1.0.201",
       "description": "",
       "category": "ai-assistants",
-      "sha": "dcb57747bfceeaa1fa72638cae52295d1d853d4a",
+      "sha": "c81e3bc69d1b18badbb63ba39581218f02421678",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -5003,10 +5003,10 @@
     },
     "bencherdev/bencher": {
       "latest": "v0",
-      "latestFull": "v0.6.11",
+      "latestFull": "v0.6.12",
       "description": "🐰 Bencher - Continuous Benchmarking",
       "category": "testing",
-      "sha": "4c83b25441d145ee273adaf74be30f2382e6ba85",
+      "sha": "8d75325c3bc59403a2186a056b472c4f49d42838",
       "inputs": [
         "version"
       ]
@@ -5269,10 +5269,10 @@
     },
     "cargo-bins/cargo-binstall": {
       "latest": "v1",
-      "latestFull": "v1.21.1",
+      "latestFull": "v1.22.0",
       "description": "Binary installation for rust projects",
       "category": "build-tools",
-      "sha": "e00d2c94cc0067b77737821097a62d91c0301baa",
+      "sha": "75b4bfae1b2c753a6806bbce6e6cb89b602de33c",
       "inputs": [
         "version"
       ]
@@ -9596,10 +9596,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.86.5",
+      "latestFull": "v2.86.6",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "ba47c86ac325773530516bb756137ac718732518",
+      "sha": "6cd13508893c0e7eab5f273c2575d3859bd7229a",
       "inputs": [
         "tool",
         "checksum",
