@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-08-24T06:16:09Z",
+    "generated": "2026-08-25T06:11:28Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -3599,15 +3599,16 @@
       ]
     },
     "actions/setup-java": {
-      "latest": "v5",
-      "latestFull": "v5.7.0",
+      "latest": "v6",
+      "latestFull": "v6.0.0",
       "description": "Set up your GitHub Actions workflow with a specific version of Java",
       "category": "setup-languages",
-      "sha": "b6effb05e454b25005698d916606bdc6ffcbf961",
+      "sha": "dd06d9cba3e5552c54d9f8ea23572deb30010f7c",
       "deprecated": [
         "v1",
         "v2",
-        "v3"
+        "v3",
+        "v4"
       ],
       "inputs": [
         "java-version",
@@ -3649,20 +3650,20 @@
         "problem-matcher"
       ],
       "migrations": {
-        "v4→v5": {
+        "v5→v6": {
           "inputChanges": {
             "added": [
-              "jdk-file",
               "force-download",
-              "set-default",
-              "verify-signature",
-              "verify-signature-public-key",
               "server-username-env-var",
               "server-password-env-var",
+              "mvn-server-credentials",
+              "mvn-repositories",
+              "mvn-repositories-include-central",
+              "mvn-repositories-prioritize-central",
               "gpg-passphrase-env-var",
+              "cache-jdk",
               "cache-path",
               "cache-read-only",
-              "show-download-progress",
               "problem-matcher"
             ],
             "removed": []
@@ -4181,10 +4182,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.201",
+      "latestFull": "v1.0.205",
       "description": "",
       "category": "ai-assistants",
-      "sha": "c81e3bc69d1b18badbb63ba39581218f02421678",
+      "sha": "16b3b310c3d7b5279df73130324d5205aeea8eac",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -9596,10 +9597,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.86.6",
+      "latestFull": "v2.86.7",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "6cd13508893c0e7eab5f273c2575d3859bd7229a",
+      "sha": "b6ff580856c41316412a0b9b60540fbc6f8c82cc",
       "inputs": [
         "tool",
         "checksum",
@@ -9958,10 +9959,10 @@
     },
     "trufflesecurity/trufflehog": {
       "latest": "v3",
-      "latestFull": "v3.97.0",
+      "latestFull": "v3.97.1",
       "description": "Find, verify, and analyze leaked credentials",
       "category": "security",
-      "sha": "bcfcf73aaf4759d4dadc2783177c245a02792318",
+      "sha": "20652fbbdefffcdaa493a5bf57ab2ac6b1db715b",
       "deprecated": [
         "v1"
       ],
