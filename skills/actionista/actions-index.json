@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-08-25T06:11:28Z",
+    "generated": "2026-08-26T06:12:55Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -2939,10 +2939,10 @@
     },
     "Songmu/tagpr": {
       "latest": "v1",
-      "latestFull": "v1.20.1",
+      "latestFull": "v1.20.2",
       "description": "automatically creates and updates a pull request for unreleased items, tag them when they are merged",
       "category": "release",
-      "sha": "d1b8138b7a31075141b6cd64103de9485ced7ac9",
+      "sha": "242e22916eb775d6e359959fe3ba5c497de4a01a",
       "inputs": [
         "version",
         "config"
@@ -4182,10 +4182,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.205",
+      "latestFull": "v1.0.206",
       "description": "",
       "category": "ai-assistants",
-      "sha": "16b3b310c3d7b5279df73130324d5205aeea8eac",
+      "sha": "1f291e1cfe0f5fc21db2aef19af844591600ade7",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -4901,10 +4901,10 @@
     },
     "azure/login": {
       "latest": "v3",
-      "latestFull": "v3.0.1",
+      "latestFull": "v3.0.2",
       "description": "Connect to Azure",
       "category": "cloud-azure",
-      "sha": "f5d393ae46f8fde4be8b75f32e3fc50e654ad0ca",
+      "sha": "7ddb5af1ef8758cf1353cf3b42f940aee27ba21c",
       "deprecated": [
         "v1"
       ],
