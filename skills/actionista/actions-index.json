@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-08-26T06:12:55Z",
+    "generated": "2026-08-27T09:09:03Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4182,10 +4182,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.206",
+      "latestFull": "v1.0.207",
       "description": "",
       "category": "ai-assistants",
-      "sha": "1f291e1cfe0f5fc21db2aef19af844591600ade7",
+      "sha": "70fec183852c4f82f3f1969faed7dd60c5149ca7",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -6670,10 +6670,10 @@
     },
     "github/codeql-action/analyze": {
       "latest": "v4",
-      "latestFull": "v4.37.8",
+      "latestFull": "v4.37.9",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "db488ddef3bf6cb639b32c2e9a7c0a7ea8271d28",
+      "sha": "cdf488f595d80d6e07e03d4674febd5ab45fa938",
       "deprecated": [
         "v1",
         "v2"
@@ -6681,10 +6681,10 @@
     },
     "github/codeql-action/autobuild": {
       "latest": "v4",
-      "latestFull": "v4.37.8",
+      "latestFull": "v4.37.9",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "db488ddef3bf6cb639b32c2e9a7c0a7ea8271d28",
+      "sha": "cdf488f595d80d6e07e03d4674febd5ab45fa938",
       "deprecated": [
         "v1",
         "v2"
@@ -6692,10 +6692,10 @@
     },
     "github/codeql-action/init": {
       "latest": "v4",
-      "latestFull": "v4.37.8",
+      "latestFull": "v4.37.9",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "db488ddef3bf6cb639b32c2e9a7c0a7ea8271d28",
+      "sha": "cdf488f595d80d6e07e03d4674febd5ab45fa938",
       "deprecated": [
         "v1",
         "v2"
@@ -8790,6 +8790,7 @@
         "name",
         "tag",
         "version",
+        "from",
         "publish",
         "latest",
         "prerelease",
@@ -9102,10 +9103,10 @@
     },
     "securego/gosec": {
       "latest": "v2",
-      "latestFull": "v2.28.0",
+      "latestFull": "v2.29.0",
       "description": "Go security checker",
       "category": "security",
-      "sha": "9e75c0576c9878035d4221392108d458abe10fc3",
+      "sha": "deb54465fea23d19a77f037e11e6589021f8501d",
       "inputs": [
         "args"
       ]
@@ -9597,10 +9598,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.86.7",
+      "latestFull": "v2.86.8",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "b6ff580856c41316412a0b9b60540fbc6f8c82cc",
+      "sha": "fcf5432d9f50d67e37ee6e29bdb7a224ff67b4a7",
       "inputs": [
         "tool",
         "checksum",
