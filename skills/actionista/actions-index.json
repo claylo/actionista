@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-08-27T09:09:03Z",
+    "generated": "2026-08-28T09:12:44Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4182,10 +4182,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.207",
+      "latestFull": "v1.0.209",
       "description": "",
       "category": "ai-assistants",
-      "sha": "70fec183852c4f82f3f1969faed7dd60c5149ca7",
+      "sha": "a60f3e1db3edbceed2b1e6c6a9d34c36b8a15eba",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -9598,10 +9598,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.86.8",
+      "latestFull": "v2.87.0",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "fcf5432d9f50d67e37ee6e29bdb7a224ff67b4a7",
+      "sha": "37f7c5781271959fb65b6b35224e28652ff2b63d",
       "inputs": [
         "tool",
         "checksum",
