@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-08-29T06:16:11Z",
+    "generated": "2026-08-30T06:16:53Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -8056,6 +8056,7 @@
         "opam-pin",
         "opam-local-packages",
         "opam-disable-sandboxing",
+        "cache",
         "dune-cache",
         "cache-prefix",
         "windows-compiler",
@@ -9280,10 +9281,10 @@
     },
     "softprops/action-gh-release": {
       "latest": "v3",
-      "latestFull": "v3.0.2",
+      "latestFull": "v3.0.3",
       "description": "📦 :octocat: GitHub Action for creating GitHub Releases",
       "category": "release",
-      "sha": "3d0d9888cb7fd7b750713d6e236d1fcb99157228",
+      "sha": "efb35369e0ad2afab669f228072c1b0d510eae64",
       "deprecated": [
         "v1"
       ],
@@ -9598,10 +9599,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.87.0",
+      "latestFull": "v2.87.1",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "37f7c5781271959fb65b6b35224e28652ff2b63d",
+      "sha": "742a3317eac7bd62f91cd888b4eead5e784ba833",
       "inputs": [
         "tool",
         "checksum",
