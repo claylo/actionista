@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-08-30T06:16:53Z",
+    "generated": "2026-08-31T06:22:58Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -7222,10 +7222,10 @@
     },
     "hendrikmuhs/ccache-action": {
       "latest": "v1",
-      "latestFull": "v1.2.23",
+      "latestFull": "v1.2.24",
       "description": "github action to speedup building using ccache",
       "category": "build-tools",
-      "sha": "d62db5f07c26379fc4b4e0916f098a92573c3b03",
+      "sha": "f09c25b45002a07be2955cbe52e8cee55643f89d",
       "inputs": [
         "key",
         "restore-keys",
@@ -8043,10 +8043,10 @@
     },
     "ocaml/setup-ocaml": {
       "latest": "v3",
-      "latestFull": "v3.7.2",
+      "latestFull": "v3.8.0",
       "description": "GitHub Action for the OCaml programming language",
       "category": "setup-languages",
-      "sha": "f92e0606b7ae4873dd1238465ea4bf6f8e40d85c",
+      "sha": "e89b2ded52a6e13f50162220cf5fe47290162032",
       "deprecated": [
         "v1"
       ],
@@ -8068,6 +8068,7 @@
         "v2→v3": {
           "inputChanges": {
             "added": [
+              "cache",
               "windows-compiler",
               "windows-environment"
             ],
@@ -9413,10 +9414,10 @@
     },
     "step-security/harden-runner": {
       "latest": "v2",
-      "latestFull": "v2.21.0",
+      "latestFull": "v2.21.1",
       "description": "Harden-Runner is a CI/CD security agent that works like an EDR for GitHub Actions runners. It monito",
       "category": "security",
-      "sha": "05e31511f85b41b11d1cf0ef85d0992719546e2c",
+      "sha": "e14015d583714f6e62063499dc959a02595150a1",
       "inputs": [
         "allowed-endpoints",
         "denied-endpoints",
@@ -9599,10 +9600,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.87.1",
+      "latestFull": "v2.87.2",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "742a3317eac7bd62f91cd888b4eead5e784ba833",
+      "sha": "1ed6d7be6168f6c9046541087ff549b6bc581fdf",
       "inputs": [
         "tool",
         "checksum",
