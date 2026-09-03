@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-09-02T06:23:36Z",
+    "generated": "2026-09-03T06:19:21Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -491,10 +491,10 @@
     },
     "JetBrains/qodana-action": {
       "latest": "v2026",
-      "latestFull": "v2026.2.0",
+      "latestFull": "v2026.2.1",
       "description": "⚙️ Scan your Go, Java, Kotlin, PHP, Python, JavaScript, TypeScript, .NET projects at GitHub with Qod",
       "category": "linting",
-      "sha": "b588768b6e7e6da579e518bc584f79de0d243692",
+      "sha": "10be11607eb323a180e2b76b26c9c5cdceac3e77",
       "deprecated": [
         "v1",
         "v2",
@@ -4182,10 +4182,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.213",
+      "latestFull": "v1.0.214",
       "description": "",
       "category": "ai-assistants",
-      "sha": "8251c103ac8c1d761882c86aba1412c7f583c844",
+      "sha": "fa2b2666b747000bf42767d1f332065b375e3c8f",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -7061,10 +7061,10 @@
     },
     "graalvm/setup-graalvm": {
       "latest": "v1",
-      "latestFull": "v1.6.5",
+      "latestFull": "v1.6.6",
       "description": "Set up your GitHub Actions workflow with a specific GraalVM distribution.",
       "category": "setup-languages",
-      "sha": "f60d4ea89f14098520aea588431217bbd9551570",
+      "sha": "0426e2e191540e8514dff98dc52a5f5146a2a276",
       "inputs": [
         "java-version",
         "java-package",
@@ -7197,10 +7197,10 @@
     },
     "helm/kind-action": {
       "latest": "v1",
-      "latestFull": "v1.14.0",
+      "latestFull": "v1.15.0",
       "description": "A GitHub Action for Kubernetes IN Docker - local clusters for testing Kubernetes",
       "category": "kubernetes",
-      "sha": "ef37e7f390d99f746eb8b610417061a60e82a6cc",
+      "sha": "06c1ae10762d3b9c1644e7fe69596ae519e015a2",
       "inputs": [
         "version",
         "config",
@@ -9963,10 +9963,10 @@
     },
     "trufflesecurity/trufflehog": {
       "latest": "v3",
-      "latestFull": "v3.97.1",
+      "latestFull": "v3.97.2",
       "description": "Find, verify, and analyze leaked credentials",
       "category": "security",
-      "sha": "20652fbbdefffcdaa493a5bf57ab2ac6b1db715b",
+      "sha": "cc1fe982afc515d2991365ce8d4d0dd07170fcad",
       "deprecated": [
         "v1"
       ],
@@ -10069,10 +10069,10 @@
     },
     "w9jds/firebase-action": {
       "latest": "v15",
-      "latestFull": "v15.28.2",
+      "latestFull": "v15.29.0",
       "description": "GitHub Action for interacting with Firebase",
       "category": "cloud-gcp",
-      "sha": "5edc2e4fb0c08474ccf6cc71b29f49502aae5401",
+      "sha": "c38233488869fe50f21a3ab4931095d09807cc7a",
       "deprecated": [
         "v1",
         "v2",
