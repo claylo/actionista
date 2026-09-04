@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-09-03T06:19:21Z",
+    "generated": "2026-09-04T06:18:15Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -2939,10 +2939,10 @@
     },
     "Songmu/tagpr": {
       "latest": "v1",
-      "latestFull": "v1.20.2",
+      "latestFull": "v1.20.3",
       "description": "automatically creates and updates a pull request for unreleased items, tag them when they are merged",
       "category": "release",
-      "sha": "242e22916eb775d6e359959fe3ba5c497de4a01a",
+      "sha": "7ebae2dcc300132baa7cc9dd108c8923b07fc366",
       "inputs": [
         "version",
         "config"
@@ -3993,6 +3993,7 @@
         "ninja",
         "conan",
         "make",
+        "autoreconf",
         "task",
         "vcpkg",
         "meson",
@@ -4182,10 +4183,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.214",
+      "latestFull": "v1.0.215",
       "description": "",
       "category": "ai-assistants",
-      "sha": "fa2b2666b747000bf42767d1f332065b375e3c8f",
+      "sha": "ef8bb1e43bf303cff727a1dd0b8837029fe982a2",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -8823,10 +8824,10 @@
     },
     "release-plz/action": {
       "latest": "v0",
-      "latestFull": "v0.5.131",
+      "latestFull": "v0.5.132",
       "description": "GitHub action for https://github.com/release-plz/release-plz",
       "category": "release",
-      "sha": "2eb1d8bcb770b4c48ccfaad919734b38b51958c9",
+      "sha": "b5543c19b03be9bd48852d20ca89f478b7723260",
       "inputs": [
         "command",
         "registry",
@@ -9963,10 +9964,10 @@
     },
     "trufflesecurity/trufflehog": {
       "latest": "v3",
-      "latestFull": "v3.97.2",
+      "latestFull": "v3.97.4",
       "description": "Find, verify, and analyze leaked credentials",
       "category": "security",
-      "sha": "cc1fe982afc515d2991365ce8d4d0dd07170fcad",
+      "sha": "363923b901c911a9164f50b6c423f47c15372b1c",
       "deprecated": [
         "v1"
       ],
