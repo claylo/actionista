@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-09-04T06:18:15Z",
+    "generated": "2026-09-05T06:16:20Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -179,23 +179,13 @@
       ]
     },
     "DeLaGuardo/setup-clojure": {
-      "latest": "v13",
-      "latestFull": "13.6.1",
+      "latest": "v3",
+      "latestFull": "3.7.0",
       "description": "GitHub Action to provision clojure's most popular build tools for Linux, Mac OS X and Windows.",
       "category": "setup-languages",
-      "sha": "4c7a6f613e5089821bb3bb2a33a3ee115578580d",
+      "sha": "6d46099eae24853c33c0482f2bb54edf4f1a4c74",
       "deprecated": [
-        "v1",
-        "v2",
-        "v3",
-        "v4",
-        "v5",
-        "v6",
-        "v7",
-        "v8",
-        "v9",
-        "v10",
-        "v11"
+        "v1"
       ],
       "inputs": [
         "lein",
@@ -3954,10 +3944,10 @@
     },
     "aminya/setup-cpp": {
       "latest": "v1",
-      "latestFull": "v1.8.0",
+      "latestFull": "v1.9.1",
       "description": "Install all the tools required for building and testing C++ and C projects.",
       "category": "setup-languages",
-      "sha": "1f17f92d6a52bfcb1a25348e2c526c2e5cbb1134",
+      "sha": "c4e5daa333e7b32a6d1d5e462bede4e1f98435b7",
       "inputs": [
         "timeout",
         "cache-tools",
@@ -4183,10 +4173,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.215",
+      "latestFull": "v1.0.216",
       "description": "",
       "category": "ai-assistants",
-      "sha": "ef8bb1e43bf303cff727a1dd0b8837029fe982a2",
+      "sha": "d75b94d5ad426cb8546e6628b6f5f19b84e5cce1",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -9602,10 +9592,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.87.4",
+      "latestFull": "v2.87.5",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "e67fa11c4b9316fa714ddf0abed07a0c3143b95b",
+      "sha": "5bf6ce016fd2e72eefc647cbca1e4213f65955b8",
       "inputs": [
         "tool",
         "checksum",
