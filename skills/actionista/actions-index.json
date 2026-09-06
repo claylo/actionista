@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-09-05T06:16:20Z",
+    "generated": "2026-09-06T06:16:30Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4173,10 +4173,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.216",
+      "latestFull": "v1.0.217",
       "description": "",
       "category": "ai-assistants",
-      "sha": "d75b94d5ad426cb8546e6628b6f5f19b84e5cce1",
+      "sha": "9c5ddab2e6d17b83ea679153b31f1d5f023cf636",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -5261,10 +5261,10 @@
     },
     "cargo-bins/cargo-binstall": {
       "latest": "v1",
-      "latestFull": "v1.22.0",
+      "latestFull": "v1.23.0",
       "description": "Binary installation for rust projects",
       "category": "build-tools",
-      "sha": "75b4bfae1b2c753a6806bbce6e6cb89b602de33c",
+      "sha": "b874e25ea559687bec77e281e9b271aa1367b624",
       "inputs": [
         "version"
       ]
@@ -8122,10 +8122,10 @@
     },
     "oxsecurity/megalinter": {
       "latest": "v10",
-      "latestFull": "v10.0.0",
+      "latestFull": "v10.1.0",
       "description": "🦙 MegaLinter analyzes 50 languages, 22 formats, 21 tooling formats, excessive copy-pastes, spelling ",
       "category": "linting",
-      "sha": "15e5b45552097e318c93de385779ce3b1084052c",
+      "sha": "9949bad031045f366be2467e00e8371a7328a2e2",
       "deprecated": [
         "v1",
         "v2",
@@ -8529,10 +8529,10 @@
     },
     "pnpm/action-setup": {
       "latest": "v6",
-      "latestFull": "v6.0.10",
+      "latestFull": "v6.1.0",
       "description": "Install pnpm package manager",
       "category": "package-managers",
-      "sha": "0977fd99725f1db4007ccb2928dbb4e90d06cc86",
+      "sha": "ea17c68df8912ef543352723c149a84f56e3d413",
       "deprecated": [
         "v1",
         "v2",
@@ -8681,10 +8681,10 @@
     },
     "pypa/cibuildwheel": {
       "latest": "v4",
-      "latestFull": "v4.2.0",
+      "latestFull": "v4.2.1",
       "description": "🎡 Build Python wheels for all the platforms with minimal configuration. ",
       "category": "build-tools",
-      "sha": "1828c10ab37f080699c7b81cea34097c684a7074",
+      "sha": "e090b81e30c4d855ea63bf4b6e59204c09a101ae",
       "deprecated": [
         "v1",
         "v2"
@@ -8814,10 +8814,10 @@
     },
     "release-plz/action": {
       "latest": "v0",
-      "latestFull": "v0.5.132",
+      "latestFull": "v0.5.133",
       "description": "GitHub action for https://github.com/release-plz/release-plz",
       "category": "release",
-      "sha": "b5543c19b03be9bd48852d20ca89f478b7723260",
+      "sha": "aec534bbd8631793b9b3b8f1ee6cd886c322e17f",
       "inputs": [
         "command",
         "registry",
@@ -9592,10 +9592,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.87.5",
+      "latestFull": "v2.87.6",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "5bf6ce016fd2e72eefc647cbca1e4213f65955b8",
+      "sha": "7b8d4719ee4aaa279bdf55df38dacb9ebfe12a6c",
       "inputs": [
         "tool",
         "checksum",
