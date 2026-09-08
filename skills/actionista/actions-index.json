@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-09-07T06:23:16Z",
+    "generated": "2026-09-08T06:18:24Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -3117,14 +3117,15 @@
       ]
     },
     "actions-rust-lang/setup-rust-toolchain": {
-      "latest": "v1",
-      "latestFull": "v1.17.0",
+      "latest": "v2",
+      "latestFull": "v2.0.0",
       "description": "Setup a specific Rust toolchain with extra features like problem matchers",
       "category": "setup-languages",
-      "sha": "166cdcfd11aee3cb47222f9ddb555ce30ddb9659",
+      "sha": "ecabd13d1c56bd1345c230e542e9144811ad706f",
       "inputs": [
         "toolchain",
         "target",
+        "build-warnings",
         "components",
         "cache",
         "cache-workspaces",
@@ -3142,7 +3143,17 @@
         "rustflags",
         "override",
         "rust-src-dir"
-      ]
+      ],
+      "migrations": {
+        "v1→v2": {
+          "inputChanges": {
+            "added": [
+              "build-warnings"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "actions/add-to-project": {
       "latest": "v2",
@@ -5278,10 +5289,10 @@
     },
     "changesets/action": {
       "latest": "v2",
-      "latestFull": "v2.1.1",
+      "latestFull": "v2.1.2",
       "description": "",
       "category": "release",
-      "sha": "8488615a623b1b9c987934bb89eae8af6a946ac1",
+      "sha": "ae32849d5ba541f9ae29e40e22a623bc13562f51",
       "inputs": [
         "github-token",
         "publish-script",
@@ -9600,10 +9611,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.87.7",
+      "latestFull": "v2.87.8",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "84f5ac3124727fb3d284d4d22ee9ab3654fd09a6",
+      "sha": "d438492cf8a250514fa2d34b30bc3c0dc37c65ff",
       "inputs": [
         "tool",
         "checksum",
