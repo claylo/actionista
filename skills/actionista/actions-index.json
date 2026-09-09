@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-09-08T06:18:24Z",
+    "generated": "2026-09-09T06:18:53Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -186,13 +186,23 @@
       ]
     },
     "DeLaGuardo/setup-clojure": {
-      "latest": "v3",
-      "latestFull": "3.7.0",
+      "latest": "v13",
+      "latestFull": "13.7.0",
       "description": "GitHub Action to provision clojure's most popular build tools for Linux, Mac OS X and Windows.",
       "category": "setup-languages",
       "sha": "6d46099eae24853c33c0482f2bb54edf4f1a4c74",
       "deprecated": [
-        "v1"
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5",
+        "v6",
+        "v7",
+        "v8",
+        "v9",
+        "v10",
+        "v11"
       ],
       "inputs": [
         "lein",
@@ -3727,6 +3737,8 @@
         "architecture",
         "check-latest",
         "token",
+        "mirror",
+        "mirror-token",
         "cache-dependency-path",
         "update-environment",
         "allow-prereleases",
@@ -4191,10 +4203,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.217",
+      "latestFull": "v1.0.219",
       "description": "",
       "category": "ai-assistants",
-      "sha": "9c5ddab2e6d17b83ea679153b31f1d5f023cf636",
+      "sha": "5ccc3a35a6367cdb8e6fbd0728287467540ecfe2",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -4926,7 +4938,8 @@
         "environment",
         "allow-no-subscriptions",
         "audience",
-        "auth-type"
+        "auth-type",
+        "mask-client-id"
       ]
     },
     "azure/webapps-deploy": {
@@ -6014,11 +6027,11 @@
       ]
     },
     "dawidd6/action-send-mail": {
-      "latest": "v19",
-      "latestFull": "v19",
+      "latest": "v20",
+      "latestFull": "v20",
       "description": ":gear: GitHub Action for sending emails",
       "category": "notifications",
-      "sha": "d35571df1982970871070b5e02f01d3b6095cb74",
+      "sha": "ca8dbb4d4f91ca7f75e7f2feea5339e76ce70c90",
       "deprecated": [
         "v1",
         "v2",
@@ -6036,7 +6049,8 @@
         "v14",
         "v15",
         "v16",
-        "v17"
+        "v17",
+        "v18"
       ],
       "inputs": [
         "connection_url",
@@ -8833,10 +8847,10 @@
     },
     "release-plz/action": {
       "latest": "v0",
-      "latestFull": "v0.5.133",
+      "latestFull": "v0.5.134",
       "description": "GitHub action for https://github.com/release-plz/release-plz",
       "category": "release",
-      "sha": "aec534bbd8631793b9b3b8f1ee6cd886c322e17f",
+      "sha": "503fe65046e8810d4844f6b3aa12ab599a3549d7",
       "inputs": [
         "command",
         "registry",
@@ -9105,10 +9119,10 @@
     },
     "sbt/setup-sbt": {
       "latest": "v1",
-      "latestFull": "v1.5.8",
+      "latestFull": "v1.5.9",
       "description": "setup-sbt installs the official sbt runner",
       "category": "setup-languages",
-      "sha": "c7d2d6258b4bd0d3ec5129e6b3453199d3c79729",
+      "sha": "82da71df4e122282484a99a8d70096bc2369dbd8",
       "inputs": [
         "sbt-runner-version",
         "disk-cache"
