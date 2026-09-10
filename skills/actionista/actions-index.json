@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-09-09T06:18:53Z",
+    "generated": "2026-09-10T06:18:57Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -3618,10 +3618,10 @@
     },
     "actions/setup-java": {
       "latest": "v6",
-      "latestFull": "v6.0.0",
+      "latestFull": "v6.0.1",
       "description": "Set up your GitHub Actions workflow with a specific version of Java",
       "category": "setup-languages",
-      "sha": "dd06d9cba3e5552c54d9f8ea23572deb30010f7c",
+      "sha": "de7274f081f381c8f8158605e0321c36c376e2e6",
       "deprecated": [
         "v1",
         "v2",
@@ -3974,10 +3974,10 @@
     },
     "aminya/setup-cpp": {
       "latest": "v1",
-      "latestFull": "v1.10.0",
+      "latestFull": "v1.10.1",
       "description": "Install all the tools required for building and testing C++ and C projects.",
       "category": "setup-languages",
-      "sha": "59179aabb1f9453d12daf81c00d789af3b67b1a6",
+      "sha": "15a6bd8cf39030f88b5da3d203a829ec4eea4955",
       "inputs": [
         "timeout",
         "cache-tools",
@@ -4203,10 +4203,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.219",
+      "latestFull": "v1.0.220",
       "description": "",
       "category": "ai-assistants",
-      "sha": "5ccc3a35a6367cdb8e6fbd0728287467540ecfe2",
+      "sha": "19dda84776b3518d98b8798e591daee763049ed3",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -4739,10 +4739,10 @@
     },
     "aws-actions/aws-secretsmanager-get-secrets": {
       "latest": "v3",
-      "latestFull": "v3.0.1",
+      "latestFull": "v3.0.2",
       "description": "",
       "category": "cloud-aws",
-      "sha": "2cb1a461cbd4865ac4299648312e4704c646cd53",
+      "sha": "2297f9a879480a9e3af9b293ed15c70caf8e1c88",
       "deprecated": [
         "v1"
       ],
@@ -4922,10 +4922,10 @@
     },
     "azure/login": {
       "latest": "v3",
-      "latestFull": "v3.0.2",
+      "latestFull": "v3.1.0",
       "description": "Connect to Azure",
       "category": "cloud-azure",
-      "sha": "7ddb5af1ef8758cf1353cf3b42f940aee27ba21c",
+      "sha": "a641126d1b8aa4d1fa005f4f92df94a3a4c4c906",
       "deprecated": [
         "v1"
       ],
@@ -4939,8 +4939,20 @@
         "allow-no-subscriptions",
         "audience",
         "auth-type",
+        "max-context-population",
         "mask-client-id"
-      ]
+      ],
+      "migrations": {
+        "v2→v3": {
+          "inputChanges": {
+            "added": [
+              "max-context-population",
+              "mask-client-id"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "azure/webapps-deploy": {
       "latest": "v3",
@@ -6694,10 +6706,10 @@
     },
     "github/codeql-action/analyze": {
       "latest": "v4",
-      "latestFull": "v4.37.9",
+      "latestFull": "v4.38.0",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "cdf488f595d80d6e07e03d4674febd5ab45fa938",
+      "sha": "b96794f015dfd88f77b49b1c93e0fa7110f94c63",
       "deprecated": [
         "v1",
         "v2"
@@ -6705,10 +6717,10 @@
     },
     "github/codeql-action/autobuild": {
       "latest": "v4",
-      "latestFull": "v4.37.9",
+      "latestFull": "v4.38.0",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "cdf488f595d80d6e07e03d4674febd5ab45fa938",
+      "sha": "b96794f015dfd88f77b49b1c93e0fa7110f94c63",
       "deprecated": [
         "v1",
         "v2"
@@ -6716,10 +6728,10 @@
     },
     "github/codeql-action/init": {
       "latest": "v4",
-      "latestFull": "v4.37.9",
+      "latestFull": "v4.38.0",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "cdf488f595d80d6e07e03d4674febd5ab45fa938",
+      "sha": "b96794f015dfd88f77b49b1c93e0fa7110f94c63",
       "deprecated": [
         "v1",
         "v2"
@@ -8847,10 +8859,10 @@
     },
     "release-plz/action": {
       "latest": "v0",
-      "latestFull": "v0.5.134",
+      "latestFull": "v0.5.135",
       "description": "GitHub action for https://github.com/release-plz/release-plz",
       "category": "release",
-      "sha": "503fe65046e8810d4844f6b3aa12ab599a3549d7",
+      "sha": "346832d73e3415c2ebd0432cba3a2bf5881e5f7d",
       "inputs": [
         "command",
         "registry",
@@ -9625,10 +9637,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.87.8",
+      "latestFull": "v2.87.9",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "d438492cf8a250514fa2d34b30bc3c0dc37c65ff",
+      "sha": "c3ec0de9ae7f1019cea21aa96aa0a895b9552063",
       "inputs": [
         "tool",
         "checksum",
@@ -10005,10 +10017,10 @@
     },
     "unikraft/kraftkit": {
       "latest": "v0",
-      "latestFull": "v0.12.15",
+      "latestFull": "v0.12.16",
       "description": "Build and use highly customized and ultra-lightweight unikernel VMs.",
       "category": "docker",
-      "sha": "3e55f74c57579b4169b3f2271a695b0b8b9966a3",
+      "sha": "b5dd63da1644808ab47dda72963d7cf90935808c",
       "inputs": [
         "after",
         "run",
@@ -10093,10 +10105,10 @@
     },
     "w9jds/firebase-action": {
       "latest": "v15",
-      "latestFull": "v15.29.0",
+      "latestFull": "v15.30.0",
       "description": "GitHub Action for interacting with Firebase",
       "category": "cloud-gcp",
-      "sha": "c38233488869fe50f21a3ab4931095d09807cc7a",
+      "sha": "f527de56a76155c20044753433bc6b5b379f4641",
       "deprecated": [
         "v1",
         "v2",
