@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-09-10T06:18:57Z",
+    "generated": "2026-09-11T06:17:51Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -3828,6 +3828,7 @@
         "ignore-issue-updates",
         "ignore-pr-updates",
         "include-only-assigned",
+        "exempt-issue-types",
         "only-issue-types"
       ]
     },
@@ -3918,10 +3919,10 @@
     },
     "affaan-m/agentshield": {
       "latest": "v1",
-      "latestFull": "v1.4.0",
+      "latestFull": "v1.6.0",
       "description": "AI agent security scanner. Detect vulnerabilities in agent configurations, MCP servers, and tool per",
       "category": "security",
-      "sha": "9bbc007cf5afb562c324bbad4ce6c544420f49f6",
+      "sha": "b0891303bdcd6037376a94263d45cfd2ff3dfb98",
       "inputs": [
         "path",
         "min-severity",
@@ -4203,10 +4204,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.220",
+      "latestFull": "v1.0.221",
       "description": "",
       "category": "ai-assistants",
-      "sha": "19dda84776b3518d98b8798e591daee763049ed3",
+      "sha": "0a8d3c9443bbff909ab973b6a17a340b913f229f",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -4422,10 +4423,10 @@
     },
     "astral-sh/setup-uv": {
       "latest": "v10",
-      "latestFull": "v10.0.1",
+      "latestFull": "v10.1.0",
       "description": "Set up your GitHub Actions workflow with a specific version of https://docs.astral.sh/uv/",
       "category": "setup-languages",
-      "sha": "20cfd1bf945f4377ade1205e4dbc17946fc9a30d",
+      "sha": "bec219d24cd3e171d82865faccec33120bb574f4",
       "deprecated": [
         "v1",
         "v2",
@@ -6039,11 +6040,11 @@
       ]
     },
     "dawidd6/action-send-mail": {
-      "latest": "v20",
-      "latestFull": "v20",
+      "latest": "v21",
+      "latestFull": "v21",
       "description": ":gear: GitHub Action for sending emails",
       "category": "notifications",
-      "sha": "ca8dbb4d4f91ca7f75e7f2feea5339e76ce70c90",
+      "sha": "03a02a49409134de07636216fb379a026c52991e",
       "deprecated": [
         "v1",
         "v2",
@@ -6062,13 +6063,15 @@
         "v15",
         "v16",
         "v17",
-        "v18"
+        "v18",
+        "v19"
       ],
       "inputs": [
         "connection_url",
         "server_address",
         "server_port",
         "secure",
+        "require_tls",
         "username",
         "password",
         "subject",
@@ -6089,7 +6092,17 @@
         "nodemailerdebug",
         "envelope_from",
         "envelope_to"
-      ]
+      ],
+      "migrations": {
+        "v20→v21": {
+          "inputChanges": {
+            "added": [
+              "require_tls"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "denoland/setup-deno": {
       "latest": "v2",
@@ -8859,10 +8872,10 @@
     },
     "release-plz/action": {
       "latest": "v0",
-      "latestFull": "v0.5.135",
+      "latestFull": "v0.5.136",
       "description": "GitHub action for https://github.com/release-plz/release-plz",
       "category": "release",
-      "sha": "346832d73e3415c2ebd0432cba3a2bf5881e5f7d",
+      "sha": "a80d79efe0a195618acb02a4089d55fe74d2505f",
       "inputs": [
         "command",
         "registry",
@@ -9637,10 +9650,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.87.9",
+      "latestFull": "v2.87.10",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "c3ec0de9ae7f1019cea21aa96aa0a895b9552063",
+      "sha": "fa23953489c080190314742a9b907f8e97c6767c",
       "inputs": [
         "tool",
         "checksum",
