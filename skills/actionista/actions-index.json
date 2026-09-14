@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-09-13T06:20:58Z",
+    "generated": "2026-09-14T06:23:55Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -5806,10 +5806,10 @@
     },
     "cpp-linter/cpp-linter-action": {
       "latest": "v2",
-      "latestFull": "v2.21.0",
+      "latestFull": "v2.22.0",
       "description": "A Github Action for linting C/C++ code integrating clang-tidy and clang-format to collect feedback p",
       "category": "linting",
-      "sha": "cab1143a2c149bc41e85b070a9de81716974c18f",
+      "sha": "dacf512996b9cfe9d9bcc7b326d1f3a64ab7b91f",
       "inputs": [
         "style",
         "extensions",
@@ -8874,10 +8874,10 @@
     },
     "release-plz/action": {
       "latest": "v0",
-      "latestFull": "v0.5.136",
+      "latestFull": "v0.5.137",
       "description": "GitHub action for https://github.com/release-plz/release-plz",
       "category": "release",
-      "sha": "a80d79efe0a195618acb02a4089d55fe74d2505f",
+      "sha": "8e61445f0b34e7c6d985255f2f1f05a36eb350dc",
       "inputs": [
         "command",
         "registry",
@@ -8929,10 +8929,10 @@
     },
     "reviewdog/action-eslint": {
       "latest": "v1",
-      "latestFull": "v1.34.0",
+      "latestFull": "v1.35.0",
       "description": "Run eslint with reviewdog",
       "category": "linting",
-      "sha": "556a3fdaf8b4201d4d74d406013386aa4f7dab96",
+      "sha": "5eb89b1e6e94ca33e91c3814c34b25a8370bba46",
       "inputs": [
         "github_token",
         "level",
@@ -9024,10 +9024,10 @@
     },
     "reviewdog/action-shellcheck": {
       "latest": "v1",
-      "latestFull": "v1.32.1",
+      "latestFull": "v1.33.0",
       "description": "Run shellcheck with reviewdog",
       "category": "linting",
-      "sha": "0722bbdb0d47f04c1b53b8734d2422ac63a45ec6",
+      "sha": "a94d585085f1f5215ae65f4de34e7bbd0523d550",
       "inputs": [
         "github_token",
         "level",
