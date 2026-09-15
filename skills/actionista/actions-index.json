@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-09-14T06:23:55Z",
+    "generated": "2026-09-15T06:19:01Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4205,10 +4205,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.223",
+      "latestFull": "v1.0.225",
       "description": "",
       "category": "ai-assistants",
-      "sha": "9cdae7f0d995e3ba7c33f226087fdf82a59cd520",
+      "sha": "bf38e86e58df9ebf3420326d019f955bb3be64dd",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -4469,10 +4469,10 @@
     },
     "asyncapi/cli": {
       "latest": "v6",
-      "latestFull": "v6.0.2",
+      "latestFull": "v6.1.0",
       "description": "CLI to work with your AsyncAPI files. You can validate them and in the future use a generator and ev",
       "category": "utilities",
-      "sha": "fb73ff3a429c1bc6a14c1b89f12601288677b9fa",
+      "sha": "268f7b4fa03db2f59c48ca6c9d37839f6c44d736",
       "deprecated": [
         "v1",
         "v2",
@@ -4757,10 +4757,10 @@
     },
     "aws-actions/configure-aws-credentials": {
       "latest": "v6",
-      "latestFull": "v6.2.4",
+      "latestFull": "v6.3.0",
       "description": "Configure AWS credential environment variables for use in other GitHub Actions.",
       "category": "cloud-aws",
-      "sha": "cbe3b392738ccf3f987d68400dafcf4b0624a56c",
+      "sha": "e1253824e5c10ff9df46874f81ed3ec929e19cfd",
       "deprecated": [
         "v1",
         "v2",
@@ -4810,7 +4810,8 @@
               "overwrite-aws-profile",
               "transitive-tag-keys",
               "custom-tags",
-              "sts-endpoint"
+              "sts-endpoint",
+              "translate-env-variables"
             ],
             "removed": []
           }
@@ -5530,10 +5531,10 @@
     },
     "codecov/codecov-action": {
       "latest": "v7",
-      "latestFull": "v7.0.0",
+      "latestFull": "v7.1.0",
       "description": "GitHub Action that uploads coverage to Codecov :open_umbrella: ",
       "category": "testing",
-      "sha": "fb8b3582c8e4def4969c97caa2f19720cb33a72f",
+      "sha": "0b35c9ecc4f0529d0eb674914510c22f85b196b4",
       "deprecated": [
         "v1",
         "v2",
@@ -5544,6 +5545,7 @@
       "inputs": [
         "base_sha",
         "binary",
+        "cleanup",
         "codecov_yml_path",
         "commit_parent",
         "directory",
@@ -5591,7 +5593,17 @@
         "verbose",
         "version",
         "working-directory"
-      ]
+      ],
+      "migrations": {
+        "v6→v7": {
+          "inputChanges": {
+            "added": [
+              "cleanup"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "coderabbitai/ai-pr-reviewer": {
       "latest": "v1",
@@ -7254,6 +7266,7 @@
       "sha": "06c1ae10762d3b9c1644e7fe69596ae519e015a2",
       "inputs": [
         "version",
+        "version_file",
         "config",
         "kubeconfig",
         "node_image",
@@ -8929,10 +8942,10 @@
     },
     "reviewdog/action-eslint": {
       "latest": "v1",
-      "latestFull": "v1.35.0",
+      "latestFull": "v1.35.1",
       "description": "Run eslint with reviewdog",
       "category": "linting",
-      "sha": "5eb89b1e6e94ca33e91c3814c34b25a8370bba46",
+      "sha": "f7eb7e555c4d14324b1827e69cad181d370a173e",
       "inputs": [
         "github_token",
         "level",
@@ -9052,10 +9065,10 @@
     },
     "ruby/setup-ruby": {
       "latest": "v1",
-      "latestFull": "v1.321.0",
+      "latestFull": "v1.322.0",
       "description": "An action to download a prebuilt Ruby and add it to the PATH in 5 seconds",
       "category": "setup-languages",
-      "sha": "95ef2b042f9d7a56d8268cba8559e2842e2ad01b",
+      "sha": "bec3f19a76460dbe12f60def7d1a77585f07516c",
       "inputs": [
         "ruby-version",
         "rubygems",
@@ -10120,10 +10133,10 @@
     },
     "w9jds/firebase-action": {
       "latest": "v15",
-      "latestFull": "v15.30.0",
+      "latestFull": "v15.30.1",
       "description": "GitHub Action for interacting with Firebase",
       "category": "cloud-gcp",
-      "sha": "f527de56a76155c20044753433bc6b5b379f4641",
+      "sha": "d462443a9654f6ed6d84972a0215e273c21107ce",
       "deprecated": [
         "v1",
         "v2",
@@ -10210,10 +10223,10 @@
     },
     "withastro/action": {
       "latest": "v6",
-      "latestFull": "v6.1.2",
+      "latestFull": "v6.1.3",
       "description": "A GitHub Action that deploys your Astro project to GitHub Pages",
       "category": "infrastructure",
-      "sha": "e84f40bd8d2caa9e768ec82ad30dd81f0b280853",
+      "sha": "3eafd002e65cc31b4f0eae0bb05450d521562247",
       "deprecated": [
         "v1",
         "v2",
