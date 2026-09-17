@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-09-16T06:19:01Z",
+    "generated": "2026-09-17T06:19:15Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4205,10 +4205,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.226",
+      "latestFull": "v1.0.227",
       "description": "",
       "category": "ai-assistants",
-      "sha": "7b0b255830a1fab6e602658672acad11c12d841d",
+      "sha": "3b8197d3d486006dd4af54613517f21ac6ac625e",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -5531,10 +5531,10 @@
     },
     "codecov/codecov-action": {
       "latest": "v7",
-      "latestFull": "v7.1.0",
+      "latestFull": "v7.1.1",
       "description": "GitHub Action that uploads coverage to Codecov :open_umbrella: ",
       "category": "testing",
-      "sha": "0b35c9ecc4f0529d0eb674914510c22f85b196b4",
+      "sha": "303a32d7a59b442fa8d48b6a1cc6825c09c847a5",
       "deprecated": [
         "v1",
         "v2",
@@ -6288,10 +6288,10 @@
     },
     "docker/setup-buildx-action": {
       "latest": "v4",
-      "latestFull": "v4.4.0",
+      "latestFull": "v4.4.1",
       "description": "GitHub Action to set up Docker Buildx",
       "category": "docker",
-      "sha": "594f3bf4285d9ea8dc53c9a0c9c4092420091003",
+      "sha": "f87e5991a6d7451dcb8d9637bfbc97413f497069",
       "deprecated": [
         "v1",
         "v2"
@@ -10018,10 +10018,10 @@
     },
     "trufflesecurity/trufflehog": {
       "latest": "v3",
-      "latestFull": "v3.97.4",
+      "latestFull": "v3.97.5",
       "description": "Find, verify, and analyze leaked credentials",
       "category": "security",
-      "sha": "363923b901c911a9164f50b6c423f47c15372b1c",
+      "sha": "f714bf454f350590f4a24c3ddb1aef02c35bf5b6",
       "deprecated": [
         "v1"
       ],
