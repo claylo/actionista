@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-09-18T06:18:24Z",
+    "generated": "2026-09-19T06:16:56Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4205,10 +4205,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.229",
+      "latestFull": "v1.0.231",
       "description": "",
       "category": "ai-assistants",
-      "sha": "a4f54ef2c58884867281bd8e2f8d63352ad019a9",
+      "sha": "cfc3eb22bfed5c26ef66e3223c982af27e4524de",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -6724,10 +6724,10 @@
     },
     "github/codeql-action/analyze": {
       "latest": "v4",
-      "latestFull": "v4.38.0",
+      "latestFull": "v4.38.1",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "b96794f015dfd88f77b49b1c93e0fa7110f94c63",
+      "sha": "1c5b675653bb5c22dbe9b12b556ec555138e09fd",
       "deprecated": [
         "v1",
         "v2"
@@ -6735,10 +6735,10 @@
     },
     "github/codeql-action/autobuild": {
       "latest": "v4",
-      "latestFull": "v4.38.0",
+      "latestFull": "v4.38.1",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "b96794f015dfd88f77b49b1c93e0fa7110f94c63",
+      "sha": "1c5b675653bb5c22dbe9b12b556ec555138e09fd",
       "deprecated": [
         "v1",
         "v2"
@@ -6746,10 +6746,10 @@
     },
     "github/codeql-action/init": {
       "latest": "v4",
-      "latestFull": "v4.38.0",
+      "latestFull": "v4.38.1",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "b96794f015dfd88f77b49b1c93e0fa7110f94c63",
+      "sha": "1c5b675653bb5c22dbe9b12b556ec555138e09fd",
       "deprecated": [
         "v1",
         "v2"
@@ -8933,10 +8933,10 @@
     },
     "reviewdog/action-eslint": {
       "latest": "v1",
-      "latestFull": "v1.35.1",
+      "latestFull": "v1.36.0",
       "description": "Run eslint with reviewdog",
       "category": "linting",
-      "sha": "f7eb7e555c4d14324b1827e69cad181d370a173e",
+      "sha": "b6303df522851d0e9abaea654da0222037d97e75",
       "inputs": [
         "github_token",
         "level",
@@ -9028,10 +9028,10 @@
     },
     "reviewdog/action-shellcheck": {
       "latest": "v1",
-      "latestFull": "v1.33.0",
+      "latestFull": "v1.34.0",
       "description": "Run shellcheck with reviewdog",
       "category": "linting",
-      "sha": "a94d585085f1f5215ae65f4de34e7bbd0523d550",
+      "sha": "0a90156c6e0553996a217f0a9e09be6b0f6bee4c",
       "inputs": [
         "github_token",
         "level",
@@ -9656,10 +9656,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.87.14",
+      "latestFull": "v2.87.16",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "76c2e6406e52637deed7160d77bded76bd83e06e",
+      "sha": "9114bf4d891761788c546334fd37538eae1bf8b3",
       "inputs": [
         "tool",
         "checksum",
