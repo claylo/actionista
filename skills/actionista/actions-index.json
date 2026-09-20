@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-09-19T06:16:56Z",
+    "generated": "2026-09-20T06:16:50Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -5444,12 +5444,21 @@
       ]
     },
     "cirolini/genai-code-review": {
-      "latest": "v2",
-      "latestFull": "v2",
-      "description": "",
+      "latest": "v3",
+      "latestFull": "v3.0.0",
+      "description": "GitHub Action that reviews pull request diffs with an LLM and posts the comments on the PR",
       "category": "ai-assistants",
-      "sha": "c316e1db847ecbcb530c5fb66c102fb8a3454a4d",
+      "sha": "900798e8d8a57735ae86477348e86cddc0451a07",
+      "deprecated": [
+        "v1"
+      ],
       "inputs": [
+        "provider",
+        "model",
+        "api_key",
+        "base_url",
+        "temperature",
+        "max_tokens",
         "openai_api_key",
         "github_token",
         "github_pr_id",
@@ -5458,18 +5467,34 @@
         "openai_max_tokens",
         "mode",
         "language",
+        "max_comments",
+        "min_severity",
+        "min_confidence",
+        "ignore_paths",
+        "incremental",
+        "panel",
+        "config_path",
+        "runlog_path",
         "custom_prompt"
       ],
       "migrations": {
-        "v1→v2": {
+        "v2→v3": {
           "inputChanges": {
             "added": [
-              "openai_model",
-              "openai_temperature",
-              "openai_max_tokens",
-              "mode",
-              "language",
-              "custom_prompt"
+              "provider",
+              "model",
+              "api_key",
+              "base_url",
+              "temperature",
+              "max_tokens",
+              "max_comments",
+              "min_severity",
+              "min_confidence",
+              "ignore_paths",
+              "incremental",
+              "panel",
+              "config_path",
+              "runlog_path"
             ],
             "removed": []
           }
@@ -6418,7 +6443,7 @@
       "latestFull": "v1",
       "description": "Concise GitHub Action for installing a Rust toolchain",
       "category": "setup-languages",
-      "sha": "6c977a6ca4077a0ceb28ffbe03f59d46e9ac8772",
+      "sha": "02cb101ec7c40f2c49e1d9714d64511d8e1b74de",
       "inputs": [
         "toolchain",
         "targets",
@@ -8878,10 +8903,10 @@
     },
     "release-plz/action": {
       "latest": "v0",
-      "latestFull": "v0.5.138",
+      "latestFull": "v0.5.139",
       "description": "GitHub action for https://github.com/release-plz/release-plz",
       "category": "release",
-      "sha": "d6c56271d640b6c1b61d1e00593641c400a9f4bd",
+      "sha": "b8d6b54b02889ff2ae2bb82e8b57c3a8fc1683a5",
       "inputs": [
         "command",
         "registry",
