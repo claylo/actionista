@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-09-21T06:24:10Z",
+    "generated": "2026-09-22T06:18:44Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4424,10 +4424,10 @@
     },
     "astral-sh/setup-uv": {
       "latest": "v10",
-      "latestFull": "v10.1.0",
+      "latestFull": "v10.2.0",
       "description": "Set up your GitHub Actions workflow with a specific version of https://docs.astral.sh/uv/",
       "category": "setup-languages",
-      "sha": "bec219d24cd3e171d82865faccec33120bb574f4",
+      "sha": "c18668ad3cf93ea998bef934396af7bb5c839dc7",
       "deprecated": [
         "v1",
         "v2",
@@ -5445,10 +5445,10 @@
     },
     "cirolini/genai-code-review": {
       "latest": "v3",
-      "latestFull": "v3.0.0",
+      "latestFull": "v3.0.1",
       "description": "GitHub Action that reviews pull request diffs with an LLM and posts the comments on the PR",
       "category": "ai-assistants",
-      "sha": "900798e8d8a57735ae86477348e86cddc0451a07",
+      "sha": "0b32576a38eca3a0dde5655830fb6307efaa85c5",
       "deprecated": [
         "v1"
       ],
@@ -5678,10 +5678,10 @@
     },
     "conda-incubator/setup-miniconda": {
       "latest": "v4",
-      "latestFull": "v4.0.1",
+      "latestFull": "v4.1.0",
       "description": "Set up your GitHub Actions workflow with conda via miniconda",
       "category": "package-managers",
-      "sha": "8ee1f361103df19b6f8c8655fd3967a8ecb162d5",
+      "sha": "be893c923ea9cf1cf7cd510fbdde27c7e18cbdcb",
       "deprecated": [
         "v1",
         "v2"
@@ -6605,7 +6605,7 @@
     "getsentry/action-github-app-token": {
       "latest": "v4",
       "latestFull": "v4.0.0",
-      "description": "Gets a GitHub auth token for a GitHub App installation",
+      "description": "deprecated; use actions/create-github-app-token instead",
       "category": "utilities",
       "sha": "5c1e90706fe007857338ac1bfbd7a4177db2f789",
       "deprecated": [
@@ -9081,10 +9081,10 @@
     },
     "ruby/setup-ruby": {
       "latest": "v1",
-      "latestFull": "v1.324.0",
+      "latestFull": "v1.325.0",
       "description": "An action to download a prebuilt Ruby and add it to the PATH in 5 seconds",
       "category": "setup-languages",
-      "sha": "a0102e0972be65f351c307e2d64b9314a57c8073",
+      "sha": "e8944e80fb94b20106697132f8c20c665fab29e9",
       "inputs": [
         "ruby-version",
         "rubygems",
