@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-09-22T06:18:44Z",
+    "generated": "2026-09-23T06:19:18Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -2947,10 +2947,10 @@
     },
     "Songmu/tagpr": {
       "latest": "v1",
-      "latestFull": "v1.20.3",
+      "latestFull": "v1.21.0",
       "description": "automatically creates and updates a pull request for unreleased items, tag them when they are merged",
       "category": "release",
-      "sha": "7ebae2dcc300132baa7cc9dd108c8923b07fc366",
+      "sha": "2afc990a4a5a9a340665cc1a484c2102f7de332f",
       "inputs": [
         "version",
         "config"
@@ -4469,10 +4469,10 @@
     },
     "asyncapi/cli": {
       "latest": "v6",
-      "latestFull": "v6.1.0",
+      "latestFull": "v6.2.0",
       "description": "CLI to work with your AsyncAPI files. You can validate them and in the future use a generator and ev",
       "category": "utilities",
-      "sha": "268f7b4fa03db2f59c48ca6c9d37839f6c44d736",
+      "sha": "63df7607f902aba80e2ef4d88a5605821f49ec58",
       "deprecated": [
         "v1",
         "v2",
@@ -5530,10 +5530,10 @@
     },
     "cloudflare/wrangler-action": {
       "latest": "v4",
-      "latestFull": "v4.0.0",
+      "latestFull": "v4.1.1",
       "description": "🧙‍♀️ easily deploy cloudflare workers applications using wrangler and github actions",
       "category": "infrastructure",
-      "sha": "ebbaa1584979971c8614a24965b4405ff95890e0",
+      "sha": "4e88846969242f7752bcfdaf5511bfbb3985ca47",
       "deprecated": [
         "v1",
         "v2"
@@ -5843,10 +5843,10 @@
     },
     "cpp-linter/cpp-linter-action": {
       "latest": "v2",
-      "latestFull": "v2.22.0",
+      "latestFull": "v2.23.1",
       "description": "A Github Action for linting C/C++ code integrating clang-tidy and clang-format to collect feedback p",
       "category": "linting",
-      "sha": "dacf512996b9cfe9d9bcc7b326d1f3a64ab7b91f",
+      "sha": "8120e05c7fbd25fa09fa93424ec49f55f7b304ab",
       "inputs": [
         "style",
         "extensions",
@@ -5868,6 +5868,10 @@
         "tidy-review",
         "format-review",
         "passive-reviews",
+        "auto-fix",
+        "auto-fix-commit-msg",
+        "auto-fix-git-user",
+        "auto-fix-git-email",
         "jobs",
         "cache-enable",
         "summary-output-file"
@@ -5884,6 +5888,10 @@
               "tidy-review",
               "format-review",
               "passive-reviews",
+              "auto-fix",
+              "auto-fix-commit-msg",
+              "auto-fix-git-user",
+              "auto-fix-git-email",
               "jobs",
               "cache-enable",
               "summary-output-file"
@@ -6667,10 +6675,10 @@
     },
     "github/branch-deploy": {
       "latest": "v12",
-      "latestFull": "v12.0.0",
+      "latestFull": "v12.0.1",
       "description": "Enabling Branch Deployments through IssueOps with GitHub Actions - If you find this project useful, ",
       "category": "infrastructure",
-      "sha": "f0984057ffe1aa340aa017b6eafb894310aed88e",
+      "sha": "97edad089bbbe0c0ad13db7bf9ac085eaa47e255",
       "deprecated": [
         "v1",
         "v2",
@@ -6740,7 +6748,8 @@
         "v11→v12": {
           "inputChanges": {
             "added": [
-              "disable_lock"
+              "disable_lock",
+              "deployment_order_scope"
             ],
             "removed": []
           }
@@ -7238,10 +7247,10 @@
     },
     "haskell-actions/setup": {
       "latest": "v2",
-      "latestFull": "v2.11.0",
+      "latestFull": "v2.12.1",
       "description": "Setting up GHC, cabal, stack on for Haskell-related CIs",
       "category": "setup-languages",
-      "sha": "cd0d9bdd65b20557f41bea4dbe43d0b5fbbfe553",
+      "sha": "0f8e8c99d88aeb3fbfd523f1ef2c6f762d10d64d",
       "inputs": [
         "ghc-version",
         "cabal-version",
@@ -9175,10 +9184,10 @@
     },
     "sbt/setup-sbt": {
       "latest": "v1",
-      "latestFull": "v1.5.9",
+      "latestFull": "v1.5.10",
       "description": "setup-sbt installs the official sbt runner",
       "category": "setup-languages",
-      "sha": "82da71df4e122282484a99a8d70096bc2369dbd8",
+      "sha": "ce95da69b39609ea153bad087708da5f37366897",
       "inputs": [
         "sbt-runner-version",
         "disk-cache"
@@ -9681,10 +9690,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.87.17",
+      "latestFull": "v2.87.18",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "94c31af3204a9f15ab40b35ad084410b905bbc73",
+      "sha": "dfae9bf3d6f6c6f20ef4ebb3486c01a51341ff12",
       "inputs": [
         "tool",
         "checksum",
@@ -9747,10 +9756,10 @@
     },
     "tailscale/github-action": {
       "latest": "v4",
-      "latestFull": "v4.1.3",
+      "latestFull": "v4.2.0",
       "description": "A GitHub Action to connect your workflow to your Tailscale network.",
       "category": "infrastructure",
-      "sha": "780049a30b6ff5c378a9e7b389d15ece7a204888",
+      "sha": "d1b6cd204f8dceda5b3eaad7f1f767be390056cd",
       "deprecated": [
         "v1",
         "v2"
@@ -9778,7 +9787,8 @@
           "inputChanges": {
             "added": [
               "audience",
-              "ping"
+              "ping",
+              "log-mode"
             ],
             "removed": [
               "targets"
@@ -10043,10 +10053,10 @@
     },
     "trufflesecurity/trufflehog": {
       "latest": "v3",
-      "latestFull": "v3.97.5",
+      "latestFull": "v3.97.6",
       "description": "Find, verify, and analyze leaked credentials",
       "category": "security",
-      "sha": "f714bf454f350590f4a24c3ddb1aef02c35bf5b6",
+      "sha": "64d939a56362f519781c53ea09b27f8d1dc0140a",
       "deprecated": [
         "v1"
       ],
