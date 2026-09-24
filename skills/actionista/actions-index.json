@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-09-23T06:19:18Z",
+    "generated": "2026-09-24T06:19:11Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -2842,7 +2842,10 @@
         "rust-toolchain",
         "rustup-components",
         "working-directory",
+        "cache",
         "sccache",
+        "kache",
+        "kache-version",
         "before-script-linux"
       ]
     },
@@ -4205,10 +4208,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.231",
+      "latestFull": "v1.0.233",
       "description": "",
       "category": "ai-assistants",
-      "sha": "cfc3eb22bfed5c26ef66e3223c982af27e4524de",
+      "sha": "8cf3482550831fb35a4fc3fbf7ca139cf8028b4c",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -7717,18 +7720,43 @@
       ]
     },
     "mathieudutour/github-tag-action": {
-      "latest": "v6",
-      "latestFull": "v6.2",
+      "latest": "v7",
+      "latestFull": "v7",
       "description": "A Github Action to automatically bump and tag master, on merge, with the latest SemVer formatted ver",
       "category": "utilities",
-      "sha": "a22cf08638b34d5badda920f9daf6e72c477b07b",
+      "sha": "af99e60ce8132224b8e6ebab5023449fe256ed46",
       "deprecated": [
         "v1",
         "v2",
         "v3",
-        "v4"
+        "v4",
+        "v5"
       ],
       "inputs": [
+        "previous_version",
+        "commit_analyzer_preset",
+        "preset_config",
+        "path_filter",
+        "scopes",
+        "ignore_keywords",
+        "parse_squash_commits",
+        "tag_search_pattern",
+        "prefix_match_tag",
+        "force_bump",
+        "force_prerelease_bump",
+        "default_draft_bump",
+        "previous_tag",
+        "initial_version",
+        "custom_tag_prerelease",
+        "force_update",
+        "rolling_tags",
+        "push",
+        "create_local_tag",
+        "working_directory",
+        "repository",
+        "repository_url",
+        "ref",
+        "soft_fail",
         "github_token",
         "default_bump",
         "default_prerelease_bump",
@@ -7742,20 +7770,7 @@
         "create_annotated_tag",
         "fetch_all_tags",
         "dry_run"
-      ],
-      "migrations": {
-        "v5→v6": {
-          "inputChanges": {
-            "added": [
-              "default_prerelease_bump",
-              "custom_release_rules",
-              "commit_sha",
-              "fetch_all_tags"
-            ],
-            "removed": []
-          }
-        }
-      }
+      ]
     },
     "mattzcarey/shippie": {
       "latest": "v0",
@@ -9090,10 +9105,10 @@
     },
     "ruby/setup-ruby": {
       "latest": "v1",
-      "latestFull": "v1.325.0",
+      "latestFull": "v1.326.0",
       "description": "An action to download a prebuilt Ruby and add it to the PATH in 5 seconds",
       "category": "setup-languages",
-      "sha": "e8944e80fb94b20106697132f8c20c665fab29e9",
+      "sha": "762794c140bbeda0f1224786aa33b4b46783a6c1",
       "inputs": [
         "ruby-version",
         "rubygems",
@@ -9690,10 +9705,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.87.18",
+      "latestFull": "v2.87.19",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "dfae9bf3d6f6c6f20ef4ebb3486c01a51341ff12",
+      "sha": "7623a79cdfecb99d681017af368ca353d9f49bb5",
       "inputs": [
         "tool",
         "checksum",
@@ -10053,10 +10068,10 @@
     },
     "trufflesecurity/trufflehog": {
       "latest": "v3",
-      "latestFull": "v3.97.6",
+      "latestFull": "v3.97.8",
       "description": "Find, verify, and analyze leaked credentials",
       "category": "security",
-      "sha": "64d939a56362f519781c53ea09b27f8d1dc0140a",
+      "sha": "a5f3de55cc2065ae4dde8fee24076f137fd62fcf",
       "deprecated": [
         "v1"
       ],
@@ -10159,10 +10174,10 @@
     },
     "w9jds/firebase-action": {
       "latest": "v15",
-      "latestFull": "v15.30.2",
+      "latestFull": "v15.31.0",
       "description": "GitHub Action for interacting with Firebase",
       "category": "cloud-gcp",
-      "sha": "844c33e381350ae5c600052ba95188f40572d8e0",
+      "sha": "48658473f4157f0dddc075d3f36ae68b7aa7cad8",
       "deprecated": [
         "v1",
         "v2",
