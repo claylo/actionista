@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-09-25T06:19:17Z",
+    "generated": "2026-09-26T06:17:42Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4208,10 +4208,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.234",
+      "latestFull": "v1.0.235",
       "description": "",
       "category": "ai-assistants",
-      "sha": "9171db3e57d6a3140a37ddc2ba92788584e0ead6",
+      "sha": "756cc22e19660d20e8cc9496b4f242475a7f7790",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -6034,11 +6034,11 @@
       }
     },
     "dawidd6/action-download-artifact": {
-      "latest": "v24",
-      "latestFull": "v24",
+      "latest": "v25",
+      "latestFull": "v25",
       "description": ":gear: GitHub Action for downloading artifacts associated with given criteria",
       "category": "utilities",
-      "sha": "d63b86af1b34672e53c440b1b83979861906bad7",
+      "sha": "634d83b91986fcec9be314054943fa5c976aeb0e",
       "deprecated": [
         "v1",
         "v2",
@@ -6061,7 +6061,8 @@
         "v19",
         "v20",
         "v21",
-        "v22"
+        "v22",
+        "v23"
       ],
       "inputs": [
         "github_token",
@@ -9105,10 +9106,10 @@
     },
     "ruby/setup-ruby": {
       "latest": "v1",
-      "latestFull": "v1.326.0",
+      "latestFull": "v1.327.0",
       "description": "An action to download a prebuilt Ruby and add it to the PATH in 5 seconds",
       "category": "setup-languages",
-      "sha": "762794c140bbeda0f1224786aa33b4b46783a6c1",
+      "sha": "14594264cd68ce8a2345dd349bc3d138a4ef85c8",
       "inputs": [
         "ruby-version",
         "rubygems",
