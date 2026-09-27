@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-09-26T06:17:42Z",
+    "generated": "2026-09-27T06:18:21Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -5311,10 +5311,10 @@
     },
     "cargo-bins/cargo-binstall": {
       "latest": "v1",
-      "latestFull": "v1.23.0",
+      "latestFull": "v1.24.0",
       "description": "Binary installation for rust projects",
       "category": "build-tools",
-      "sha": "b874e25ea559687bec77e281e9b271aa1367b624",
+      "sha": "422f3094be6a0843857aa008b499caaf6bce0da8",
       "inputs": [
         "version"
       ]
@@ -9706,10 +9706,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.87.20",
+      "latestFull": "v2.87.21",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "9983c65e42da123ff25d1f78505eb6de315aa172",
+      "sha": "4cef1412cce204788f482e778a0b9187f9626a29",
       "inputs": [
         "tool",
         "checksum",
