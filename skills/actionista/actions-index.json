@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-09-28T06:26:03Z",
+    "generated": "2026-09-29T06:19:52Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -3593,7 +3593,8 @@
         "cache",
         "cache-dependency-path",
         "workloads",
-        "architecture"
+        "architecture",
+        "check-latest"
       ]
     },
     "actions/setup-go": {
@@ -4208,10 +4209,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.235",
+      "latestFull": "v1.0.236",
       "description": "",
       "category": "ai-assistants",
-      "sha": "756cc22e19660d20e8cc9496b4f242475a7f7790",
+      "sha": "8ce9314fa9a404564fa7e954cd84f25bcba2b829",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -5045,10 +5046,10 @@
     },
     "bencherdev/bencher": {
       "latest": "v0",
-      "latestFull": "v0.6.12",
+      "latestFull": "v0.6.13",
       "description": "🐰 Bencher - Continuous Benchmarking",
       "category": "testing",
-      "sha": "8d75325c3bc59403a2186a056b472c4f49d42838",
+      "sha": "f80847436d7157936b40525db4c2a1064124f04a",
       "inputs": [
         "version"
       ]
@@ -6034,11 +6035,11 @@
       }
     },
     "dawidd6/action-download-artifact": {
-      "latest": "v25",
-      "latestFull": "v25",
+      "latest": "v26",
+      "latestFull": "v26",
       "description": ":gear: GitHub Action for downloading artifacts associated with given criteria",
       "category": "utilities",
-      "sha": "634d83b91986fcec9be314054943fa5c976aeb0e",
+      "sha": "27e4ae67c24b67d3b54bc6d6a45475be1e28031b",
       "deprecated": [
         "v1",
         "v2",
@@ -6062,7 +6063,8 @@
         "v20",
         "v21",
         "v22",
-        "v23"
+        "v23",
+        "v24"
       ],
       "inputs": [
         "github_token",
@@ -7177,10 +7179,10 @@
     },
     "gradle/actions/setup-gradle": {
       "latest": "v6",
-      "latestFull": "v6.3.0",
+      "latestFull": "v6.4.0",
       "description": "A collection of GitHub Actions to accelerate your Gradle Builds on GitHub",
       "category": "build-tools",
-      "sha": "9c971963bec38e04b3d30dcc455b5382be2fdbfb",
+      "sha": "3f5f9adaf7d9fecd50b5935e54106014257a94e6",
       "deprecated": [
         "v1",
         "v2",
@@ -7284,7 +7286,10 @@
         "skip_upload",
         "mark_as_latest",
         "packages_with_index",
-        "pages_branch"
+        "pages_branch",
+        "oci_registry_url",
+        "oci_username",
+        "oci_password"
       ]
     },
     "helm/kind-action": {
@@ -7827,10 +7832,10 @@
     },
     "mikefarah/yq": {
       "latest": "v4",
-      "latestFull": "v4.53.6",
+      "latestFull": "v4.54.1",
       "description": "yq is a portable command-line YAML, JSON, XML, CSV, TOML, HCL  and properties processor",
       "category": "utilities",
-      "sha": "c14f446382944492701b16c1ddb48bb9dbe683e3",
+      "sha": "504fc38780cc46be8444ea1b72fb55919fc0bfb0",
       "deprecated": [
         "v1",
         "v2"
@@ -10175,10 +10180,10 @@
     },
     "w9jds/firebase-action": {
       "latest": "v15",
-      "latestFull": "v15.31.0",
+      "latestFull": "v15.32.0",
       "description": "GitHub Action for interacting with Firebase",
       "category": "cloud-gcp",
-      "sha": "48658473f4157f0dddc075d3f36ae68b7aa7cad8",
+      "sha": "4161c349226912980c1767a8d531465c09ebc470",
       "deprecated": [
         "v1",
         "v2",
