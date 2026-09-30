@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-09-29T06:19:52Z",
+    "generated": "2026-09-30T06:19:43Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -498,10 +498,10 @@
     },
     "JetBrains/qodana-action": {
       "latest": "v2026",
-      "latestFull": "v2026.2.1",
+      "latestFull": "v2026.2.2",
       "description": "⚙️ Scan your Go, Java, Kotlin, PHP, Python, JavaScript, TypeScript, .NET projects at GitHub with Qod",
       "category": "linting",
-      "sha": "10be11607eb323a180e2b76b26c9c5cdceac3e77",
+      "sha": "3e8d76ff0e0241618abd808682f426afe84bab3f",
       "deprecated": [
         "v1",
         "v2",
@@ -2950,10 +2950,10 @@
     },
     "Songmu/tagpr": {
       "latest": "v1",
-      "latestFull": "v1.21.0",
+      "latestFull": "v1.21.1",
       "description": "automatically creates and updates a pull request for unreleased items, tag them when they are merged",
       "category": "release",
-      "sha": "2afc990a4a5a9a340665cc1a484c2102f7de332f",
+      "sha": "967f2ab22be958948fb5bd439bfa3d404dd9dee8",
       "inputs": [
         "version",
         "config"
@@ -4209,10 +4209,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.236",
+      "latestFull": "v1.0.237",
       "description": "",
       "category": "ai-assistants",
-      "sha": "8ce9314fa9a404564fa7e954cd84f25bcba2b829",
+      "sha": "fd1c128679612beff4ca259c78021c506e8aa7a7",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -5933,10 +5933,10 @@
     },
     "cypress-io/github-action": {
       "latest": "v7",
-      "latestFull": "v7.4.4",
+      "latestFull": "v7.4.5",
       "description": "GitHub Action for running Cypress end-to-end & component tests",
       "category": "testing",
-      "sha": "01e3b659a495b41649cdd0aa82e1d1624e26520b",
+      "sha": "789d836053c5ca389c2905fc0c9f2909da778c46",
       "deprecated": [
         "v1",
         "v2",
@@ -6035,11 +6035,11 @@
       }
     },
     "dawidd6/action-download-artifact": {
-      "latest": "v26",
-      "latestFull": "v26",
+      "latest": "v27",
+      "latestFull": "v27",
       "description": ":gear: GitHub Action for downloading artifacts associated with given criteria",
       "category": "utilities",
-      "sha": "27e4ae67c24b67d3b54bc6d6a45475be1e28031b",
+      "sha": "eab87c9830c39eff17e5a6eadb20bfb4bc880477",
       "deprecated": [
         "v1",
         "v2",
@@ -6064,7 +6064,8 @@
         "v21",
         "v22",
         "v23",
-        "v24"
+        "v24",
+        "v25"
       ],
       "inputs": [
         "github_token",
@@ -9009,10 +9010,10 @@
     },
     "reviewdog/action-golangci-lint": {
       "latest": "v2",
-      "latestFull": "v2.10.0",
+      "latestFull": "v2.10.1",
       "description": "Run golangci-lint with reviewdog",
       "category": "linting",
-      "sha": "c76cceaaab89abe74e649d2e34c6c9adc26662d2",
+      "sha": "db65103266f304d8ac929ad6c0cd02d14f6837ba",
       "inputs": [
         "github_token",
         "golangci_lint_flags",
@@ -9711,10 +9712,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.87.21",
+      "latestFull": "v2.87.22",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "4cef1412cce204788f482e778a0b9187f9626a29",
+      "sha": "83ac0ad63c0167e6f06796fab0fce28db1bf3db0",
       "inputs": [
         "tool",
         "checksum",
