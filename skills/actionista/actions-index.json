@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-09-30T06:19:43Z",
+    "generated": "2026-10-01T06:20:17Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -163,10 +163,10 @@
     },
     "Apple-Actions/upload-testflight-build": {
       "latest": "v5",
-      "latestFull": "v5.4.0",
+      "latestFull": "v5.5.0",
       "description": "A GitHub Action that Uploads a build to Apple TestFlight",
       "category": "mobile",
-      "sha": "1fc69ca369a60b813eaaa2d936eda22794b52e17",
+      "sha": "14df18fee5a4ff3b76971dd382f033494a0194e9",
       "deprecated": [
         "v1",
         "v2",
@@ -2917,10 +2917,10 @@
     },
     "SonarSource/sonarqube-scan-action": {
       "latest": "v8",
-      "latestFull": "v8.2.2",
+      "latestFull": "v8.3.0",
       "description": "",
       "category": "linting",
-      "sha": "ba9859eae8dd6bd29e412f25ddbbef3d032000f4",
+      "sha": "d209202bc7d53ff1cc128f7f907dac145c9d6ae9",
       "deprecated": [
         "v1",
         "v2",
@@ -4209,10 +4209,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.237",
+      "latestFull": "v1.0.238",
       "description": "",
       "category": "ai-assistants",
-      "sha": "fd1c128679612beff4ca259c78021c506e8aa7a7",
+      "sha": "12dd8d74c712f5f3669365b2369b558c495b1104",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -4824,10 +4824,10 @@
     },
     "azure/aks-set-context": {
       "latest": "v5",
-      "latestFull": "v5.0.0",
+      "latestFull": "v5.0.1",
       "description": "GitHub Action for setting context (retrieving Kubeconfig) before interacting with Kubernetes cluster",
       "category": "kubernetes",
-      "sha": "60623acbdcbbdcf799ad50a1adf8703874339f8b",
+      "sha": "883bdc8d8d1d0fd87e66cc4ba6f0b618f9eb5281",
       "deprecated": [
         "v1",
         "v2",
@@ -5761,10 +5761,10 @@
     },
     "coursier/setup-action": {
       "latest": "v3",
-      "latestFull": "v3.0.3",
+      "latestFull": "v3.0.4",
       "description": "▶️ GitHub Action using Coursier to install JVM and Scala tools",
       "category": "setup-languages",
-      "sha": "3174df5c784a0c8724f06b7924b849551c40c39e",
+      "sha": "648df969f41ef15fda2baba8b37f9fa3d16390a3",
       "deprecated": [
         "v1"
       ],
@@ -8814,7 +8814,8 @@
         "output-dir",
         "config-file",
         "only",
-        "extras"
+        "extras",
+        "python-path"
       ]
     },
     "pypa/gh-action-pip-audit": {
@@ -10181,10 +10182,10 @@
     },
     "w9jds/firebase-action": {
       "latest": "v15",
-      "latestFull": "v15.32.0",
+      "latestFull": "v15.32.1",
       "description": "GitHub Action for interacting with Firebase",
       "category": "cloud-gcp",
-      "sha": "4161c349226912980c1767a8d531465c09ebc470",
+      "sha": "35d0fd9b92b2c66dcd13f1b72dacc588e89e7567",
       "deprecated": [
         "v1",
         "v2",
