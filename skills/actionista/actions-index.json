@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-10-02T06:20:03Z",
+    "generated": "2026-10-03T06:20:22Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4145,10 +4145,10 @@
     },
     "anchore/sbom-action": {
       "latest": "v0",
-      "latestFull": "v0.24.2",
+      "latestFull": "v0.24.3",
       "description": "GitHub Action for creating software bill of materials using Syft.",
       "category": "security",
-      "sha": "3ad7283483fc7af8ff2b4ea19663c2d5ca935e26",
+      "sha": "66cbf4bc1f1c0d2edc94016e65bc221b6bb0ad6c",
       "inputs": [
         "path",
         "file",
@@ -4209,10 +4209,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.239",
+      "latestFull": "v1.0.240",
       "description": "",
       "category": "ai-assistants",
-      "sha": "97c53473391bff1901034d4b454b5bac7ab7a029",
+      "sha": "ed670b4cf9de2a5a570d130d2f6197b9e543cd64",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -5312,10 +5312,10 @@
     },
     "cargo-bins/cargo-binstall": {
       "latest": "v1",
-      "latestFull": "v1.24.0",
+      "latestFull": "v1.25.0",
       "description": "Binary installation for rust projects",
       "category": "build-tools",
-      "sha": "422f3094be6a0843857aa008b499caaf6bce0da8",
+      "sha": "a29e25869a42756b3be062dc4dae3e4b01bb4f38",
       "inputs": [
         "version"
       ]
