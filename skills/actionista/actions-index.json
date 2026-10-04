@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-10-03T06:20:22Z",
+    "generated": "2026-10-04T08:04:47Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4209,10 +4209,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.240",
+      "latestFull": "v1.0.241",
       "description": "",
       "category": "ai-assistants",
-      "sha": "ed670b4cf9de2a5a570d130d2f6197b9e543cd64",
+      "sha": "cab360f6565aa35a51d6ce9e43f1f4287c0a32ea",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -5312,10 +5312,10 @@
     },
     "cargo-bins/cargo-binstall": {
       "latest": "v1",
-      "latestFull": "v1.25.0",
+      "latestFull": "v1.25.1",
       "description": "Binary installation for rust projects",
       "category": "build-tools",
-      "sha": "a29e25869a42756b3be062dc4dae3e4b01bb4f38",
+      "sha": "7bebc2e59eb8820162b7ac8f62a92bfdb2732447",
       "inputs": [
         "version"
       ]
@@ -6564,10 +6564,10 @@
     },
     "fwilhe2/setup-kotlin": {
       "latest": "v2",
-      "latestFull": "v2.0",
+      "latestFull": "v2.1",
       "description": "Setup the Kotlin™ cli compiler in GitHub Actions",
       "category": "setup-languages",
-      "sha": "ee9692514da313706b193d808526812102a344e4",
+      "sha": "b325539ca8f6e1d9ee04efed06f49bdbf5426dbb",
       "inputs": [
         "version",
         "install-native",
@@ -8956,10 +8956,10 @@
     },
     "reviewdog/action-brakeman": {
       "latest": "v2",
-      "latestFull": "v2.19.2",
+      "latestFull": "v2.20.0",
       "description": "Run brakeman with reviewdog 🐶",
       "category": "linting",
-      "sha": "5083efd49634e26645a0736681b618ccc3fb7f14",
+      "sha": "3ca1f826ac652d188845fe8faa3a1423afb904b6",
       "inputs": [
         "github_token",
         "brakeman_version",
@@ -9715,10 +9715,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.87.22",
+      "latestFull": "v2.87.24",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "83ac0ad63c0167e6f06796fab0fce28db1bf3db0",
+      "sha": "e407f7bafb71fd004bc5c2da3032e5470cbb6ef0",
       "inputs": [
         "tool",
         "checksum",
