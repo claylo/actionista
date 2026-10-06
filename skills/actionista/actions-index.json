@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-10-05T06:29:23Z",
+    "generated": "2026-10-06T06:19:30Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4209,10 +4209,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.241",
+      "latestFull": "v1.0.243",
       "description": "",
       "category": "ai-assistants",
-      "sha": "cab360f6565aa35a51d6ce9e43f1f4287c0a32ea",
+      "sha": "86d88e619d8e6caf07b5c3944dd14f441c533718",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -4607,10 +4607,10 @@
     },
     "aws-actions/amazon-ecs-render-task-definition": {
       "latest": "v1",
-      "latestFull": "v1.9.0",
+      "latestFull": "v1.9.1",
       "description": "Inserts a container image URI into an Amazon ECS task definition JSON file.",
       "category": "cloud-aws",
-      "sha": "138c24f321fdbdf7edee4a685519d253cae2cdea",
+      "sha": "8d79160660ad39c402a16e5fc7cd2a32e8f7d6b7",
       "inputs": [
         "task-definition",
         "task-definition-arn",
@@ -7847,10 +7847,10 @@
     },
     "mikepenz/action-junit-report": {
       "latest": "v6",
-      "latestFull": "v6.5.0",
+      "latestFull": "v6.6.0",
       "description": "Reports junit test results as GitHub Pull Request Check",
       "category": "testing",
-      "sha": "a9170d5795813c01ab4901ffb045b52bab4ab09d",
+      "sha": "b7b80d7ac5b1da46d6aaff9fb57ad50d8453bcb3",
       "deprecated": [
         "v1",
         "v2",
@@ -7883,6 +7883,8 @@
         "job_summary",
         "job_summary_text",
         "detailed_summary",
+        "failed_summary",
+        "failed_summary_logs",
         "flaky_summary",
         "verbose_summary",
         "skip_success_summary",
@@ -7907,7 +7909,9 @@
           "inputChanges": {
             "added": [
               "include_skipped",
-              "job_summary_text"
+              "job_summary_text",
+              "failed_summary",
+              "failed_summary_logs"
             ],
             "removed": []
           }
@@ -8801,10 +8805,10 @@
     },
     "pypa/cibuildwheel": {
       "latest": "v4",
-      "latestFull": "v4.2.1",
+      "latestFull": "v4.3.0",
       "description": "🎡 Build Python wheels for all the platforms with minimal configuration. ",
       "category": "build-tools",
-      "sha": "e090b81e30c4d855ea63bf4b6e59204c09a101ae",
+      "sha": "adba99c781d3746d38b3a09b1cf797965bcb7fe6",
       "deprecated": [
         "v1",
         "v2"
@@ -9528,10 +9532,10 @@
     },
     "step-security/harden-runner": {
       "latest": "v2",
-      "latestFull": "v2.21.1",
+      "latestFull": "v2.22.0",
       "description": "Harden-Runner is a CI/CD security agent that works like an EDR for GitHub Actions runners. It monito",
       "category": "security",
-      "sha": "e14015d583714f6e62063499dc959a02595150a1",
+      "sha": "351661ca32ac09a36dc5ee2d536e3128f2a3c8ed",
       "inputs": [
         "allowed-endpoints",
         "denied-endpoints",
@@ -9544,7 +9548,9 @@
         "policy",
         "api-key",
         "use-policy-store",
-        "deploy-on-self-hosted-vm"
+        "deploy-on-self-hosted-vm",
+        "customer",
+        "server-name"
       ],
       "migrations": {
         "v1→v2": {
@@ -9557,7 +9563,9 @@
               "policy",
               "api-key",
               "use-policy-store",
-              "deploy-on-self-hosted-vm"
+              "deploy-on-self-hosted-vm",
+              "customer",
+              "server-name"
             ],
             "removed": []
           }
@@ -9715,10 +9723,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.87.24",
+      "latestFull": "v2.87.25",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "e407f7bafb71fd004bc5c2da3032e5470cbb6ef0",
+      "sha": "183e4297cca2404691e9380e1307288dced5c82a",
       "inputs": [
         "tool",
         "checksum",
@@ -10078,10 +10086,10 @@
     },
     "trufflesecurity/trufflehog": {
       "latest": "v3",
-      "latestFull": "v3.97.9",
+      "latestFull": "v3.98.0",
       "description": "Find, verify, and analyze leaked credentials",
       "category": "security",
-      "sha": "4dd8831c5f12599465d4d45c3c447b4018a34c85",
+      "sha": "0186870afd2c4a90def791d80260923ba583d076",
       "deprecated": [
         "v1"
       ],
