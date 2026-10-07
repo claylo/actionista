@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-10-06T06:19:30Z",
+    "generated": "2026-10-07T06:18:26Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -163,10 +163,10 @@
     },
     "Apple-Actions/upload-testflight-build": {
       "latest": "v5",
-      "latestFull": "v5.5.0",
+      "latestFull": "v5.5.1",
       "description": "A GitHub Action that Uploads a build to Apple TestFlight",
       "category": "mobile",
-      "sha": "14df18fee5a4ff3b76971dd382f033494a0194e9",
+      "sha": "65a84cdb671ee2ccfa93710cd58e8f7b5d251967",
       "deprecated": [
         "v1",
         "v2",
@@ -2950,10 +2950,10 @@
     },
     "Songmu/tagpr": {
       "latest": "v1",
-      "latestFull": "v1.21.1",
+      "latestFull": "v1.21.2",
       "description": "automatically creates and updates a pull request for unreleased items, tag them when they are merged",
       "category": "release",
-      "sha": "967f2ab22be958948fb5bd439bfa3d404dd9dee8",
+      "sha": "0c4eb5a3b0862693702acea436a7c68bd586530d",
       "inputs": [
         "version",
         "config"
@@ -4209,10 +4209,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.243",
+      "latestFull": "v1.0.244",
       "description": "",
       "category": "ai-assistants",
-      "sha": "86d88e619d8e6caf07b5c3944dd14f441c533718",
+      "sha": "58985842b834ed26087302ba27d07bc24ca8697a",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -5312,10 +5312,10 @@
     },
     "cargo-bins/cargo-binstall": {
       "latest": "v1",
-      "latestFull": "v1.25.1",
+      "latestFull": "v1.25.2",
       "description": "Binary installation for rust projects",
       "category": "build-tools",
-      "sha": "7bebc2e59eb8820162b7ac8f62a92bfdb2732447",
+      "sha": "c06f6a0003f7c6165a00c89d1697731c9e8a5c72",
       "inputs": [
         "version"
       ]
@@ -6635,10 +6635,10 @@
     },
     "github/accessibility-scanner": {
       "latest": "v3",
-      "latestFull": "v3.4.1",
+      "latestFull": "v3.5.0",
       "description": "Finds potential accessibility gaps, files GitHub issues to track them, and attempts to fix them with",
       "category": "ai-assistants",
-      "sha": "745198705c4aecb2af83732eaafe1f6e3f7787c2",
+      "sha": "5317f296914241f19e56332ec60d073e5668dca7",
       "deprecated": [
         "v1"
       ],
@@ -7295,10 +7295,10 @@
     },
     "helm/kind-action": {
       "latest": "v1",
-      "latestFull": "v1.15.0",
+      "latestFull": "v1.15.1",
       "description": "A GitHub Action for Kubernetes IN Docker - local clusters for testing Kubernetes",
       "category": "kubernetes",
-      "sha": "06c1ae10762d3b9c1644e7fe69596ae519e015a2",
+      "sha": "1544676c07bb3570fcb70166beaa07c4528fd4aa",
       "inputs": [
         "version",
         "version_file",
@@ -9723,10 +9723,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.87.25",
+      "latestFull": "v2.87.26",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "183e4297cca2404691e9380e1307288dced5c82a",
+      "sha": "f7e5d7c961414b23f5b25b2da9294395d08513ad",
       "inputs": [
         "tool",
         "checksum",
@@ -10086,10 +10086,10 @@
     },
     "trufflesecurity/trufflehog": {
       "latest": "v3",
-      "latestFull": "v3.98.0",
+      "latestFull": "v3.99.0",
       "description": "Find, verify, and analyze leaked credentials",
       "category": "security",
-      "sha": "0186870afd2c4a90def791d80260923ba583d076",
+      "sha": "b2b0a92070f206ab7b5a1105d82a7f2f48d92341",
       "deprecated": [
         "v1"
       ],
