@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-10-08T06:20:44Z",
+    "generated": "2026-10-09T06:19:56Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -120,16 +120,17 @@
       }
     },
     "Apple-Actions/download-provisioning-profiles": {
-      "latest": "v6",
-      "latestFull": "v6.1.0",
+      "latest": "v7",
+      "latestFull": "v7.0.0",
       "description": "Github Action for downloading provisioning profiles from Apple AppStore Connect",
       "category": "mobile",
-      "sha": "2126b5f86a0e2863cbf4d2d312112b22b943a594",
+      "sha": "230860ab5f632551a5f9a5e1d98a774485463888",
       "deprecated": [
         "v1",
         "v2",
         "v3",
-        "v4"
+        "v4",
+        "v5"
       ],
       "inputs": [
         "bundle-id",
@@ -141,10 +142,10 @@
     },
     "Apple-Actions/import-codesign-certs": {
       "latest": "v7",
-      "latestFull": "v7.0.0",
+      "latestFull": "v7.1.0",
       "description": "GitHub Action for Importing Code-signing Certificates into a Keychain",
       "category": "mobile",
-      "sha": "5142e029c445c10ffc7149d172e540235a065466",
+      "sha": "77ba2a2a8f5cfc8c405ebf3159f767c323e238f9",
       "deprecated": [
         "v1",
         "v2",
@@ -163,10 +164,10 @@
     },
     "Apple-Actions/upload-testflight-build": {
       "latest": "v5",
-      "latestFull": "v5.5.1",
+      "latestFull": "v5.6.0",
       "description": "A GitHub Action that Uploads a build to Apple TestFlight",
       "category": "mobile",
-      "sha": "65a84cdb671ee2ccfa93710cd58e8f7b5d251967",
+      "sha": "155ea93be9ee6d5186c71f660a612f5eddb14510",
       "deprecated": [
         "v1",
         "v2",
@@ -182,8 +183,21 @@
         "backend",
         "transporter-executable-path",
         "uses-non-exempt-encryption",
-        "wait-for-processing"
-      ]
+        "wait-for-processing",
+        "upload-attempts",
+        "upload-timeout-minutes"
+      ],
+      "migrations": {
+        "v4→v5": {
+          "inputChanges": {
+            "added": [
+              "upload-attempts",
+              "upload-timeout-minutes"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "DeLaGuardo/setup-clojure": {
       "latest": "v13",
@@ -4210,10 +4224,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.245",
+      "latestFull": "v1.0.247",
       "description": "",
       "category": "ai-assistants",
-      "sha": "6fed3ca145920b639991cb756090506e1bcaf515",
+      "sha": "2dca132ff0e0c4094ce6048b422c6915a071210b",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -6460,7 +6474,7 @@
       "latestFull": "v1",
       "description": "Concise GitHub Action for installing a Rust toolchain",
       "category": "setup-languages",
-      "sha": "7e38f4b43b4db5c8dd498af069a4f6196df1d067",
+      "sha": "e2a55d2ffb04f378e9626c28d38b36d230d1e12f",
       "inputs": [
         "toolchain",
         "targets",
@@ -6767,10 +6781,10 @@
     },
     "github/codeql-action/analyze": {
       "latest": "v4",
-      "latestFull": "v4.38.2",
+      "latestFull": "v4.38.3",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "2892aa5e19bbd11bc0cff5427e3b750a04d9e3c2",
+      "sha": "24c54180a607b1449ed407dd24f251e4e9147c8d",
       "deprecated": [
         "v1",
         "v2"
@@ -6778,10 +6792,10 @@
     },
     "github/codeql-action/autobuild": {
       "latest": "v4",
-      "latestFull": "v4.38.2",
+      "latestFull": "v4.38.3",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "2892aa5e19bbd11bc0cff5427e3b750a04d9e3c2",
+      "sha": "24c54180a607b1449ed407dd24f251e4e9147c8d",
       "deprecated": [
         "v1",
         "v2"
@@ -6789,10 +6803,10 @@
     },
     "github/codeql-action/init": {
       "latest": "v4",
-      "latestFull": "v4.38.2",
+      "latestFull": "v4.38.3",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "2892aa5e19bbd11bc0cff5427e3b750a04d9e3c2",
+      "sha": "24c54180a607b1449ed407dd24f251e4e9147c8d",
       "deprecated": [
         "v1",
         "v2"
@@ -7849,10 +7863,10 @@
     },
     "mikepenz/action-junit-report": {
       "latest": "v6",
-      "latestFull": "v6.6.0",
+      "latestFull": "v6.6.1",
       "description": "Reports junit test results as GitHub Pull Request Check",
       "category": "testing",
-      "sha": "b7b80d7ac5b1da46d6aaff9fb57ad50d8453bcb3",
+      "sha": "6ef3fdcfcd5f0b5d14df3e659ef19b8c6820f93d",
       "deprecated": [
         "v1",
         "v2",
@@ -9236,10 +9250,10 @@
     },
     "shivammathur/setup-php": {
       "latest": "v2",
-      "latestFull": "2.37.2",
+      "latestFull": "2.40.0",
       "description": "GitHub action to set up PHP with extensions, php.ini configuration, coverage drivers, and various to",
       "category": "setup-languages",
-      "sha": "f3e473d116dcccaddc5834248c87452386958240",
+      "sha": "eb7c497e18156a6bbabfef1d3a82760b9eda3962",
       "inputs": [
         "php-version",
         "php-version-file",
@@ -10089,10 +10103,10 @@
     },
     "trufflesecurity/trufflehog": {
       "latest": "v3",
-      "latestFull": "v3.99.0",
+      "latestFull": "v3.99.2",
       "description": "Find, verify, and analyze leaked credentials",
       "category": "security",
-      "sha": "b2b0a92070f206ab7b5a1105d82a7f2f48d92341",
+      "sha": "e76dff8a7e57d6df0c60ad8cbf5d5cba505a8fc9",
       "deprecated": [
         "v1"
       ],
@@ -10195,10 +10209,10 @@
     },
     "w9jds/firebase-action": {
       "latest": "v15",
-      "latestFull": "v15.32.1",
+      "latestFull": "v15.33.0",
       "description": "GitHub Action for interacting with Firebase",
       "category": "cloud-gcp",
-      "sha": "35d0fd9b92b2c66dcd13f1b72dacc588e89e7567",
+      "sha": "e29beaf3208f031d4864f2bf6ddd8f890d5c8afc",
       "deprecated": [
         "v1",
         "v2",
