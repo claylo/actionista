@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-10-09T06:19:56Z",
+    "generated": "2026-10-10T06:18:15Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4224,10 +4224,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.247",
+      "latestFull": "v1.0.248",
       "description": "",
       "category": "ai-assistants",
-      "sha": "2dca132ff0e0c4094ce6048b422c6915a071210b",
+      "sha": "1d6de8cb0c237e7c15e9e1bdf973826ebae490cc",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -4443,10 +4443,10 @@
     },
     "astral-sh/setup-uv": {
       "latest": "v10",
-      "latestFull": "v10.2.0",
+      "latestFull": "v10.3.0",
       "description": "Set up your GitHub Actions workflow with a specific version of https://docs.astral.sh/uv/",
       "category": "setup-languages",
-      "sha": "c18668ad3cf93ea998bef934396af7bb5c839dc7",
+      "sha": "1c37ad07a6a961277cf70c0d37d6f313000f5884",
       "deprecated": [
         "v1",
         "v2",
@@ -4554,10 +4554,10 @@
     },
     "aws-actions/amazon-ecs-deploy-task-definition": {
       "latest": "v2",
-      "latestFull": "v2.6.3",
+      "latestFull": "v2.6.4",
       "description": "Registers an Amazon ECS task definition and deploys it to an ECS service.",
       "category": "cloud-aws",
-      "sha": "c465972ecbd160473f22e683363b422a5412a3de",
+      "sha": "a00d4d57ac0de1a99b39fe469f3d898d38717c2b",
       "inputs": [
         "task-definition",
         "desired-count",
@@ -5922,21 +5922,21 @@
       }
     },
     "cycjimmy/semantic-release-action": {
-      "latest": "v6",
-      "latestFull": "v6.0.0",
+      "latest": "v7",
+      "latestFull": "v7.1.0",
       "description": "GitHub Action for Semantic Release",
       "category": "release",
-      "sha": "b12c8f6015dc215fe37bc154d4ad456dd3833c90",
+      "sha": "8be816a60e417d22b0e09b61adc23605036497eb",
       "deprecated": [
         "v1",
         "v2",
         "v3",
-        "v4"
+        "v4",
+        "v5"
       ],
       "inputs": [
         "semantic_version",
         "branches",
-        "branch",
         "extra_plugins",
         "dry_run",
         "ci",
@@ -5944,8 +5944,21 @@
         "extends",
         "working_directory",
         "tag_format",
-        "repository_url"
-      ]
+        "repository_url",
+        "skip_npm_plugin"
+      ],
+      "migrations": {
+        "v6→v7": {
+          "inputChanges": {
+            "added": [
+              "skip_npm_plugin"
+            ],
+            "removed": [
+              "branch"
+            ]
+          }
+        }
+      }
     },
     "cypress-io/github-action": {
       "latest": "v7",
@@ -9135,10 +9148,10 @@
     },
     "ruby/setup-ruby": {
       "latest": "v1",
-      "latestFull": "v1.327.0",
+      "latestFull": "v1.328.0",
       "description": "An action to download a prebuilt Ruby and add it to the PATH in 5 seconds",
       "category": "setup-languages",
-      "sha": "14594264cd68ce8a2345dd349bc3d138a4ef85c8",
+      "sha": "e81a8fa391b11a595c1b7ed84177cc0fe02faf83",
       "inputs": [
         "ruby-version",
         "rubygems",
@@ -9740,10 +9753,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.87.26",
+      "latestFull": "v2.87.27",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "f7e5d7c961414b23f5b25b2da9294395d08513ad",
+      "sha": "ab6895351a88b908e96a4697860d4ffea5e57dbe",
       "inputs": [
         "tool",
         "checksum",
