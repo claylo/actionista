@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-10-10T06:18:15Z",
+    "generated": "2026-10-11T06:18:39Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -5328,10 +5328,10 @@
     },
     "cargo-bins/cargo-binstall": {
       "latest": "v1",
-      "latestFull": "v1.25.2",
+      "latestFull": "v1.25.3",
       "description": "Binary installation for rust projects",
       "category": "build-tools",
-      "sha": "c06f6a0003f7c6165a00c89d1697731c9e8a5c72",
+      "sha": "3be4ad2b146f3302f92e5956c54fedbb6ae8cccc",
       "inputs": [
         "version"
       ]
@@ -5923,10 +5923,10 @@
     },
     "cycjimmy/semantic-release-action": {
       "latest": "v7",
-      "latestFull": "v7.1.0",
+      "latestFull": "v7.1.2",
       "description": "GitHub Action for Semantic Release",
       "category": "release",
-      "sha": "8be816a60e417d22b0e09b61adc23605036497eb",
+      "sha": "1989a0fefc4aea321e07f717680ed8e345925dc1",
       "deprecated": [
         "v1",
         "v2",
@@ -8835,10 +8835,10 @@
     },
     "pypa/cibuildwheel": {
       "latest": "v4",
-      "latestFull": "v4.3.0",
+      "latestFull": "v4.3.1",
       "description": "🎡 Build Python wheels for all the platforms with minimal configuration. ",
       "category": "build-tools",
-      "sha": "adba99c781d3746d38b3a09b1cf797965bcb7fe6",
+      "sha": "b3395e271a35f73dad77f21802abe9b986dfe299",
       "deprecated": [
         "v1",
         "v2"
@@ -8970,10 +8970,10 @@
     },
     "release-plz/action": {
       "latest": "v0",
-      "latestFull": "v0.5.140",
+      "latestFull": "v0.5.141",
       "description": "GitHub action for https://github.com/release-plz/release-plz",
       "category": "release",
-      "sha": "18641b6c63063cc5ff8786ebf69cd57e8541bae1",
+      "sha": "f393a7b38aca9d9b4c58447b291dbac963901df6",
       "inputs": [
         "command",
         "registry",
