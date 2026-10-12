@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-10-11T06:18:39Z",
+    "generated": "2026-10-12T06:29:01Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4489,10 +4489,10 @@
     },
     "asyncapi/cli": {
       "latest": "v6",
-      "latestFull": "v6.2.0",
+      "latestFull": "v6.2.1",
       "description": "CLI to work with your AsyncAPI files. You can validate them and in the future use a generator and ev",
       "category": "utilities",
-      "sha": "63df7607f902aba80e2ef4d88a5605821f49ec58",
+      "sha": "5c382e168801d3762cc0424b794775074a2c6c1d",
       "deprecated": [
         "v1",
         "v2",
@@ -9753,10 +9753,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.87.27",
+      "latestFull": "v2.87.28",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "ab6895351a88b908e96a4697860d4ffea5e57dbe",
+      "sha": "1168f6810a3cb30a3514bf5756a3b7f0422c6df8",
       "inputs": [
         "tool",
         "checksum",
