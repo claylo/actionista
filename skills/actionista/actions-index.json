@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-10-12T06:29:01Z",
+    "generated": "2026-10-13T06:21:57Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -338,10 +338,10 @@
     },
     "EnricoMi/publish-unit-test-result-action": {
       "latest": "v2",
-      "latestFull": "v2.24.0",
+      "latestFull": "v2.25.0",
       "description": "GitHub Action to publish unit test results on GitHub",
       "category": "testing",
-      "sha": "d0a4676d0e0b938bc201470d88276b7c74c712b3",
+      "sha": "7622c5bf3d112a72ab4fa3951c2aa5723d8ab92d",
       "inputs": [
         "github_token",
         "github_token_actor",
@@ -2671,6 +2671,8 @@
         "prefer-source-code",
         "nofollow-import-to",
         "user-package-configuration-file",
+        "noinclude-dlls",
+        "include-windows-runtime-dlls",
         "force-runtime-environment-variable",
         "onefile-tempdir-spec",
         "onefile-child-grace-time",
@@ -2678,6 +2680,7 @@
         "warn-implicit-exceptions",
         "warn-unusual-code",
         "assume-yes-for-downloads",
+        "update-check",
         "nowarn-mnemonic",
         "deployment",
         "no-deployment-flag",
@@ -2692,6 +2695,19 @@
         "file-description",
         "copyright",
         "trademarks",
+        "macos-create-installer",
+        "macos-installer-output",
+        "windows-create-installer",
+        "windows-nsis-path",
+        "windows-installer-output",
+        "windows-installer-install-dir",
+        "windows-installer-shortcuts",
+        "windows-installer-license-file",
+        "windows-installer-no-user-change-install-dir",
+        "windows-installer-mode",
+        "linux-create-installer",
+        "linux-installer-appimagetool-path",
+        "linux-installer-output",
         "force-stdout-spec",
         "force-stderr-spec",
         "windows-console-mode",
@@ -2703,7 +2719,6 @@
         "macos-app-console-mode",
         "macos-target-arch",
         "macos-app-icon",
-        "macos-app-create-dmg",
         "macos-signed-app-name",
         "macos-app-name",
         "macos-app-mode",
@@ -2711,10 +2726,14 @@
         "macos-sign-identity",
         "macos-sign-notarization",
         "macos-app-version",
+        "macos-app-macos-min-version",
+        "macos-app-category-type",
         "macos-app-protected-resource",
         "macos-sign-keyring-filename",
         "macos-sign-keyring-password",
-        "linux-icon",
+        "linux-app-icon",
+        "linux-app-console-mode",
+        "linux-app-license",
         "clang",
         "mingw64",
         "zig",
@@ -2724,8 +2743,10 @@
         "lto",
         "static-libpython",
         "cf-protection",
+        "target-arch",
         "debug",
         "debug-self-forking",
+        "debug-address-sanitizer",
         "no-debug-immortal-assumptions",
         "no-debug-c-warnings",
         "unstripped",
@@ -2756,6 +2777,10 @@
         "windows-certificate-password",
         "windows-signed-content-comment",
         "anti-debugger-debugging",
+        "codemeter-path",
+        "codemeter-command",
+        "codemeter-args",
+        "codemeter-keep-unprotected",
         "data-hiding-salt-value",
         "embed-data-files-compile-time-pattern",
         "embed-data-files-run-time-pattern",
@@ -2766,7 +2791,11 @@
         "encrypt-stdout",
         "encrypt-stderr",
         "encrypt-debug-init",
-        "encrypt-crypto-package",
+        "obfuscate-line-numbers",
+        "private-import-patterns",
+        "source-inclusion-args",
+        "source-inclusion-timeout",
+        "show-source-inclusion-trace",
         "upx-binary",
         "upx-disable-cache",
         "include-pickle-support-module",
@@ -2774,6 +2803,7 @@
         "include-pmw-color",
         "tk-library-dir",
         "tcl-library-dir",
+        "torch-hub-model",
         "include-qt-plugins",
         "noinclude-qt-plugins",
         "noinclude-qt-translations",
@@ -3355,10 +3385,10 @@
     },
     "actions/create-github-app-token": {
       "latest": "v3",
-      "latestFull": "v3.2.0",
+      "latestFull": "v3.3.0",
       "description": "GitHub Action for creating a GitHub App Installation Access Token",
       "category": "core",
-      "sha": "bcd2ba49218906704ab6c1aa796996da409d3eb1",
+      "sha": "64ab729a6294000f5aa4a4bc0b73d1f32bc45510",
       "deprecated": [
         "v1"
       ],
@@ -3376,6 +3406,7 @@
         "permission-artifact-metadata",
         "permission-attestations",
         "permission-checks",
+        "permission-code-quality",
         "permission-codespaces",
         "permission-contents",
         "permission-custom-properties-for-organizations",
@@ -3395,11 +3426,13 @@
         "permission-metadata",
         "permission-organization-administration",
         "permission-organization-announcement-banners",
+        "permission-organization-copilot-agent-settings",
         "permission-organization-copilot-seat-management",
         "permission-organization-custom-org-roles",
         "permission-organization-custom-properties",
         "permission-organization-custom-roles",
         "permission-organization-events",
+        "permission-organization-external-properties-for-repos",
         "permission-organization-hooks",
         "permission-organization-packages",
         "permission-organization-personal-access-token-requests",
@@ -3422,7 +3455,6 @@
         "permission-single-file",
         "permission-starring",
         "permission-statuses",
-        "permission-team-discussions",
         "permission-vulnerability-alerts",
         "permission-workflows"
       ],
@@ -3434,10 +3466,15 @@
               "enterprise",
               "permission-artifact-metadata",
               "permission-attestations",
+              "permission-code-quality",
               "permission-discussions",
-              "permission-merge-queues"
+              "permission-merge-queues",
+              "permission-organization-copilot-agent-settings",
+              "permission-organization-external-properties-for-repos"
             ],
-            "removed": []
+            "removed": [
+              "permission-team-discussions"
+            ]
           }
         }
       }
@@ -5922,17 +5959,18 @@
       }
     },
     "cycjimmy/semantic-release-action": {
-      "latest": "v7",
-      "latestFull": "v7.1.2",
+      "latest": "v8",
+      "latestFull": "v8.0.1",
       "description": "GitHub Action for Semantic Release",
       "category": "release",
-      "sha": "1989a0fefc4aea321e07f717680ed8e345925dc1",
+      "sha": "bda3da8d0cac44ed30fdc42bf9ad6a0362ce0583",
       "deprecated": [
         "v1",
         "v2",
         "v3",
         "v4",
-        "v5"
+        "v5",
+        "v6"
       ],
       "inputs": [
         "semantic_version",
@@ -5946,19 +5984,7 @@
         "tag_format",
         "repository_url",
         "skip_npm_plugin"
-      ],
-      "migrations": {
-        "v6→v7": {
-          "inputChanges": {
-            "added": [
-              "skip_npm_plugin"
-            ],
-            "removed": [
-              "branch"
-            ]
-          }
-        }
-      }
+      ]
     },
     "cypress-io/github-action": {
       "latest": "v7",
@@ -7153,10 +7179,10 @@
     },
     "goreleaser/goreleaser-action": {
       "latest": "v7",
-      "latestFull": "v7.2.3",
+      "latestFull": "v7.3.0",
       "description": "GitHub Action for GoReleaser",
       "category": "release",
-      "sha": "f06c13b6b1a9625abc9e6e439d9c05a8f2190e94",
+      "sha": "a4f02ab5355a589de60d917a659ce617ed19b3de",
       "deprecated": [
         "v1",
         "v2",
@@ -8970,10 +8996,10 @@
     },
     "release-plz/action": {
       "latest": "v0",
-      "latestFull": "v0.5.141",
+      "latestFull": "v0.5.142",
       "description": "GitHub action for https://github.com/release-plz/release-plz",
       "category": "release",
-      "sha": "f393a7b38aca9d9b4c58447b291dbac963901df6",
+      "sha": "8921286633dfa0c4020f7f30bd1c14fe19cbb10e",
       "inputs": [
         "command",
         "registry",
@@ -9148,10 +9174,10 @@
     },
     "ruby/setup-ruby": {
       "latest": "v1",
-      "latestFull": "v1.328.0",
+      "latestFull": "v1.329.0",
       "description": "An action to download a prebuilt Ruby and add it to the PATH in 5 seconds",
       "category": "setup-languages",
-      "sha": "e81a8fa391b11a595c1b7ed84177cc0fe02faf83",
+      "sha": "651ff0d62c5c79bed6d53ec518387aae20e72c1a",
       "inputs": [
         "ruby-version",
         "rubygems",
