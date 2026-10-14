@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-10-13T06:21:57Z",
+    "generated": "2026-10-14T06:18:23Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -2633,10 +2633,10 @@
     },
     "Nuitka/Nuitka-Action": {
       "latest": "v1",
-      "latestFull": "v1.4",
+      "latestFull": "v1.5",
       "description": "Action to build with Nuitka on GitHub in your workflows",
       "category": "build-tools",
-      "sha": "0d4e22d4b66062a13d120f6948dd90170be04b3a",
+      "sha": "bb65ca8023bef5f41a2114acd387b5f36d860145",
       "inputs": [
         "working-directory",
         "nuitka-version",
@@ -4261,10 +4261,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.248",
+      "latestFull": "v1.0.249",
       "description": "",
       "category": "ai-assistants",
-      "sha": "1d6de8cb0c237e7c15e9e1bdf973826ebae490cc",
+      "sha": "34968b5981d5d170904281aa3df6f3c0d4a28855",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -8137,10 +8137,10 @@
     },
     "nrwl/nx-set-shas": {
       "latest": "v5",
-      "latestFull": "v5.0.1",
+      "latestFull": "v5.1.0",
       "description": ":sparkles: A Github Action which sets the base and head SHAs required for `nx affected` commands in ",
       "category": "utilities",
-      "sha": "afb73a62d26e41464e9254689e1fd6122ee683c1",
+      "sha": "e602fada7ad5987b0f7b1905e7a99ea1c661514c",
       "deprecated": [
         "v1",
         "v2",
@@ -8156,8 +8156,21 @@
         "last-successful-event",
         "working-directory",
         "workflow-id",
-        "use-previous-merge-group-commit"
-      ]
+        "use-previous-merge-group-commit",
+        "lookup-strategy",
+        "max-commits"
+      ],
+      "migrations": {
+        "v4→v5": {
+          "inputChanges": {
+            "added": [
+              "lookup-strategy",
+              "max-commits"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "obi1kenobi/cargo-semver-checks-action": {
       "latest": "v2",
@@ -9268,10 +9281,10 @@
     },
     "sbt/setup-sbt": {
       "latest": "v1",
-      "latestFull": "v1.5.11",
+      "latestFull": "v1.5.12",
       "description": "setup-sbt installs the official sbt runner",
       "category": "setup-languages",
-      "sha": "6158cb0903b8ceeae04f830055f3155e1b6a5ad7",
+      "sha": "ecad189dd245444b9ae0a0cd5922fd938b88906f",
       "inputs": [
         "sbt-runner-version",
         "disk-cache"
