@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-10-15T06:18:42Z",
+    "generated": "2026-10-16T06:17:53Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4264,10 +4264,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.250",
+      "latestFull": "v1.0.251",
       "description": "",
       "category": "ai-assistants",
-      "sha": "a26b07d8c778b0c43f64618e5fd29fd0f8af72e8",
+      "sha": "374f254f5efaf968abfe15d399fd90972e8138b9",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -6516,7 +6516,7 @@
       "latestFull": "v1",
       "description": "Concise GitHub Action for installing a Rust toolchain",
       "category": "setup-languages",
-      "sha": "e2a55d2ffb04f378e9626c28d38b36d230d1e12f",
+      "sha": "683b588c487a69d01f6c6ddf40f036ff682cc2c8",
       "inputs": [
         "toolchain",
         "targets",
@@ -6823,10 +6823,10 @@
     },
     "github/codeql-action/analyze": {
       "latest": "v4",
-      "latestFull": "v4.38.3",
+      "latestFull": "v4.39.0",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "24c54180a607b1449ed407dd24f251e4e9147c8d",
+      "sha": "6f2ac81f5cd81fe351a197ba0b00d91d03cd2aee",
       "deprecated": [
         "v1",
         "v2"
@@ -6834,10 +6834,10 @@
     },
     "github/codeql-action/autobuild": {
       "latest": "v4",
-      "latestFull": "v4.38.3",
+      "latestFull": "v4.39.0",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "24c54180a607b1449ed407dd24f251e4e9147c8d",
+      "sha": "6f2ac81f5cd81fe351a197ba0b00d91d03cd2aee",
       "deprecated": [
         "v1",
         "v2"
@@ -6845,10 +6845,10 @@
     },
     "github/codeql-action/init": {
       "latest": "v4",
-      "latestFull": "v4.38.3",
+      "latestFull": "v4.39.0",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "24c54180a607b1449ed407dd24f251e4e9147c8d",
+      "sha": "6f2ac81f5cd81fe351a197ba0b00d91d03cd2aee",
       "deprecated": [
         "v1",
         "v2"
