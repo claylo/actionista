@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-10-16T06:17:53Z",
+    "generated": "2026-10-17T06:16:00Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -2994,10 +2994,10 @@
     },
     "Songmu/tagpr": {
       "latest": "v1",
-      "latestFull": "v1.21.2",
+      "latestFull": "v1.21.3",
       "description": "automatically creates and updates a pull request for unreleased items, tag them when they are merged",
       "category": "release",
-      "sha": "0c4eb5a3b0862693702acea436a7c68bd586530d",
+      "sha": "1fcd7292d1fe8ea9a8313eef46b8d80b7a15d227",
       "inputs": [
         "version",
         "config"
@@ -4264,10 +4264,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.251",
+      "latestFull": "v1.0.252",
       "description": "",
       "category": "ai-assistants",
-      "sha": "374f254f5efaf968abfe15d399fd90972e8138b9",
+      "sha": "f27be6b65a4652f08a2ba3cff79114829b588967",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -5963,10 +5963,10 @@
     },
     "cycjimmy/semantic-release-action": {
       "latest": "v8",
-      "latestFull": "v8.1.0",
+      "latestFull": "v8.1.2",
       "description": "GitHub Action for Semantic Release",
       "category": "release",
-      "sha": "9e1f8a3ef91f1097285028e799a5fb8bb90e8899",
+      "sha": "03595b5eaf44910cf239ff20904cc52d410f97d4",
       "deprecated": [
         "v1",
         "v2",
@@ -6693,10 +6693,10 @@
     },
     "github/accessibility-scanner": {
       "latest": "v3",
-      "latestFull": "v3.5.0",
+      "latestFull": "v3.5.1",
       "description": "Finds potential accessibility gaps, files GitHub issues to track them, and attempts to fix them with",
       "category": "ai-assistants",
-      "sha": "5317f296914241f19e56332ec60d073e5668dca7",
+      "sha": "b9ff6911fdcdb17032a2fda1013b77bb4bff76b3",
       "deprecated": [
         "v1"
       ],
@@ -8297,10 +8297,10 @@
     },
     "overtrue/phplint": {
       "latest": "v9",
-      "latestFull": "9.7.2",
+      "latestFull": "9.7.3",
       "description": ":bug:  A tool that can speed up linting of php files by running several lint processes at once.",
       "category": "linting",
-      "sha": "f9d3fb3c6b6af49fce0fa8d712da1c38da41fe65",
+      "sha": "61d8ea7e056093bc0bf57f0e9f1867bec445a840",
       "deprecated": [
         "v1",
         "v2",
@@ -9795,10 +9795,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.87.28",
+      "latestFull": "v2.87.29",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "1168f6810a3cb30a3514bf5756a3b7f0422c6df8",
+      "sha": "8cca0918f8471c33515202b73f56ab27f2bed283",
       "inputs": [
         "tool",
         "checksum",
