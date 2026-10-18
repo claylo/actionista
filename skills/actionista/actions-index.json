@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-10-17T06:16:00Z",
+    "generated": "2026-10-18T06:16:31Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -5368,10 +5368,10 @@
     },
     "cargo-bins/cargo-binstall": {
       "latest": "v1",
-      "latestFull": "v1.25.3",
+      "latestFull": "v1.26.0",
       "description": "Binary installation for rust projects",
       "category": "build-tools",
-      "sha": "3be4ad2b146f3302f92e5956c54fedbb6ae8cccc",
+      "sha": "8a2045612414e945291083f820cd50b4d8fc2218",
       "inputs": [
         "version"
       ]
@@ -7557,10 +7557,10 @@
     },
     "julia-actions/setup-julia": {
       "latest": "v3",
-      "latestFull": "v3.0.2",
+      "latestFull": "v3.0.3",
       "description": "This action sets up a Julia environment for use in actions by downloading a specified version of Jul",
       "category": "setup-languages",
-      "sha": "fa02766e078afaaf09b14210362cee14137e6a32",
+      "sha": "da908477b5db94c10ffce8cfea9f2b3b9d5db687",
       "deprecated": [
         "v1"
       ],
