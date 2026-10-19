@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-10-18T06:16:31Z",
+    "generated": "2026-10-19T06:23:36Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4264,10 +4264,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.252",
+      "latestFull": "v1.0.253",
       "description": "",
       "category": "ai-assistants",
-      "sha": "f27be6b65a4652f08a2ba3cff79114829b588967",
+      "sha": "5eb090f3c3afd701a0672cd32981197ca27688f6",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
