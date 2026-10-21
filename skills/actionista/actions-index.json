@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-10-20T06:17:49Z",
+    "generated": "2026-10-21T06:17:57Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -3028,10 +3028,10 @@
     },
     "Swatinem/rust-cache": {
       "latest": "v2",
-      "latestFull": "v2.9.2",
+      "latestFull": "v2.9.3",
       "description": "A GitHub Action that implements smart caching for rust/cargo projects ",
       "category": "package-managers",
-      "sha": "6323deb102c322ba6fcbdcafc7e3dddab59af2b6",
+      "sha": "d1527c8f67ef9af357290475d4af4b0fab8f12e0",
       "inputs": [
         "prefix-key",
         "shared-key",
@@ -4264,10 +4264,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.254",
+      "latestFull": "v1.0.256",
       "description": "",
       "category": "ai-assistants",
-      "sha": "db77d4d3c98f3f6380e7cd45ffba2342a3dbde3c",
+      "sha": "a5a423f75c251dcbff8a74e99f83b2cb03c72bfa",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -6593,10 +6593,10 @@
     },
     "expo/expo-github-action": {
       "latest": "v9",
-      "latestFull": "9.0.0",
+      "latestFull": "9.0.1",
       "description": "Expo GitHub Action makes it easy to automate EAS builds or updates",
       "category": "mobile",
-      "sha": "eab7a230208c952974db8c3245cfd78402c7b385",
+      "sha": "9da89d3617bb88139671bad31b09c65714c2ee06",
       "deprecated": [
         "v1",
         "v2",
@@ -7438,10 +7438,10 @@
     },
     "hynek/build-and-inspect-python-package": {
       "latest": "v3",
-      "latestFull": "v3.0.1",
+      "latestFull": "v3.0.2",
       "description": "Build and Inspect Python Packages in GitHub Actions",
       "category": "build-tools",
-      "sha": "2abe76da66d0a6a4a227101f9348ee855797cfa5",
+      "sha": "67230f7b8410ae0052b39c1efc89d89fff43ff10",
       "deprecated": [
         "v1"
       ],
@@ -8877,10 +8877,10 @@
     },
     "pypa/cibuildwheel": {
       "latest": "v4",
-      "latestFull": "v4.3.1",
+      "latestFull": "v4.3.2",
       "description": "🎡 Build Python wheels for all the platforms with minimal configuration. ",
       "category": "build-tools",
-      "sha": "b3395e271a35f73dad77f21802abe9b986dfe299",
+      "sha": "f11181315571b24e4a3c67f1a828532793f2df55",
       "deprecated": [
         "v1",
         "v2"
@@ -8919,10 +8919,10 @@
     },
     "pypa/gh-action-pypi-publish": {
       "latest": "v1",
-      "latestFull": "v1.14.2",
+      "latestFull": "v1.14.3",
       "description": "The blessed :octocat: GitHub Action, for publishing your :package: distribution files to PyPI, the t",
       "category": "release",
-      "sha": "dc37677b2e1c63e2034f94d8a5b11f265b73ba33",
+      "sha": "7245906fb61fa33a13554f9d5fb856fe61758086",
       "inputs": [
         "user",
         "password",
