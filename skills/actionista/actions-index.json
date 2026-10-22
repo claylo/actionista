@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-10-21T06:17:57Z",
+    "generated": "2026-10-22T06:18:07Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -3637,6 +3637,7 @@
         "dotnet-version",
         "dotnet-quality",
         "dotnet-channel",
+        "skip-lts-prepass",
         "global-json-file",
         "source-url",
         "owner",
@@ -3779,10 +3780,10 @@
     },
     "actions/setup-python": {
       "latest": "v7",
-      "latestFull": "v7.0.0",
+      "latestFull": "v7.1.0",
       "description": "Set up your GitHub Actions workflow with a specific version of Python",
       "category": "setup-languages",
-      "sha": "5fda3b95a4ea91299a34e894583c3862153e4b97",
+      "sha": "6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
       "deprecated": [
         "v1",
         "v2",
@@ -3808,7 +3809,10 @@
       "migrations": {
         "v6→v7": {
           "inputChanges": {
-            "added": [],
+            "added": [
+              "mirror",
+              "mirror-token"
+            ],
             "removed": [
               "pip-install"
             ]
@@ -4264,10 +4268,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.256",
+      "latestFull": "v1.0.258",
       "description": "",
       "category": "ai-assistants",
-      "sha": "a5a423f75c251dcbff8a74e99f83b2cb03c72bfa",
+      "sha": "6b6870e649b5ff408753befeaee5fc7989d4e6a9",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -4483,10 +4487,10 @@
     },
     "astral-sh/setup-uv": {
       "latest": "v10",
-      "latestFull": "v10.3.0",
+      "latestFull": "v10.3.1",
       "description": "Set up your GitHub Actions workflow with a specific version of https://docs.astral.sh/uv/",
       "category": "setup-languages",
-      "sha": "1c37ad07a6a961277cf70c0d37d6f313000f5884",
+      "sha": "18d369b23da25a81e9458561248e1aafff6a70fa",
       "deprecated": [
         "v1",
         "v2",
@@ -6823,10 +6827,10 @@
     },
     "github/codeql-action/analyze": {
       "latest": "v4",
-      "latestFull": "v4.39.0",
+      "latestFull": "v4.39.1",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "6f2ac81f5cd81fe351a197ba0b00d91d03cd2aee",
+      "sha": "9b3254085494b55a0f7c4c2b3d2d52cc712ce370",
       "deprecated": [
         "v1",
         "v2"
@@ -6834,10 +6838,10 @@
     },
     "github/codeql-action/autobuild": {
       "latest": "v4",
-      "latestFull": "v4.39.0",
+      "latestFull": "v4.39.1",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "6f2ac81f5cd81fe351a197ba0b00d91d03cd2aee",
+      "sha": "9b3254085494b55a0f7c4c2b3d2d52cc712ce370",
       "deprecated": [
         "v1",
         "v2"
@@ -6845,10 +6849,10 @@
     },
     "github/codeql-action/init": {
       "latest": "v4",
-      "latestFull": "v4.39.0",
+      "latestFull": "v4.39.1",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "6f2ac81f5cd81fe351a197ba0b00d91d03cd2aee",
+      "sha": "9b3254085494b55a0f7c4c2b3d2d52cc712ce370",
       "deprecated": [
         "v1",
         "v2"
@@ -8877,10 +8881,10 @@
     },
     "pypa/cibuildwheel": {
       "latest": "v4",
-      "latestFull": "v4.3.2",
+      "latestFull": "v4.3.3",
       "description": "🎡 Build Python wheels for all the platforms with minimal configuration. ",
       "category": "build-tools",
-      "sha": "f11181315571b24e4a3c67f1a828532793f2df55",
+      "sha": "8c2dcd2e96041a619f5ff03c9638d7941e2553a4",
       "deprecated": [
         "v1",
         "v2"
@@ -9012,10 +9016,10 @@
     },
     "release-plz/action": {
       "latest": "v0",
-      "latestFull": "v0.5.143",
+      "latestFull": "v0.5.144",
       "description": "GitHub action for https://github.com/release-plz/release-plz",
       "category": "release",
-      "sha": "6caa8d34f74d82b0dc76a18edd1cc3d6801c9baf",
+      "sha": "8b5bf233ecb5779f63508db7cd050e948ee77cc2",
       "inputs": [
         "command",
         "registry",
@@ -9190,10 +9194,10 @@
     },
     "ruby/setup-ruby": {
       "latest": "v1",
-      "latestFull": "v1.331.0",
+      "latestFull": "v1.332.0",
       "description": "An action to download a prebuilt Ruby and add it to the PATH in 5 seconds",
       "category": "setup-languages",
-      "sha": "824c0e29fdfc7d689c191c27acc969d2d04b7dd8",
+      "sha": "b1da4809b005e0178fe08a1d57317bffc00b7b4c",
       "inputs": [
         "ruby-version",
         "rubygems",
@@ -9795,10 +9799,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.87.29",
+      "latestFull": "v2.87.30",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "8cca0918f8471c33515202b73f56ab27f2bed283",
+      "sha": "a4d3f3f761dcd95cce1b72cb61cb6d1963438177",
       "inputs": [
         "tool",
         "checksum",
