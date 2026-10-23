@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-10-22T06:18:07Z",
+    "generated": "2026-10-23T06:18:29Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -2994,13 +2994,14 @@
     },
     "Songmu/tagpr": {
       "latest": "v1",
-      "latestFull": "v1.21.3",
+      "latestFull": "v1.21.4",
       "description": "automatically creates and updates a pull request for unreleased items, tag them when they are merged",
       "category": "release",
-      "sha": "1fcd7292d1fe8ea9a8313eef46b8d80b7a15d227",
+      "sha": "e1250d6c84e4425db82b5e90549d62dfe23e9ebe",
       "inputs": [
         "version",
-        "config"
+        "config",
+        "attestation-token"
       ]
     },
     "SpicyPizza/create-envfile": {
@@ -4268,10 +4269,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.258",
+      "latestFull": "v1.0.259",
       "description": "",
       "category": "ai-assistants",
-      "sha": "6b6870e649b5ff408753befeaee5fc7989d4e6a9",
+      "sha": "ae68417a745a5df4b2124873632bd73a2255e6f6",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -4487,10 +4488,10 @@
     },
     "astral-sh/setup-uv": {
       "latest": "v10",
-      "latestFull": "v10.3.1",
+      "latestFull": "v10.3.2",
       "description": "Set up your GitHub Actions workflow with a specific version of https://docs.astral.sh/uv/",
       "category": "setup-languages",
-      "sha": "18d369b23da25a81e9458561248e1aafff6a70fa",
+      "sha": "07a047e608db84b3d8c06cd9a7c7dcc9c355c18e",
       "deprecated": [
         "v1",
         "v2",
@@ -6156,11 +6157,11 @@
       ]
     },
     "dawidd6/action-send-mail": {
-      "latest": "v22",
-      "latestFull": "v22",
+      "latest": "v23",
+      "latestFull": "v23",
       "description": ":gear: GitHub Action for sending emails",
       "category": "notifications",
-      "sha": "67ce3558d613188179559c61d3565140cf389968",
+      "sha": "47af4a10b540781705f283a2cf1a9650713ac795",
       "deprecated": [
         "v1",
         "v2",
@@ -6181,7 +6182,8 @@
         "v17",
         "v18",
         "v19",
-        "v20"
+        "v20",
+        "v21"
       ],
       "inputs": [
         "connection_url",
@@ -8881,10 +8883,10 @@
     },
     "pypa/cibuildwheel": {
       "latest": "v4",
-      "latestFull": "v4.3.3",
+      "latestFull": "v4.3.4",
       "description": "🎡 Build Python wheels for all the platforms with minimal configuration. ",
       "category": "build-tools",
-      "sha": "8c2dcd2e96041a619f5ff03c9638d7941e2553a4",
+      "sha": "b9e566a2b284570af229f6c2a33673410d0389a3",
       "deprecated": [
         "v1",
         "v2"
@@ -9194,10 +9196,10 @@
     },
     "ruby/setup-ruby": {
       "latest": "v1",
-      "latestFull": "v1.332.0",
+      "latestFull": "v1.334.0",
       "description": "An action to download a prebuilt Ruby and add it to the PATH in 5 seconds",
       "category": "setup-languages",
-      "sha": "b1da4809b005e0178fe08a1d57317bffc00b7b4c",
+      "sha": "26e5b7d197ebf60545ee9667bcbace0be11ccaec",
       "inputs": [
         "ruby-version",
         "rubygems",
@@ -9542,10 +9544,10 @@
     },
     "stefanzweifel/git-auto-commit-action": {
       "latest": "v7",
-      "latestFull": "v7.2.0",
+      "latestFull": "v7.2.1",
       "description": "Automatically commit and push changed files back to GitHub with this GitHub Action for the 80% use c",
       "category": "git-operations",
-      "sha": "4a55954c782fc1ea30b9056cd3e7a2b40ca8887d",
+      "sha": "d0b01107b5db882071f96de5dd4b54961ea93f4c",
       "deprecated": [
         "v1",
         "v2",
@@ -9865,10 +9867,10 @@
     },
     "tailscale/github-action": {
       "latest": "v4",
-      "latestFull": "v4.2.0",
+      "latestFull": "v4.3.0",
       "description": "A GitHub Action to connect your workflow to your Tailscale network.",
       "category": "infrastructure",
-      "sha": "d1b6cd204f8dceda5b3eaad7f1f767be390056cd",
+      "sha": "99a8333667fff04fdd6cffb46dfd409f8329a7bf",
       "deprecated": [
         "v1",
         "v2"
@@ -10162,10 +10164,10 @@
     },
     "trufflesecurity/trufflehog": {
       "latest": "v3",
-      "latestFull": "v3.99.3",
+      "latestFull": "v3.99.4",
       "description": "Find, verify, and analyze leaked credentials",
       "category": "security",
-      "sha": "e63326d6545de8f425d93ce24078c6e68d83f70e",
+      "sha": "c85580b712841eda4c53bc28fc6ace6100e8c16c",
       "deprecated": [
         "v1"
       ],
@@ -10268,10 +10270,10 @@
     },
     "w9jds/firebase-action": {
       "latest": "v15",
-      "latestFull": "v15.34.0",
+      "latestFull": "v15.34.1",
       "description": "GitHub Action for interacting with Firebase",
       "category": "cloud-gcp",
-      "sha": "fc894b2de04cfc04c398e98dea8ac546470fbd6b",
+      "sha": "a3f8db378f69597e99644eb9c8dfefe0bcce6e1d",
       "deprecated": [
         "v1",
         "v2",
