@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-10-23T06:18:29Z",
+    "generated": "2026-10-24T06:16:58Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -164,10 +164,10 @@
     },
     "Apple-Actions/upload-testflight-build": {
       "latest": "v5",
-      "latestFull": "v5.6.0",
+      "latestFull": "v5.7.0",
       "description": "A GitHub Action that Uploads a build to Apple TestFlight",
       "category": "mobile",
-      "sha": "155ea93be9ee6d5186c71f660a612f5eddb14510",
+      "sha": "acf1166e95edc302069b74b258a788004fe39a08",
       "deprecated": [
         "v1",
         "v2",
@@ -4269,10 +4269,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.259",
+      "latestFull": "v1.0.261",
       "description": "",
       "category": "ai-assistants",
-      "sha": "ae68417a745a5df4b2124873632bd73a2255e6f6",
+      "sha": "16f9f71ab9c490faf367f94dd294897edc25be33",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -5996,10 +5996,10 @@
     },
     "cypress-io/github-action": {
       "latest": "v7",
-      "latestFull": "v7.4.6",
+      "latestFull": "v7.4.7",
       "description": "GitHub Action for running Cypress end-to-end & component tests",
       "category": "testing",
-      "sha": "c541a95ea92d9239347a2355f2e895cd4b3f8060",
+      "sha": "bc982daf1fc26474fa0cf2c355d6c910616ce411",
       "deprecated": [
         "v1",
         "v2",
@@ -6346,10 +6346,10 @@
     },
     "docker/login-action": {
       "latest": "v4",
-      "latestFull": "v4.6.0",
+      "latestFull": "v4.7.0",
       "description": "GitHub Action to login against a Docker registry",
       "category": "docker",
-      "sha": "dbcb813823bdd20940b903addbd779551569679f",
+      "sha": "81c6f93d4bc991e510b342a00b419b3bb4efc5c6",
       "deprecated": [
         "v1",
         "v2"
@@ -9018,10 +9018,10 @@
     },
     "release-plz/action": {
       "latest": "v0",
-      "latestFull": "v0.5.144",
+      "latestFull": "v0.5.145",
       "description": "GitHub action for https://github.com/release-plz/release-plz",
       "category": "release",
-      "sha": "8b5bf233ecb5779f63508db7cd050e948ee77cc2",
+      "sha": "7ef5e4d4b0420630cfcaeb182c01e13651d4c577",
       "inputs": [
         "command",
         "registry",
@@ -9301,10 +9301,10 @@
     },
     "securego/gosec": {
       "latest": "v2",
-      "latestFull": "v2.29.0",
+      "latestFull": "v2.30.0",
       "description": "Go security checker",
       "category": "security",
-      "sha": "deb54465fea23d19a77f037e11e6589021f8501d",
+      "sha": "5eb1d104ef85ff2c905c877eb600e8c1dee33a22",
       "inputs": [
         "args"
       ]
@@ -9801,10 +9801,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.87.30",
+      "latestFull": "v2.87.31",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "a4d3f3f761dcd95cce1b72cb61cb6d1963438177",
+      "sha": "1e29709c0ec63babbe8f266397a465f29a825f91",
       "inputs": [
         "tool",
         "checksum",
@@ -10164,10 +10164,10 @@
     },
     "trufflesecurity/trufflehog": {
       "latest": "v3",
-      "latestFull": "v3.99.4",
+      "latestFull": "v3.99.7",
       "description": "Find, verify, and analyze leaked credentials",
       "category": "security",
-      "sha": "c85580b712841eda4c53bc28fc6ace6100e8c16c",
+      "sha": "31ce31ee1abbcc7dc8eee5764c17121c3044c8b2",
       "deprecated": [
         "v1"
       ],
@@ -10360,10 +10360,10 @@
     },
     "withastro/action": {
       "latest": "v6",
-      "latestFull": "v6.1.3",
+      "latestFull": "v6.1.4",
       "description": "A GitHub Action that deploys your Astro project to GitHub Pages",
       "category": "infrastructure",
-      "sha": "3eafd002e65cc31b4f0eae0bb05450d521562247",
+      "sha": "a8b97df764791eb61fbf3338ef713b0e61ae05c5",
       "deprecated": [
         "v1",
         "v2",
