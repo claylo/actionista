@@ -4,7 +4,7 @@ description: >-
 license: MIT
 metadata:
   repository: https://github.com/claylo/actionista
-  version: 1.2.178
+  version: 1.2.179
 name: actionista
 ---
 
