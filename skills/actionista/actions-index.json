@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-10-24T06:16:58Z",
+    "generated": "2026-10-25T06:16:31Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -2565,10 +2565,10 @@
     },
     "Kesin11/actions-timeline": {
       "latest": "v3",
-      "latestFull": "v3.2.0",
+      "latestFull": "v3.2.1",
       "description": "An Action shows timeline of a workflow in a run summary.",
       "category": "utilities",
-      "sha": "57fc93f20c6da7fbc14063c6d24a2a5627c799ad",
+      "sha": "460b1f8a750077029ad3589824d371b200e91dcf",
       "deprecated": [
         "v1"
       ],
@@ -4269,10 +4269,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.261",
+      "latestFull": "v1.0.262",
       "description": "",
       "category": "ai-assistants",
-      "sha": "16f9f71ab9c490faf367f94dd294897edc25be33",
+      "sha": "925afb53776cf1a2b738c6bdbed37b4d4000ef13",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -5373,10 +5373,10 @@
     },
     "cargo-bins/cargo-binstall": {
       "latest": "v1",
-      "latestFull": "v1.26.0",
+      "latestFull": "v1.26.1",
       "description": "Binary installation for rust projects",
       "category": "build-tools",
-      "sha": "8a2045612414e945291083f820cd50b4d8fc2218",
+      "sha": "81df5c23b0dc775b009efdfc9895c5965b7a4e40",
       "inputs": [
         "version"
       ]
@@ -9018,10 +9018,10 @@
     },
     "release-plz/action": {
       "latest": "v0",
-      "latestFull": "v0.5.145",
+      "latestFull": "v0.5.146",
       "description": "GitHub action for https://github.com/release-plz/release-plz",
       "category": "release",
-      "sha": "7ef5e4d4b0420630cfcaeb182c01e13651d4c577",
+      "sha": "b2baf303c463c223526d52a8a91b0777f052cf3f",
       "inputs": [
         "command",
         "registry",
@@ -9196,10 +9196,10 @@
     },
     "ruby/setup-ruby": {
       "latest": "v1",
-      "latestFull": "v1.334.0",
+      "latestFull": "v1.335.0",
       "description": "An action to download a prebuilt Ruby and add it to the PATH in 5 seconds",
       "category": "setup-languages",
-      "sha": "26e5b7d197ebf60545ee9667bcbace0be11ccaec",
+      "sha": "7f797815d8adceb1c412e7abefdd1ab4abc47a5f",
       "inputs": [
         "ruby-version",
         "rubygems",
