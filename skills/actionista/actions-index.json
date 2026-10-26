@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-10-25T06:16:31Z",
+    "generated": "2026-10-26T06:23:20Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -5909,7 +5909,7 @@
     "cpp-linter/cpp-linter-action": {
       "latest": "v2",
       "latestFull": "v2.23.1",
-      "description": "A Github Action for linting C/C++ code integrating clang-tidy and clang-format to collect feedback p",
+      "description": "Lint C/C++ pull requests with clang-format and clang-tidy, and post the results as annotations, comm",
       "category": "linting",
       "sha": "8120e05c7fbd25fa09fa93424ec49f55f7b304ab",
       "inputs": [
