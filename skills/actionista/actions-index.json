@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-10-26T06:23:20Z",
+    "generated": "2026-10-27T06:18:23Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4269,10 +4269,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.262",
+      "latestFull": "v1.0.263",
       "description": "",
       "category": "ai-assistants",
-      "sha": "925afb53776cf1a2b738c6bdbed37b4d4000ef13",
+      "sha": "8041f1d17e0e7d2f2cfe35002962e9f26237c0bb",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -4534,10 +4534,10 @@
     },
     "asyncapi/cli": {
       "latest": "v6",
-      "latestFull": "v6.2.1",
+      "latestFull": "v6.2.2",
       "description": "CLI to work with your AsyncAPI files. You can validate them and in the future use a generator and ev",
       "category": "utilities",
-      "sha": "5c382e168801d3762cc0424b794775074a2c6c1d",
+      "sha": "8c60d5eb70bb18beea24fa9fca5c8cd08c4735d2",
       "deprecated": [
         "v1",
         "v2",
@@ -5908,10 +5908,10 @@
     },
     "cpp-linter/cpp-linter-action": {
       "latest": "v2",
-      "latestFull": "v2.23.1",
+      "latestFull": "v2.24.0",
       "description": "Lint C/C++ pull requests with clang-format and clang-tidy, and post the results as annotations, comm",
       "category": "linting",
-      "sha": "8120e05c7fbd25fa09fa93424ec49f55f7b304ab",
+      "sha": "774040af57f011a5fc47911f08ff0c3059d1835a",
       "inputs": [
         "style",
         "extensions",
@@ -5996,10 +5996,10 @@
     },
     "cypress-io/github-action": {
       "latest": "v7",
-      "latestFull": "v7.4.7",
+      "latestFull": "v7.4.8",
       "description": "GitHub Action for running Cypress end-to-end & component tests",
       "category": "testing",
-      "sha": "bc982daf1fc26474fa0cf2c355d6c910616ce411",
+      "sha": "4ce68f262a3888d22cf3175d62010a145ba737ee",
       "deprecated": [
         "v1",
         "v2",
@@ -7220,10 +7220,10 @@
     },
     "graalvm/setup-graalvm": {
       "latest": "v1",
-      "latestFull": "v1.6.7",
+      "latestFull": "v1.6.8",
       "description": "Set up your GitHub Actions workflow with a specific GraalVM distribution.",
       "category": "setup-languages",
-      "sha": "27b360dbb857524eaf0b4c4cef364d38e5b4f173",
+      "sha": "f70bc8032f90a104502824a54bcb94b6f01715bc",
       "inputs": [
         "java-version",
         "java-package",
@@ -9801,10 +9801,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.87.31",
+      "latestFull": "v2.87.32",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "1e29709c0ec63babbe8f266397a465f29a825f91",
+      "sha": "5488ac5a951645ce95062214902ac4b6bc1a1037",
       "inputs": [
         "tool",
         "checksum",
