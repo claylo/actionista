@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-10-27T06:18:23Z",
+    "generated": "2026-10-28T06:14:01Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -164,10 +164,10 @@
     },
     "Apple-Actions/upload-testflight-build": {
       "latest": "v5",
-      "latestFull": "v5.7.0",
+      "latestFull": "v5.8.0",
       "description": "A GitHub Action that Uploads a build to Apple TestFlight",
       "category": "mobile",
-      "sha": "acf1166e95edc302069b74b258a788004fe39a08",
+      "sha": "958b2fe4969e2ab1824f79f07c270b950f06bb3a",
       "deprecated": [
         "v1",
         "v2",
@@ -184,6 +184,8 @@
         "transporter-executable-path",
         "uses-non-exempt-encryption",
         "wait-for-processing",
+        "groups",
+        "groups-file",
         "upload-attempts",
         "upload-timeout-minutes"
       ],
@@ -191,6 +193,8 @@
         "v4→v5": {
           "inputChanges": {
             "added": [
+              "groups",
+              "groups-file",
               "upload-attempts",
               "upload-timeout-minutes"
             ],
@@ -2961,10 +2965,10 @@
     },
     "SonarSource/sonarqube-scan-action": {
       "latest": "v8",
-      "latestFull": "v8.3.0",
+      "latestFull": "v8.4.0",
       "description": "",
       "category": "linting",
-      "sha": "d209202bc7d53ff1cc128f7f907dac145c9d6ae9",
+      "sha": "4d1dc0c91ee400dcf8a6dddf2f705ac36542e304",
       "deprecated": [
         "v1",
         "v2",
@@ -4269,10 +4273,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.263",
+      "latestFull": "v1.0.264",
       "description": "",
       "category": "ai-assistants",
-      "sha": "8041f1d17e0e7d2f2cfe35002962e9f26237c0bb",
+      "sha": "d70510b174a1244958df0b03166a54912811f3e6",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -5107,10 +5111,10 @@
     },
     "bencherdev/bencher": {
       "latest": "v0",
-      "latestFull": "v0.6.13",
+      "latestFull": "v0.6.14",
       "description": "🐰 Bencher - Continuous Benchmarking",
       "category": "testing",
-      "sha": "f80847436d7157936b40525db4c2a1064124f04a",
+      "sha": "58a33f76185c1187f3df355817d2ac7285ac77f0",
       "inputs": [
         "version"
       ]
@@ -7336,10 +7340,10 @@
     },
     "helm/chart-releaser-action": {
       "latest": "v1",
-      "latestFull": "v1.7.0",
+      "latestFull": "v1.8.0",
       "description": "A GitHub Action to turn a GitHub project into a self-hosted Helm chart repo, using helm/chart-releas",
       "category": "kubernetes",
-      "sha": "cae68fefc6b5f367a0275617c9f83181ba54714f",
+      "sha": "df287104677278f869ca5480bd260358397cc3f9",
       "inputs": [
         "version",
         "config",
@@ -7350,6 +7354,7 @@
         "skip_existing",
         "skip_upload",
         "mark_as_latest",
+        "match_tags",
         "packages_with_index",
         "pages_branch",
         "oci_registry_url",
@@ -8235,10 +8240,10 @@
     },
     "ocaml/setup-ocaml": {
       "latest": "v3",
-      "latestFull": "v3.9.0",
+      "latestFull": "v3.9.1",
       "description": "GitHub Action for the OCaml programming language",
       "category": "setup-languages",
-      "sha": "93303b622b2522e4411e295f9e77411a24912ac7",
+      "sha": "ff66428f72b64472e749b22e0ad4dded4b2ddca6",
       "deprecated": [
         "v1"
       ],
@@ -8883,10 +8888,10 @@
     },
     "pypa/cibuildwheel": {
       "latest": "v4",
-      "latestFull": "v4.3.4",
+      "latestFull": "v4.3.5",
       "description": "🎡 Build Python wheels for all the platforms with minimal configuration. ",
       "category": "build-tools",
-      "sha": "b9e566a2b284570af229f6c2a33673410d0389a3",
+      "sha": "f9b966cfadf4109556cadc5bb39ddb72d0ce664e",
       "deprecated": [
         "v1",
         "v2"
@@ -9018,10 +9023,10 @@
     },
     "release-plz/action": {
       "latest": "v0",
-      "latestFull": "v0.5.146",
+      "latestFull": "v0.5.147",
       "description": "GitHub action for https://github.com/release-plz/release-plz",
       "category": "release",
-      "sha": "b2baf303c463c223526d52a8a91b0777f052cf3f",
+      "sha": "f67a7e724bdad4a0f6875f186060a0ca2770d76c",
       "inputs": [
         "command",
         "registry",
@@ -9610,10 +9615,10 @@
     },
     "step-security/harden-runner": {
       "latest": "v2",
-      "latestFull": "v2.22.2",
+      "latestFull": "v2.22.3",
       "description": "Harden-Runner is a CI/CD security agent that works like an EDR for GitHub Actions runners. It monito",
       "category": "security",
-      "sha": "dc2769abcc0fcfbadfc1df54081c1608579ef6b2",
+      "sha": "46b06cea07f9e64621fdf066ba77ac6915163d43",
       "inputs": [
         "allowed-endpoints",
         "denied-endpoints",
