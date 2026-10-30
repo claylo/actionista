@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-10-29T06:14:03Z",
+    "generated": "2026-10-30T06:13:55Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -121,10 +121,10 @@
     },
     "Apple-Actions/download-provisioning-profiles": {
       "latest": "v7",
-      "latestFull": "v7.0.0",
+      "latestFull": "v7.1.0",
       "description": "Github Action for downloading provisioning profiles from Apple AppStore Connect",
       "category": "mobile",
-      "sha": "230860ab5f632551a5f9a5e1d98a774485463888",
+      "sha": "233aa54e59082c0e8a8cf8b0b02c72dea2422ef9",
       "deprecated": [
         "v1",
         "v2",
@@ -142,10 +142,10 @@
     },
     "Apple-Actions/import-codesign-certs": {
       "latest": "v7",
-      "latestFull": "v7.1.0",
+      "latestFull": "v7.2.0",
       "description": "GitHub Action for Importing Code-signing Certificates into a Keychain",
       "category": "mobile",
-      "sha": "77ba2a2a8f5cfc8c405ebf3159f767c323e238f9",
+      "sha": "288b8ec97b82c66b6f2a6baaf7acc8dfbcbe331c",
       "deprecated": [
         "v1",
         "v2",
@@ -164,10 +164,10 @@
     },
     "Apple-Actions/upload-testflight-build": {
       "latest": "v5",
-      "latestFull": "v5.8.0",
+      "latestFull": "v5.9.0",
       "description": "A GitHub Action that Uploads a build to Apple TestFlight",
       "category": "mobile",
-      "sha": "958b2fe4969e2ab1824f79f07c270b950f06bb3a",
+      "sha": "665328adbecbc3ad929d3da710696d928b8a7ba9",
       "deprecated": [
         "v1",
         "v2",
@@ -4273,10 +4273,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.264",
+      "latestFull": "v1.0.265",
       "description": "",
       "category": "ai-assistants",
-      "sha": "d70510b174a1244958df0b03166a54912811f3e6",
+      "sha": "6d5ae526d25ce88daa2200be073e1a373167f064",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -5111,10 +5111,10 @@
     },
     "bencherdev/bencher": {
       "latest": "v0",
-      "latestFull": "v0.6.14",
+      "latestFull": "v0.6.15",
       "description": "🐰 Bencher - Continuous Benchmarking",
       "category": "testing",
-      "sha": "58a33f76185c1187f3df355817d2ac7285ac77f0",
+      "sha": "24c333d7030390d2f3e130569386f4f1f8577113",
       "inputs": [
         "version"
       ]
@@ -7349,6 +7349,7 @@
         "version",
         "config",
         "charts_dir",
+        "charts",
         "install_dir",
         "install_only",
         "skip_packaging",
@@ -9873,10 +9874,10 @@
     },
     "tailscale/github-action": {
       "latest": "v4",
-      "latestFull": "v4.3.0",
+      "latestFull": "v4.4.0",
       "description": "A GitHub Action to connect your workflow to your Tailscale network.",
       "category": "infrastructure",
-      "sha": "99a8333667fff04fdd6cffb46dfd409f8329a7bf",
+      "sha": "064b10558093f38325e838ddea35486bdc6b1d5c",
       "deprecated": [
         "v1",
         "v2"
