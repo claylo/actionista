@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-10-30T06:13:55Z",
+    "generated": "2026-10-31T06:10:37Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4273,10 +4273,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.265",
+      "latestFull": "v1.0.266",
       "description": "",
       "category": "ai-assistants",
-      "sha": "6d5ae526d25ce88daa2200be073e1a373167f064",
+      "sha": "d535f5172dec02b204866b393d6b20b9b2aaf98d",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -5111,10 +5111,10 @@
     },
     "bencherdev/bencher": {
       "latest": "v0",
-      "latestFull": "v0.6.15",
+      "latestFull": "v0.6.16",
       "description": "🐰 Bencher - Continuous Benchmarking",
       "category": "testing",
-      "sha": "24c333d7030390d2f3e130569386f4f1f8577113",
+      "sha": "7de3c69a85380826613050826b4bce062be2f07d",
       "inputs": [
         "version"
       ]
@@ -9203,10 +9203,10 @@
     },
     "ruby/setup-ruby": {
       "latest": "v1",
-      "latestFull": "v1.335.0",
+      "latestFull": "v1.336.0",
       "description": "An action to download a prebuilt Ruby and add it to the PATH in 5 seconds",
       "category": "setup-languages",
-      "sha": "7f797815d8adceb1c412e7abefdd1ab4abc47a5f",
+      "sha": "de492cf36cbab201753d720ce4f4e336cd688c94",
       "inputs": [
         "ruby-version",
         "rubygems",
@@ -9351,10 +9351,10 @@
     },
     "siderolabs/conform": {
       "latest": "v0",
-      "latestFull": "v0.1.0-alpha.31",
+      "latestFull": "v0.1.0-alpha.32",
       "description": "Policy enforcement for your pipelines.",
       "category": "linting",
-      "sha": "cfdb3cce90daece912e6a5cb3f20b2316a78a5bf",
+      "sha": "57c5cc3cabc0c9219d69673cfa8faa49c2db76fb",
       "inputs": [
         "token"
       ]
@@ -9808,10 +9808,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.88.0",
+      "latestFull": "v2.88.1",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "86f7a0ffb25f40114606501a311ebcfaf882ea32",
+      "sha": "68a389c788b2cd04016ce8c80ee23b80d2ab3d68",
       "inputs": [
         "tool",
         "checksum",
