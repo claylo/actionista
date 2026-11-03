@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-11-02T06:16:04Z",
+    "generated": "2026-11-03T06:12:25Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -3005,7 +3005,9 @@
       "inputs": [
         "version",
         "config",
-        "attestation-token"
+        "attestation-token",
+        "mode",
+        "plan"
       ]
     },
     "SpicyPizza/create-envfile": {
@@ -3181,10 +3183,10 @@
     },
     "actions-rust-lang/setup-rust-toolchain": {
       "latest": "v2",
-      "latestFull": "v2.0.0",
+      "latestFull": "v2.0.1",
       "description": "Setup a specific Rust toolchain with extra features like problem matchers",
       "category": "setup-languages",
-      "sha": "ecabd13d1c56bd1345c230e542e9144811ad706f",
+      "sha": "a188e68d0fd2bd36ad51dccb2b07ba6e75105f30",
       "inputs": [
         "toolchain",
         "target",
@@ -3628,10 +3630,10 @@
     },
     "actions/setup-dotnet": {
       "latest": "v6",
-      "latestFull": "v6.0.0",
+      "latestFull": "v6.1.0",
       "description": "Set up your GitHub Actions workflow with a specific version of the .NET core sdk",
       "category": "setup-languages",
-      "sha": "a98b56852c35b8e3190ac28c8c2271da59106c68",
+      "sha": "0f4a354dd5547a28c70b7853dbd95d5b67886e73",
       "deprecated": [
         "v1",
         "v2",
@@ -3652,7 +3654,18 @@
         "workloads",
         "architecture",
         "check-latest"
-      ]
+      ],
+      "migrations": {
+        "v5→v6": {
+          "inputChanges": {
+            "added": [
+              "skip-lts-prepass",
+              "check-latest"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "actions/setup-go": {
       "latest": "v7",
@@ -4273,10 +4286,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.266",
+      "latestFull": "v1.0.267",
       "description": "",
       "category": "ai-assistants",
-      "sha": "d535f5172dec02b204866b393d6b20b9b2aaf98d",
+      "sha": "4845bacbb38b3c4b15d948f035349786f678e068",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -4538,10 +4551,10 @@
     },
     "asyncapi/cli": {
       "latest": "v6",
-      "latestFull": "v6.2.2",
+      "latestFull": "v6.2.3",
       "description": "CLI to work with your AsyncAPI files. You can validate them and in the future use a generator and ev",
       "category": "utilities",
-      "sha": "8c60d5eb70bb18beea24fa9fca5c8cd08c4735d2",
+      "sha": "4348318b060daa19fb75e1e278b84d2dba9d743a",
       "deprecated": [
         "v1",
         "v2",
@@ -5843,6 +5856,7 @@
         "disableDefaultRepos",
         "mirrors",
         "extraJvmArgs",
+        "requireChecksum",
         "useContainerImage",
         "launcher",
         "preferredLauncher"
@@ -8820,10 +8834,10 @@
     },
     "psalm/psalm-github-actions": {
       "latest": "v2",
-      "latestFull": "2.3.2",
+      "latestFull": "2.5.0",
       "description": "",
       "category": "linting",
-      "sha": "0358ab8948a68b11b5a08eea4ca9b38c3adc59dd",
+      "sha": "07d1dd5fe8fe2094b40e960f810593358add96c6",
       "inputs": [
         "security_analysis",
         "show_info",
@@ -9028,10 +9042,10 @@
     },
     "release-plz/action": {
       "latest": "v0",
-      "latestFull": "v0.5.147",
+      "latestFull": "v0.5.148",
       "description": "GitHub action for https://github.com/release-plz/release-plz",
       "category": "release",
-      "sha": "f67a7e724bdad4a0f6875f186060a0ca2770d76c",
+      "sha": "66b324fd6c72d05d2a08568492ecdd62bfb8a62b",
       "inputs": [
         "command",
         "registry",
@@ -9794,10 +9808,10 @@
     },
     "taiki-e/create-gh-release-action": {
       "latest": "v1",
-      "latestFull": "v1.11.0",
+      "latestFull": "v1.12.0",
       "description": "GitHub Action for creating GitHub Releases based on changelog.",
       "category": "release",
-      "sha": "eba8ea96c86cca8a37f1b56e94b4d13301fba651",
+      "sha": "045e5c0ed9c50cc1f96de7e891a09ad3daea245f",
       "inputs": [
         "changelog",
         "allow-missing-changelog",
@@ -9811,10 +9825,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.89.0",
+      "latestFull": "v2.89.1",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "1919c4a95903d2c33e4a221102edca87309fc14b",
+      "sha": "682ce6c3c696a4cd5168a05f98e51aa02b877941",
       "inputs": [
         "tool",
         "checksum",
@@ -10174,10 +10188,10 @@
     },
     "trufflesecurity/trufflehog": {
       "latest": "v3",
-      "latestFull": "v3.99.7",
+      "latestFull": "v3.99.8",
       "description": "Find, verify, and analyze leaked credentials",
       "category": "security",
-      "sha": "31ce31ee1abbcc7dc8eee5764c17121c3044c8b2",
+      "sha": "ea68ca03c865c5f324e86e849ced20ed3cf9dbbb",
       "deprecated": [
         "v1"
       ],
