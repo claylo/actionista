@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-11-03T06:12:25Z",
+    "generated": "2026-11-04T06:11:46Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -2965,10 +2965,10 @@
     },
     "SonarSource/sonarqube-scan-action": {
       "latest": "v8",
-      "latestFull": "v8.4.0",
+      "latestFull": "v8.4.1",
       "description": "",
       "category": "linting",
-      "sha": "4d1dc0c91ee400dcf8a6dddf2f705ac36542e304",
+      "sha": "e805d875275f728fac1885b413934be6d7c63f65",
       "deprecated": [
         "v1",
         "v2",
@@ -2998,10 +2998,10 @@
     },
     "Songmu/tagpr": {
       "latest": "v1",
-      "latestFull": "v1.21.4",
+      "latestFull": "v1.22.0",
       "description": "automatically creates and updates a pull request for unreleased items, tag them when they are merged",
       "category": "release",
-      "sha": "e1250d6c84e4425db82b5e90549d62dfe23e9ebe",
+      "sha": "047aec4b6c0ce166f52958b5a97f5a3d927fd65b",
       "inputs": [
         "version",
         "config",
@@ -4286,10 +4286,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.267",
+      "latestFull": "v1.0.268",
       "description": "",
       "category": "ai-assistants",
-      "sha": "4845bacbb38b3c4b15d948f035349786f678e068",
+      "sha": "c0949c50a78c1ec8ce2647db36629b870e715d0c",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -5840,10 +5840,10 @@
     },
     "coursier/setup-action": {
       "latest": "v3",
-      "latestFull": "v3.0.4",
+      "latestFull": "v3.1.0",
       "description": "▶️ GitHub Action using Coursier to install JVM and Scala tools",
       "category": "setup-languages",
-      "sha": "648df969f41ef15fda2baba8b37f9fa3d16390a3",
+      "sha": "d5a17f9aaeb260f9ba336a5b582fb49f79c64ac4",
       "deprecated": [
         "v1"
       ],
@@ -5866,6 +5866,7 @@
           "inputChanges": {
             "added": [
               "mirrors",
+              "requireChecksum",
               "launcher",
               "preferredLauncher"
             ],
@@ -6073,10 +6074,10 @@
     },
     "davelosert/vitest-coverage-report-action": {
       "latest": "v2",
-      "latestFull": "v2.13.1",
+      "latestFull": "v2.13.2",
       "description": "A GitHub Action to report vitest test coverage results",
       "category": "testing",
-      "sha": "8f86cfb56ed6d5613ea8cdc5259f207fbfd51ece",
+      "sha": "74c2d9210b4fc44c84d8213f61d7ec99837b7aa0",
       "inputs": [
         "github-token",
         "vite-config-path",
@@ -6850,10 +6851,10 @@
     },
     "github/codeql-action/analyze": {
       "latest": "v4",
-      "latestFull": "v4.39.1",
+      "latestFull": "v4.39.2",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "9b3254085494b55a0f7c4c2b3d2d52cc712ce370",
+      "sha": "1fc58d04a4d4374f921bdac573c3811c240f9c26",
       "deprecated": [
         "v1",
         "v2"
@@ -6861,10 +6862,10 @@
     },
     "github/codeql-action/autobuild": {
       "latest": "v4",
-      "latestFull": "v4.39.1",
+      "latestFull": "v4.39.2",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "9b3254085494b55a0f7c4c2b3d2d52cc712ce370",
+      "sha": "1fc58d04a4d4374f921bdac573c3811c240f9c26",
       "deprecated": [
         "v1",
         "v2"
@@ -6872,10 +6873,10 @@
     },
     "github/codeql-action/init": {
       "latest": "v4",
-      "latestFull": "v4.39.1",
+      "latestFull": "v4.39.2",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "9b3254085494b55a0f7c4c2b3d2d52cc712ce370",
+      "sha": "1fc58d04a4d4374f921bdac573c3811c240f9c26",
       "deprecated": [
         "v1",
         "v2"
@@ -7366,6 +7367,7 @@
         "config",
         "charts_dir",
         "charts",
+        "ignore_paths",
         "install_dir",
         "install_only",
         "skip_packaging",
@@ -7935,10 +7937,10 @@
     },
     "mikepenz/action-junit-report": {
       "latest": "v6",
-      "latestFull": "v6.6.2",
+      "latestFull": "v6.7.0",
       "description": "Reports junit test results as GitHub Pull Request Check",
       "category": "testing",
-      "sha": "8a133bfa3ecb0ea9024c1e2ae788b4c25f6cdb9d",
+      "sha": "4a26df3e2ae132254ba12a53f65a388d0961e786",
       "deprecated": [
         "v1",
         "v2",
@@ -7980,6 +7982,7 @@
         "include_time_in_summary",
         "simplified_summary",
         "group_suite",
+        "module_reports",
         "comment",
         "updateComment",
         "annotate_notice",
@@ -7999,7 +8002,8 @@
               "include_skipped",
               "job_summary_text",
               "failed_summary",
-              "failed_summary_logs"
+              "failed_summary_logs",
+              "module_reports"
             ],
             "removed": []
           }
@@ -8754,10 +8758,10 @@
     },
     "pnpm/action-setup": {
       "latest": "v6",
-      "latestFull": "v6.1.0",
+      "latestFull": "v6.1.1",
       "description": "Install pnpm package manager",
       "category": "package-managers",
-      "sha": "ea17c68df8912ef543352723c149a84f56e3d413",
+      "sha": "73e46992e05b19abd31f2f3c20e0e7370d762115",
       "deprecated": [
         "v1",
         "v2",
@@ -8853,10 +8857,10 @@
     },
     "pulumi/actions": {
       "latest": "v7",
-      "latestFull": "v7.0.0",
+      "latestFull": "v7.1.0",
       "description": "Deploy continuously to your cloud of choice, using your favorite language, Pulumi, and GitHub!",
       "category": "infrastructure",
-      "sha": "8e5e406f4007fca908480587cb9893c07090f58d",
+      "sha": "96c7761824268174e0d2a4e8c7d75671eebd24a7",
       "deprecated": [
         "v1",
         "v2",
@@ -8903,7 +8907,17 @@
         "log-flow",
         "debug",
         "run-program"
-      ]
+      ],
+      "migrations": {
+        "v6→v7": {
+          "inputChanges": {
+            "added": [
+              "run-program"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "pypa/cibuildwheel": {
       "latest": "v4",
@@ -9825,10 +9839,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.89.1",
+      "latestFull": "v2.90.0",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "682ce6c3c696a4cd5168a05f98e51aa02b877941",
+      "sha": "b80e2bb2635f28eb98b9fce1e2f0887e1535c6b2",
       "inputs": [
         "tool",
         "checksum",
