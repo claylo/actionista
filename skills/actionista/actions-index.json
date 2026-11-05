@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-11-04T06:11:46Z",
+    "generated": "2026-11-05T06:11:57Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -3693,10 +3693,10 @@
     },
     "actions/setup-java": {
       "latest": "v6",
-      "latestFull": "v6.1.0",
+      "latestFull": "v6.2.0",
       "description": "Set up your GitHub Actions workflow with a specific version of Java",
       "category": "setup-languages",
-      "sha": "b843ebf9b913146b38da2eaa7aeddf76074ae1ad",
+      "sha": "77dd5b2ce225ea11469928ac317850245a74ae78",
       "deprecated": [
         "v1",
         "v2",
@@ -3725,6 +3725,7 @@
         "mvn-server-repository-origins",
         "mvn-repositories",
         "mvn-plugin-repositories",
+        "mvn-mirrors",
         "mvn-repositories-include-central",
         "mvn-repositories-prioritize-central",
         "settings-path",
@@ -3755,6 +3756,7 @@
               "mvn-server-repository-origins",
               "mvn-repositories",
               "mvn-plugin-repositories",
+              "mvn-mirrors",
               "mvn-repositories-include-central",
               "mvn-repositories-prioritize-central",
               "gpg-passphrase-env-var",
@@ -6747,6 +6749,7 @@
         "file_experimental_issues",
         "reduced_motion",
         "color_scheme",
+        "ignore_https_errors",
         "scans",
         "dry_run"
       ],
@@ -6851,10 +6854,10 @@
     },
     "github/codeql-action/analyze": {
       "latest": "v4",
-      "latestFull": "v4.39.2",
+      "latestFull": "v4.39.3",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "1fc58d04a4d4374f921bdac573c3811c240f9c26",
+      "sha": "33d7b85da1a04171e211befe2c739303b9a4c066",
       "deprecated": [
         "v1",
         "v2"
@@ -6862,10 +6865,10 @@
     },
     "github/codeql-action/autobuild": {
       "latest": "v4",
-      "latestFull": "v4.39.2",
+      "latestFull": "v4.39.3",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "1fc58d04a4d4374f921bdac573c3811c240f9c26",
+      "sha": "33d7b85da1a04171e211befe2c739303b9a4c066",
       "deprecated": [
         "v1",
         "v2"
@@ -6873,10 +6876,10 @@
     },
     "github/codeql-action/init": {
       "latest": "v4",
-      "latestFull": "v4.39.2",
+      "latestFull": "v4.39.3",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "1fc58d04a4d4374f921bdac573c3811c240f9c26",
+      "sha": "33d7b85da1a04171e211befe2c739303b9a4c066",
       "deprecated": [
         "v1",
         "v2"
@@ -7385,10 +7388,10 @@
     },
     "helm/kind-action": {
       "latest": "v1",
-      "latestFull": "v1.15.1",
+      "latestFull": "v1.15.2",
       "description": "A GitHub Action for Kubernetes IN Docker - local clusters for testing Kubernetes",
       "category": "kubernetes",
-      "sha": "1544676c07bb3570fcb70166beaa07c4528fd4aa",
+      "sha": "ea822c7bf1874f08e5a491df991c228edffc3376",
       "inputs": [
         "version",
         "version_file",
@@ -9328,10 +9331,10 @@
     },
     "sbt/setup-sbt": {
       "latest": "v1",
-      "latestFull": "v1.5.13",
+      "latestFull": "v1.5.14",
       "description": "setup-sbt installs the official sbt runner",
       "category": "setup-languages",
-      "sha": "b113b960ba361e87e08ce02a390d51871b7ee459",
+      "sha": "67d461eba2c4753196c230e02da850757ba4775e",
       "inputs": [
         "sbt-runner-version",
         "disk-cache"
@@ -9547,10 +9550,10 @@
     },
     "softprops/turnstyle": {
       "latest": "v3",
-      "latestFull": "v3.3.3",
+      "latestFull": "v3.3.4",
       "description": "🎟️A GitHub Action for serializing workflow runs",
       "category": "utilities",
-      "sha": "3805450be63b8c80577dc253e8c17e9132036df4",
+      "sha": "205d0f5001f3666ce880d22e0d885f2dac989327",
       "deprecated": [
         "v1"
       ],
@@ -9839,10 +9842,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.90.0",
+      "latestFull": "v2.90.1",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "b80e2bb2635f28eb98b9fce1e2f0887e1535c6b2",
+      "sha": "c509219cf42fba86913069efd0ade2458c59337b",
       "inputs": [
         "tool",
         "checksum",
@@ -10308,10 +10311,10 @@
     },
     "w9jds/firebase-action": {
       "latest": "v15",
-      "latestFull": "v15.34.2",
+      "latestFull": "v15.35.0",
       "description": "GitHub Action for interacting with Firebase",
       "category": "cloud-gcp",
-      "sha": "18be666dd40e1769c63de2dac0e6053e0e8c7349",
+      "sha": "613446dcc285a5102059fe40cdf29a09767a6ff9",
       "deprecated": [
         "v1",
         "v2",
