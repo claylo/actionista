@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-11-06T06:12:45Z",
+    "generated": "2026-11-07T06:10:32Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -342,10 +342,10 @@
     },
     "EnricoMi/publish-unit-test-result-action": {
       "latest": "v2",
-      "latestFull": "v2.25.0",
+      "latestFull": "v2.26.0",
       "description": "GitHub Action to publish unit test results on GitHub",
       "category": "testing",
-      "sha": "7622c5bf3d112a72ab4fa3951c2aa5723d8ab92d",
+      "sha": "da5b7be67623cd59bbbd1a0ce4f022050a55605f",
       "inputs": [
         "github_token",
         "github_token_actor",
@@ -3222,10 +3222,10 @@
     },
     "actions/add-to-project": {
       "latest": "v2",
-      "latestFull": "v2.0.0",
+      "latestFull": "v2.0.1",
       "description": "Automate adding issues and pull requests to GitHub projects",
       "category": "core",
-      "sha": "5afcf98fcd03f1c2f92c3c83f58ae24323cc57fd",
+      "sha": "f2c1f1fa649a891be84948ea89b5dfba1526ef05",
       "inputs": [
         "project-url",
         "github-token",
@@ -4288,10 +4288,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.268",
+      "latestFull": "v1.0.269",
       "description": "",
       "category": "ai-assistants",
-      "sha": "c0949c50a78c1ec8ce2647db36629b870e715d0c",
+      "sha": "61a9c274fa7110a66dfafc1bbbced03833eb25fe",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -4553,10 +4553,10 @@
     },
     "asyncapi/cli": {
       "latest": "v6",
-      "latestFull": "v6.2.3",
+      "latestFull": "v6.3.0",
       "description": "CLI to work with your AsyncAPI files. You can validate them and in the future use a generator and ev",
       "category": "utilities",
-      "sha": "4348318b060daa19fb75e1e278b84d2dba9d743a",
+      "sha": "95c9a31e20b7262bc6a6931ba65928af6d12217e",
       "deprecated": [
         "v1",
         "v2",
@@ -6623,10 +6623,10 @@
     },
     "expo/expo-github-action": {
       "latest": "v9",
-      "latestFull": "9.0.1",
+      "latestFull": "9.0.2",
       "description": "Expo GitHub Action makes it easy to automate EAS builds or updates",
       "category": "mobile",
-      "sha": "9da89d3617bb88139671bad31b09c65714c2ee06",
+      "sha": "5273c2136bd09c2a341fe3340d3e767ce5a13015",
       "deprecated": [
         "v1",
         "v2",
@@ -7372,6 +7372,7 @@
         "charts_dir",
         "charts",
         "ignore_paths",
+        "package_path",
         "install_dir",
         "install_only",
         "skip_packaging",
@@ -7941,10 +7942,10 @@
     },
     "mikepenz/action-junit-report": {
       "latest": "v6",
-      "latestFull": "v6.7.0",
+      "latestFull": "v6.7.1",
       "description": "Reports junit test results as GitHub Pull Request Check",
       "category": "testing",
-      "sha": "4a26df3e2ae132254ba12a53f65a388d0961e786",
+      "sha": "a16be3a69023e9bd7e748ede768b3282ea7b30ce",
       "deprecated": [
         "v1",
         "v2",
@@ -9238,10 +9239,10 @@
     },
     "ruby/setup-ruby": {
       "latest": "v1",
-      "latestFull": "v1.336.0",
+      "latestFull": "v1.338.0",
       "description": "An action to download a prebuilt Ruby and add it to the PATH in 5 seconds",
       "category": "setup-languages",
-      "sha": "de492cf36cbab201753d720ce4f4e336cd688c94",
+      "sha": "b3aaceaef7e0ee231b499e7b5f49c03fc1d32199",
       "inputs": [
         "ruby-version",
         "rubygems",
@@ -9652,10 +9653,10 @@
     },
     "step-security/harden-runner": {
       "latest": "v2",
-      "latestFull": "v2.22.3",
+      "latestFull": "v2.22.4",
       "description": "Harden-Runner is a CI/CD security agent that works like an EDR for GitHub Actions runners. It monito",
       "category": "security",
-      "sha": "46b06cea07f9e64621fdf066ba77ac6915163d43",
+      "sha": "1d88384fd173af6ecb012dfd0264a306b711241a",
       "inputs": [
         "allowed-endpoints",
         "denied-endpoints",
@@ -9843,10 +9844,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.90.1",
+      "latestFull": "v2.90.2",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "c509219cf42fba86913069efd0ade2458c59337b",
+      "sha": "3a3daafd3b7f23b8f65d9f5ba2db203fb59b79e2",
       "inputs": [
         "tool",
         "checksum",
