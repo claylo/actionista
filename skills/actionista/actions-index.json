@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-11-07T06:10:32Z",
+    "generated": "2026-11-08T06:10:52Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -9081,10 +9081,10 @@
     },
     "reviewdog/action-brakeman": {
       "latest": "v2",
-      "latestFull": "v2.20.0",
+      "latestFull": "v2.21.0",
       "description": "Run brakeman with reviewdog 🐶",
       "category": "linting",
-      "sha": "3ca1f826ac652d188845fe8faa3a1423afb904b6",
+      "sha": "0fee43fec04facd0f7fb907e2e70ce622a3b7ddb",
       "inputs": [
         "github_token",
         "brakeman_version",
@@ -9116,10 +9116,10 @@
     },
     "reviewdog/action-eslint": {
       "latest": "v1",
-      "latestFull": "v1.36.1",
+      "latestFull": "v1.37.0",
       "description": "Run eslint with reviewdog",
       "category": "linting",
-      "sha": "3ee2a450da17e060b9dfa4bffd53976906c6b2b0",
+      "sha": "6dad10dc50476699ad1ddbbb19bf55d36f311a39",
       "inputs": [
         "github_token",
         "level",
@@ -9176,10 +9176,10 @@
     },
     "reviewdog/action-rubocop": {
       "latest": "v2",
-      "latestFull": "v2.22.0",
+      "latestFull": "v2.23.0",
       "description": "Run rubocop with reviewdog 🐶",
       "category": "linting",
-      "sha": "b6d5e953a5fc0bf3ab65254e77730ea2174d6d6d",
+      "sha": "3ed4a947f3051b184d27eac7ac903d3fe68563ed",
       "inputs": [
         "fail_level",
         "fail_on_error",
@@ -9211,10 +9211,10 @@
     },
     "reviewdog/action-shellcheck": {
       "latest": "v1",
-      "latestFull": "v1.34.1",
+      "latestFull": "v1.35.0",
       "description": "Run shellcheck with reviewdog",
       "category": "linting",
-      "sha": "d0b8d5fd7fad6afdb6e1b6ce1778892be4d1f427",
+      "sha": "b4ffc0b2a69f857f82b74d1310cd3e62e932f9f7",
       "inputs": [
         "github_token",
         "level",
