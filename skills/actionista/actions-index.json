@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-11-08T06:10:52Z",
+    "generated": "2026-11-09T06:15:49Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4410,10 +4410,10 @@
     },
     "appleboy/telegram-action": {
       "latest": "v1",
-      "latestFull": "v1.1.1",
+      "latestFull": "v1.1.2",
       "description": "GitHub Action that sends a Telegram message.",
       "category": "notifications",
-      "sha": "214f06cfa3d3a588c1472116889437e7c6fd29b1",
+      "sha": "68ac04bda0e0f4755e24649161566b4b6732cc83",
       "inputs": [
         "to",
         "token",
@@ -7928,10 +7928,10 @@
     },
     "mikefarah/yq": {
       "latest": "v4",
-      "latestFull": "v4.54.2",
+      "latestFull": "v4.54.3",
       "description": "yq is a portable command-line YAML, JSON, XML, CSV, TOML, HCL  and properties processor",
       "category": "utilities",
-      "sha": "a4330671f17776618660a419ab2531e4f4dc48b6",
+      "sha": "f2944b823f84906a127dbd29e4c2a3e60c4e550e",
       "deprecated": [
         "v1",
         "v2"
@@ -9844,10 +9844,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.90.2",
+      "latestFull": "v2.90.3",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "3a3daafd3b7f23b8f65d9f5ba2db203fb59b79e2",
+      "sha": "cfdb7ed4ccc7c7dce37759eae89dc5674b469b39",
       "inputs": [
         "tool",
         "checksum",
