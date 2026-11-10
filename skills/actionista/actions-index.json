@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-11-09T06:15:49Z",
+    "generated": "2026-11-10T06:11:38Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4288,10 +4288,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.269",
+      "latestFull": "v1.0.271",
       "description": "",
       "category": "ai-assistants",
-      "sha": "61a9c274fa7110a66dfafc1bbbced03833eb25fe",
+      "sha": "4fa93a88de49bbef68b10eb15aabedf28ca0e1ed",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -8552,10 +8552,10 @@
     },
     "peter-evans/create-pull-request": {
       "latest": "v8",
-      "latestFull": "v8.1.1",
+      "latestFull": "v8.1.2",
       "description": "A GitHub action to create a pull request for changes to your repository in the actions workspace",
       "category": "git-operations",
-      "sha": "5f6978faf089d4d20b00c7766989d076bb2fc7f1",
+      "sha": "15733dbdfeedb4f7fdb73d13c6f5ac83b710fab8",
       "deprecated": [
         "v1",
         "v2",
@@ -9387,10 +9387,10 @@
     },
     "siderolabs/conform": {
       "latest": "v0",
-      "latestFull": "v0.1.0-alpha.32",
+      "latestFull": "v0.1.0-alpha.33",
       "description": "Policy enforcement for your pipelines.",
       "category": "linting",
-      "sha": "57c5cc3cabc0c9219d69673cfa8faa49c2db76fb",
+      "sha": "18598907d4315be915a0c446fdd8aa9b47ba2c22",
       "inputs": [
         "token"
       ]
