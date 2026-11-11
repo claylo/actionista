@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-11-10T06:11:38Z",
+    "generated": "2026-11-11T06:12:00Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -8336,10 +8336,10 @@
     },
     "overtrue/phplint": {
       "latest": "v9",
-      "latestFull": "9.8.0",
+      "latestFull": "9.8.1",
       "description": ":bug:  A tool that can speed up linting of php files by running several lint processes at once.",
       "category": "linting",
-      "sha": "722f95a6c8924b9e0cfcbdd1e49bb8c31c858a77",
+      "sha": "bb918dfb1342421b8b14f543b743be3f4e18028f",
       "deprecated": [
         "v1",
         "v2",
@@ -8552,10 +8552,10 @@
     },
     "peter-evans/create-pull-request": {
       "latest": "v8",
-      "latestFull": "v8.1.2",
+      "latestFull": "v8.1.3",
       "description": "A GitHub action to create a pull request for changes to your repository in the actions workspace",
       "category": "git-operations",
-      "sha": "15733dbdfeedb4f7fdb73d13c6f5ac83b710fab8",
+      "sha": "3ffccacd46053766916f087ce41d627c0b8cf2d1",
       "deprecated": [
         "v1",
         "v2",
