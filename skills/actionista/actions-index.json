@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-11-11T06:12:00Z",
+    "generated": "2026-11-12T06:12:23Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -5392,10 +5392,10 @@
     },
     "cargo-bins/cargo-binstall": {
       "latest": "v1",
-      "latestFull": "v1.26.2",
+      "latestFull": "v1.27.0",
       "description": "Binary installation for rust projects",
       "category": "build-tools",
-      "sha": "851112458b5f28a29e5bc14a690c3f283d9dcc6f",
+      "sha": "5885714d0a40a14b2535c6ffc051fd8e49aa9665",
       "inputs": [
         "version"
       ]
@@ -5930,10 +5930,10 @@
     },
     "cpp-linter/cpp-linter-action": {
       "latest": "v2",
-      "latestFull": "v2.24.0",
+      "latestFull": "v2.24.1",
       "description": "Lint C/C++ pull requests with clang-format and clang-tidy, and post the results as annotations, comm",
       "category": "linting",
-      "sha": "774040af57f011a5fc47911f08ff0c3059d1835a",
+      "sha": "71cf8e84d4876ee304e3330f314df15b9da49c67",
       "inputs": [
         "style",
         "extensions",
@@ -7416,10 +7416,10 @@
     },
     "hendrikmuhs/ccache-action": {
       "latest": "v1",
-      "latestFull": "v1.2.24",
+      "latestFull": "v1.2.25",
       "description": "github action to speedup building using ccache",
       "category": "build-tools",
-      "sha": "f09c25b45002a07be2955cbe52e8cee55643f89d",
+      "sha": "dbeefd73e8e2ffc1bbc412570072735eb4db3607",
       "inputs": [
         "key",
         "restore-keys",
@@ -10313,10 +10313,10 @@
     },
     "w9jds/firebase-action": {
       "latest": "v15",
-      "latestFull": "v15.35.0",
+      "latestFull": "v15.36.0",
       "description": "GitHub Action for interacting with Firebase",
       "category": "cloud-gcp",
-      "sha": "613446dcc285a5102059fe40cdf29a09767a6ff9",
+      "sha": "4cdc4914d02e1044478456e9d0f87118e13541d9",
       "deprecated": [
         "v1",
         "v2",
