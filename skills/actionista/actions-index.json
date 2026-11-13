@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-11-12T06:12:23Z",
+    "generated": "2026-11-13T06:11:49Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -4288,10 +4288,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.271",
+      "latestFull": "v1.0.275",
       "description": "",
       "category": "ai-assistants",
-      "sha": "4fa93a88de49bbef68b10eb15aabedf28ca0e1ed",
+      "sha": "4d75e5f390ee76b2e09c1980ecc99ff3a2e088c8",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -4301,6 +4301,7 @@
         "branch_name_template",
         "allowed_bots",
         "allowed_non_write_users",
+        "restrict_untrusted_prs",
         "include_comments_by_actor",
         "exclude_comments_by_actor",
         "prompt",
@@ -7246,10 +7247,10 @@
     },
     "graalvm/setup-graalvm": {
       "latest": "v1",
-      "latestFull": "v1.6.8",
+      "latestFull": "v1.6.9",
       "description": "Set up your GitHub Actions workflow with a specific GraalVM distribution.",
       "category": "setup-languages",
-      "sha": "f70bc8032f90a104502824a54bcb94b6f01715bc",
+      "sha": "d6eca2595046623d69d636041513c80abf745406",
       "inputs": [
         "java-version",
         "java-package",
@@ -9211,10 +9212,10 @@
     },
     "reviewdog/action-shellcheck": {
       "latest": "v1",
-      "latestFull": "v1.35.0",
+      "latestFull": "v1.35.1",
       "description": "Run shellcheck with reviewdog",
       "category": "linting",
-      "sha": "b4ffc0b2a69f857f82b74d1310cd3e62e932f9f7",
+      "sha": "950c9d71535c8c49e5c029c33a438ade63b9009c",
       "inputs": [
         "github_token",
         "level",
@@ -10207,10 +10208,10 @@
     },
     "trufflesecurity/trufflehog": {
       "latest": "v3",
-      "latestFull": "v3.99.8",
+      "latestFull": "v3.99.9",
       "description": "Find, verify, and analyze leaked credentials",
       "category": "security",
-      "sha": "ea68ca03c865c5f324e86e849ced20ed3cf9dbbb",
+      "sha": "3bd2b5887eb0efb8fa18bfd1d296032924e4ffdc",
       "deprecated": [
         "v1"
       ],
