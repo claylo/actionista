@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-11-13T06:11:49Z",
+    "generated": "2026-11-14T06:10:43Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -2965,10 +2965,10 @@
     },
     "SonarSource/sonarqube-scan-action": {
       "latest": "v8",
-      "latestFull": "v8.4.1",
+      "latestFull": "v8.5.0",
       "description": "",
       "category": "linting",
-      "sha": "e805d875275f728fac1885b413934be6d7c63f65",
+      "sha": "59202af334b4ba7b5db01b701b8e79f8b3bef0f4",
       "deprecated": [
         "v1",
         "v2",
@@ -3693,10 +3693,10 @@
     },
     "actions/setup-java": {
       "latest": "v6",
-      "latestFull": "v6.2.0",
+      "latestFull": "v6.3.0",
       "description": "Set up your GitHub Actions workflow with a specific version of Java",
       "category": "setup-languages",
-      "sha": "77dd5b2ce225ea11469928ac317850245a74ae78",
+      "sha": "d1374f8ac74474200d16ef8ecee22c7ae7a51880",
       "deprecated": [
         "v1",
         "v2",
@@ -4288,10 +4288,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.275",
+      "latestFull": "v1.0.276",
       "description": "",
       "category": "ai-assistants",
-      "sha": "4d75e5f390ee76b2e09c1980ecc99ff3a2e088c8",
+      "sha": "f3b070c88125d33dbae5653df5f143101d4ea9dc",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -5127,10 +5127,10 @@
     },
     "bencherdev/bencher": {
       "latest": "v0",
-      "latestFull": "v0.6.16",
+      "latestFull": "v0.6.17",
       "description": "🐰 Bencher - Continuous Benchmarking",
       "category": "testing",
-      "sha": "7de3c69a85380826613050826b4bce062be2f07d",
+      "sha": "b2484bc6734c8e6da4fad141bd13527a11da3988",
       "inputs": [
         "version"
       ]
@@ -6019,10 +6019,10 @@
     },
     "cypress-io/github-action": {
       "latest": "v7",
-      "latestFull": "v7.4.9",
+      "latestFull": "v7.4.10",
       "description": "GitHub Action for running Cypress end-to-end & component tests",
       "category": "testing",
-      "sha": "18016a55674bd02cabf197de5762a1710cb5577c",
+      "sha": "0ed14f5d30c4ad6e5e8ffb6f57dbb69150137a3f",
       "deprecated": [
         "v1",
         "v2",
@@ -7692,10 +7692,10 @@
     },
     "lukka/get-cmake": {
       "latest": "v4",
-      "latestFull": "v4.4.5",
+      "latestFull": "v4.5.0",
       "description": "Install and Cache latest CMake and Ninja for your workflows on your GitHub",
       "category": "build-tools",
-      "sha": "f86dd60acae0d132056913e248bdabf0e0580b7a",
+      "sha": "16e8153a8b4918849d92aad131befe67a3705daa",
       "deprecated": [
         "v1",
         "v2"
