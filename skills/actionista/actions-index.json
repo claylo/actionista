@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-11-14T06:10:43Z",
+    "generated": "2026-11-15T06:10:57Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -5189,10 +5189,10 @@
     },
     "bnjbvr/cargo-machete": {
       "latest": "v0",
-      "latestFull": "v0.9.2",
+      "latestFull": "v0.10.0",
       "description": "Remove unused Rust dependencies with this one weird trick!",
       "category": "build-tools",
-      "sha": "ac30a525c0a8d163a92d727b3ff079ee3f6ecb08",
+      "sha": "a84eadc0a20e522e37a502609e97a7ce30c998ed",
       "inputs": [
         "args"
       ]
@@ -9013,10 +9013,10 @@
     },
     "release-drafter/release-drafter": {
       "latest": "v7",
-      "latestFull": "v7.10.0",
+      "latestFull": "v7.11.0",
       "description": "Drafts your next release notes as pull requests are merged into master. ",
       "category": "release",
-      "sha": "978bb0b30c5ee8cdd332ced253758157150d43f0",
+      "sha": "d1a19e60e81a7e650d00a7de9277f87e439117ea",
       "deprecated": [
         "v1",
         "v2",
@@ -9845,10 +9845,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.90.3",
+      "latestFull": "v2.90.4",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "cfdb7ed4ccc7c7dce37759eae89dc5674b469b39",
+      "sha": "4a76afe23f9e08d2d9550fb56e556444e8611d21",
       "inputs": [
         "tool",
         "checksum",
