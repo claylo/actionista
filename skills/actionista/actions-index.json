@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-11-15T06:10:57Z",
+    "generated": "2026-11-16T06:17:33Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -5189,10 +5189,10 @@
     },
     "bnjbvr/cargo-machete": {
       "latest": "v0",
-      "latestFull": "v0.10.0",
+      "latestFull": "v0.10.1",
       "description": "Remove unused Rust dependencies with this one weird trick!",
       "category": "build-tools",
-      "sha": "a84eadc0a20e522e37a502609e97a7ce30c998ed",
+      "sha": "431e75731b681a69a4cfdeb1315b505778bb5c70",
       "inputs": [
         "args"
       ]
@@ -8337,10 +8337,10 @@
     },
     "overtrue/phplint": {
       "latest": "v9",
-      "latestFull": "9.8.1",
+      "latestFull": "9.8.2",
       "description": ":bug:  A tool that can speed up linting of php files by running several lint processes at once.",
       "category": "linting",
-      "sha": "bb918dfb1342421b8b14f543b743be3f4e18028f",
+      "sha": "b8f8ad7306170c61142dc72487c58b7e667a0132",
       "deprecated": [
         "v1",
         "v2",
@@ -9845,10 +9845,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.90.4",
+      "latestFull": "v2.90.5",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "4a76afe23f9e08d2d9550fb56e556444e8611d21",
+      "sha": "ab49d3c64680143e184118bed66a46419fc15519",
       "inputs": [
         "tool",
         "checksum",
