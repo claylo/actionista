@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-11-16T06:17:33Z",
+    "generated": "2026-11-17T06:12:05Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -239,10 +239,10 @@
     },
     "EmbarkStudios/cargo-deny-action": {
       "latest": "v2",
-      "latestFull": "v2.1.1",
+      "latestFull": "v2.1.2",
       "description": "❌ GitHub Action for cargo-deny 🦀",
       "category": "security",
-      "sha": "3c6349835b2b7b196a839186cb8b78e02f7b5f25",
+      "sha": "70f81531115945ba6eb6b941ec9d39d063438eb9",
       "inputs": [
         "command",
         "arguments",
@@ -3669,10 +3669,10 @@
     },
     "actions/setup-go": {
       "latest": "v7",
-      "latestFull": "v7.0.0",
+      "latestFull": "v7.1.0",
       "description": "Set up your GitHub Actions workflow with a specific version of Go",
       "category": "setup-languages",
-      "sha": "b7ad1dad31e06c5925ef5d2fc7ad053ef454303e",
+      "sha": "d8cbb8045d7f43706b9177cceb36c1f91a6644d5",
       "deprecated": [
         "v1",
         "v2",
@@ -4288,10 +4288,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.276",
+      "latestFull": "v1.0.278",
       "description": "",
       "category": "ai-assistants",
-      "sha": "f3b070c88125d33dbae5653df5f143101d4ea9dc",
+      "sha": "cc98b3ae241b0fcfb6a42a2690751afffecb4452",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -4532,6 +4532,7 @@
         "no-project",
         "working-directory",
         "checksum",
+        "require-checksums",
         "github-token",
         "enable-cache",
         "cache-dependency-glob",
@@ -4554,10 +4555,10 @@
     },
     "asyncapi/cli": {
       "latest": "v6",
-      "latestFull": "v6.3.0",
+      "latestFull": "v6.3.1",
       "description": "CLI to work with your AsyncAPI files. You can validate them and in the future use a generator and ev",
       "category": "utilities",
-      "sha": "95c9a31e20b7262bc6a6931ba65928af6d12217e",
+      "sha": "a7a7cb80a91c0cd91936f5901af73902322c1a4e",
       "deprecated": [
         "v1",
         "v2",
@@ -4614,6 +4615,7 @@
         "mask-password",
         "registries",
         "registry-type",
+        "ecr-private-token-type",
         "skip-logout"
       ]
     },
@@ -4837,7 +4839,9 @@
         "secret-ids",
         "parse-json-secrets",
         "name-transformation",
-        "auto-select-family-attempt-timeout"
+        "auto-select-family-attempt-timeout",
+        "http-proxy",
+        "no-proxy"
       ]
     },
     "aws-actions/configure-aws-credentials": {
@@ -5746,10 +5750,10 @@
     },
     "conan-io/setup-conan": {
       "latest": "v1",
-      "latestFull": "v1.5.0",
+      "latestFull": "v1.5.1",
       "description": "A GitHub Action to install and configure the Conan package manager in your workflow",
       "category": "build-tools",
-      "sha": "5db0275587014d13a5ca698db681ce4782a6e052",
+      "sha": "2c7f599b76d52302b8e122bf890878e696d4577b",
       "inputs": [
         "version",
         "config_urls",
@@ -9258,10 +9262,10 @@
     },
     "rubygems/release-gem": {
       "latest": "v1",
-      "latestFull": "v1.4.1",
+      "latestFull": "v1.4.2",
       "description": "The official GitHub Action for publishing your gem files to RubyGems.org",
       "category": "release",
-      "sha": "7f9650160c1a4e7989fdc9855807bdbd421d8b6b",
+      "sha": "5c53f5308233b7c0f47411f0471b3faae6fa57b2",
       "inputs": [
         "token",
         "await-release",
@@ -10226,10 +10230,10 @@
     },
     "unikraft/kraftkit": {
       "latest": "v0",
-      "latestFull": "v0.12.16",
+      "latestFull": "v0.13.1",
       "description": "Build and use highly customized and ultra-lightweight unikernel VMs.",
       "category": "docker",
-      "sha": "b5dd63da1644808ab47dda72963d7cf90935808c",
+      "sha": "b3d167b5dcd35a4dcf8117ba4a5dc7163e90116d",
       "inputs": [
         "after",
         "run",
