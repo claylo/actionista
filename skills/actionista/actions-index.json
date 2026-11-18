@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-11-17T06:12:05Z",
+    "generated": "2026-11-18T06:12:00Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -3488,10 +3488,10 @@
     },
     "actions/dependency-review-action": {
       "latest": "v5",
-      "latestFull": "v5.0.0",
+      "latestFull": "v5.0.1",
       "description": "A GitHub Action for detecting vulnerable dependencies and invalid licenses in your PRs",
       "category": "core",
-      "sha": "a1d282b36b6f3519aa1f3fc636f609c47dddb294",
+      "sha": "bbc44d14a204704ccc493733616cd1e93a0321ec",
       "deprecated": [
         "v1",
         "v2",
@@ -4288,10 +4288,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.278",
+      "latestFull": "v1.0.281",
       "description": "",
       "category": "ai-assistants",
-      "sha": "cc98b3ae241b0fcfb6a42a2690751afffecb4452",
+      "sha": "e5812cd75691ca7bbfc57c0ecf4441db3a1ab7dd",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -4301,6 +4301,7 @@
         "branch_name_template",
         "allowed_bots",
         "allowed_non_write_users",
+        "allow_fork_prs",
         "restrict_untrusted_prs",
         "include_comments_by_actor",
         "exclude_comments_by_actor",
@@ -4599,17 +4600,15 @@
         "version",
         "execute_install_scripts",
         "empty_packages_behavior",
-        "refresh",
-        "debug",
-        "add-repository"
+        "debug"
       ]
     },
     "aws-actions/amazon-ecr-login": {
       "latest": "v2",
-      "latestFull": "v2.1.7",
+      "latestFull": "v2.2.0",
       "description": "Logs into Amazon ECR with the local Docker client.",
       "category": "cloud-aws",
-      "sha": "03f1aad4c6c7ffd436567f42f9384779290529bd",
+      "sha": "7290e214a610b32bc0eef81748948b6d466a8783",
       "inputs": [
         "http-proxy",
         "mask-password",
@@ -4617,7 +4616,17 @@
         "registry-type",
         "ecr-private-token-type",
         "skip-logout"
-      ]
+      ],
+      "migrations": {
+        "v1→v2": {
+          "inputChanges": {
+            "added": [
+              "ecr-private-token-type"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "aws-actions/amazon-ecs-deploy-task-definition": {
       "latest": "v2",
@@ -4827,13 +4836,14 @@
       ]
     },
     "aws-actions/aws-secretsmanager-get-secrets": {
-      "latest": "v3",
-      "latestFull": "v3.0.2",
+      "latest": "v4",
+      "latestFull": "v4.0.0",
       "description": "",
       "category": "cloud-aws",
-      "sha": "2297f9a879480a9e3af9b293ed15c70caf8e1c88",
+      "sha": "e952bd7125c27e5be0060e50955b90a7e5addd99",
       "deprecated": [
-        "v1"
+        "v1",
+        "v2"
       ],
       "inputs": [
         "secret-ids",
@@ -4842,7 +4852,18 @@
         "auto-select-family-attempt-timeout",
         "http-proxy",
         "no-proxy"
-      ]
+      ],
+      "migrations": {
+        "v3→v4": {
+          "inputChanges": {
+            "added": [
+              "http-proxy",
+              "no-proxy"
+            ],
+            "removed": []
+          }
+        }
+      }
     },
     "aws-actions/configure-aws-credentials": {
       "latest": "v6",
@@ -7251,10 +7272,10 @@
     },
     "graalvm/setup-graalvm": {
       "latest": "v1",
-      "latestFull": "v1.6.9",
+      "latestFull": "v1.6.10",
       "description": "Set up your GitHub Actions workflow with a specific GraalVM distribution.",
       "category": "setup-languages",
-      "sha": "d6eca2595046623d69d636041513c80abf745406",
+      "sha": "60e76998d25690099182b796e99b8804da582d90",
       "inputs": [
         "java-version",
         "java-package",
@@ -9244,10 +9265,10 @@
     },
     "ruby/setup-ruby": {
       "latest": "v1",
-      "latestFull": "v1.338.0",
+      "latestFull": "v1.341.0",
       "description": "An action to download a prebuilt Ruby and add it to the PATH in 5 seconds",
       "category": "setup-languages",
-      "sha": "b3aaceaef7e0ee231b499e7b5f49c03fc1d32199",
+      "sha": "20eb24b0d509e2b9ed9b6d42ddfeb992915e0564",
       "inputs": [
         "ruby-version",
         "rubygems",
@@ -9338,10 +9359,10 @@
     },
     "sbt/setup-sbt": {
       "latest": "v1",
-      "latestFull": "v1.5.14",
+      "latestFull": "v1.5.15",
       "description": "setup-sbt installs the official sbt runner",
       "category": "setup-languages",
-      "sha": "67d461eba2c4753196c230e02da850757ba4775e",
+      "sha": "7e114eae4f32ec3f93c851c2793376a77f384409",
       "inputs": [
         "sbt-runner-version",
         "disk-cache"
@@ -9658,10 +9679,10 @@
     },
     "step-security/harden-runner": {
       "latest": "v2",
-      "latestFull": "v2.22.4",
+      "latestFull": "v2.23.0",
       "description": "Harden-Runner is a CI/CD security agent that works like an EDR for GitHub Actions runners. It monito",
       "category": "security",
-      "sha": "1d88384fd173af6ecb012dfd0264a306b711241a",
+      "sha": "aebdcf6156ab6691adf63218240e476564a1ed4c",
       "inputs": [
         "allowed-endpoints",
         "denied-endpoints",
@@ -9676,7 +9697,9 @@
         "use-policy-store",
         "deploy-on-self-hosted-vm",
         "customer",
-        "server-name"
+        "server-name",
+        "secure-registry",
+        "check-run-id"
       ],
       "migrations": {
         "v1→v2": {
@@ -9691,7 +9714,9 @@
               "use-policy-store",
               "deploy-on-self-hosted-vm",
               "customer",
-              "server-name"
+              "server-name",
+              "secure-registry",
+              "check-run-id"
             ],
             "removed": []
           }
