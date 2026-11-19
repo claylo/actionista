@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-11-18T06:12:00Z",
+    "generated": "2026-11-19T06:12:19Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -516,10 +516,10 @@
     },
     "JetBrains/qodana-action": {
       "latest": "v2026",
-      "latestFull": "v2026.2.2",
+      "latestFull": "v2026.2.4",
       "description": "⚙️ Scan your Go, Java, Kotlin, PHP, Python, JavaScript, TypeScript, .NET projects at GitHub with Qod",
       "category": "linting",
-      "sha": "3e8d76ff0e0241618abd808682f426afe84bab3f",
+      "sha": "13e3acbbaeb2cbfc37893b98e74594985edf42eb",
       "deprecated": [
         "v1",
         "v2",
@@ -3392,10 +3392,10 @@
     },
     "actions/create-github-app-token": {
       "latest": "v3",
-      "latestFull": "v3.3.0",
+      "latestFull": "v3.4.0",
       "description": "GitHub Action for creating a GitHub App Installation Access Token",
       "category": "core",
-      "sha": "64ab729a6294000f5aa4a4bc0b73d1f32bc45510",
+      "sha": "f418cff399f7aef4c2f0ad47e25ca7a6abbdd6fc",
       "deprecated": [
         "v1"
       ],
@@ -4288,10 +4288,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.281",
+      "latestFull": "v1.0.283",
       "description": "",
       "category": "ai-assistants",
-      "sha": "e5812cd75691ca7bbfc57c0ecf4441db3a1ab7dd",
+      "sha": "f431adaf77e0fecf918431e75a2b5b45b85af002",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -9265,10 +9265,10 @@
     },
     "ruby/setup-ruby": {
       "latest": "v1",
-      "latestFull": "v1.341.0",
+      "latestFull": "v1.342.0",
       "description": "An action to download a prebuilt Ruby and add it to the PATH in 5 seconds",
       "category": "setup-languages",
-      "sha": "20eb24b0d509e2b9ed9b6d42ddfeb992915e0564",
+      "sha": "f9c4492e86def3e644ab32a0ef185eda5b0c20d0",
       "inputs": [
         "ruby-version",
         "rubygems",
@@ -9874,10 +9874,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.90.5",
+      "latestFull": "v2.90.6",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "ab49d3c64680143e184118bed66a46419fc15519",
+      "sha": "75a7c0f87bd666af3cdb75c5b9e9d03ab6044e6f",
       "inputs": [
         "tool",
         "checksum",
@@ -10343,10 +10343,10 @@
     },
     "w9jds/firebase-action": {
       "latest": "v15",
-      "latestFull": "v15.36.0",
+      "latestFull": "v15.37.0",
       "description": "GitHub Action for interacting with Firebase",
       "category": "cloud-gcp",
-      "sha": "4cdc4914d02e1044478456e9d0f87118e13541d9",
+      "sha": "e01972352bce28ca4658ce13d6abefd26053a4e2",
       "deprecated": [
         "v1",
         "v2",
