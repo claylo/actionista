@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-11-20T06:11:51Z",
+    "generated": "2026-11-21T06:10:59Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -3642,6 +3642,7 @@
       ],
       "inputs": [
         "dotnet-version",
+        "dotnet-runtime",
         "dotnet-quality",
         "dotnet-channel",
         "skip-lts-prepass",
@@ -4031,10 +4032,10 @@
     },
     "amannn/action-semantic-pull-request": {
       "latest": "v6",
-      "latestFull": "v6.1.2",
+      "latestFull": "v6.1.3",
       "description": "A GitHub Action that ensures that your PR title matches the Conventional Commits spec",
       "category": "linting",
-      "sha": "2252a14e810aa9b85c2d560bd7070c802206ecf6",
+      "sha": "c5e23b7e584519ee15caa684cf60d056aa9f035f",
       "deprecated": [
         "v1",
         "v2",
@@ -4288,10 +4289,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.284",
+      "latestFull": "v1.0.286",
       "description": "",
       "category": "ai-assistants",
-      "sha": "c84e279f859e2591391e95bd309286eb111c345f",
+      "sha": "acfe7992852970efb4fee683d63d628e3e52df67",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -4509,10 +4510,10 @@
     },
     "astral-sh/setup-uv": {
       "latest": "v10",
-      "latestFull": "v10.3.3",
+      "latestFull": "v10.4.0",
       "description": "Set up your GitHub Actions workflow with a specific version of https://docs.astral.sh/uv/",
       "category": "setup-languages",
-      "sha": "68559e99cc807c1eb7e9238fd43a15bba460eec2",
+      "sha": "1db35dd8eee11c5894872e0b383ae6c406cf738d",
       "deprecated": [
         "v1",
         "v2",
@@ -5956,10 +5957,10 @@
     },
     "cpp-linter/cpp-linter-action": {
       "latest": "v2",
-      "latestFull": "v2.24.1",
+      "latestFull": "v2.24.2",
       "description": "Lint C/C++ pull requests with clang-format and clang-tidy, and post the results as annotations, comm",
       "category": "linting",
-      "sha": "71cf8e84d4876ee304e3330f314df15b9da49c67",
+      "sha": "f00129419240baeb5d34e89d087f5f013514b309",
       "inputs": [
         "style",
         "extensions",
@@ -6881,10 +6882,10 @@
     },
     "github/codeql-action/analyze": {
       "latest": "v4",
-      "latestFull": "v4.39.3",
+      "latestFull": "v4.39.4",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "33d7b85da1a04171e211befe2c739303b9a4c066",
+      "sha": "1bd86f2fdb4b86187fa4059f16f31a3202acc9ea",
       "deprecated": [
         "v1",
         "v2"
@@ -6892,10 +6893,10 @@
     },
     "github/codeql-action/autobuild": {
       "latest": "v4",
-      "latestFull": "v4.39.3",
+      "latestFull": "v4.39.4",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "33d7b85da1a04171e211befe2c739303b9a4c066",
+      "sha": "1bd86f2fdb4b86187fa4059f16f31a3202acc9ea",
       "deprecated": [
         "v1",
         "v2"
@@ -6903,10 +6904,10 @@
     },
     "github/codeql-action/init": {
       "latest": "v4",
-      "latestFull": "v4.39.3",
+      "latestFull": "v4.39.4",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "33d7b85da1a04171e211befe2c739303b9a4c066",
+      "sha": "1bd86f2fdb4b86187fa4059f16f31a3202acc9ea",
       "deprecated": [
         "v1",
         "v2"
@@ -7982,6 +7983,7 @@
         "token",
         "github_token",
         "report_paths",
+        "exclude_report_paths",
         "group_reports",
         "test_files_prefix",
         "exclude_sources",
@@ -8020,6 +8022,7 @@
         "follow_symlink",
         "job_name",
         "annotations_limit",
+        "max_test_cases",
         "skip_annotations",
         "truncate_stack_traces",
         "resolve_ignore_classname",
@@ -8362,10 +8365,10 @@
     },
     "overtrue/phplint": {
       "latest": "v9",
-      "latestFull": "9.8.2",
+      "latestFull": "9.8.3",
       "description": ":bug:  A tool that can speed up linting of php files by running several lint processes at once.",
       "category": "linting",
-      "sha": "b8f8ad7306170c61142dc72487c58b7e667a0132",
+      "sha": "47af9f81a55d48ca1123c589b5f12c9b2d4766d6",
       "deprecated": [
         "v1",
         "v2",
@@ -9265,10 +9268,10 @@
     },
     "ruby/setup-ruby": {
       "latest": "v1",
-      "latestFull": "v1.342.0",
+      "latestFull": "v1.343.0",
       "description": "An action to download a prebuilt Ruby and add it to the PATH in 5 seconds",
       "category": "setup-languages",
-      "sha": "f9c4492e86def3e644ab32a0ef185eda5b0c20d0",
+      "sha": "be3c7df29b3349ec6bcfc6b4792f1cf9f5237d18",
       "inputs": [
         "ruby-version",
         "rubygems",
@@ -9423,10 +9426,10 @@
     },
     "slackapi/slack-github-action": {
       "latest": "v4",
-      "latestFull": "v4.0.0",
+      "latestFull": "v4.1.0",
       "description": "Send data into Slack using this GitHub Action!",
       "category": "notifications",
-      "sha": "dcb1066f776dd043e64d0e8ba94ca15cc7e1875d",
+      "sha": "0bc3581177d9a0f8d555e07689384b376528e8fa",
       "deprecated": [
         "v1",
         "v2"
