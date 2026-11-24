@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-11-23T06:16:24Z",
+    "generated": "2026-11-24T06:12:07Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -2568,13 +2568,14 @@
       ]
     },
     "Kesin11/actions-timeline": {
-      "latest": "v3",
-      "latestFull": "v3.2.1",
+      "latest": "v4",
+      "latestFull": "v4.0.0",
       "description": "An Action shows timeline of a workflow in a run summary.",
       "category": "utilities",
-      "sha": "460b1f8a750077029ad3589824d371b200e91dcf",
+      "sha": "d547cc51bd6e8016ac50219eeb29a9eb385a2546",
       "deprecated": [
-        "v1"
+        "v1",
+        "v2"
       ],
       "inputs": [
         "github-token",
@@ -2584,11 +2585,10 @@
         "output-html"
       ],
       "migrations": {
-        "v2→v3": {
+        "v3→v4": {
           "inputChanges": {
             "added": [
-              "expand-composite-actions",
-              "expand-composite-actions-threshold"
+              "output-html"
             ],
             "removed": []
           }
@@ -2966,10 +2966,10 @@
     },
     "SonarSource/sonarqube-scan-action": {
       "latest": "v8",
-      "latestFull": "v8.5.0",
+      "latestFull": "v8.5.1",
       "description": "",
       "category": "linting",
-      "sha": "59202af334b4ba7b5db01b701b8e79f8b3bef0f4",
+      "sha": "70bad232163b09d998ea0707ee80c0ec80798c16",
       "deprecated": [
         "v1",
         "v2",
@@ -4226,10 +4226,10 @@
     },
     "anchore/sbom-action": {
       "latest": "v0",
-      "latestFull": "v0.24.3",
+      "latestFull": "v0.24.4",
       "description": "GitHub Action for creating software bill of materials using Syft.",
       "category": "security",
-      "sha": "66cbf4bc1f1c0d2edc94016e65bc221b6bb0ad6c",
+      "sha": "dfcb83b97731532d72be422cbc51ee64adb6fd56",
       "inputs": [
         "path",
         "file",
@@ -4250,10 +4250,10 @@
     },
     "anchore/scan-action": {
       "latest": "v7",
-      "latestFull": "v7.4.2",
+      "latestFull": "v7.4.3",
       "description": "Anchore container analysis and scan provided as a GitHub Action",
       "category": "security",
-      "sha": "27805bf3b4e84b4a5c980df22ed233c00390a439",
+      "sha": "11983a512817154c80a9db660c1a184be7513ed6",
       "deprecated": [
         "v1",
         "v2",
@@ -4290,10 +4290,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.286",
+      "latestFull": "v1.0.289",
       "description": "",
       "category": "ai-assistants",
-      "sha": "acfe7992852970efb4fee683d63d628e3e52df67",
+      "sha": "eb56b6666facdbd501035f4a0269d8caee2e7a8b",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -9269,10 +9269,10 @@
     },
     "ruby/setup-ruby": {
       "latest": "v1",
-      "latestFull": "v1.343.0",
+      "latestFull": "v1.344.0",
       "description": "An action to download a prebuilt Ruby and add it to the PATH in 5 seconds",
       "category": "setup-languages",
-      "sha": "be3c7df29b3349ec6bcfc6b4792f1cf9f5237d18",
+      "sha": "78c62f2208e480ce3d5ae4dfd9b9e181acf48b63",
       "inputs": [
         "ruby-version",
         "rubygems",
@@ -9287,14 +9287,15 @@
     },
     "rubygems/release-gem": {
       "latest": "v1",
-      "latestFull": "v1.4.2",
+      "latestFull": "v1.5.0",
       "description": "The official GitHub Action for publishing your gem files to RubyGems.org",
       "category": "release",
-      "sha": "5c53f5308233b7c0f47411f0471b3faae6fa57b2",
+      "sha": "2654a0fe0dc39725c07fe84d7fe863a084f2424e",
       "inputs": [
         "token",
         "await-release",
         "setup-trusted-publisher",
+        "owner",
         "attestations",
         "working-directory"
       ]
@@ -9363,10 +9364,10 @@
     },
     "sbt/setup-sbt": {
       "latest": "v1",
-      "latestFull": "v1.5.15",
+      "latestFull": "v1.5.16",
       "description": "setup-sbt installs the official sbt runner",
       "category": "setup-languages",
-      "sha": "7e114eae4f32ec3f93c851c2793376a77f384409",
+      "sha": "20cf087132cf939c160f0e53f87ba33634003e3e",
       "inputs": [
         "sbt-runner-version",
         "disk-cache"
@@ -10241,10 +10242,10 @@
     },
     "trufflesecurity/trufflehog": {
       "latest": "v3",
-      "latestFull": "v3.100.0",
+      "latestFull": "v3.100.1",
       "description": "Find, verify, and analyze leaked credentials",
       "category": "security",
-      "sha": "d232362a64a09a9e7d58267b8f5acef00ae90e23",
+      "sha": "4ef51f69ca6347aaa76a5e64a87eac9c0c909f71",
       "deprecated": [
         "v1"
       ],
