@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-11-24T06:12:07Z",
+    "generated": "2026-11-25T06:13:04Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -239,10 +239,10 @@
     },
     "EmbarkStudios/cargo-deny-action": {
       "latest": "v2",
-      "latestFull": "v2.1.3",
+      "latestFull": "v2.1.4",
       "description": "❌ GitHub Action for cargo-deny 🦀",
       "category": "security",
-      "sha": "17aeb3c839e42274e2b8adf721c8c65edfdc74dd",
+      "sha": "81891abc19297b21343b15ef67dc61e4aea74fda",
       "inputs": [
         "command",
         "arguments",
@@ -4033,10 +4033,10 @@
     },
     "amannn/action-semantic-pull-request": {
       "latest": "v6",
-      "latestFull": "v6.1.3",
+      "latestFull": "v6.1.4",
       "description": "A GitHub Action that ensures that your PR title matches the Conventional Commits spec",
       "category": "linting",
-      "sha": "c5e23b7e584519ee15caa684cf60d056aa9f035f",
+      "sha": "66e72920af32222769c386d81f89656ebcb6d6d5",
       "deprecated": [
         "v1",
         "v2",
@@ -4290,10 +4290,10 @@
     },
     "anthropics/claude-code-action": {
       "latest": "v1",
-      "latestFull": "v1.0.289",
+      "latestFull": "v1.0.290",
       "description": "",
       "category": "ai-assistants",
-      "sha": "eb56b6666facdbd501035f4a0269d8caee2e7a8b",
+      "sha": "4411a9e9b0283becf4b924f7bce360fd7756c78c",
       "inputs": [
         "trigger_phrase",
         "assignee_trigger",
@@ -4592,18 +4592,29 @@
       ]
     },
     "awalsh128/cache-apt-pkgs-action": {
-      "latest": "v1",
-      "latestFull": "v1.6.3",
+      "latest": "v2",
+      "latestFull": "v2.0.0",
       "description": "Cache APT packages in GitHub Actions",
       "category": "package-managers",
-      "sha": "553a35bb8ebd9fcabcb1c9451aa4c98e1b4ca8a9",
+      "sha": "009d70260b0f2e115cfa77447f8bd04c8e797064",
       "inputs": [
         "packages",
         "version",
         "execute_install_scripts",
         "empty_packages_behavior",
         "debug"
-      ]
+      ],
+      "migrations": {
+        "v1→v2": {
+          "inputChanges": {
+            "added": [],
+            "removed": [
+              "refresh",
+              "add-repository"
+            ]
+          }
+        }
+      }
     },
     "aws-actions/amazon-ecr-login": {
       "latest": "v2",
@@ -6883,10 +6894,10 @@
     },
     "github/codeql-action/analyze": {
       "latest": "v4",
-      "latestFull": "v4.39.4",
+      "latestFull": "v4.39.5",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "1bd86f2fdb4b86187fa4059f16f31a3202acc9ea",
+      "sha": "915412ff23e8b7659517e607487dbeae018f2934",
       "deprecated": [
         "v1",
         "v2"
@@ -6894,10 +6905,10 @@
     },
     "github/codeql-action/autobuild": {
       "latest": "v4",
-      "latestFull": "v4.39.4",
+      "latestFull": "v4.39.5",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "1bd86f2fdb4b86187fa4059f16f31a3202acc9ea",
+      "sha": "915412ff23e8b7659517e607487dbeae018f2934",
       "deprecated": [
         "v1",
         "v2"
@@ -6905,10 +6916,10 @@
     },
     "github/codeql-action/init": {
       "latest": "v4",
-      "latestFull": "v4.39.4",
+      "latestFull": "v4.39.5",
       "description": "Actions for running CodeQL analysis",
       "category": "security",
-      "sha": "1bd86f2fdb4b86187fa4059f16f31a3202acc9ea",
+      "sha": "915412ff23e8b7659517e607487dbeae018f2934",
       "deprecated": [
         "v1",
         "v2"
