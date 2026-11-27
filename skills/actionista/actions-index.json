@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-11-26T06:12:47Z",
+    "generated": "2026-11-27T06:12:40Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -516,10 +516,10 @@
     },
     "JetBrains/qodana-action": {
       "latest": "v2026",
-      "latestFull": "v2026.3.1",
+      "latestFull": "v2026.1.4",
       "description": "⚙️ Scan your Go, Java, Kotlin, PHP, Python, JavaScript, TypeScript, .NET projects at GitHub with Qod",
       "category": "linting",
-      "sha": "aa698739cd4b8204ad53291bea7e16cd75da3c9f",
+      "sha": "c9c173a6953ca827bd12e51e18fdd54c515d3c53",
       "deprecated": [
         "v1",
         "v2",
@@ -9890,10 +9890,10 @@
     },
     "taiki-e/install-action": {
       "latest": "v2",
-      "latestFull": "v2.90.10",
+      "latestFull": "v2.90.11",
       "description": "GitHub Action for installing development tools (mainly from GitHub Releases).",
       "category": "build-tools",
-      "sha": "893d6ee8d714b6c7dfe2bcd94e5759e9a7958a7e",
+      "sha": "073e1fd0bc889c9aee68dbaaa927cde1b5653a83",
       "inputs": [
         "tool",
         "checksum",
