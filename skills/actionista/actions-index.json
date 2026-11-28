@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "generated": "2026-11-27T06:12:40Z",
+    "generated": "2026-11-28T06:11:21Z",
     "generator": "actionista",
     "actionCount": 264,
     "note": "This index is updated daily by .github/workflows/update-index.yml"
@@ -239,10 +239,10 @@
     },
     "EmbarkStudios/cargo-deny-action": {
       "latest": "v2",
-      "latestFull": "v2.1.4",
+      "latestFull": "v2.1.5",
       "description": "❌ GitHub Action for cargo-deny 🦀",
       "category": "security",
-      "sha": "81891abc19297b21343b15ef67dc61e4aea74fda",
+      "sha": "bb119f768ea239e765aeaef5769558d4f21213aa",
       "inputs": [
         "command",
         "arguments",
@@ -5212,7 +5212,8 @@
       "inputs": [
         "token",
         "version",
-        "working-dir"
+        "working-dir",
+        "verify-digest"
       ],
       "migrations": {
         "v1→v2": {
